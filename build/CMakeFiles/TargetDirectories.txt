@@ -1,0 +1,3 @@
+/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/build/CMakeFiles/pdf.dir
+/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/build/CMakeFiles/edit_cache.dir
+/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/build/CMakeFiles/rebuild_cache.dir
