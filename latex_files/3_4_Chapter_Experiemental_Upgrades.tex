@@ -1,5 +1,129 @@
 %--- Chapter 4 ----------------------------------------------------------------%
 \chapter{Experimental Upgrades}
+
+
+The ATLAS detector is currently operating beyond its original design specifications from the early 2000s. 
+As the LHC has steadily increased its delivered luminosity, the ATLAS detector has required a series of upgrades to cope with higher data rates, increased detector occupancy, and elevated radiation levels.
+
+Beginning in approximately 2030, the LHC will enter the High-Luminosity phase (HL-LHC). 
+During this period, the instantaneous luminosity is expected to increase by up to an order of magnitude relative to the original LHC design, reaching values of
+\[
+\mathcal{L} = 5 \times 10^{34}~\mathrm{cm}^{-2}\mathrm{s}^{-1}.
+\]
+At these luminosities, an average of approximately 200 proton--proton interactions per bunch crossing is anticipated, compared to the typical 20--50 interactions observed during Run~2. 
+This dramatic increase in pileup presents significant challenges for event reconstruction, triggering, and data acquisition.
+
+To meet these challenges and continue exploring the particle physics phenomena at the HL-LHC, the ATLAS detector is undergoing extensive upgrades. 
+These upgrades are designed to improve radiation tolerance, increase detector granularity, enhance readout bandwidth, and maintain or improve physics performance under extreme operating conditions. 
+Major upgrade components include a complete replacement of the Inner Detector with a new all-silicon Inner Tracker (ITk), upgrades to the Muon Spectrometer, new front-end and readout electronics for the calorimeters, and substantial improvements to the trigger and data acquisition systems.
+
+The ATLAS upgrade program is divided into two phases. 
+Phase 1 upgrades were completed during the Long Shutdown 2 period and commissioned by 2024. 
+Phase 2 upgrades are scheduled for completion by 2030, prior to the start of HL-LHC operations.
+
+
+
+\section{Phase 1 upgrades}
+The Phase 1 upgrade program focused on improving detector performance and trigger capabilities in preparation for Run 3 of the LHC. 
+Key components of this phase included upgrades to the Muon Spectrometer, the introduction of new trigger electronics, and improvements to detector readout systems. 
+These upgrades enabled ATLAS to operate efficiently at higher luminosities and increased event rates during Run 3.
+
+
+
 \section{Phase 2 upgrades}
+
+
+The Phase 2 upgrade program is designed to prepare the ATLAS detector for sustained operation during the HL-LHC era and is scheduled for completion in 2030. 
+The most significant component of this upgrade is the complete replacement of the current Inner Detector with a new all-silicon Inner Tracker (ITk). 
+
+The ITk will provide substantially higher granularity, improved radiation hardness, and faster readout capabilities compared to the existing Inner Detector. 
+It is designed to maintain excellent tracking and vertexing performance in the presence of extreme pileup and radiation levels expected at the HL-LHC. 
+The design and performance of the ITk are described in detail in the ATLAS Technical Design Reports~\cite{ATLASITkTDR1,ATLASITkTDR2}, and the ITk forms the primary focus of this chapter.
+
+
+ 
 \subsection{ATLAS ITk}
 
+
+The primary goal of the ITk upgrade is to maintain or improve charged-particle tracking performance in the high-luminosity environment of the HL-LHC. 
+Two major challenges must be addressed to achieve this goal: the substantially increased detector occupancy due to high pileup, and the extreme radiation levels expected over the lifetime of the detector.
+
+The innermost layers of the ITk are expected to experience radiation fluences exceeding
+$2 \times 10^{16}~\mathrm{n_{eq}/cm^2}$
+and total ionizing doses of up to approximately 1.7 Grad. 
+To operate reliably under these conditions, the ITk employs radiation hard silicon sensor technologies, advanced readout electronics, and a detector layout optimized for performance and longevity.
+The first layer of the ITk is also designed to be replaceable, allowing for potential replacement during the HL-LHC era. 
+
+ITk is split into two main systems: the Pixel Detector and the Strip Detector.
+\subsubsection{Pixel Detector}
+
+The combined effects of integrated luminosity and the planed increase of instantaneous luminosity result in the ID no longer be sufficient for tracking and vertexing beyond run 3 in ATLAS and will be replaced. 
+The ID is being replaced with a new all-silicon Inner Tracker (ITk).
+ITk is designed to accommodate the 200 collisions per bunch crossing expected in the high luminosity LHC while providing readout at 1MHz so that the tracking can be used in L0-L1 triggers.
+The core of the ITk is the pixel module which detects the passage of charged particles.
+The pixel module is made of a silicon detector bonded directly to the front-end electronics for readout. 
+The pixel modules will be attached to local supports either rings or staves made of carbon fiber laminates and high thermal-conductive foam core with titanium pipes traversing the center for cooling. 
+These rings and staves are mounted into shells that will provide outer structure for ITk as can be seen in figure 1.
+
+The US ATLAS program is responsible for the two inner most layers of ITk called the Inner System. 
+The Inner System consists of 2348 modules. 
+SLAC National Laboratory is responsible for the assembly of the inner detector. 
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Layer & Radius [mm] & Z Range [mm] & Pixel Size [$\mu m$] & Sensor Thickness \\
+\hline
+L0 & 34  & $\pm245$ & 25x100 & 270 \\
+L1 & 99  & $\pm245$ & 50x50 & 100 \\
+L2 & 160 & $\pm372$ & 50x50 & 150 \\
+L3 & 228 & $\pm372$ & 50x50 & 150 \\
+L4 & 291 & $\pm372$ & 50x50 & 150 \\
+
+\hline
+\end{tabular}
+\caption{Stave locations}
+\label{tab:five_columns}
+\end{table}
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+Layer & Radius [mm] & Pixel Size [$\mu m$] & Sensor Thickness [$\mu m$] \\
+\hline
+0  & 33.20    & 25x100 & 270 \\
+.5 & 58.7     & 25x100 & 100 \\
+1  & 80.00    & 50x50 & 150 \\
+2  & 154.50   & 50x50 & 150 \\
+3  & 214.55   & 50x50 & 150 \\
+4  & 274.60   & 50x50 & 150 \\
+
+\hline
+\end{tabular}
+\caption{Ring locations}
+\label{tab:five_columns}
+\end{table}
+
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../Pictures/ITK_fig1.png}
+        \caption{ITk layout}
+        \label{fig:silicon_view}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../Pictures/ITK_fig2.png}
+        \caption{Inner Detector layout}
+        \label{fig:readout_geometry}
+    \end{subfigure}
+    \caption{View of ITk layers and locations in r-z plane.}
+    \label{fig:itk_schematics}
+\end{figure}

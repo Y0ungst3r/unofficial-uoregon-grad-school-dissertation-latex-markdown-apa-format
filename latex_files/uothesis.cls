@@ -139,8 +139,8 @@
 \RequirePackage{lipsum}
 \fi
 \ifapacite
-\RequirePackage[natbibapa]{apacite}
-\bibliographystyle{apacite}
+% \RequirePackage[natbibapa]{apacite}
+\bibliographystyle{plain}
 \fi
 
 \ifdraft
