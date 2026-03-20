@@ -1,2 +1,90 @@
 %--- Chapter 5 ----------------------------------------------------------------%
 \chapter{Object Reconstruction}
+
+
+
+\subsection{}
+The purpose of this document is to compile all the information on the dNdx and dEdx I find in a easier to understand way to me. 
+	
+	\subsection{Sagitta}
+	The sagitta is defined as an arcs deviation from a circle. See figure that doesn't exsist yet. 
+	
+	The sagitta can be related to important values as 
+	\begin{equation}
+		(R - s)^2 + L^2 = R^2
+	\end{equation}
+	
+	Now with some gentle work 
+	\begin{equation}
+		s = R\left(1 - \sqrt{1 - \frac{L^2}{R^2}}\right) 
+	\end{equation}
+	
+	Noting that $L<<R$ for all particles that we care about we can expand to get 
+	\begin{equation}
+		s = \frac{L^2}{8R} \label{Sagitta}
+	\end{equation}
+	
+	With this we can get the value for $P_t$ as 
+	\begin{equation}
+		P_t cos (\lambda) = .3 B R = \frac{.3 B L^2}{8 s} \label{Momentum}
+	\end{equation}
+	
+	Where B is defined as the uniform magnetic field the particle is passing through in units of Tesla. L is the lever arm length in units of meters. s is the Sagitta as defined above in units of meters. More on this equation can be found at \url{https://pdg.lbl.gov/2024/reviews/experimental_methods_and_colliders.html}
+	\subsection{Momentum Error}
+	
+	Momentum error can be found by starting with equation \ref{Momentum}. 
+	
+	\begin{equation}
+		P = .3 B R \rightarrow  \delta_P = .3 B \delta_R
+	\end{equation}
+	
+	Which dividing by P on both sides and using \ref{Momentum} again we return to.
+
+
+	\begin{equation}
+		 \frac{\delta_P}{P} = \frac{\delta_R}{R} \label{LinearError}
+	\end{equation}
+	
+	Now we can find the relation for $\delta_R$ by using \ref{Sagitta}
+	
+	\begin{equation}
+		 \delta_R = \sqrt{\left(\frac{1}{4} \frac{L^2}{s}\right)^2 \sigma_L^2 + \left( \frac{1}{8} \frac{L^2}{s^2} \right)^2 \sigma^2_s}
+	\end{equation}
+	
+	For some reason I have yet to understand we can assume the first term in the square root is small. I am not sure I understand why. If anything I would expect them to actually be the same term. However, if it is small we return the equation that is used. 
+	
+		\begin{equation}
+			\delta_R = \left( \frac{1}{8} \frac{L^2}{s^2} \right) \sigma_s
+		\end{equation}
+		
+		Then we use equation \ref{LinearError} change back to the important thing. 
+		
+		\begin{equation}
+			\frac{\delta_P}{P} = \frac{1}{8} \frac{L^2}{R s^2} \sigma_s
+		\end{equation}
+		
+		We can remove the s with equation \ref{Sagitta}.
+		
+		\begin{equation}
+			\frac{\delta_P}{P} = \frac{8 R}{ L^2} \sigma_s
+		\end{equation}
+	
+		Then finally using equation \ref{Momentum} to return to all observable. 
+			
+	\begin{equation}
+		\frac{\delta_P}{P^2} = \frac{8}{0.3 B L^2} \sigma_s
+	\end{equation}
+	
+	\subsection{Mass Error}
+	
+	For disappearing tracks the mass as calculated from dE/dx the error is dominated by error on momentum. The error is can be found starting with relation between dEdx and momentum.
+	\begin{equation}
+		{p^2} \frac{dE}{dx} = m^2
+	\end{equation}
+	
+	With some constant to make the units and calibration work out. 
+	
+	So then the mass error is 
+	\begin{equation}
+		\delta_m = \left(P \frac{dE}{dx}\right)^{3/2} \delta_P
+	\end{equation}

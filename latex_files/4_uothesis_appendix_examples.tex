@@ -7,9 +7,79 @@
 \renewcommand\thetable{\thechapter.\arabic{table}}
 
 %--- Appendix A ---------------------------------------------------------------%
-\chapter{The First Appendix}
-\section{Appendix One Section One}
-\subsection{Chapter four section one sub-section one}
+\chapter{dEdx measurements}
+
+The purpose of this document is to compile all the information on the dNdx and dEdx I find in a easier to understand way to me. 
+	
+	\subsection{Small number of collisions}
+	Due to the statistical nature of the Ionization of particles the actual energy transferred and the actual number of collisions is different from the expected value. To calculate this some assumptions are necessary. First lets assume that the sample is thin enough that the total energy of the particle is not effected largely by the ionization. That is that $ \bar{\Delta \text{E}} << \text{E} $. 
+	
+	Lets also assume that there is no rare total transfer of energy. This is really more of hard elestic scattering. 
+	
+	The number of collisions is given by $\bar{\text{N}} = x \frac{d\text{N}}{dx}$
+	
+	Then the number of N collisions happening is independent of each other so it is given by the poission distribution 
+	
+	\begin{equation}
+		P(x, \text{N}) = \frac{\bar{\text{N}}^{\text{N}}}{\text{N}!} e^{-\bar{\text{N}}}
+	\end{equation}
+	
+	So that is N events happening has a chance P with a mean of $\bar{\text{N}}$.
+	
+	Now the probability density $W_1$ of an energy loss $\omega$ occurring in a single collision with an atom is. 
+	
+	\begin{equation}
+		W_1 (\omega) = \frac{d^2\bar{\text{N}}}{dxd\omega} / \frac{d\bar{\text{N}}}{dx} = 1/ \sigma \frac{d \sigma}{d \omega}
+	\end{equation}
+	
+	where the integral $\int_{0}^{\infty} W_1 d \omega = 1$
+	
+	
+	Now in the case of N collisions the result is a convolution over $\omega$. 
+	\begin{equation}
+		W_\text{N}(\omega) = W_1(\omega)*W_1(\omega)*.....*W_1(\omega)
+	\end{equation}
+	
+	Where the convolution is 
+	\begin{equation}
+		W_1(\omega)*W_1(\omega) = \int_0^\omega W_1(\omega')*W_1(\omega - \omega') d \omega'
+	\end{equation}
+	
+	
+	Now if $N = 0$ we have a special case. This is when there is no collisions so that means there can be no momentum transfer. The result of this is a function that is 0 everywhere except at $\omega = 0$ and integrates to one. 
+	
+	\begin{equation}
+		W_0(\omega) = \delta (\omega)
+	\end{equation}
+	
+	With this we can get our probability 
+	\begin{equation}
+		f(x, \Delta) = \sum_{\text{N}=0}^{\infty}\frac{\bar{\text{N}}^{\text{N}}}{\text{N}!} e^{-\bar{\text{N}}} W_\text{N}(\Delta)
+	\end{equation}
+	
+	This ends the small number of collisions. If $\bar{\text{N}}$ is close to one then this expansion is the way to go as $W_\text{N}$ quickly goes to zero resulting in few terms being needed.
+	
+	\subsection{Laundau} 
+	Next Landau method. This method is valid for higher number of collisions. Starting with a univariable transport equation
+	
+	\begin{equation}
+		\Partial{f(x, \Delta)}{x} = \int_0^{T_0} w(\omega, \gamma) [f(x, \Delta - \omega) - f(x, \Delta)] d \omega
+	\end{equation}
+	
+	With the initial condition that if the thickness is zero $f(x = 0, \Delta) = \gamma(\Delta)$. Not sure how you can have energy transfer in no thickness but okay.
+	\begin{equation}
+		w(\omega) = \bar{\text{N}} W_1(\omega) = x \frac{d^2 \bar{\text{N}}}{dx d \omega} = x n_a \frac{d \sigma}{d \omega}
+	\end{equation}
+	
+	Where $w(\omega)$ is the probability of energy loss $\omega$ of a particle per unit path 
+	
+	This monster can be solved with a laplace transform. 
+	
+	\begin{equation}
+		L(f(x, \Delta)) \equiv \int_{0}^{\infty} f(x, \Delta) e^{-p\Delta} d \Delta = e^{-G(x, p)}
+	\end{equation}
+
+
 
 %--- Appendix B ---------------------------------------------------------------%
 % Restart counting to B.1, B.2...

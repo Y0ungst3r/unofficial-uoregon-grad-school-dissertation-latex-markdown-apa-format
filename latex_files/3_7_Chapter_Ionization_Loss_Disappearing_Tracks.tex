@@ -1,3 +1,256 @@
 %--- Chapter 7 ----------------------------------------------------------------%
-\chapter{Disappearing Tracks with High Ionization Loss}
+\chapter{Disappearing Tracks with High Ionization Energy Loss}
 \label{ch:llp_search_dedx_dt}
+\section{Analysis Inttroduction}
+
+%As discussed in Section \ref{sec:SUSY}, supersymmetry (SUSY) provides a compelling framework that addresses several shortcomings of the Standard Model. 
+%However, despite its theoretical appeal, no direct experimental evidence for SUSY has yet been observed. 
+%One possible explanation is that SUSY may manifest in regions of parameter space that are challenging to probe, such as scenarios involving long-lived particles.
+%
+%Since SUSY must be a broken symmetry, the masses of supersymmetric particles are expected to be significantly heavier than those of their Standard Model counterparts. 
+%This motivates searches in the heavy, long-lived particle phase space as a promising avenue for discovery.
+%
+%In models such as anomaly-mediated supersymmetry breaking (AMSB) wino scenarios or coannihilation stau models, the mass splitting between charged and neutral states can be small. This small mass difference leads to suppressed decay rates and, consequently, long particle lifetimes. Given that lower-mass regions of these models have already been excluded by previous searches, any viable realization is expected to lie at higher masses. This further motivates searches targeting heavy, long-lived particles.
+%
+%The disappearing track and high ionization energy loss analyses are designed to probe such scenarios involving heavy, long-lived charged particles. 
+% A disappearing track is defined as a reconstructed pixel track that traverses approximately 133 mm of the detector before leaving no associated hits in the semiconductor tracker (SCT). 
+% These short tracks, often referred to as tracklets, provide a distinctive experimental signature. 
+% This requirement enables sensitivity to particles with lifetimes on the order of $\mathcal{O}(0.01\text{--}10,\mathrm{ns})$.
+%
+% However, relying solely on disappearing tracks presents significant challenges in controlling background contributions. 
+% By incorporating a requirement on high ionization energy loss, it is possible to suppress dominant background sources, albeit at the cost of reduced sensitivity to lighter particles. %
+% Consequently, this analysis is primarily sensitive to heavy, long-lived charged particles and aims to detect them through direct experimental signatures.
+%
+
+In this analysis we search for heavy long-lived particles by searching for disappearing tracks that leave high ionizaion energy loss. 
+This search is specifically looks for BSM physics and can arise from many different models. 
+Specifically we search for GMSB and AMSB models as described in Section ~\ref{sec:SUSY}.
+In both these cases it is natural to get heavy long-lived particles that this anaylsis targets 
+
+A disappearing track is a reconstructed pixel track that hits at least the first four pixel layers of the Inner detector but doesn't hit the seven (or eight depending on year) required to considered full track. 
+These short tracks, called tracklets, provide a unique experiemental signature not typcial of any of the standard model particles.
+
+There are three sources of background in the disappeairng track searches fakes and hadronic scattering and leptonic scattering.
+These three sources of background are all expceted to have low dEdx. 
+
+
+% The Disappearing Track and High Ionization Energy Loss analysis targets these models with heavy long-lived charged particles. 
+% A disappearing track is a pixel track that passes through only about 133mm of the detector and then leaves no hits in the SCT. 
+% These short tracks are a special reconstruction of tracks often called tracklets. 
+% This requirement means that we can target the direct detection of particles with ~O(.01-10ns).
+% The difficulty with requiring just a disaappearing track is that it is hard to handle the sources of background. 
+% Adding the high ionization requirement allows use to reduce the worst of the background with the trade-off of requiring that we target heavy particles.
+% Meaning that this analysis targets heavy long-lived charged particles by direct detection.
+
+
+
+
+
+\section{Data}
+
+
+
+For this analysis full run 2 and partial run 3 data is used. 
+The data was taken in 2015 to 2024. 
+The data is from PP collisions at a center of mass energy for run 2 of $S = \sqrt(13 TeV)$ and for run 3 of $S = \sqrt(13.6 TeV)$.
+
+
+
+The datasets used in this analysis were produced using a non-standard reconstruction chain.
+This analysis requires information not retained in standard DAODs and is typically only available in the RAW data, such as pixel cluster charge, size and shape.
+To retain these non-standard variables in the DAOD, event picking was used to select the data. 
+The event picking is a method for selecting specific events to be reconstructed in a non-standard reconstruction chain, allowing great flexibility in choosing what infomation is saved.
+
+Event picking relies on the EventIndex, A system designed for direct selection and retrieval of individual events. 
+By retrieving only the required subset of the full dataset, the number of files that must be staged from tape is significantly reduced, decreasing the total reprocessing time. 
+Event picking consists of three main steps.
+
+\textbf{Event selection.} \\
+A subset of the total dataset to be reconstructed must be identified.
+This is done by analyzing the standard DAOD files produced in the nominal reconstruction chain to determine which events are relevant for the analysis. 
+The selected events include those in the signal region, validation regions, control regions, and additional events required for dedicated studies.
+Once the events are identified, their corresponding run and event numbers are extracted. 
+
+\textbf{Event retrieval}\\
+The selected event and run numbers, together with any needed metadata(E.G. trigger stream infomation or run years), are provided to the event picking service.
+The event picking service queries the EventIndex and retrieves the corresponding RAW events. 
+These events are then collected into containers that can be managed via rucio and stored in group storage.  
+
+\textbf{Event reconstruction}\\
+The selected RAW events are reconstructed using a dedicated reconstruction designed preserve information that is normally not saved during the reconstruction stage. 
+These DAODs are then compared to the datasets from the nominal reconstruction chain to check for issues in the reconstruction and to ensure that all selected events are present in the DAODs.
+
+
+
+The event selections used for event picking are defined in Sec.~\ref{sec:Signal_Regions_and_Selections_Baseline_Selections}.
+Using event picking roughly 1.6~M event were picked from the main physic streams listed in table \ref{tab:realAODs}. 
+The resulting event picked raw and LLP1 files are listed in table \ref{tab:RawEvents}.  
+
+
+
+
+\section{Simulation}
+\label{sec:Simulation}
+The Monte Carlo (MC) samples used in this analysis probe a largely unexplored region of parameter space in searches for physics beyond the Standard Model (BSM).
+The targeted phase space corresponds to heavy particles with masses of $\mathcal{O}(100$--$1000~\GeV)$ and lifetimes of $\mathcal{O}(0.1$--$10~ns)$.
+This search targets the direct detection of long-lived charged particles and is therefore designed to be as model-agnostic as reasonably possible.
+The benchmark models considered in this analysis are motivated by supersymmetry (SUSY), which naturally provides mechanisms for long-lived particles.
+In particular, the analysis focuses on gauge-mediated SUSY breaking (GMSB) stau scenarios and anomaly-mediated SUSY breaking (AMSB) wino scenarios.
+
+
+\subsection{Wino}
+
+For the wino benchmark, the SUSY scenario considered is anomaly-mediated SUSY breaking (AMSB).
+In this framework, the lightest neutralino is typically the lightest supersymmetric particle (LSP), while the chargino (wino-like) is the next-to-lightest supersymmetric particle (NLSP), as shown in Fig.~\ref{fig:feynman_wino}.
+The small mass splitting between the chargino and the neutralino leads to a suppressed phase space for the chargino decay, resulting in a long lifetime.
+
+The wino samples are generated using a simplified AMSB-inspired model in which only the masses and lifetimes of the charginos and neutralinos are varied to determine the kinematics.
+This approach assumes that the slepton masses are sufficiently large to be neglected.
+The simplified model has been validated against full AMSB simulations and shows good agreement.
+Although the branching ratio of the chargino must be set manually in this framework, the simplified setup significantly streamlines the generation of samples and facilitates future reinterpretations.
+
+The wino samples were generated using \textsc{MadGraph5\_aMC@NLO}~v3.5.1 interfaced with \textsc{Pythia}~8.308 and \textsc{EvtGen}~v2.1.1.
+The A14 tune with the NNPDF23LO PDF set was used.
+
+\subsection{Stau}
+
+The stau benchmark is based on a gauge-mediated SUSY breaking (GMSB) scenario.
+In this case, the gravitino is the LSP and is massless.
+The stau is the NLSP and decays to a tau lepton and a gravitino, as illustrated in Fig.~\ref{fig:feynman_stau}.
+Due to the very small coupling to the gravitino, the stau can acquire a long lifetime.
+
+The stau samples were generated using \textsc{MadGraph5\_aMC@NLO}~v3.3.1 interfaced with \textsc{Pythia}~8.308 and \textsc{EvtGen}~v2.1.1.
+The A14 tune with the NNPDF23LO PDF set was used.
+
+
+
+\begin{figure}[tp]
+\centering
+\subfloat[]{
+  \label{fig:feynman_wino}  
+  \includegraphics[width=.4\textwidth]{../Pictures/C1C1-qpipiN1N1-AMSB.pdf}
+}
+\subfloat[]{
+  \label{fig:feynman_stau}
+  \includegraphics[width=.4\textwidth]{../Pictures/staustau-jtautauN1N1.pdf}
+}
+  \caption{Left: Feynman diagram for pair-produced charginos. Right: Feynman diagram for pair produced staus}
+   \label{fig:feynman_diagrams}
+\end{figure}
+
+
+
+
+
+\section{Signal Region and Selections}
+To achieve the best possible sensitivity to multiple different signal models this analysis has four signal regions, of two catergories, decay agnositc and decay specific. 
+In the decay agnositc region we remain mostly agnostic to any sort of decay mode and focus on targeting just the disappearing track.
+In this mode we split into two targeted regions one for high mass particles and one for low mass.
+In the decay specific mode we look for either a kinked tracklet which is from a decay or veto any sort of kink.
+Covering all this signal regions allows for the best sensitivity to multiple models and makes possible future reinterpretations simplier. 
+These regions are shown in Fig. ~\cite{fig:sr_diagram}
+
+
+\begin{figure}[tp]
+    \centering
+    \includegraphics[width=.9\textwidth]{../Pictures/Overall_concept.png}
+    \label{fig:st_diagram}
+    \caption{
+        Schematic view of the signal regions. 
+    On the left being for decay agnositc signal regions. 
+    On the right being for decay specific regions. 
+    Note that in this case the $\Delta m $ is specifically the mass splitting between the BSM particle and the sum of decay products.
+    }
+
+\end{figure}
+
+As all ddata for this analysis uses event picking it is applied to all regions. 
+
+
+\section{Background Estimation}
+
+
+For this search there are two primary sources of backgrounds, fakes and scattering background. 
+
+Fakes are mis-combination of multiple real low-momentum particles that are reconstructed as a single high-momentum tracklet. 
+These fake tracklets can exhibit high ionization energy loss as the underlying particles interacting with the sensors are low-momentum and therefore can have a large ionization energy loss. 
+Fake tracklets are a challenging background as originate from mis-combinations of particles and are therefore heavily influenced by pileup conditions and detector performance.
+As a result they are difficult to reliably model the abundance using Monte Carlo simulation. 
+
+The scattering background originates from real high-energy electrons, muons, or hadrons that undergo material interactions, or more rarely decay, such that they produce a tracklet signature. 
+Although these particles are typically minimum ionizing at the relevant energies, the statistical nature of ionization energy loss, as well as occasional overlaps with other particles, can cause them to appear as highly ionizing. 
+Consequently, the scattering background is strongly influenced by the detector material and detector conditions, making accurate modeling in Monte Carlo simulation challenging.
+
+For this analysis, two background estimation methods have been developed in parallel.
+This approach allows different estimation strategies to be tested and validated against each other.
+Do to the challenging conditions that lead to the background sources in this analysis both techniques are fully data driven. 
+The first technique developed is a simple cut and count method relying on KVU pt and dE/dx.
+The second technique is a two component dE/dx shape fit.
+Both methods have been developed together and use the same baseline selections described in section ~\ref{sec:Signal_Regions_and_Selections}
+
+\subsection{ABCD Method in dE/dx and pT}
+\label{sec:Background_Estimation_ABCD_in_dEdx_and_pT}
+
+For the ABCD background estimates KVUpT and dE/dx are used as the uncorrelated variables to define four different regions. 
+The signal regions and three control regions are constructed using simple threshold selections in KVUpT and dEdx. 
+The excpected background yield in the signal region is predicted from the control regions according to Eq. ~\ref{eq:ABCD}.
+
+\begin{equation}
+    N_A = N_B * N_C / N_D
+\end{equation}
+
+
+
+To ensure the validity of this background assumption the correlation between KVUpT and dE/dx is studied.
+The correlation in background between KVUpT an dEdx is evaluated by slicing the data in KVUpT and examining dEdx distributions in each slice. 
+To maintain the statistics uneven bins were choosen. 
+
+The background estimation is validated in several independent regions designed to test closure and correlation with different background compositions:
+\begin{itemize}
+    \item A low-$pT$ region between 20 and 60 GeV
+    \item a minimum-ionizing region
+    \item a fake enriched region
+    \item a low-$E^{miss}_T$ region between 100 and 120 GeV
+\end{itemize}
+
+
+
+These validation regions are used to test the assumption that Pt and dE/dx are approzimately ooncorrelated for background events and that there is closure in the background estimation. 
+To further study the validity of the ABCD method and the behaior of the dE/dx tails, a simple toy model of the signal region is constructed. 
+The toy model is built using templets extracted from data. a dE/dx templates is obtained from the low momentum, while the pT template is obtained from the low-dEdx region. These templates are then used a PDF for the randomly generate pseudo events to be selected from. 
+Used the generated-events, a simple cut and count procedure is applied to estimate the expected yield in the signal region. This toy model provides a consistency check of the ABCD prediction and aloows the impact of the dE/dx tails to be further studied. 
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{c c c c c c}
+\hline
+\hline
+\multicolumn{6}{c}{\textbf{Inclusive region}}\\
+\hline
+Channel & 
+\begin{tabular}{c} High Pt \\ dE/dx$\le$1.2 \end{tabular} & 
+\begin{tabular}{c}Low Pt \\ dE/dx$>$1.6 \end{tabular} & 
+\begin{tabular}{c}Low Pt \\ dE/dx$\le$1.2\end{tabular} &
+\multicolumn{2}{c}{\begin{tabular}{c}High Pt \\ dE/dx$>$1.6\end{tabular}} \\
+\hline
+& B & C & D & Predicted A & Observed A\\
+\hline
+Low MeT VR     & 58  & 1682 & 1052 & $36.3 \pm 6.0$ & 35 \\
+Fake Enriched VR  & 30  & 663  & 221  & $10.0 \pm 3.2$ & 15 \\
+MIP Enriched VR  & 49  & 3423 & 3152 & $45.1 \pm 6.7$ & 42 \\
+Electron Enriched VR  & 34   & 2276 & 852  & $12.7 \pm 3.6$ & 13 \\
+Hadron Enriched VR  & 2    & 218  & 0    & N/A           & 0  \\
+Muon Enriched VR & 13   & 929  & 2300 & $32.2 \pm 5.7$ & 29 \\
+High MeT SR & 151 & 1810 & 2627 & $219.159 \pm 14.804$ & Blinded \\
+\hline
+\end{tabular}
+\caption{Inclusive Region results background estimation results.}
+\label{tab:Inclusive_VR_ABCD_reformatted}
+\end{table}
+
+
+\section{Results}
+
+We found SUSY!!
+

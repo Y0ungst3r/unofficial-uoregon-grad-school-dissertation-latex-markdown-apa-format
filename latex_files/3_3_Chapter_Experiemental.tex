@@ -38,7 +38,7 @@ The center-of-mass energy of proton--proton collisions is 13~TeV during Run~2 an
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{../Pictures/LHC_complex.pdf}
+    \includegraphics[width=\textwidth]{../Pictures/LHC_complex.pdf}
     \caption{Schematic of the LHC accelerator complex\cite{Cern_accelerator_complex_2019}, showing the sequence of accelerators used to prepare and inject proton beams into the LHC ring. 
     Image credit: CERN .}
     \label{fig:lhc_complex}
@@ -99,11 +99,12 @@ It is approximately 46~m long, 25~m in diameter, weighs about 7000~tons, and con
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{../Pictures/ATLAS_CrossSection.jpg}
+    \includegraphics[width=\textwidth]{../Pictures/ATLAS_CrossSection.jpg}
     \caption{Schematic view of the ATLAS detector\cite{ATLAS_Picture}, showing the main subsystems arranged around the interaction point. 
-    Image credit: CERN .}
+    Image credit: CERN}
     \label{fig:ATLAS_figure}
 \end{figure}
+
 
 
 Starting from the interaction point and moving radially outward, the main subsystems are the Inner Detector (ID), the central solenoid magnet, the electromagnetic and hadronic calorimeters, the toroidal magnet system, and the Muon Spectrometer (MS). 
@@ -116,7 +117,7 @@ Surrounding this is the hadronic calorimeter, designed to measure the energies o
 
 Enclosing the calorimeters is the toroidal magnet system, which supplies the magnetic field required for the Muon Spectrometer. 
 The MS forms the outermost layer of ATLAS and is optimized for the detection and momentum measurement of muons. 
-Due to their relatively large mass and weak interactions with matter, muons typically traverse the inner detector and calorimeters with minimal energy loss, making the MS essential for their identification. 
+Due to their relatively large mass, long lifetime, and weak interactions with matter, muons typically traverse the inner detector and calorimeters with minimal energy loss, making the MS essential for their identification. 
 The MS employs a combination of tracking chambers and magnetic fields to measure the curvature of muon trajectories, enabling precise momentum determination.
 
 
@@ -176,7 +177,7 @@ Pseudorapidity is useful for ATLAS as it is invariant under Lorentz boosts along
 \subsection{Inner Detector}
 
 The inner detector (ID) is a marvel of technology and innovation that was used in collaboration
-with other detector systems on ATLAS to not only discover a new particle but to confirm that it was
+with other detector systems on ATLAS to not only discover a new particle but to confirm that it is
 a scalar Higgs Boson. The ID is at the center of the ATLAS detector and measures momentum,
 position, impact parameter, charge, and some particle identification including via ionization loss,
 of charged particles that pass though it.
@@ -191,7 +192,7 @@ Particles that transverse the Pixel Detector, the SCT, and the TRT have momentum
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{../Pictures/IDbriefing.png}
+    \includegraphics[width=\textwidth]{../Pictures/IDbriefing.png}
     \caption{Schematic view of the Inner Detector\cite{ATLAS_Picture}, showing the beam pipe, pixel barrel, SCT barrel, and TRT. 
     Image credit: CERN .}
     \label{fig:ID_figure}
@@ -242,9 +243,10 @@ The IBL is positioned at a radius of 33.5~mm from the beamline, enabling high-pr
 It is constructed from 14 staves, each containing 32 front-end chips mounted on silicon sensors.
 
 Two sensor technologies are employed in the IBL: planar sensors and 3D sensors. 
-Planar sensors are used in the central region of each stave, while 3D sensors are utilized in the forward regions due to their superior radiation tolerance. 
+Planar sensors are used in the central region of each stave, while 3D sensors are utilized in the forward regions due to their superior radiation tolerance.
+The superior radiation tolerance of 3D sensors vs planar sensors comes from a reduction in the electrode separation which reduces the probability of charge trapping. 
 Each sensor is segmented into pixels with dimensions of $50~\mu\text{m}$ in $\phi$ and $250~\mu\text{m}$ in $z$. 
-Each stave contains 1280 columns and 336 rows of pixels, resulting in approximately 12.8 million pixels in the full IBL.
+Each stave contains 80 columns and 336 rows of pixels, resulting in approximately 12 million pixels in the full IBL.
 
 The remaining three barrel layers of the Pixel Detector, referred to as the B-layer, Layer~1, and Layer~2, are located at radii of 50.5~mm, 88.5~mm, and 122.5~mm, respectively. 
 In these layers, planar silicon sensors with a thickness of $250~\mu\text{m}$ are used, with pixel dimensions of $50~\mu\text{m}$ in $\phi$ and $3  00~\mu\text{m}$ in $z$.
@@ -255,7 +257,7 @@ The pixel detector is capped by 3 endcaps on either side of the collision point 
 A pixel module consists of a silicon sensor bump-bonded to dedicated readout chips. 
 The sensors are based on reverse-biased silicon diodes. 
 Applying a reverse bias voltage creates a depleted region within the sensor volume. 
-Charged particles traversing this depletion region generate approximately 90 electron-hole pairs per micrometer, with each pair requiring about 3.16~eV to be produced. 
+Charged particles traversing this depletion region generate approximately 90 electron-hole pairs per micrometer, with each pair requiring about 3.6~eV to be produced\cite{Particle_Detectors}. 
 The resulting charge carriers drift under the applied electric field, inducing a measurable signal on the electrodes.
 
 Direct measurement of the collected charge would require power-intensive analog-to-digital conversion. 
@@ -274,7 +276,7 @@ Each module contains two back-to-back silicon strip sensors mounted with a small
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{../Pictures/SiliconShot.png}
+    \includegraphics[width=\textwidth]{../Pictures/SiliconShot.png}
     \caption{Schematic view of silicion microstrip detector. credit: }
     \label{fig:Silicion_view}
 \end{figure}
@@ -298,13 +300,16 @@ Nevertheless, when combined with the Pixel Detector and SCT, the TRT enhances pa
 
 ATLAS employs two main calorimeter systems: the electromagnetic calorimeter and the hadronic calorimeter. 
 Together, these systems are designed to absorb  and measure the energies of particles emerging from the interaction point after they traverse the Inner Detector.
+
+
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{../Pictures/calorimeter.png}
+    \includegraphics[width=\textwidth]{../Pictures/calorimeter.png}
     \caption{Schematic view of the Calorimeters\cite{ATLAS_Picture}, showing the electromagnetic and hadronic calorimeters. 
-    Image credit: CERN .}
+    Image credit: CERN.}
     \label{fig:calorimeter_figure}
 \end{figure}
+
 \subsubsection{Electromagnetic Calorimeter}
 
 The electromagnetic calorimeter is a sampling calorimeter that uses lead as the absorber material and liquid argon as the active medium. 
@@ -336,7 +341,7 @@ A schematic view of the Muon Spectrometer and its various detector components is
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{../Pictures/muonSys.jpg}
+    \includegraphics[width=\textwidth]{../Pictures/muonSys.jpg}
     \caption{Schematic layout of the ATLAS Muon Spectrometer showing the barrel and endcap regions along with the locations of the different detector technologies used for muon tracking and triggering.}
     \label{fig:muonSys}
 \end{figure}
