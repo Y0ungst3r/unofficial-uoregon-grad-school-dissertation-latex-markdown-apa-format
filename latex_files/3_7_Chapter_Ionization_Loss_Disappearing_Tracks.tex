@@ -1,7 +1,7 @@
 %--- Chapter 7 ----------------------------------------------------------------%
 \chapter{Disappearing Tracks with High Ionization Energy Loss}
 \label{ch:llp_search_dedx_dt}
-\section{Analysis Inttroduction}
+\section{Analysis Introduction}
 
 %As discussed in Section \ref{sec:SUSY}, supersymmetry (SUSY) provides a compelling framework that addresses several shortcomings of the Standard Model. 
 %However, despite its theoretical appeal, no direct experimental evidence for SUSY has yet been observed. 
@@ -22,18 +22,6 @@
 % Consequently, this analysis is primarily sensitive to heavy, long-lived charged particles and aims to detect them through direct experimental signatures.
 %
 
-In this analysis we search for heavy long-lived particles by searching for disappearing tracks that leave high ionizaion energy loss. 
-This search is specifically looks for BSM physics and can arise from many different models. 
-Specifically we search for GMSB and AMSB models as described in Section ~\ref{sec:SUSY}.
-In both these cases it is natural to get heavy long-lived particles that this anaylsis targets 
-
-A disappearing track is a reconstructed pixel track that hits at least the first four pixel layers of the Inner detector but doesn't hit the seven (or eight depending on year) required to considered full track. 
-These short tracks, called tracklets, provide a unique experiemental signature not typcial of any of the standard model particles.
-
-There are three sources of background in the disappeairng track searches fakes and hadronic scattering and leptonic scattering.
-These three sources of background are all expceted to have low dEdx. 
-
-
 % The Disappearing Track and High Ionization Energy Loss analysis targets these models with heavy long-lived charged particles. 
 % A disappearing track is a pixel track that passes through only about 133mm of the detector and then leaves no hits in the SCT. 
 % These short tracks are a special reconstruction of tracks often called tracklets. 
@@ -45,18 +33,34 @@ These three sources of background are all expceted to have low dEdx.
 
 
 
+This analysis searches for heavy long-lived charged particles using disappearing track signatures characterized by high ionization energy loss ($dE/dx$). Such signatures are predicted in several BSM theories, including GMSB and AMSB. In these scenarios, long-lived particles arise naturally due to small mass splittings or weak couplings. 
+
+Add sentence about how we are sensitive to low mass so considering them to be high mass is reasonably. 
+
+
+A disappearing track is a reconstructed pixel track that hits at least the first four pixel layers of the Inner detector but doesn't hit the required number to be a full track. 
+This tracks are associated with three effects, the decay of the particle making the track, scattering of the particle, or uncorrelated hits that are mis-reconstructed as a track.
+These short tracks, called tracklets, provide a unique experimental signature not common from standard model particles.
+
+There are three sources of background in the disappeairng track searches fakes and hadronic scattering and leptonic scattering.
+These three sources of background nominally have low dEdx, however, due to the statistical nature of ionization energy loss can have large dEdx. 
+
+
+
+
+
 
 \section{Data}
+\label{sec:Data_EP}
 
 
-
-For this analysis full run 2 and partial run 3 data is used. 
+For full run 2 and partial run 3 data is used in this search. 
 The data was taken in 2015 to 2024. 
 The data is from PP collisions at a center of mass energy for run 2 of $S = \sqrt(13 TeV)$ and for run 3 of $S = \sqrt(13.6 TeV)$.
 
 
 
-The datasets used in this analysis were produced using a non-standard reconstruction chain.
+The datasets used were produced using a non-standard reconstruction chain.
 This analysis requires information not retained in standard DAODs and is typically only available in the RAW data, such as pixel cluster charge, size and shape.
 To retain these non-standard variables in the DAOD, event picking was used to select the data. 
 The event picking is a method for selecting specific events to be reconstructed in a non-standard reconstruction chain, allowing great flexibility in choosing what infomation is saved.
@@ -72,7 +76,7 @@ The selected events include those in the signal region, validation regions, cont
 Once the events are identified, their corresponding run and event numbers are extracted. 
 
 \textbf{Event retrieval}\\
-The selected event and run numbers, together with any needed metadata(E.G. trigger stream infomation or run years), are provided to the event picking service.
+The selected event and run numbers, together with any needed metadata(E.G. trigger stream information or run years), are provided to the event picking service.
 The event picking service queries the EventIndex and retrieves the corresponding RAW events. 
 These events are then collected into containers that can be managed via rucio and stored in group storage.  
 
@@ -91,10 +95,10 @@ The resulting event picked raw and LLP1 files are listed in table \ref{tab:RawEv
 
 \section{Simulation}
 \label{sec:Simulation}
-The Monte Carlo (MC) samples used in this analysis probe a largely unexplored region of parameter space in searches for physics beyond the Standard Model (BSM).
+The Monte Carlo (MC) samples used probe a largely unexplored region of parameter space in searches for physics beyond the Standard Model (BSM).
 The targeted phase space corresponds to heavy particles with masses of $\mathcal{O}(100$--$1000~\GeV)$ and lifetimes of $\mathcal{O}(0.1$--$10~ns)$.
 This search targets the direct detection of long-lived charged particles and is therefore designed to be as model-agnostic as reasonably possible.
-The benchmark models considered in this analysis are motivated by supersymmetry (SUSY), which naturally provides mechanisms for long-lived particles.
+The benchmark models considered are motivated by supersymmetry (SUSY), which naturally provides mechanisms for long-lived particles.
 In particular, the analysis focuses on gauge-mediated SUSY breaking (GMSB) stau scenarios and anomaly-mediated SUSY breaking (AMSB) wino scenarios.
 
 
@@ -143,13 +147,16 @@ The A14 tune with the NNPDF23LO PDF set was used.
 
 
 \section{Signal Region and Selections}
-To achieve the best possible sensitivity to multiple different signal models this analysis has four signal regions, of two catergories, decay agnositc and decay specific. 
-In the decay agnositc region we remain mostly agnostic to any sort of decay mode and focus on targeting just the disappearing track.
-In this mode we split into two targeted regions one for high mass particles and one for low mass.
-In the decay specific mode we look for either a kinked tracklet which is from a decay or veto any sort of kink.
-Covering all this signal regions allows for the best sensitivity to multiple models and makes possible future reinterpretations simplier. 
-These regions are shown in Fig. ~\cite{fig:sr_diagram}
 
+
+To achieve optimal sensitivity across a range of signal models and mass scales, this analysis defines four signal regions, grouped into two categories: decay agnostic and decay specific.
+The decay agnostic regions are designed to remain largely independent of the underlying decay mode, focusing instead on the identification of disappearing tracks with high ionization energy loss. These regions are further subdivided into two categories targeting high mass and low mass particles, respectively.
+In contrast, the decay specific regions explicitly target particular decay signatures. One region selects events containing a kinked tracklet, indicative of a decay, while the other applies a veto on such kinks to target models with soft decay products that cannot be reconstructed.
+Together, these signal regions provide broad and complementary sensitivity to multiple models while enabling more robust future reinterpretations of the results. A schematic overview of the regions is shown in Fig.~\ref{fig:sr_diagram}.
+
+
+\subsection{Event Picking}
+To further exploit the discriminating power of ionization energy loss, it is necessary to incorporate cluster level information in the event reconstruction. This additional granularity improves the performance of $dE/dx$-based selections, motivating the need for event picking strategy.
 
 \begin{figure}[tp]
     \centering
@@ -157,15 +164,117 @@ These regions are shown in Fig. ~\cite{fig:sr_diagram}
     \label{fig:st_diagram}
     \caption{
         Schematic view of the signal regions. 
-    On the left being for decay agnositc signal regions. 
+    On the left being for decay agnostic signal regions. 
     On the right being for decay specific regions. 
     Note that in this case the $\Delta m $ is specifically the mass splitting between the BSM particle and the sum of decay products.
     }
 
 \end{figure}
 
-As all ddata for this analysis uses event picking it is applied to all regions. 
+As described in Sec.~\ref{sec:Data_EP}, not all events can be reconstructed with the full cluster information. Therefore, an event picking procedure is applied. To efficiently utilize this procedure, a set of preliminary selections is defined with the goal of retaining approximately $10^6$ events. These selected events include signal, validation, and control regions.
 
+
+The selection strategy proceeds in stages. First, poorly reconstructed tracklets are removed using quality criteria. Subsequently, requirements on MET, KVU $p_T$, and track based isolation are applied to suppress background contributions while retaining signal efficiency. 
+
+A key aspect of this strategy is that certain potentially powerful background rejection selections are intentionally not applied at this stage. Instead, they are reserved to define dedicated validation and control regions, ensuring robust background modeling and cross checks. The full set of selections is summarized in Table~\ref{tab:EP_selections}.
+
+The variables MET, KVU $p_T$, and track based isolation are found to provide the most effective discrimination between signal and background while maintaining high signal acceptance.
+
+To validate these choices, the impact of the MET, KVU $p_T$, and track-based isolation requirements on both signal efficiency and background rejection were evaluated, results can be seen in Fig. \ref{fig:selection_performance}
+
+First, KVU $p_T$ is used instead of $p_T$ due to its more accurate momentum reconstruction, as discussed in Sec.~\ref{sec:KVU}. It is observed that KVU $p_T$ exhibits a rapidly falling distribution for background, whereas the signal exhibits a broad, smeared peak at higher $p_T$, with a strong suppression of events at low $p_T$. Motivating the selections shown in Fig. ~\ref{fig:selection_performance}
+
+MeT is used for removing a significant number of background events. The MET requirement is observed to alter the relative composition of background processes, necessitating a selection to suppress the QCD contributions in the low MeT region. The chosen MET threshold was chosen to preserve a low MET validation region for background estimation and is therefor lower than the expected optimal value for background rejection and signal acceptance. The final MeT selection is further optimized within each signal region using cluster level selections. The distributions of MET for signal and background are shown in Fig.~\ref{fig:selection_performance}.
+
+
+The last major selection used to remove background is track level isolation. The track level isolation is found to remove hadronic decays and jets efficiently without removing signal. This can be seen in Fig. ~\ref{fig:selection_isolation}.
+
+The full cutflow for event picking can be seen in Fig. ~\ref{fig:Ep_cutflow}
+
+\begin{figure}[tp]
+    \centering
+
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../Pictures/Chap_7/METblinded_nm1.png}
+        \caption{MET distribution}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../Pictures/Chap_7/KVUmomentum10blinded_nm1.png}
+        \caption{KVU $p_T$ distribution}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../Pictures/Chap_7/ptcone40blinded_nm1.png}
+        \caption{Tracklet based isolation distribution}
+    \end{subfigure}
+
+    \caption{
+        Distributions of the key selection variables for signal and background processes, with dEdx $< 1.2$ to avoid signal region. 
+    (a) MeT distribution, (b) KVU $p_T$, (c) ptcone40 
+        Clear separation between signal and background is observed, motivating the chosen selection thresholds at the dashed lines shown. 
+    }
+    \label{fig:selection_performance}
+\end{figure}
+
+
+
+\begin{figure}[tp]
+    \centering
+    \includegraphics[width=\textwidth]{../Pictures/Chap_7/Cutflow.png}
+    \caption{Final cutflow for event picking selectionss.}
+    \label{fig:Ep_cutflow}
+\end{figure}
+
+
+\begin{table}[h!]
+\centering
+	\begin{tabular}{l | l | l}
+		\hline\hline
+		\textbf{Category} & \textbf{Item}              & \textbf{Description}                                            \\ \hline\hline
+		Event             & Event Cleaning             &                                                                 \\
+		                  & GRL pass                   &                                                                 \\ 
+		                  & No Bad LLP Jets            &                                                                 \\
+		                  & Trigger                    & Lowest unprescaled $E^{miss}_T$ trigger.                        \\
+		                  & Offline Missing E$_t$      & $MeT > 100$ GeV                                                 \\
+		                  & Disappearing track         & \begin{tabular}{l}Must have a tracklet that \\ satisfies the following requirements.\end{tabular} \\ \hline\hline
+		Tracklet          & Four Layer Tracklet        & Tracklet must have hit all four barrel pixel layers             \\
+		                  & Tracklet Momentum          & KVU Pt $>$ 20 GeV                                               \\
+		                  & No Ganged Flag             &                                                                 \\
+		                  & No Spoilt Hits Hits        &                                                                 \\
+		                  & No Outliers Hits           &                                                                 \\
+		                  & Number dEdx measurements   & Two or more Pixel hits used for dEdx measurement                \\
+                          & LLP Pt Cone 40   & Require PtCone40 $<$ 5 GeV                                                \\
+	\end{tabular}
+\caption{Event Picking Selections.}
+\label{tab:EP_selections}
+\end{table}
+
+
+\subsection{Baseline Selections}
+In addition to the selections for event picking baseline selections were defined and are listed in Tab. \ref{tab:baseline_selections}
+\begin{table}
+\begin{tabular}{ l | l}
+        \multicolumn{2}{c}{\textbf{Baseline Selections}}\\
+		\hline\hline
+		 \textbf{Item}              & \textbf{Description}                                            \\ \hline\hline
+
+                        \hline\hline
+		                Relative Tracklet Isolation        & LLP $Pt_{cone 40} / Pt < 0.04$ \\
+		                Longitudinal Impact Paramter Significance & $\sigma_{d_0} < 1.5$ \\
+		                Nearest Vertex Impact Parameter & $z_0 < 0.2$ mm\\
+                        P Value & $p < 0.1$\\
+                        Pseudorapidity & $\eta < 1.9$ \\
+                        tracklet Momentum & Pt $>$ 20 GeV (Note non KVU)
+	\end{tabular}
+    \caption{The baseline selections used for all signal regions.}
+\label{tab:baseline_selections}
+\end{table}
+
+\subsection{Signal Regions: inclusive Regions}
+\subsection{Signal Regions: kinked tracklet}
 
 \section{Background Estimation}
 
@@ -191,20 +300,40 @@ Both methods have been developed together and use the same baseline selections d
 \subsection{ABCD Method in dE/dx and pT}
 \label{sec:Background_Estimation_ABCD_in_dEdx_and_pT}
 
-For the ABCD background estimates KVUpT and dE/dx are used as the uncorrelated variables to define four different regions. 
-The signal regions and three control regions are constructed using simple threshold selections in KVUpT and dEdx. 
-The excpected background yield in the signal region is predicted from the control regions according to Eq. ~\ref{eq:ABCD}.
-
+For the ABCD background estimates KVU pT and dE/dx are used to define four different regions. 
+The signal regions and three control regions are constructed using simple threshold selections in KVU $p_T$ and dEdx. 
+The expected background yield in the signal region is predicted from the control regions according to Eq. ~\ref{eq:ABCD}.
+This estimation assumes that KVU pT and dE/dx are uncorrelated.
 \begin{equation}
-    N_A = N_B * N_C / N_D
+    N_A = \frac{N_B \cdot N_C}{N_D}
 \end{equation}
 
 
+To ensure the validity of this background assumption the correlation between KVU $p_T$ and dE/dx is studied.
+The correlation in background between KVU $p_T$ an dEdx is evaluated in two ways. 
+First is by directly comparing the dE/dx shapes for different values of dE/dx. 
+The other is by slicing the data in KVU $p_T$ and examining the fraction of events in the dEdx tails. 
+At higher dE/dx values there is few events so uneven bins were choosen. 
+The results can be seen in Fig. \ref{fig:tail_frac} and \ref{fig:dEdx_shapes}.
+The tail fractions are roughly flat across pT bins showing us that the landau tail is not changing at higher pT values. 
+The dEdx distributuion is constant showing us that the dEdx distribution is not changing. 
 
-To ensure the validity of this background assumption the correlation between KVUpT and dE/dx is studied.
-The correlation in background between KVUpT an dEdx is evaluated by slicing the data in KVUpT and examining dEdx distributions in each slice. 
-To maintain the statistics uneven bins were choosen. 
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{../Pictures/Chap_7/dEdx_tail_frac.png}
+    \caption{Tail fraction percentages of the inclusive signal region.}
+    \label{fig:tail_frac}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{../Pictures/Chap_7/dEdx_stack.png}
+    \caption{dEdx shapes of different slices of pT. All slices are normalized to show relative differences.}
+    \label{fig:dEdx_shapes}
+\end{figure}
+
+Given that these 
 The background estimation is validated in several independent regions designed to test closure and correlation with different background compositions:
 \begin{itemize}
     \item A low-$pT$ region between 20 and 60 GeV
@@ -212,13 +341,12 @@ The background estimation is validated in several independent regions designed t
     \item a fake enriched region
     \item a low-$E^{miss}_T$ region between 100 and 120 GeV
 \end{itemize}
+The results of these regions as well as the signal region can be seen in fig~\ref{tab:Inclusive_VR_ABCD_reformatted}
 
 
-
-These validation regions are used to test the assumption that Pt and dE/dx are approzimately ooncorrelated for background events and that there is closure in the background estimation. 
 To further study the validity of the ABCD method and the behaior of the dE/dx tails, a simple toy model of the signal region is constructed. 
 The toy model is built using templets extracted from data. a dE/dx templates is obtained from the low momentum, while the pT template is obtained from the low-dEdx region. These templates are then used a PDF for the randomly generate pseudo events to be selected from. 
-Used the generated-events, a simple cut and count procedure is applied to estimate the expected yield in the signal region. This toy model provides a consistency check of the ABCD prediction and aloows the impact of the dE/dx tails to be further studied. 
+Using the generated-events, a simple cut and count procedure is applied to estimate the expected yield in the signal region. This toy model provides a consistency check of the ABCD prediction and aloows the impact of the dE/dx tails to be further studied. 
 
 
 \begin{table}[h!]
@@ -249,8 +377,8 @@ High MeT SR & 151 & 1810 & 2627 & $219.159 \pm 14.804$ & Blinded \\
 \label{tab:Inclusive_VR_ABCD_reformatted}
 \end{table}
 
+\subsection{Two component dEdx template}
 
 \section{Results}
-
 We found SUSY!!
 
