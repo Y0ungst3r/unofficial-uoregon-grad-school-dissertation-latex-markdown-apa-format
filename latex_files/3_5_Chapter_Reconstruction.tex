@@ -1,13 +1,10 @@
 %--- Chapter 5 ----------------------------------------------------------------%
 \chapter{Object Reconstruction}
 
-\subsection{Kalman Vertex Updater}
-\label{sec:KVU}
 
-\subsection{}
-The purpose of this document is to compile all the information on the dNdx and dEdx I find in a easier to understand way to me. 
-	
-	\subsection{Sagitta}
+
+\section{Sagitta}
+\label{sec:sagitta}
 	The sagitta is defined as an arcs deviation from a circle. See figure that doesn't exsist yet. 
 	
 	The sagitta can be related to important values as 
@@ -74,23 +71,46 @@ The purpose of this document is to compile all the information on the dNdx and d
 			
 	\begin{equation}
 		\frac{\delta_P}{P^2} = \frac{8}{0.3 B L^2} \sigma_s
-	\end{equation}
-	
-	\subsection{Mass Error}
-	
-	For disappearing tracks the mass as calculated from dE/dx the error is dominated by error on momentum. The error is can be found starting with relation between dEdx and momentum.
-	\begin{equation}
-		{p^2} \frac{dE}{dx} = m^2
-	\end{equation}
-	
-	With some constant to make the units and calibration work out. 
-	
-	So then the mass error is 
-	\begin{equation}
-		\delta_m = \left(P \frac{dE}{dx}\right)^{3/2} \delta_P
+		\label{eq:pT_error}
 	\end{equation}
 
+\section{Kinked Tracklets}
+\label{sec:kinked_tracklet}
+	
+\section{Vertex Updater}
+\label{sec:KVU}
 
+Given from Eq. \ref{eq:pT_error} that the error on the momentum measurement error goes as $L^{-2}$, one of the best ways to imporeve momentum error is to increase the measured arm. To accomplish this task for disappearing tracks we make the assumption that the tracklet comes from the nearest vertex. This process procedes as folows. 
+\begin{itemize}
+	\item Tracklets are reconstructed as normal
+	\item The distance between each tracklet and the nearest vertex, including pileup vertices, is calculated.
+	\item The tracklet is refitted assuming that the tragecticry originated from the nearest calculated vertex. 
+	\item Finally the tracklet perigee parameters are updated with the new fit results. Noting that the impact parameters are identically zero. 
+\end{itemize}
+
+This method of reconstructing the momentum gains approximately an additional 33mm of length to the cord length, L. As this results in better agreement with true particle momentums it is used in this thesis in all places pT is meantioned unless specifcally noted.   
+
+	% \subsection{Mass Error}
+	
+	% For disappearing tracks the mass as calculated from dE/dx the error is dominated by error on momentum. The error is can be found starting with relation between dEdx and momentum.
+	% \begin{equation}
+	% 	{p^2} \frac{dE}{dx} = m^2
+	% \end{equation}
+	
+	% With some constant to make the units and calibration work out. 
+	
+	% So then the mass error is 
+	% \begin{equation}
+	% 	\delta_m = \left(P \frac{dE}{dx}\right)^{3/2} \delta_P
+	% \end{equation}
+
+
+\section{Kalman Vertex Updater}
+\label{sec:KVU}
+
+
+
+	
 \section{dEdx measurements}
 
 The purpose of this document is to compile all the information on the dNdx and dEdx I find in a easier to understand way to me. 
@@ -162,3 +182,17 @@ The purpose of this document is to compile all the information on the dNdx and d
 	\begin{equation}
 		L(f(x, \Delta)) \equiv \int_{0}^{\infty} f(x, \Delta) e^{-p\Delta} d \Delta = e^{-G(x, p)}
 	\end{equation}
+
+	From this taking inspriration from someone way smarter then me I can see that 
+	\begin{equation}
+		G(x, p) = \int_{0}^{T_0} w(\omega)\left[ 1 - e^{-p\omega} \right] d\omega
+	\end{equation}
+
+	Which then appling the inverse laplace transform we obtain
+\begin{equation}
+	f(x, \Delta) = \frac{1}{2 \pi i} \int_{i \infty}^{-i \infty} \left[ e^{p \Delta - G(x, p)} \right] dp
+	\label{eq:exact_dEdx}
+\end{equation}
+
+Eq. \ref{eq:exact_dEdx} is an exact solution but in practice is difficult to work with and weakly converges. Leading to a need for some assumptions to get an easier equation. 
+
