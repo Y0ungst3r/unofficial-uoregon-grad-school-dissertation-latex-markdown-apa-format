@@ -1,0 +1,156 @@
+Three profile likelihood fits are performed: to assess the accuracy of the SM background determination ({\em background-only} fit), to compute the $p$-value of the SM-only hypothesis ({\em model-independent} fit), and to evaluate the confidence level (CL) for excluding a specific new-physics hypothesis ({\em model-dependent} fit)~\cite{Baak:2014wma}. Due to the low event yields in the SRs, pseudoexperiments are used for statistical interpretation of the results when performing the model-independent fit, while the asymptotic approximation~\cite{Cowan:2010js} is used when performing the model-dependent fit.
+
+When performing the background-only fit, the hadronic background yield is allowed to float in the CRs, resulting in a set of normalisation factors which are uncorrelated between SRs. One hadronic normalistion factor is calculated for each SR and is propagated as a general scaling factor to the SR's tracklet \pt distribution. Only the CRs, and not the SRs, are used to constrain the SM background. The electron, muon and fake-tracklet background yields are allowed to vary within their uncertainties when the fit is performed, but no overall normalisation is derived for these backgrounds.
+
+Figure~\ref{fig:results:BinnedCRs} presents an overview of the CRs after the background-only fit. The CRs that are used to normalise the hadronic backgrounds have, by design, a ratio of data to background event yield of one, whereas the other CRs that are used to derive the tracklet \pt distribution for the fake background are not normalised and the data--MC difference is applied as the $\mathrm{SF}_{\met}^{\mathrm{fake}}$ value from the fake-background estimation procedure before performing the fit. 
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.75\textwidth]{figures/results/Public/cr_allchannels_postfit.pdf}
+  \vspace{-0.5cm}
+  \caption{The post-fit yields in the CRs. All statistical and systematic uncertainties are considered in the error bands. Three representative pre-fit signal yields are indicated with dashed lines.}
+  \label{fig:results:BinnedCRs}
+\end{figure}
+
+To evaluate the fit procedure and background modelling, the CR normalisations are extrapolated to the VRs and the results are compared with data and validated before performing the same extrapolation to the SRs. Good agreement is seen between the data and prediction when examining the modelling of the tracklet $\pt$ shape in three of the VRs as shown in Figure~\ref{fig:VR_N1}. The tracklet \pt distribution differs between the electron and muon backgrounds because an electron is more likely to undergo bremsstrahlung than a muon. 
+
+\begin{figure}[htb]
+\begin{center}
+\subfigure[]{
+\includegraphics[width=0.44\textwidth]{figures/results/Public/FourLayer_middleMET_CaloSide_highpt_postfit.pdf}\label{fig:VR_N1:a}
+}
+\subfigure[]{
+\includegraphics[width=0.44\textwidth]{figures/results/Public/ThreeLayerNotSP_middleMET_CaloVeto_highpt_postfit.pdf}\label{fig:VR_N1:b}
+}
+\subfigure[]{
+\includegraphics[width=0.44\textwidth]{figures/results/Public/ThreeLayerSP_middleMET_CaloVeto_highpt_postfit.pdf}\label{fig:VR_N1:c}
+}\\
+\end{center}
+\vspace{-0.75cm}
+\caption{The post-fit tracklet \pt distributions in \protect\subref{fig:VR_N1:a} \VRAms, \protect\subref{fig:VR_N1:b} \VRBzm, and \protect\subref{fig:VR_N1:c} \VRBom. The dashed vertical line denotes the boundary between the CR and VR selections. The pre-fit signal distributions are indicated with dashed lines. The lower pad shows the ratio of the observed yields to the post-fit predicted background yields. The last bin includes overflow events. All statistical and systematic uncertainties are considered in the error bands.}
+\label{fig:VR_N1}
+\end{figure}
+
+
+The level of post-fit agreement in the VRs and SRs is shown in Figure~\ref{fig:results:BinnedVRSR}, which also shows the statistical significance~\cite{Cousins:2007bmb} of the observed data yields and the background prediction in each of the regions. Good agreement is seen in the VRs. Small excesses are seen in \SRAh and \SRBo, corresponding to local significances of 1.9$\sigma$ and 1.0$\sigma$ respectively. These discrepancies and how the events compare with the previous analysis are discussed further at the end of this section.
+
+\begin{figure}[t!]
+  \centering
+\includegraphics[width=0.75\textwidth]{figures/results/Public/vrsr_allchannels_postfit.pdf}
+  \vspace{-0.5cm}
+  \caption{The observed and expected event yields in the VRs and SRs. The lower pads show the ratio of the observed yields to the post-fit predicted background yields and the statistical significance~\cite{Cousins:2007bmb} of the observed data. A red arrow is used to indicate that a ratio value is outside the displayed interval. The background estimates are calculated from the background-only fit. All statistical and systematic uncertainties are considered in the error bands. Three representative pre-fit signal yields are indicated with dashed lines.}
+  \label{fig:results:BinnedVRSR}
+\end{figure}
+
+Figure~\ref{fig:SR_N1} presents post-fit distributions of the tracklet \pt in each SR. In the regions where a relatively high number of background events are expected (\SRAm and \SRBz), the data are in good agreement with the background estimates, with the distributions agreeing within uncertainties. Due to the small number of events in \SRAh and \SRBo, less can be discerned from the level of agreement of the tracklet \pt distributions. Figure~\ref{fig:SRA:a} shows the presence of three data events in a single \SRAh bin, corresponding to tracklet \pt values of 139\,GeV, 142\,GeV and 152\,GeV.
+
+\begin{figure}[b]
+\begin{center}
+\subfigure[]{
+\includegraphics[width=0.44\textwidth]{figures/results/Public/FourLayer_highMET_CaloVeto_highpt_postfit.pdf}\label{fig:SRA:a}
+}
+\subfigure[]{
+\includegraphics[width=0.44\textwidth]{figures/results/Public/FourLayer_middleMET_CaloVeto_highpt_postfit.pdf}\label{fig:SRA:b}
+}\\
+\subfigure[]{
+\includegraphics[width=0.44\textwidth]{figures/results/Public/ThreeLayerNotSP_highMET_CaloVeto_highpt_postfit.pdf}\label{fig:SRA:c}
+}
+\subfigure[]{
+\includegraphics[width=0.44\textwidth]{figures/results/Public/ThreeLayerSP_highMET_CaloVeto_highpt_postfit.pdf}\label{fig:SRA:d}
+}
+\end{center}
+\vspace{-0.5cm}
+\caption{The post-fit tracklet \pt distributions in \protect\subref{fig:SRA:a} \SRAh, \protect\subref{fig:SRA:b} \SRAm, \protect\subref{fig:SRA:c} \SRBz, and \protect\subref{fig:SRA:d} \SRBo. The dashed vertical line denotes the boundary between the CR/VR and SR selections. The lower pad shows the ratio of the observed data yields to the post-fit predicted background estimates. A red arrow is used to indicate that a ratio value is outside the displayed interval. The last bin includes overflow events. All statistical and systematic uncertainties are considered in the error bands. Three representative pre-fit signal yields are indicated with dashed lines.
+}
+\label{fig:SR_N1}
+\end{figure}
+
+Table~\ref{tab:SRA_Yields} shows the observed and expected yields in the SRs, as well as the model-independent fit results in each SR. The model-independent fit uses the same CRs as the background-only fit. A single-bin SR is also included in the fit by summing the individual tracklet-\pt bins in a given region. The hadronic background is then allowed to float in the CRs and the single-bin SR. This method uses a profile-likelihood-ratio test statistic~\cite{Cowan:2010js}, where a generic new-physics signal of intensity $\mu_{\mathrm{sig}}$ is assumed to contribute exclusively to each individual, single-bin SR, and is used to assess the $p$-value of the background-only hypothesis (corresponding to $\mu_{\mathrm{sig}} = 0$) and to extract $S^{95}_{\mathrm{exp}}$ and $S^{95}_{\mathrm{obs}}$, i.e.\ the expected and observed 95\% CL limits on the number of signal events in the SR, using the CL$_\mathrm{s}$ prescription~\cite{Read:2002hq}. The $S^{95}_{\mathrm{obs}}$ limit is also converted to a limit on the visible cross-section $\sigma_{\mathrm{obs}}^{95}$ by dividing by the total integrated luminosity. 
+
+\begin{table}[hb]
+  \renewcommand\arraystretch{1.5}
+  \newcolumntype{M}{r@{${}\pm{}$}l}
+  \centering
+\caption{Summary of the observed and post-fit expected SR yields, with \enquote{Bkg.} denoting background, and the model-independent fit results. All systematic and statistical uncertainties are considered. The calculated $p_0$-value is capped at 0.5 and shown together with the corresponding significance in standard deviations $(Z)$. \label{tab:SRA_Yields}}
+  \scriptsize
+  \begin{tabular}{l MMMM}
+    \toprule
+     & \multicolumn{2}{c}{\SRAh} & \multicolumn{2}{c}{\SRAm} & \multicolumn{2}{c}{\SRBo} & \multicolumn{2}{c}{\SRBz} \\
+    \midrule
+    Fake Bkg.     & $0.33$   & $0.14$   & $6.8$   & $1.1$   & $0.62$   & $0.16$   & $10.9$   & $0.8$ \\
+    Hadron Bkg.   & $(5$     & $4)\times 10^{-4}$ & $(7$ & $7)\times 10^{-3}$ & $0.029$ & $0.014$ & $0.011$ & $0.021$ \\
+    Electron Bkg. & $(3.7$   & $2.1)\times 10^{-4}$ & $(4.6$ & $2.7)\times 10^{-3}$ & $(10$ & $9)\times 10^{-6}$ & $(2.5$ & $1.3)\times 10^{-4}$ \\
+    Muon Bkg.     & $0.342$  & $0.015$  & $3.28$  & $0.14$  & $(1.1$   & $0.6)\times 10^{-3}$ & $0.068$ & $0.009$ \\
+    \midrule
+    Total Bkg.    & $0.68$   & $0.14$   & $10.1$  & $1.1$   & $0.65$   & $0.16$   & $11.0$   & $0.8$ \\
+    \midrule
+    Observed      & \multicolumn{2}{c}{$3$}  & \multicolumn{2}{c}{$12$} & \multicolumn{2}{c}{$2$} & \multicolumn{2}{c}{$8$} \\
+    \midrule
+    %$p_{0}~(Z)$ & \multicolumn{2}{c}{$0.033\ (1.9)$} & \multicolumn{2}{c}{$0.26\ (0.6)$} & \multicolumn{2}{c}{$0.14\ (1.1)$} & \multicolumn{2}{c}{$0.5\ (0)$} \\
+    $p_{0}~(Z)$ & \multicolumn{2}{c}{0.033 (1.9)} & \multicolumn{2}{c}{0.26 (0.6)} & \multicolumn{2}{c}{0.14 (1.1)} & \multicolumn{2}{c}{0.5 (0)} \\   
+    $S_{\mathrm{exp}}^{95}$ & \multicolumn{2}{c}{$3.7^{+0.8}_{-0.6}$} & \multicolumn{2}{c}{$12.3^{+3.6}_{-2.9}$} & \multicolumn{2}{c}{$3.2^{+1.0}_{-0.2}$} & \multicolumn{2}{c}{$8.3^{+2.8}_{-2.6}$} \\
+    $S_{\mathrm{obs}}^{95}$ & \multicolumn{2}{c}{6.0} & \multicolumn{2}{c}{12.4} & \multicolumn{2}{c}{5.0} & \multicolumn{2}{c}{5.8} \\
+    $\sigma_{\mathrm{obs}}^{95}~[\mathrm{fb}]$ & \multicolumn{2}{c}{0.044} & \multicolumn{2}{c}{0.090} & \multicolumn{2}{c}{0.037} & \multicolumn{2}{c}{0.043} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+In the absence of a significant excess in the observed data, 95\% CL exclusion limits are placed on the SUSY signal scenarios by statistically combining all SRs, binned in tracklet \pt, which provides greater sensitivity than simply considering only one SR at a time. The binning is chosen such that the low tracklet-\pt bins retain sufficient granularity to ensure fit stability and signal sensitivity, with wider bins used as tracklet \pt increases, reflecting the poorer tracklet \pt resolution and limited discrimination power of the highest bins. A model-dependent fit is used, where each signal scenario is introduced and a fit to the tracklet \pt distribution is performed, with CRs and SRs used to normalise the hadronic background and determine the signal strength for a specific signal model.
+The four-layer regions dominate the sensitivity, and although the expected sensitivity in the SUSY models is significantly better than in the previous analysis~\cite{SUSY-2018-19}, by around $100\,\GeV$ in SUSY particle masses, the small excess in \SRAh weakens the observed exclusion limit.
+
+The model-dependent limits for wino pair production are shown in Figure~\ref{fig:results:WinoLimits}, where wino-like charginos with lifetimes of $1\,$ns and masses up to $1020\,\GeV$ are expected to be excluded. The small excess observed in the signal regions results in a weaker observed mass exclusion limit of $880\,\GeV$.
+Figure~\ref{fig:results:HiggsinoLimits} shows the model-dependent limits for higgsino pair production, where in the long-lifetime region of ${\sim}1$\,ns, the sensitivity extends up to masses of $720\,\GeV$ ($840\,\GeV$ expected). 
+Figures~\ref{fig:results:WinoLimits} and \ref{fig:results:HiggsinoLimits} also show the exclusion sensitivities when converting the chargino lifetime to the mass-splitting between the electroweakinos and when comparing it with the theoretical expectation for mass splitting in wino- or higgsino-like scenarios. In the wino-like case, charginos are excluded for masses up to $670\,\GeV$ ($770\,\GeV$ expected), while in the higgsino-like case, charginos are excluded for masses up to $225\,\GeV$ ($250\,\GeV$ expected), improving upon previous results by $15\,\GeV$. Compared to the previous analysis, this search is able to exclude smaller values of the signal cross-section. For example, when considering a higgsino signal scenario of $m(\chinoonepm) = 300$\,GeV and $\tau(\chinoonepm) = 0.05$\,ns the signal cross-section exclusion limit is a factor of 2.5 times lower than the previous result. When considering $m(\chinoonepm) = 500$\,GeV and $\tau(\chinoonepm) = 0.1$\,ns the signal cross-section exclusion limit is a factor of 1.8 lower than in the previous analysis. 
+
+\begin{figure}[tb!]
+\begin{center}
+  \subfigure[]{
+  \includegraphics[width=0.45\textwidth]{figures/results/Public/wino.pdf}
+    \label{fig:results:WinoFull}
+    }
+  \subfigure[] {
+  \includegraphics[width=0.45\textwidth]{figures/results/Public/dm_wino_combined.pdf}
+      \label{fig:results:WinoDM}
+    }
+  \end{center}
+\vspace{-0.75cm}
+\caption{The expected (dashed line) and observed (solid line) 95\% CL exclusion contours for wino production as a function of the chargino mass and \protect\subref{fig:results:WinoFull} lifetime, or \protect\subref{fig:results:WinoDM} mass splitting of the electroweakinos. The dotted lines indicates the $\pm \sigma_{\mathrm{theory}}$ from signal cross-section uncertainties, while the solid band indicates the $\pm \sigma_{\mathrm{exp}}$ from experimental systematic uncertainties and statistical uncertainties on the data yields. The solid grey area shows the region excluded by Ref.~\cite{SUSY-2018-19}. The dashed-dotted line is the prediction of the chargino lifetime or wino mass splitting as a function of the chargino mass as predicted by the SM loop corrections~\cite{Ibe:2012sx}. \label{fig:results:WinoLimits}}
+\end{figure}
+
+\begin{figure}[tb!]
+\begin{center}
+  \subfigure[]{
+  %\includegraphics[width=0.45\textwidth]{figures/results/Public/higgsino_indiv.pdf}
+  \includegraphics[width=0.45\textwidth]{figures/results/Public/higgsino_combined.pdf}
+    \label{fig:results:HiggsinoFull}
+    }
+  \subfigure[] {
+  \includegraphics[width=0.45\textwidth]{figures/results/Public/dm_higgsino_combined.pdf}
+      \label{fig:results:HiggsinoDM}
+    }
+  \end{center}
+\vspace{-0.75cm}
+\caption{The expected (dashed line) and observed (solid line) 95\% CL exclusion contours for higgsino production as a function of the chargino mass and \protect\subref{fig:results:HiggsinoFull} lifetime, or \protect\subref{fig:results:HiggsinoDM} mass splitting of the electroweakinos. The dotted lines indicates the $\pm \sigma_{\mathrm{theory}}$ from signal cross-section uncertainties, while the solid band indicates the $\pm \sigma_{\mathrm{exp}}$ from experimental systematic uncertainties and statistical uncertainties on the data yields. The solid grey area shows the region excluded by Ref.~\cite{SUSY-2018-19}. The dashed-dotted line is the prediction of the chargino lifetime or higgsino mass splitting as a function of the chargino mass as predicted by the SM loop corrections~\cite{Thomas:1998wy}. \label{fig:results:HiggsinoLimits}}
+\end{figure}
+
+
+The 95\% CL exclusion limits in the $\tau$-slepton scenarios are presented in Figure~\ref{fig:results:StauLimits}. Due to the small cross-section for $\stau\stau$ production, the signal yield is too low in the three-layer SRs to offer sensitivity, so only the four-layer SRs and associated CRs are used in the model-dependent fit. The sensitivity in CMSSM- and GMSB-inspired scenarios is comparable, with $\tau$-sleptons excluded for masses up to around $320\,\GeV$ and $300\,\GeV$ ($390\,\GeV$ and $380\,\GeV$ expected), respectively, for a mass difference of ${\sim}2\,\GeV$ between the $\tau$-slepton and \ninoone/\gravino (corresponding to $\tau$-slepton lifetimes of ${\sim}1$\,ns).
+
+\begin{figure}[tb!]
+\begin{center}
+  \subfigure[]{
+  \includegraphics[width=0.45\textwidth]{figures/results/Public/cmssm_stau.pdf}
+    \label{fig:results:cmssm_stau}
+    }
+  \subfigure[]{
+  \includegraphics[width=0.45\textwidth]{figures/results/Public/gmsb_stau.pdf}
+      \label{fig:results:gmsb_stau}
+    }
+  \end{center}
+\vspace{-0.75cm}
+  \caption{The expected (dashed line) and observed (solid line) 95\% CL exclusion contours for $\tau$-slepton production in \protect\subref{fig:results:cmssm_stau} CMSSM-inspired scenarios and \protect\subref{fig:results:gmsb_stau} GMSB-inspired scenario. The dotted lines indicates the $\pm \sigma_{\mathrm{theory}}$ from signal cross-section uncertainties, while the solid band indicates the $\pm \sigma_{\mathrm{exp}}$ from experimental systematic uncertainties and statistical uncertainties on the data yields.\label{fig:results:StauLimits}}
+\end{figure}
+
+Due to changes in the analysis strategy since the previous analysis in Ref.~\cite{SUSY-2018-19}, particularly in the reconstruction of the tracklets, a direct comparison of the SRs is non-trivial, as the previous analyses used five-layer tracking and did not use the additional SCT data quality veto. Despite this, it is found that one of the events selected by \SRAh was also one of the three events selected by the previous analysis. The two new events in \SRAh are selected because of improvements in track reconstruction. 
+The two events selected by \SRBo are likely to stem from a hadronic interaction in the ID material as a secondary vertex is reconstructed in a region with known material. The resulting kink in the particle path results in a reconstructed tracklet rather than a standard track. A \enquote{material veto} was considered in the analysis design to avoid such events, but was not adopted as it had a highly detrimental impact on the signal acceptance.
+

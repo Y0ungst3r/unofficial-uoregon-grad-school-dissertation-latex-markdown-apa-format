@@ -42,7 +42,7 @@ These tracks are associated with three physical phenomena, the decay of the part
 These short tracks, called tracklets, provide a unique experimental signature not common from standard model particles.
 
 There are three sources of background in the disappearing track searches, fakes, hadronic scattering, and leptonic scattering.
-These three sources of background nominally have low dEdx, however, due to the statistical nature of ionization energy loss can have large dEdx. 
+These three sources of background nominally have low$\text{d}E/\text{d}x$, however, due to the statistical nature of ionization energy loss can have large$\text{d}E/\text{d}x$. 
 
 
 
@@ -208,7 +208,7 @@ The full cutflow for event picking can be seen in Fig. ~\ref{fig:Ep_cutflow}
     \end{subfigure}
 
     \caption{
-        Distributions of the key selection variables for signal and background processes, with dEdx $< 1.2$ to avoid signal region. 
+        Distributions of the key selection variables for signal and background processes, with$\text{d}E/\text{d}x$ $< 1.2$ to avoid signal region. 
     (a) MeT distribution, (b) $p_T$, (c) ptcone40 
         Clear separation between signal and background is observed, motivating the chosen selection thresholds at the dashed lines shown. 
     }
@@ -246,7 +246,7 @@ The full cutflow for event picking can be seen in Fig. ~\ref{fig:Ep_cutflow}
 		    No Ganged Flag             &                                                                 \\
 		    No Spoilt Hits Hits        &                                                                 \\
 		    No Outliers Hits           &                                                                 \\
-		    Number dEdx measurements   & Two or more Pixel hits used for dEdx measurement                \\
+		    Number$\text{d}E/\text{d}x$ measurements   & Two or more Pixel hits used for$\text{d}E/\text{d}x$ measurement                \\
             LLP Pt Cone 40   & Require PtCone40 $<$ 5 GeV                                                \\
 
 	\end{tabular}
@@ -282,9 +282,9 @@ In addition to the selections for event picking baseline selections were defined
 \subsection{Signal Regions: inclusive Regions}
 
 The inclusive signal regions are split into two regions, high mass and low mass. 
-In addition to the baseline selections the high mass inclusive signal region only has an additional requirement on dEdx and pT. 
-Similar to the high mass inclusive signal region the low mass inclusive region uses all the baseline selections with an additional requirement on dEdx and pT. 
-This choice was motivated by the relationship between dEdx and mass shown in Eq. \ref{eq:BetheBloch} and Eq. \ref{eq:rel_momentum}.
+In addition to the baseline selections the high mass inclusive signal region only has an additional requirement on$\text{d}E/\text{d}x$ and pT. 
+Similar to the high mass inclusive signal region the low mass inclusive region uses all the baseline selections with an additional requirement on$\text{d}E/\text{d}x$ and pT. 
+This choice was motivated by the relationship between$\text{d}E/\text{d}x$ and mass shown in Eq. \ref{eq:BetheBloch} and Eq. \ref{eq:rel_momentum}.
 
 The selections are summarized in tab. \ref{tab:inclusive_regions}
 
@@ -399,7 +399,7 @@ pass Baseline Selection&   \\
 Offline $E_{\mathrm{T}}^{\mathrm{miss}}$               &  $E_{\mathrm{T}}^{\mathrm{miss}} > $ 100 GeV  \\
 \end{tabular}
 \caption{Selections for the kink-required SR, which targets large mass-splitting signals like the GMSB stau. A kinked tracklet is required as a unique probe for these signal events. Since significant background rejection is achieved from the kink and the $dE/dx$ requirement, the $E_{\mathrm{T}}^{\mathrm{miss}}$ and vertex-constrained $p_{\mathrm{T}}$ thresholds are loosened to 100\,GeV and 40\,GeV, respectively, to maximize signal acceptance.}
-\label{tab:kink_require_sr}
+\label{tab:kink_require_sr_event}
 \end{table}
 
 
@@ -411,7 +411,6 @@ Offline $E_{\mathrm{T}}^{\mathrm{miss}}$               &  $E_{\mathrm{T}}^{\math
 \textbf {Category} &  \textbf{Item} & \textbf{Description}  \\
 \hline
 \hline
-
 Cluster level quality cut& \\ 
 Momentum &  $p_{\mathrm{T}} >$ 20 GeV and vertex-constrained $p_{\mathrm{T}} >$ 40 GeV  \\
 Calorimeter Veto & $E_{\mathrm{T}}^{\mathrm{topoclus} 40 } < 5 $ GeV \\
@@ -448,22 +447,23 @@ Both methods have been developed together and use the same baseline selections d
 \label{sec:Background_Estimation_ABCD_in_dEdx_and_pT}
 
 For the ABCD background estimates pT and dE/dx are used to define four different regions. 
-The signal regions and three control regions are constructed using simple threshold selections in $p_T$ and dEdx. 
+The signal regions and three control regions are constructed using simple threshold selections in $p_T$ and$\text{d}E/\text{d}x$. 
 The expected background yield in the signal region is predicted from the control regions according to Eq. ~\ref{eq:ABCD}.
 This estimation assumes that pT and dE/dx are uncorrelated.
 \begin{equation}
     N_A = \frac{N_B \cdot N_C}{N_D}
+    \label{eq:ABCD}
 \end{equation}
 
 
 To ensure the validity of this background assumption the correlation between $p_T$ and dE/dx is studied.
-The correlation in background between $p_T$ an dEdx is evaluated in two ways. 
+The correlation in background between $p_T$ an$\text{d}E/\text{d}x$ is evaluated in two ways. 
 First is by directly comparing the dE/dx shapes for different values of dE/dx. 
-The other is by slicing the data in $p_T$ and examining the fraction of events in the dEdx tails. 
+The other is by slicing the data in $p_T$ and examining the fraction of events in the$\text{d}E/\text{d}x$ tails. 
 At higher dE/dx values there is few events so uneven bins were choosen. 
 The results can be seen in Fig. \ref{fig:tail_frac} and \ref{fig:dEdx_shapes}.
 The tail fractions are roughly flat across pT bins showing us that the landau tail is not changing at higher pT values. 
-The dEdx distributuion is constant showing us that the dEdx distribution is not changing. 
+The$\text{d}E/\text{d}x$ distributuion is constant showing us that the$\text{d}E/\text{d}x$ distribution is not changing. 
 
 
 \begin{figure}[htbp]
@@ -476,8 +476,7 @@ The dEdx distributuion is constant showing us that the dEdx distribution is not 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth]{../Pictures/Chap_7/dEdx_stack.png}
-    \caption{dEdx shapes of different slices of pT. All slices are normalized to show relative differences.}
-    \label{fig:dEdx_shapes}
+    \caption{\label{fig:dEdx_shapes}dEdx shapes of different slices of pT. All slices are normalized to show relative differences.}
 \end{figure}
 
 The background estimation is validated in several independent regions designed to test closure and correlation with different background compositions:
@@ -523,8 +522,8 @@ High MeT SR & 151 & 1810 & 2627 & $219.159 \pm 14.804$ & Blinded \\
 \label{tab:Inclusive_VR_ABCD_reformatted}
 \end{table}
 
-\subsection{Two component dEdx template}
-The two component dEdx background estimation is done using the dEdx as the final discriminate. This is done by extracting the background dEdx templates from specific validation regions and then appyyinh the component fits to extract the background estimation in the signal regions. 
+\subsection{Two component$\text{d}E/\text{d}x$ template}
+The two component$\text{d}E/\text{d}x$ background estimation is done using the$\text{d}E/\text{d}x$ as the final discriminate. This is done by extracting the background$\text{d}E/\text{d}x$ templates from specific validation regions and then appyyinh the component fits to extract the background estimation in the signal regions. 
 This method relies on the assumptiin that background consists of only two unique shapes, fakes and MIPs. 
 The background fit is then simplified to two parameters and the resulting background pdf is given by Eq.~\ref{eq:pdf_background}.
 

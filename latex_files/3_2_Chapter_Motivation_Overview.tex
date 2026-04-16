@@ -1,8 +1,153 @@
 %--- Chapter 2 ----------------------------------------------------------------%
 \chapter{Overview and Motivation}
+
+\section{Standard Model of Particle Physics}
+
+
+The Standard Model (SM) of particle physics represents one of the most significant achievements of modern theoretical and experimental physics. Developed through decades of theoretical innovation and experimental discovery, it provides a remarkably successful framework for describing the fundamental particles and their interactions. Extensive experimental tests have confirmed its predictions with high precision. 
+The SM is a quantum gauge field theory that describes the known elementary particles and three of the four fundamental forces: electromagnetic, weak, and strong. 
+This description is based on the local symmetries under the groups $\mathrm{SU}(3)_C \times \mathrm{SU}(2)_L \times \mathrm{U}(1)_Y$.
+Particles in this framework are understood as excitations of their corresponding quantum fields.
+
+The SM elementary particles are shown in Fig.~\ref{fig:particle_zoo}.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{../Pictures/Chap_2/Standard_Model_of_Elementary_Particles.png}
+    \caption{Standard model elementary particles.}
+    \label{fig:particle_zoo}
+\end{figure}
+
+
+
+\subsection{Fermions}
+
+Particles can be classified in several ways, one of the simplest being by their spin. Particles with half-integer spin are known as fermions. All elementary fermions in the Standard Model have spin $1/2$ and constitute all the observable matter in the universe. Fermions are divided into two classes: leptons and quarks, each organized into three generations. Each generation has identical electric and strong charge but differs in mass.
+
+
+Each generation of leptons consists of a charged lepton and a neutrino. Neutrinos carry no electric charge and do not interact via the electromagnetic force. Neutrinos also do not carry color charge, and therefore interact only via the weak force. This makes them among the most difficult particles to detect experimentally. Charged leptons carry one unit of electric charge and interact via both the electromagnetic and weak interactions.
+
+
+Quarks carry both electric and color charge and therefore participate in all three interactions. They are divided into up-type and down-type quarks. Due to color confinement, quarks are not observed as free particles, but only as bound states in color-neutral hadrons.
+
+Color charge is the quantum number associated with the strong interaction, described by the gauge group $\mathrm{SU}(3)_C$. Quarks can exist in any one of three colored states, often represented as r,g,b for red, green, and blue (Not to be confused with photon colors in the visible spectrum. It is just a convient analogy to help keep track of the charges). 
+
+
+A summary of the quantum numbers of fermions is given in Table~\ref{tab:fermion_table}.
+\begin{table}[ht!]
+
+    \begin{tabular}{c | c | c | c | c | c }
+        Fermion & Symbol Used & Mass & Electric Charge & Color Charge & J \\
+        \hline \hline
+        Electron & $e$ & .5110 \MeV & -1 & 0 & 1/2 \\
+        Muon & $\mu$ & 105.7 \MeV & -1 & 0 & 1/2 \\
+        Tau & $\tau$ & 1776 \MeV & -1 & 0 & 1/2 \\
+        Electron Neutrino & $\nu_e$ &  $< .8$ \eV & 0 & 0 & 1/2 \\
+        Muon Neutrino & $\nu_\mu$ &  $< .8$ \eV & 0 & 0 & 1/2 \\
+        Tau Neutrino & $\nu_\tau$ &  $< .8$ \eV & 0 & 0 & 1/2 \\
+        Up Quark & u & 2.16 \MeV & 2/3 & Yes & 1/2 \\
+        Down Quark & d & 4.70 \MeV & -1/3 & Yes & 1/2 \\
+        Strange Quark & s & 93.5 \MeV & 2/3 & Yes & 1/2 \\
+        Charm Quark & c & 1.27 \GeV & 2/3 & Yes & 1/2 \\
+        Bottom Quark & b & 4.18 \GeV & 2/3 & Yes & 1/2 \\
+        Top Quark & t & 182.6 \GeV & 2/3 & Yes & 1/2 \\
+
+    \end{tabular}
+    \caption{Summary of fermion masses and quantum numbers in the Standard Model.}
+    \label{tab:fermion_table}
+\end{table}
+
+\subsection{Bosons}
+Bosons are particles with integer spin and include the force carriers of the Standard Model. The gauge bosons are spin-1 vector particles that arise from the underlying gauge symmetries and mediate the fundamental interactions. These consist of the photon, which mediates the electromagnetic interaction; eight gluons, which mediate the strong interaction between colored particles; and the $W^\pm$ and $Z^0$ bosons, which mediate the weak interaction.
+
+In addition to the gauge bosons, the Standard Model contains a scalar, spin-0, particle known as the Higgs boson. Unlike the gauge bosons, the Higgs does not arise from a gauge symmetry but instead from the Higgs field introduced to generate masses for elementary particles. Through the Higgs mechanism, the electroweak symmetry $\mathrm{SU}(2)_L \times \mathrm{U}(1)_Y$ is spontaneously broken to $\mathrm{U}(1)_{\mathrm{em}}$. This symmetry breaking gives rise to masses for the $W^\pm$ and $Z^0$ bosons, while the photon remains massless, and also allows fermions to acquire mass through Yukawa couplings to the Higgs field.
+
+
+
+
 \section{Background Motivation}
+
+
+
+
+
+Despite the remarkable success of the Standard Model, there remain several open questions in particle physics. Notably, the Standard Model does not provide an explanation for dark matter, nor does it address the hierarchy problem. These issues do not indicate that the Standard Model is incorrect, but rather suggest that it is an incomplete description of some more fundamental model.
+
+
+
+The hierarchy problem arises from the sensitivity of the Higgs boson parameters to quantum corrections. Consider the Higgs potential
+
+\begin{equation}
+    V(\Phi) = m_H^2 |\Phi|^2 + \lambda |\Phi|^4,
+\end{equation}
+
+where $\Phi$ is the complex scalar Higgs doublet, and $m_H^2$ and $\lambda$ are parameters of the renormalizable theory. Radiative corrections to the Higgs mass parameter receive contributions from loop diagrams involving Standard Model particles. For example, a fermion loop, as illustrated in Fig.~\ref{fig:loop_corrections}, gives a correction of the form
+\begin{equation}
+    \Delta m_H^2 \sim -\frac{|\lambda_f|^2}{8\pi^2} \Lambda_{\mathrm{UV}}^2 + ....
+\end{equation}
+
+ 
+where $\lambda_f$ is the Yukawa coupling and $\Lambda_{\mathrm{UV}}$ is the ultraviolet cutoff scale.
+
+These corrections grow quadratically with the cutoff scale, implying that if the Standard Model is valid up to very high energies, the Higgs mass receives large quantum corrections. Maintaining the Higgs mass at the electroweak scale therefore requires a delicate cancellation between the bare mass parameter and these radiative corrections. This apparent fine-tuning is generally regarded as unnatural and provides strong motivation for physics beyond the Standard Model.
+
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}{.42\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../Pictures/Chap_2/h-ff-h.pdf}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../Pictures/Chap_2/h-ss-h.pdf}
+    \end{subfigure}
+    \caption{Higgs quantum corrections example from 1 loop a) fermions and b) SUSY scalars}
+    \label{fig:loop_corrections}
+\end{figure}
+
+
+
+In addition to the hierarchy problem another open problem in particle physics is the existence of dark matter. Astrophysical and cosmological observations provide strong evidence for the existence of large amounts of non-luminous matter, known as dark matter, in the Universe. One of the earliest pieces of evidence comes from measurements of galactic rotation curves, which show that stars rotational velocities in galaxies at large radii remain approximately constant. In contrast, if visible matter accounted for the majority of the galactic mass, the rotational velocity of stars would be expected to decrease with increasing distance from the galactic center. Additional evidence for dark matter arises from observations such as gravitational lensing and the dynamics of galaxy clusters, both of which indicate the presence of additional mass contributing to the gravitational potential.
+
+With the exception of gravitational wave observations from detectors such as LIGO, Virgo, and KAGRA, most astronomical measurements rely on electromagnetic radiation. Since no direct detection of dark matter has yet been achieved, it is inferred that dark matter does not interact electromagnetically, and its presence is instead deduced indirectly through its gravitational effects on visible matter and radiation.
+
+These observations imply that a significant fraction of the matter content of the Universe is not directly observable, with current estimates indicating that approximately 84.4\% of the total matter density is dark matter, compared to about 15.6\% baryonic (visible) matter ~\cite{ParticleDataGroup:2024cfk}.
+
+Both the hierarchy problem and the existence of dark matter point toward physics beyond the Standard Model. These observations motivate the development of new theoretical frameworks and continued experimental searches for undiscovered particles. While the specific theory that extends the Standard Model remains unknown, several well-motivated candidates have been proposed, among which supersymmetry is one of the most extensively studied.
+
 \section{Supersymmetry}
 \label{sec:SUSY}
+
+Supersymmetry (SUSY) is a theoretical extension of the Standard Model that introduces a spacetime symmetry relating fermions and bosons. This symmetry predicts the existence of a rich new set of particles, known as superpartners, which extend the Standard Model particle content. Supersymmetry provides a compelling framework to address the hierarchy problem and also offers viable candidates for dark matter.
+
+The defining feature of supersymmetry is the existence of supersymmertic transformation, $Q$ that transform bosonic states into fermionic states and vice versa:
+\begin{align}
+    Q \Ket{\text{boson}} &= \Ket{\text{fermion}}, \\
+    Q \Ket{\text{fermion}} &= \Ket{\text{boson}}.
+\end{align}
+
+Particles in supersymmetric theories are organized into supermultiplets, in which each bosonic degree of freedom is paired with a fermionic degree of freedom. For example, each Weyl fermion is associated with two real scalar superpartners, typically arranged into a complex scalar field~\cite{MARTIN_1998}. Similarly, spin-1 gauge bosons are paired with spin-1/2 fermionic superpartners known as gauginos. These superpartners extend the Standard Model particle content, leading to a rich phenomenology and providing new particles to search for experimentally. The full set of predicted superpartners is illustrated in Fig.~\ref{fig:SUSY_zoo}.
+
+
+The scalar superpartners to the fermions would add another term to the higgs correction of the form in Fig. \ref{fig:loop_corrections} b). This term picks up a negitive symbol due to spin statistics. As each fermion has a super partner the correction to the Higgs term from each fermion and superpartner would be
+\begin{equation}
+    \Delta m_H^2 \sim -\frac{|\lambda_f|^2}{8\pi^2} \Lambda_{\mathrm{UV}}^2 + \frac{|\lambda_s|^2}{16\pi^2} \Lambda_{\mathrm{UV}}^2 ....
+\end{equation} 
+
 \subsection{Coannihilation Stau}
+
+
+
+
+Searches for supersymmetry and other beyond the Standard Model particles have not yet revealed conclusive evidence of new physics. To continue the search, an important phase space to explore is long lived particles. Assuming that dark matter was in thermal equilibrium during the early moments of the universe, cosmological limits can be placed on staus, the superpartners of the tau lepton, of approximately 1 ns to satisfy requirements for relic abundance of dark matter \cite{coannihilation}. This important strip of phase space is not fully explored in current searches at ATLAS due to the cross section of sleptons being relatively small. 
+
+
+An important theoretical motivation to search for long lived staus comes from the coannihilation model which can give the observed dark matter relic density. Limits set on SUSY by the dark matter relic density suggest that given the neutralino, $\chi$, being the lightest SUSY particle and the stau, $\Stau$, being the next to lightest SUSY particle, the lifetime of the stau would need to be of the order O(1 ns). Stau with a long lifetime is a favored fraction of the remaining phase spaces of the various SUSY models that can produce dark matter candidates. 
+
+
+In addition to the theoretical motivation from dark matter, the ANITA experiment \cite{ANITA} provides strong experimental motivation to search for long lived staus. High energy cosmic neutrinos that pass through ice produce electromagnetic showers by the Askaryan effect. These showers give off radio emissions characteristic of the particles that initiated the shower. ANITA observed two anomalous events. The events are radio wave showers observed directly by ANITA that were produced below the horizon. The two events that are anomalous have no Standard Model processes that could produce them. One explanation for the anomalous events is long lived staus with lifetime order 1ns to 10ns that traveled through a chord length of the Earth $l > 5700$ km and then decayed to a tau. 
+
+
 \subsection{Gauge Meditated SUSY Breaking}
-\subsection{Anomalya Mediaded SUSY Breaking}
+\subsection{Anomaly Mediaded SUSY Breaking}

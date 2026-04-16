@@ -1,0 +1,191 @@
+Data-driven methods are used to estimate all backgrounds in the analysis and a similar approach is used for all backgrounds sources. Template regions (TRs) are used to calculate an initial tracklet \pt distribution/template by selecting events containing the background under consideration. A set of alternative regions, with relaxed reconstruction selections, are used to calculate transfer factors (TFs) that are then applied to the tracklet \pt template to correct for the rate of electrons, muons, hadrons, and spurious signals/fakes misidentified as tracklets. This approach produces a purely data-driven estimate of the SR background from electrons and muons. However, MC simulation is used to calculate the TFs for the hadronic and fake backgrounds, so control regions (CRs) are used to normalise the tracklet \pt distribution and predict the expected yields in the SRs.
+
+The electron and muon backgrounds arise due to bremsstrahlung from interactions with the inner-detector material resulting in an abrupt increase in the electron/muon track curvature. This causes the lepton to not satisfy the standard tracking requirements for lepton reconstruction and it is instead incorrectly reconstructed as a tracklet. Hadrons can also be misidentified as tracklets because of similar sudden increases in track curvature due to bremsstrahlung or hadronic interactions in the inner-detector material, or charged hadron decays inside the inner detector. Fake tracklets can be formed with spurious pixel hits from low-\pt particles that do not belong to the primary interaction (\pileup), from the underlying event, or from detector noise. The methods described below are used to estimate the expected tracklet \pt distributions ($f_{\mathrm{SR}}^{\mathrm{bkg}}$) in each SR.
+
+The dominant background contribution in all SRs is due to fake tracklets. From MC studies it is found that true tracklets usually exhibit a correlation between the true particle \pt and the tracklet \pt, whereas fake tracklets do not have this correlation. For each SR the \pt distribution of fake tracklets is estimated by
+
+\begin{equation*}
+f_{\mathrm{SR}}^{\mathrm{fake}}(\pt) = N^{\mathrm{TRfake}}(\pt) \times \mathrm{TF}^{\mathrm{fake}}_{d_0\textrm{-correction}}(d_0) \times \mathrm{TF}^{\mathrm{fake}}_{\mathrm{hybrid}}(\pt) \times \mathrm{SF}^{\mathrm{fake}}_{z_0} \times \mathrm{SF}^{\mathrm{fake}}_{\met},
+\end{equation*}
+
+using the yields in TRs modified by TFs and scale factors (SFs), which are described further below. In total, three tracklet \pt templates ($N^{\mathrm{TRfake}}(\pt)$) are extracted from three TRs (TRfake), each defined with the same selection as the SRs, but with orthogonal selections of $\met < 150\,\GeV$ and $|z_0\sin\theta| > 2.5$\,mm. Due to this inverted \met selection, the same TRfake is used for \SRAh and \SRAm. The \met trigger can be safely used with this lower selection because the trigger efficiency does not need to be well understood in this region since it is not used to predict the overall event yield. Furthermore, because the tracklets are not included in the \met calculation, the shape of the \pt distribution is independent of \met. All three TRs select tracklets reconstructed from hits in three layers to ensure a high-statistics \pt template. Figure~\ref{fig:bkg:34_layer_Template} presents an example of the $N^{\mathrm{TRfake}}(\pt)$ distribution extracted from the TR associated with \SRAh and \SRAm.
+
+From studies using $V$+\:\!jets MC events, it is found that extrapolating from the high-$|z_0\sin\theta|$ TR to regions with low $|z_0\sin\theta|$ introduces a $|d_0|/\sigma(d_0)$ dependence. This is corrected for by using $|d_0|/\sigma(d_0)$-binned correction factors, $\mathrm{TF}^{\mathrm{fake}}_{d_0\textrm{-correction}}$, defined as the ratio of the $|d_0|/\sigma(d_0)$ distribution shape for tracklets with $|z_0\sin\theta| < 0.2\,$mm to that for those with $|z_0\sin\theta| > 2.5\,$mm and are taken directly from data. Figure~\ref{fig:bkg:fake_SF_d0} shows the difference in $|d_0|/\sigma(d_0)$ between the TR and a low-$|z_0\sin\theta|$ region, with the $\mathrm{TF}^{\mathrm{fake}}_{d_0\textrm{-correction}}$ shown in the lower panel.
+
+\begin{figure}[tb!]
+\begin{center}
+  \subfigure[] {
+  \includegraphics[width=0.44\textwidth]{figures/background/Public/template_original_4layer.pdf}
+      \label{fig:bkg:34_layer_Template}
+    }
+  \subfigure[]{
+  \includegraphics[width=0.44\textwidth]{figures/background/Public/h_weight_d0sig_3layer_z0cr_to_4layer_lowmet.pdf}
+    \label{fig:bkg:fake_SF_d0}
+    }
+  \subfigure[] {
+  \includegraphics[width=0.44\textwidth]{figures/background/Public/tracklet_vcpt_4layer_label.pdf}
+      \label{fig:bkg:34_Hybrid}
+    }
+  \end{center}
+\vspace{-0.75cm}
+\caption{Individual components used in the estimation of the fake background: \protect\subref{fig:bkg:34_layer_Template} shows the original template, $N^{\mathrm{TRfake}}(\pt)$, as a solid line. The templates after the application of the transfer factors are shown as dashed lines; \protect\subref{fig:bkg:fake_SF_d0} shows the $|d_{0}|/\sigma(d_{0})$ dependence introduced when extrapolating over $|z_0\sin\theta|$ and the binwise, with respect to $|d_{0}|/\sigma(d_{0})$, transfer factors $\mathrm{TF}^{\mathrm{fake}}_{d_0\textrm{-correction}}(d_0)$ used to remove the dependence; and \protect\subref{fig:bkg:34_Hybrid} shows a comparison between the pure fake and hybrid fake contributions and the \pt-dependent transfer factors $\mathrm{TF}^{\mathrm{fake}}_{\mathrm{hybrid}}(\pt)$ used to extrapolate from the template region that contains pure fakes to the SR, which contains a mixture of hybrid and pure fake components. }
+\end{figure}
+
+Studies of $V$+\;\!jets MC events show that the fake-tracklet background has two sources: \enquote{pure} fakes, where the tracklet is reconstructed from unrelated coincidental hits in the pixel layers, and \enquote{hybrid} fakes, where at least one hit is not from a true hadron. In these studies it is found that at low \met the dominant component comes from pure fakes, while at higher \met there is a mixture of both contributions. To account for the different contributions when extrapolating from low- to high-\met regions, the tracklet \pt template is adjusted by a \pt-dependent transfer factor, $\mathrm{TF}_{\mathrm{hybrid}}^{\mathrm{fake}}$, derived from $V$+\:\!jets MC samples and calculated as the ratio of the tracklet \pt distributions for pure fakes and hybrid fakes. The TFs are used to scale the pure fake \pt distribution to the hybrid fake distribution, and the sum of the pure fakes and hybrid fakes is then used for the final tracklet \pt shape. Figure~\ref{fig:bkg:34_Hybrid} shows the relative contributions of pure fakes and hybrid fakes from MC simulation studies, and the ratio of the two is fitted with a falling exponential-plus-constant distribution as shown in the bottom panel.
+
+To scale the template to data, a set of regions enriched in fake tracklets are used; these select events with a low-\pt tracklet ($\pt< 35\,\GeV$), low \met ($\met< 150\,\GeV$), and a high-\pt \enquote{unconstrained} tracklet ($\pt> 100\,\GeV$), while keeping all other SR selections the same. The unconstrained tracklet is produced from the same hits as a typical tracklet, but there is no requirement to re-fit this tracklet to the primary vertex, so a significantly different \pt measurement can result. A set of scale factors, $\mathrm{SF}_{z_0}^{\mathrm{fake}}$, are calculated as the ratio of events in the fake tracklet enhanced regions to the events in the associated TRfake region but with an alternative selection of tracklet $\pt < 35\,\GeV$ and unconstrained-tracklet $\pt <100\,\GeV$ ensuring orthogonality.
+
+A final set of scale factors, $\mathrm{SF}_{\met}^{\mathrm{fake}}$, are used to extrapolate the template from the low-\met region to the SRs with tighter \met selections. The scale factors are derived from CRs which use high values of the tracklet $|d_{0}|/\sigma(d_{0})$ (${>}1.5$), a loosened tracklet \pt selection (${>}20\,\GeV$), but otherwise the same selections as the SRs. MC simulation shows the normalisation regions are ${>}99$\% pure in fake tracklets, with a ratio of pure to hybrid fakes similar to that in the SRs. Table~\ref{tab:CRA_Selections} defines the control regions \CRAl and \CRAh, with the ratio of events in the low-CR to the high-CR used to derive the fake background $\mathrm{SF}_{\met}^{\mathrm{fake}}$ in the signal regions \SRAh and \SRAm. Table~\ref{tab:CR1p_Selections} defines the control regions \CRBol and \CRBoh used to calculate $\mathrm{SF}_{\met}^{\mathrm{fake}}$ for the fake background in \SRBo, and Table~\ref{tab:CR1z_Selections} defines \CRBzl and \CRBzh, which are used to scale this background in \SRBz. The remaining two CRs, \CRBom and \CRBzm, are used to calculate $\mathrm{SF}_{\met}^{\mathrm{fake}}$ for the validation regions, introduced later in the section. 
+
+The background from electrons reconstructed as tracklets is given by
+
+\begin{equation*}
+f_{\mathrm{SR}}^{e}(\pt,\eta) = N^{\mathrm{TR}e}(\pt,\eta) \times \mathrm{TF}^e_{\mathrm{tracklet}}(\pt,\eta) \times \mathrm{TF}^e_{\textrm{calo-veto}}(\pt,\eta) \times f^{e}_{\mathrm{smear}}(\pt),
+\end{equation*}
+
+\begin{figure}[b!]
+\begin{center}
+  \subfigure[] {
+  \includegraphics[width=0.45\textwidth]{figures/background/Public/factor_comparison_electron.pdf}
+      \label{fig:bkg:el_Template}
+    }
+  \subfigure[]{
+  \includegraphics[width=0.45\textwidth]{figures/background/Public/m_h_tfpix_ele_pt_incl.pdf}
+    \label{fig:bkg:el_TF_trk}
+    }\\
+  \subfigure[] {
+  \includegraphics[width=0.45\textwidth]{figures/background/Public/tf_caloveto_1d.pdf}
+      \label{fig:bkg:el_TF_calo}
+    }
+  \subfigure[] {
+  %\includegraphics[width=0.45\textwidth]{figures/background/Public/smearing_function_with_band.pdf}
+  \includegraphics[width=0.45\textwidth]{figures/background/Public/smearing_function_with_band_ver2.pdf}
+      \label{fig:bkg:el_smear}
+    }
+  \end{center}
+\vspace{-0.75cm}
+\caption{Individual contributions used in the estimation of the electron background: \protect\subref{fig:bkg:el_Template} presents the original electron \pt template, $N^{\mathrm{TRe}}(\pt)$, as a solid line, with the templates also shown after the application of each transfer/smearing factor as dashed lines; \protect\subref{fig:bkg:el_TF_trk} shows the transfer factor, $\mathrm{TF}^e_{\mathrm{tracklet}}$, used to correct for the likelihood of reconstructing an electron track as a tracklet; \protect\subref{fig:bkg:el_TF_calo} shows the transfer factors, $\mathrm{TF}^{e}_{\textrm{calo-veto}}$, used to correct for the likelihood of an electron not being associated with a calorimeter energy cluster; and \protect\subref{fig:bkg:el_smear} shows the smearing functions, $f^{e}_{\mathrm{smear}}$, used to correct the measured electron track \pt to the tracklet \pt (defined on the figure). While the tracklet \pt template and the TFs are dependent upon both \pt and $\eta$, the components are shown with their dependence upon the tracklet \pt distribution as a representative distribution. }
+\end{figure}
+
+which uses the yields in TRs modified by TFs and a smearing function that is described further below. Four electron-enriched TRs (TR$e$), with the same selections as the associated SRs but with the presence of exactly one electron instead of a tracklet, are used to extract a set of templates for the tracklet \pt spectrum ($N^{\mathrm{TR}e}(\pt,\eta)$). An example of the template \pt spectrum is presented in Figure~\ref{fig:bkg:el_Template} for the TR$e$ associated with \SRAh. The TR$e$ events must fire the single-electron trigger, with an offline $\pt$ requirement of $27\,\GeV$. To mimic the expected \met distribution in the SR, the electrons are removed from the \met calculation in this region, allowing the same \met selection as in the SR to be applied. A data-driven tag-and-probe method using $Z\rightarrow ee$ events is used to derive correction factors to estimate the likelihood that a standard electron is reconstructed as a tracklet ($\mathrm{TF}^e_{\mathrm{tracklet}}$) by identifying probe electrons that have a calorimeter energy cluster but no associated standard track. Figure~\ref{fig:bkg:el_TF_trk} shows the \pt dependence of the $\mathrm{TF}^e_{\mathrm{tracklet}}$ distributions. A further transfer factor ($\mathrm{TF}^{e}_{\textrm{calo-veto}}$) is calculated, again using a data-driven tag-and-probe method in $Z\rightarrow ee$ events, to estimate the likelihood that an electron with a standard track does not have an associated calorimeter energy cluster. Figure~\ref{fig:bkg:el_TF_calo} shows the \pt dependence of $\mathrm{TF}^{e}_{\textrm{calo-veto}}$ for three- and four-layer tracklets, where both TFs are calculated in bins of tracklet \pt and $\eta$. A transfer factor ($\mathrm{TF}^{e}_{\mathrm{tracklet+\pi}}$) is calculated and used specifically for the regions where the electron is associated with a low-energy charged-pion track and is used instead of $\mathrm{TF}^e_{\mathrm{tracklet}}$ when considering the regions requiring the presence of a pion. The application of these TFs allows the electron \pt template taken from the TR to be scaled in a way that takes into account the likelihood that an electron may not satisfy both of the tracking and calorimeter requirements, and thus is reconstructed as a tracklet. To account for the differences between a standard reconstructed electron track and a reconstructed tracklet, a $p_{\mathrm{T}}$-dependent smearing function ($f^{e}_{\mathrm{smear}}$) is applied. To calculate the smearing function, the tracklet reconstruction is applied to a standard track associated with an electron (again using $Z\rightarrow ee$ data) and the difference between the charge and \pt values of the standard track and tracklet are calculated. This function is fitted using a Gaussian core with exponential tails. Figure~\ref{fig:bkg:el_smear} shows the smearing functions used for three- and four-layer tracklets.
+
+A similar method is used to constrain the muon backgrounds. The tracklet \pt distribution due to muons in a SR is calculated as
+
+\begin{equation*}
+f_{\mathrm{SR}}^{\mu}(\pt,\eta) = N^{\mathrm{TR}\mu}(\pt,\eta) \times \mathrm{TF}^\mu_{\mathrm{tracklet}}(\pt,\eta) \times \mathrm{TF}^\mu_{\textrm{MS-veto}}(\pt,\eta)\times f^{\mu}_{\mathrm{smear}}(\pt).
+\end{equation*}
+
+This is used in the same way as for the electron background and the individual terms are derived in a similar manner as discussed below. Four muon-enriched TRs (TR$\mu$) are defined and the tracklet \pt template is taken from events passing the same selection as in the SRs but containing exactly one muon instead of a tracklet. The TR$\mu$ events must fire the single-muon trigger, with an offline $\pt$ requirement of $27\,\GeV$. As with the electrons, the expected \met distribution in the SR is emulated by removing the muons from the \met calculation. Correction factors to account for muons reconstructed as tracklets ($\mathrm{TF}^\mu_{\mathrm{tracklet}}$), and muons that do not have an associated track in the MS ($\mathrm{TF}^{\mu}_{\textrm{MS-veto}}$), are calculated in bins of tracklet \pt and $\eta$ using a tag-and-probe method in $Z\rightarrow \mu\mu$ events. A transfer factor ($\mathrm{TF}^{\mu}_{\mathrm{tracklet+\pi}}$) is calculated specifically for the cases where the muon is associated with a low-energy charged-pion track and is used instead of $\mathrm{TF}^\mu_{\mathrm{tracklet}}$ in the regions requiring the presence of a pion. A $p_{\mathrm{T}}$-dependent smearing function ($f^{\mu}_{\mathrm{smear}}$) is applied to account for differences between the measured muon track $p_{\mathrm{T}}$ in the TR and the reconstructed tracklet \pt. 
+
+The final background considered in the analysis, the one due to hadronic interactions, is calculated as
+
+\begin{equation*}
+f_{\mathrm{SR}}^{\mathrm{had}}(\pt,\eta) = N^{\mathrm{TRhad}}(\pt,\eta) \times \mathrm{TF}^{\mathrm{had}}_{\mathrm{tracklet}}(\pt,\eta) \times \mathrm{TF}^{\mathrm{had}}_{\textrm{calo-veto}}(\pt,\eta) \times f^{\mathrm{had}}_{\mathrm{smear}}(\pt).
+\end{equation*}
+
+Similarly to the other backgrounds, yields in TRs are modified by TFs and a smearing function, which is described below. Four hadronic TRs (TRhad) are defined to extract the tracklet \pt template ($N^{\mathrm{TRhad}}(\pt,\eta)$) by applying the same selections as the associated SR, but with changed tracklet reconstruction requirements. In the TRs the track with the highest $\pt$ is required to have at least 14 hits in the TRT detector, at least five hits in the SCT, and be matched, within $\Delta R < 0.2$, to a calorimeter energy cluster with $E_{\mathrm{T}}^{\mathrm{clus}} > 3\,\GeV$, and $E_{\mathrm{T}}^{\mathrm{topoclus40}}/\pt^{\mathrm{track}} > 0.5$, resulting in a pure sample of hadronic tracks. Due to the unavailability of a data-driven tag-and-probe method to calculate the transfer factors, pion and electron \enquote{particle gun} simulation is used to estimate the probability to misidentify a hadron as a short track ($\mathrm{TF}^\mathrm{had}_{\mathrm{tracklet}}$) by calculating the ratio of hadron MC events reconstructed as tracklets to electron MC events reconstructed as tracklets and multiplying this by the $\mathrm{TF}^e_{\mathrm{tracklet}}$ value calculated from data as described above. A similar procedure is followed to calculate $\mathrm{TF}^\mathrm{had}_{\mathrm{tracklet+\pi}}$, which is subsequently used instead of $\mathrm{TF}^\mathrm{had}_{\mathrm{tracklet}}$ to calculate the SR contribution containing a low-energy pion. A transfer factor $\mathrm{TF}_{\textrm{calo-veto}}^{\mathrm{had}}$ is applied to estimate the likelihood of reconstructing a hadron without an associated calorimeter energy cluster; it is calculated as the ratio of MC events containing a tracklet associated with a calorimeter energy cluster within $\Delta R=0.4$ of the tracklet (when requiring $E_{\mathrm{T}}^{\mathrm{clus}} > 10\,\GeV$) to those without (when requiring $E_{\mathrm{T}}^{\mathrm{clus}}$ < 5\,GeV). Both TFs are dependent upon \pt and $\eta$. A $p_{\mathrm{T}}$-dependent smearing function ($f^{\mathrm{had}}_{\mathrm{smear}}$) is applied to take into account differences between the hadronic track and the reconstructed tracklet. 
+
+\begin{table}[tp]
+\centering
+\caption{Summary of the event and tracklet selection requirements for the CRs associated with the four-layer SRs. \label{tab:CRA_Selections}}
+\scriptsize
+\begin{tabular}{l | c | c | c | c }
+\toprule
+Variable & \CRAl & \CRAh & \CRAls & \CRAms \\
+\midrule
+\met trigger & \multicolumn{4}{c}{Passed} \\ 
+Number of leptons &   \multicolumn{4}{c}{$= 0$} \\
+Number of jets ($\pt > 20\,\GeV$) &   \multicolumn{4}{c}{$= 1$} \\
+Leading jet $\pt$ &   \multicolumn{4}{c}{$> 100\,\GeV$} \\
+$|\Delta\phi(j_1,\vec{p}_{\mathrm{T}}^{\mathrm{miss}})|$ &   \multicolumn{4}{c}{$> 1.0$} \\
+Number of four-layer tracklets &   \multicolumn{4}{c}{$\geq 1$} \\
+Tracklet $\pt$ &  $> 20\,\GeV$ &  $20{-}60\,\GeV$ & $> 20\,\GeV$ & $20{-}60\,\GeV$ \\
+Tracklet $E_\mathrm{T}^{\mathrm{clus}}$ &  $< 5\,\GeV$ &  $< 5\,\GeV$ & $> 5\,\GeV$ & $> 5\,\GeV$ \\
+\met & $< 150\,\GeV$ & $>300\,\GeV$ & $<150\,\GeV$ & $150{-}300\,\GeV$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+After evaluating the tracklet \pt distributions for the electron, muon, hadron and fake backgrounds, they are used as the input to a binned likelihood fit (as described in Section \ref{sec:result}) to provide a final estimate of the background distributions in the SRs, performing an extrapolation to higher values of \met. The hadronic background tracklet distributions are normalised using \enquote{sideband} CRs: \CRAls and \CRAms (defined in Table~\ref{tab:CRA_Selections}) for the four-layer SRs, and \CRBols and \CRBoms (defined in Table \ref{tab:CR1p_Selections}) for both three-layer SRs, where the \enquote{S} in the superscript denotes the sideband CR for the region. Applying this normalisation mitigates the MC dependence introduced when calculating the hadronic transfer factors. Figure~\ref{fig:background:FitSchematic} presents a schematic overview of the general background estimation strategy with the usage of CRs to normalise the hadronic background while the remaining backgrounds are taken from their templates as described above. 
+
+\begin{table}[b]
+\centering
+\caption{Summary of the event and tracklet selection requirements for the CRs associated with the three-layer SRs that contain a low-energy charged pion. \label{tab:CR1p_Selections}}
+\scriptsize
+\begin{tabular}{l | c | c | c | c | c }
+\toprule
+Variable & \CRBol & \CRBom & \CRBoh & \CRBols & \CRBoms \\
+\midrule
+\met trigger & \multicolumn{5}{c}{Passed} \\ 
+Number of leptons &   \multicolumn{5}{c}{$= 0$} \\
+Number of jets ($\pt > 20\,\GeV$) &   \multicolumn{5}{c}{$= 1$} \\
+Leading jet $\pt$ &   \multicolumn{5}{c}{$> 100\,\GeV$} \\
+$|\Delta\phi(j_1,\vec{p}_{\mathrm{T}}^{\mathrm{miss}})|$ &   \multicolumn{5}{c}{$> 1.0$} \\
+Number of three-layer tracklets &   \multicolumn{5}{c}{$\geq 1$} \\
+Number of charged pions & \multicolumn{5}{c}{$\geq 1$} \\
+Tracklet $\pt$ &  $> 20\,\GeV$ &  $20{-}60\,\GeV$ & $20{-}60\,\GeV$ & $> 20\,\GeV$ & $20{-}60\,\GeV$ \\
+Tracklet $E_\mathrm{T}^{\mathrm{clus}}$ &  $< 5\,\GeV$ &  $< 5\,\GeV$ & $< 5\,\GeV$ & $> 5\,\GeV$ & $> 5\,\GeV$ \\
+\met & $< 150\,\GeV$ & $150{-}240\,\GeV$ & $>240\,\GeV$ & $< 150\,\GeV$ & $150{-}240\,\GeV$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}[tp]
+\centering
+\caption{Summary of the event and tracklet selection requirements for the CRs associated with the three-layer SRs that veto a low-energy charged pion. \label{tab:CR1z_Selections}}
+\scriptsize
+\begin{tabular}{l | c | c | c  }
+\toprule
+Variable & \CRBzl & \CRBzm & \CRBzh \\
+\midrule
+\met trigger & \multicolumn{3}{c}{Passed} \\ 
+Number of leptons &   \multicolumn{3}{c}{$= 0$} \\
+Number of jets ($\pt > 20\,\GeV$) &   \multicolumn{3}{c}{$= 1$} \\
+Leading jet $\pt$ &   \multicolumn{3}{c}{$> 100\,\GeV$} \\
+$|\Delta\phi(j_1,\vec{p}_{\mathrm{T}}^{\mathrm{miss}})|$ &   \multicolumn{3}{c}{$> 1.0$} \\
+Number of three-layer tracklets &   \multicolumn{3}{c}{$\geq 1$} \\
+Number of charged pions & \multicolumn{3}{c}{$= 0$} \\
+Tracklet $\pt$ &  $> 20\,\GeV$ &  $20{-}60\,\GeV$ & $20{-}60\,\GeV$\\
+Tracklet $E_\mathrm{T}^{\mathrm{clus}}$ &  $< 5\,\GeV$ &  $< 5\,\GeV$ & $< 5\,\GeV$\\
+\met & $< 150\,\GeV$ & $150{-}280\,\GeV$ & $>280\,\GeV$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{figure}[t!]
+  \centering
+  \includegraphics[width=0.85\textwidth]{figures/background/Schematic-newText.pdf}
+  %\includegraphics[width=0.85\textwidth]{figures/background/Schematic.png}
+\vspace{-3.5cm}
+\caption{Schematic diagram for the background estimation strategy, describing the usage of template regions (TRs), and relaxed selections to calculate transfer factors (TFs) before performing the fit using control regions (CRs). The kinematic regions are orthogonal due to selections on \met, tracklet $p_{\mathrm{T}}$, and tracklet $E_\mathrm{T}^{\mathrm{clus}}$, with high calorimeter energies (\enquote{calo-side}) dominated by the hadron background, and low calorimeter energies (\enquote{calo-veto}) dominated by the fake background.}
+  \label{fig:background:FitSchematic}
+\end{figure}
+
+To evaluate the fit procedure and background modelling, orthogonal validation regions (VRs) are constructed by selecting events kinematically closer to the SR, and an extrapolation of the CR backgrounds to the VRs is performed. Five VRs are defined, as shown in Table~\ref{tab:VR_Selections}, with reversed selections on the tracklet $\pt$, tracklet $E_\mathrm{T}^{\mathrm{clus}}$, or $\met$ in order to remain orthogonal to both the SRs and CRs. 
+
+\begin{table}[tp]
+\centering
+\caption{Summary of the event and tracklet selection requirements for the validation regions. \label{tab:VR_Selections}}
+\scriptsize
+\begin{tabular}{l | c | c | c | c | c}
+\toprule
+Variable & \VRAm & \VRAms & \VRBom & \VRBoms & \VRBzm \\
+\midrule
+\met trigger & \multicolumn{5}{c}{Passed} \\ 
+Number of leptons &   \multicolumn{5}{c}{$= 0$} \\
+Number of jets ($\pt > 20\,\GeV$) &   \multicolumn{5}{c}{$= 1$} \\
+Leading jet $\pt$ &   \multicolumn{5}{c}{$> 100\,\GeV$} \\
+$|\Delta\phi(j_1,\vec{p}_{\mathrm{T}}^{\mathrm{miss}})|$ &   \multicolumn{5}{c}{$> 1.0$} \\
+Number of four-layer tracklets &   \multicolumn{2}{c|}{$\geq 1$} & \multicolumn{3}{c}{= 0} \\
+Number of three-layer tracklets &   \multicolumn{2}{c|}{-} & \multicolumn{3}{c}{$\geq 1$} \\
+Number of charged pions & \multicolumn{2}{c|}{-} & \multicolumn{2}{c|}{$\geq 1$} & $= 0$ \\
+Tracklet $\pt$ & $< 60\,\GeV$ & $> 60\,\GeV$ & $> 60\,\GeV$ & $> 60\,\GeV$ & $> 60\,\GeV$ \\
+Tracklet $E_\mathrm{T}^{\mathrm{clus}}$ &  $< 5\,\GeV$ &  $> 5\,\GeV$ & $< 5\,\GeV$ & $> 5\,\GeV$ & $< 5\,\GeV$ \\
+\met & $150{-}300\,\GeV$ & $150{-}300\,\GeV$ & $150{-}240\,\GeV$ & $150{-}240\,\GeV$ & $> 280\,\GeV$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\FloatBarrier

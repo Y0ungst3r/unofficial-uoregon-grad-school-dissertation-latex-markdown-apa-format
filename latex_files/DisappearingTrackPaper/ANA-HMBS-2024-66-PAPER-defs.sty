@@ -1,0 +1,164 @@
+\newcommand\info[1]{{\color{red}> #1}}
+\newcommand\plot[1]{{\color{cyan}Plot Request: #1}}
+
+
+
+% Signal Region definitions, anything with an A is the 4-layer, anything with a B is the 3-layer
+\newcommand\SRAh{SR$^\mathrm{4High}$\xspace}
+\newcommand\SRAm{SR$^\mathrm{4Mid}$\xspace}
+\newcommand\SRBz{SR$^\mathrm{{3High}0\pi}$\xspace}
+\newcommand\SRBo{SR$^\mathrm{{3High1}\pi}$\xspace}
+
+\newcommand\VRAm{VR$^\mathrm{4Mid}$\xspace}
+\newcommand\VRAms{VR$^\mathrm{4MidS}$\xspace}
+\newcommand\VRBom{VR$^\mathrm{{3Mid}1\pi}$\xspace}
+\newcommand\VRBoms{VR$^\mathrm{{3Mid1}\pi\mathrm{S}}$\xspace}
+\newcommand\VRBzm{VR$^\mathrm{{3High}0\pi}$\xspace}
+
+
+% Control Region Definitions 4-layer
+\newcommand\CRAl{CR$^\mathrm{4Low}$\xspace}
+\newcommand\CRAh{CR$^\mathrm{4High}$\xspace}
+\newcommand\CRAls{CR$^\mathrm{4LowS}$\xspace}
+\newcommand\CRAms{CR$^\mathrm{4MidS}$\xspace}
+
+
+% CR definitions 3-layer, o means one pion, z means zero, s means sideband
+\newcommand\CRBol{CR$^\mathrm{{3Low}1\pi}$\xspace}
+\newcommand\CRBom{CR$^\mathrm{{3Mid}1\pi}$\xspace}
+\newcommand\CRBoh{CR$^\mathrm{{3High}1\pi}$\xspace}
+\newcommand\CRBols{CR$^\mathrm{{3Low}1\pi\mathrm{S}}$\xspace}
+\newcommand\CRBoms{CR$^\mathrm{{3Mid}1\pi\mathrm{S}}$\xspace}
+
+\newcommand\CRBzl{CR$^\mathrm{{3Low}0\pi}$\xspace}
+\newcommand\CRBzm{CR$^\mathrm{{3Mid}0\pi}$\xspace}
+\newcommand\CRBzh{CR$^\mathrm{{3High}0\pi}$\xspace}
+
+
+\def\mdiff{\Delta m_{\chinoone}}
+\def\mdiffchi{\Delta m\,(\chinoonepm, \ninoone)}
+
+
+\newcommand\needed[1]{{\color{red}(#1)}}
+\newcommand{\meteleVec}{\ensuremath{\textbf{E}_{\mathrm{T}}^{\mathrm{miss, \, e}}}\xspace}
+\newcommand{\metphotVec}{\ensuremath{\textbf{E}_{\mathrm{T}}^{\mathrm{miss, \, \gamma}}}\xspace}
+\newcommand{\mettauVec}{\ensuremath{\textbf{E}_{\mathrm{T}}^{\mathrm{miss, \, \tau}}}\xspace}
+\newcommand{\metmuVec}{\ensuremath{\textbf{E}_{\mathrm{T}}^{\mathrm{miss, \, \mu}}}\xspace}
+\newcommand{\metjetVec}{\ensuremath{\textbf{E}_{\mathrm{T}}^{\mathrm{miss, \, \mathrm{jet}}}}\xspace}
+\newcommand{\metvec}{\ensuremath{\textbf{E}_{\mathrm{T}}^{\mathrm{miss}}}\xspace}
+\newcommand{\pTobjvec}{\ensuremath{\textbf{p}_{\mathrm{T}}^{\mathrm{Obj}}}\xspace}
+\newcommand{\pTobj}{\ensuremath{p_{\mathrm{T}}^{\mathrm{Obj}}}\xspace}
+\newcommand{\pTobjtruevec}{\ensuremath{\textbf{p}_{\mathrm{T}}^{\mathrm{Object, true}}}\xspace}
+\newcommand{\pTeleVec}{\ensuremath{\textbf{p}_{\mathrm{T}}^{e}}\xspace}
+\newcommand{\pTphotVec}{\ensuremath{\textbf{p}_{\mathrm{T}}^{\gamma}}\xspace}
+\newcommand{\pTtauVec}{\ensuremath{\textbf{p}_{\mathrm{T}}^{\tau}}\xspace}
+\newcommand{\pTjetVec}{\ensuremath{\textbf{p}_{\mathrm{T}}^{\mathrm{jets}}}\xspace}
+\newcommand{\pTmuVec}{\ensuremath{\textbf{p}_{\mathrm{T}}^{\mu}}\xspace}
+\newcommand{\pTsoftVec}{\ensuremath{\textbf{p}_{\mathrm{T}}^{\mathrm{soft}}}\xspace}
+\newcommand{\metvecSoft}{\ensuremath{\textbf{E}_{\mathrm{T}}^{\mathrm{miss, \, Soft}}}\xspace}
+\newcommand{\metvecHard}{\ensuremath{\textbf{E}_{\mathrm{T}}^{\mathrm{miss, \, Hard}}}\xspace}
+\newcommand{\metsig}{\ensuremath{\mathcal{S}(\met)}\xspace}
+\newcommand\note[1]{{\color{red}#1}}
+%x
+\newcommand{\minmbl}{\ensuremath{m_{b\ell}^{\mathrm{min}}}\xspace}
+\newcommand{\minmTb}{\ensuremath{m_{\mathrm{T}b}^{\mathrm{min}}}\xspace}
+\newcommand{\minmTj}{\ensuremath{m_{\mathrm{T}j}^{\mathrm{min}}}\xspace}
+\newcommand{\mindphijet}{\ensuremath{\mathrm{min}[\Delta\phi(\mathrm{jet}_{1-4},\,\met)]}\xspace}
+\newcommand{\mttwo}{\ensuremath{m_{\mathrm{T}2}}\xspace}
+\newcommand{\amttwo}{\ensuremath{a\mttwo}\xspace}
+\newcommand{\meff}{\ensuremath{m_{\mathrm{eff}}}\xspace}
+\newcommand{\mt}{\ensuremath{m_{\mathrm{T}}}\xspace}
+\newcommand{\msfos}{\ensuremath{m_{\mathrm{SFOS}}}\xspace}
+
+
+%%
+
+\newcommand{\lumi}{$\mathcal{L}$\xspace}
+\newcommand{\averagemu}{$\langle\mu\rangle$\xspace}
+
+\newcommand{\acer}{{AcerMC}\xspace}
+\newcommand{\alpgen}{{ALPGEN}\xspace}
+\newcommand{\powheg}{{POWHEG}\xspace}
+\newcommand{\powhegbox}{{POWHEG-BOX}\xspace}
+\newcommand{\prospino}{{PROSPINO}\xspace}
+\newcommand{\herwig}{{HERWIG}\xspace}
+\newcommand{\herwigpp}{{Herwig++}\xspace}
+\newcommand{\pythia}{{PYTHIA}\xspace}
+\newcommand{\pythiaeight}{{PYTHIA8}\xspace}
+\newcommand{\mcatnlo}{{MC@NLO}\xspace}
+\newcommand{\sherpa}{{SHERPA}\xspace}
+\newcommand{\fewz}{{FEWZ}\xspace}
+\newcommand{\mcfm}{{MCFM}\xspace}
+\newcommand{\isajet}{{ISAJET}\xspace}
+\newcommand{\isasugra}{{ISASUGRA}\xspace}
+\newcommand{\isasusy}{{ISASUSY}\xspace}
+\newcommand{\jimmy}{{JIMMY}\xspace}
+\newcommand{\cteqVER}[1]{{CTEQ#1}\xspace}
+\newcommand{\geant}{{GEANT4}\xspace}
+\newcommand{\madgraph}{{MadGraph5\_aMC@NLO}\xspace}
+\newcommand{\amcpeight}{{aMC@NLO+PYTHIA8}\xspace}
+
+\newcommand{\evtgen}{\textsc{EvtGen}\xspace}
+\newcommand{\comix}{\textsc{Comix}\xspace}
+\newcommand{\openloops}{\textsc{OpenLoops}\xspace}
+
+% extra SUSY
+\newcommand*{\ninoAll}{\ensuremath{\mathchoice%
+      {\displaystyle\raise.4ex\hbox{\(\displaystyle\tilde\chi^0_{1,2,3,4}\)}}%
+         {\textstyle\raise.4ex\hbox{\(\textstyle\tilde\chi^0_{1,2,3,4}\)}}%
+       {\scriptstyle\raise.3ex\hbox{\(\scriptstyle\tilde\chi^0_{1,2,3,4}\)}}%
+ {\scriptscriptstyle\raise.3ex\hbox{\(\scriptscriptstyle\tilde\chi^0_{1,2,3,4}\)}}}\xspace}
+\newcommand*{\chinoAllpm}{\ensuremath{\mathchoice%
+      {\displaystyle\raise.4ex\hbox{\(\displaystyle\tilde\chi^\pm_{1,2}\)}}%
+         {\textstyle\raise.4ex\hbox{\(\textstyle\tilde\chi^\pm_{1,2}\)}}%
+       {\scriptstyle\raise.3ex\hbox{\(\scriptstyle\tilde\chi^\pm_{1,2}\)}}%
+ {\scriptscriptstyle\raise.3ex\hbox{\(\scriptscriptstyle\tilde\chi^\pm_{1,2}\)}}}\xspace}
+
+%
+% Masses
+%
+\def\mstop{\ensuremath{m_{\stop}}\xspace}
+\def\msbottom{\ensuremath{m_{\sbot}}\xspace}
+\def\mchipm{\ensuremath{m_{\chipm}}\xspace}
+\def\mLSP{\ensuremath{m_{\nino}}\xspace}
+\def\mneut{\ensuremath{m_{\neut}}\xspace}
+\def\mneuttwo{\ensuremath{m_{\neuttwo}}\xspace}
+\def\LSP{\nino}
+\def\mtop{\ensuremath{m_{\mathrm{t}}}\xspace}
+% \def\mtop{\ensuremath{m_{\mathrm{top}}}\xspace}
+
+%
+% Definition of background processes
+%
+\def\ttV{\ttbar+\Wboson/\Zboson\xspace}
+\def\ttW{\ttbar+\Wboson\xspace}
+\def\ttWW{\ttbar+\Wboson\Wboson\xspace}
+\def\ttZ{\ttbar+\Zboson\xspace}
+\def\Vjets{\ensuremath{\Wboson/\Zboson\!+\!\mathrm{jets}}\xspace}
+\def\Wjets{\ensuremath{\Wboson\!+\!\mathrm{jets}}\xspace}
+\def\Wbjets{\ensuremath{\Wboson\!+\!\mathrm{HF\ jets}}\xspace}
+\def\Wenujets{\ensuremath{\Wboson(e\nu)\!+\!\mathrm{jets}}\xspace}
+\def\Wmunujets{\ensuremath{\Wboson(\mu\nu)\!+\!\mathrm{jets}}\xspace}
+\def\Wtaunujets{\ensuremath{\Wboson(\tau\nu)\!+\!\mathrm{jets}}\xspace}
+\def\Zjets{\ensuremath{\Zboson\!+\!\mathrm{jets}}\xspace}
+\def\Zbjets{\ensuremath{\Zboson\!+\!\mathrm{HF\ jets}}\xspace}
+\def\Zeejets{\ensuremath{\Zboson(ee)\!+\!\mathrm{jets}}\xspace}
+\def\Zmumujets{\ensuremath{\Zboson(\mu\mu)\!+\!\mathrm{jets}}\xspace}
+\def\Ztautaujets{\ensuremath{\Zboson(\tau\tau)\!+\!\mathrm{jets}}\xspace}
+\def\Znunujets{\ensuremath{\Zboson(\nu\nu)\!+\!\mathrm{jets}}\xspace}
+\def\DMstopN{\ensuremath{\Delta m\left(\tone,\neut\right)}\xspace}
+\def\DMsbotN{\ensuremath{\Delta m\left(\bone,\neut\right)}\xspace}
+\def\GammaJets{\ensuremath{\gamma\!+\!\mathrm{jets}}\xspace}
+
+%
+% Definition of particles
+%
+
+\def\higgs{\ensuremath{h}\xspace}
+
+%
+%   Definition of signal region tags for the third generation summary paper
+%
+% stat
+%
+\newcommand{\cls}{CL$_s$}

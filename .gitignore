@@ -24,3 +24,5 @@ acs-main.bib
 *.swo
 Pictures
 output
+figures
+build

@@ -1,0 +1,40 @@
+The signal scenarios investigated contain a tracklet, \met, and in the case of the chargino production scenarios a low-energy charged pion. In all considered signal scenarios, the \met is however too small to satisfy the \met trigger requirements. Therefore, events are required to contain a high-\pt initial-state radiation (ISR) jet to boost the SUSY particle system and achieve enough \met to exceed the trigger threshold. Signal regions (SRs) are defined using kinematic variable selections to enhance the contribution from signal processes relative to the background processes. All SRs require events to have zero leptons, at least one jet, and a large azimuthal separation between the highest-\pt jet and the $\vec{p}_{\mathrm{T}}^{\mathrm{miss}}$, denoted by ($|\Delta\phi(j_1,\vec{p}_{\mathrm{T}}^{\mathrm{miss}})|$. Four orthogonal SRs are defined in the analysis, two requiring the presence of a tracklet reconstructed from four pixel layers, and another two requiring the presence of a tracklet reconstructed from three pixel layers and differing mainly in whether or not a low-energy charged pion is required. Table~\ref{tab:SRA_Selections} provides a summary of all SR selections used in the analysis. 
+
+\begin{table}[tb!]
+\centering
+\caption{Summary of the signal region selection requirements. \label{tab:SRA_Selections}}
+%\scriptsize
+\begin{tabular}{l | c | c | c | c }
+\toprule
+Variable & \SRAh & \SRAm & \SRBo & \SRBz \\
+\midrule
+\met trigger & \multicolumn{4}{c}{Passed} \\ 
+Number of leptons &   \multicolumn{4}{c}{$= 0$} \\
+Number of jets ($\pt > 20\,\GeV$) &   \multicolumn{4}{c}{$\geq 1$} \\
+Leading jet \pt &   \multicolumn{4}{c}{$> 100\,\GeV$} \\
+$|\Delta\phi(j_1,\vec{p}_{\mathrm{T}}^{\mathrm{miss}})|$ &   \multicolumn{4}{c}{$> 1.0$} \\
+Number of four-layer tracklets &   \multicolumn{2}{c|}{$\geq 1$} & \multicolumn{2}{c}{$= 0$} \\
+Number of three-layer tracklets &   \multicolumn{2}{c|}{-} & \multicolumn{2}{c}{$\geq 1$} \\
+Number of charged pions & \multicolumn{2}{c|}{-} & $\geq 1$ & $= 0$ \\
+Tracklet $p_{\mathrm{T}}$ & $> 60\,\GeV$ & $> 60$\,GeV & $> 60\,\GeV$ & $> 60\,\GeV$ \\
+Tracklet $|\eta|$ & 0.1--1.9 & 0.1--1.9 & 0.1--1.9 & 0.1--1.7 \\
+\met & $> 300$\,GeV & $150{-}300\,\GeV$ & $>240\,\GeV$ & $>280\,\GeV$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The four-hit SRs (\SRAh and \SRAm) require events to contain a tracklet that is reconstructed from four pixel-detector hits and has tracklet $p_{\mathrm{T}} >60\,\GeV$. Tracklets with hits in four layers provide sensitivity to a wide range of \chinopm/$\tau$-slepton lifetimes, from 0.02 to 10\,ns. No requirement is placed on the presence of a low-energy charged pion. \SRAh requires high \met, whereas \SRAm selects events with lower \met. The two SRs containing tracklets reconstructed from hits in three layers are defined in order to target very short-lived charged SUSY particles, which is the phase space of interest for the higgsino-like case, where $\tau(\chinoonepm) \sim 0.02{-}0.2$\,ns. A tracklet $p_{\mathrm{T}} > 60\,\GeV$ requirement is applied for both three-layer tracklet SRs and the main difference between the two is the absence or presence of a low-energy charged pion. \SRBo requires the presence of at least one low-energy charged pion and requires $\met >240\,\GeV$, whereas \SRBz applies a low-energy charged-pion veto and applies a slightly tighter $\met > 280\,\GeV$ selection.  
+
+In all regions, the backgrounds arise either from events containing particles that are misidentified as tracklets or from unrelated coincidental pixel-layer hits that form a tracklet. Figure~\ref{fig:analysis:BkgSchematic} presents schematically how background events might be mis-reconstructed and satisfy the SR selections. The \chinoonepm signal scenario is also shown, in the case where the charged pion is reconstructed from the track it leaves in the SCT detector, and in the case where the charged pion does not have enough energy to reach the SCT and leave any hits. Background events may have tracklets reconstructed from pixel hits which belong to known SM particles (electrons, muons, hadrons) or from coincidentally combined hits (referred to as the \enquote{fake} background).
+
+\begin{figure}[t!]
+  \centering
+  \includegraphics[width=0.95\textwidth]{figures/analysis/Background_Diagram.pdf}
+  \caption{Schematic diagram illustrating how the signal scenarios are detected and how the background processes may enter the SR selections. The detector layers are not shown to scale. Taken from Ref.~\cite{SUSY-2018-19}.}
+  \label{fig:analysis:BkgSchematic}
+\end{figure}
+
+
+
+
+\FloatBarrier

@@ -1,0 +1,152 @@
+%--- Chapter 6 ----------------------------------------------------------------%
+\chapter{Disapearing Tracks}
+\label{ch:llp_search_dt}
+
+\section{Introduction}
+\label{ch:dt_intro}
+The Disappearing Track search is based on identifying short tracklets that decay within the ID volume. As discussed in Sec.~\ref{sec:SUSY}, multiple BSM models predict long-lived particles that can give rise to these signatures. The Disappearing Track search directly targets charged long-lived particles and probes a region of phase space that is difficult to access with other searches.
+
+A key advantage of this signature is it remains agnostic to the decay products of the BSM particle, allowing the search to be sensitive to a wide range of models. The work presented in this thesis that contributes to this search focuses primarily on the addition of new signal models. In particular, the stau GMSB and stau coannihilation models as described in Sec.~\ref{sec:SUSY}. For completeness, the full analysis is presented in this chapter. More details can be found in the published from this search \cite{atlascollaboration2026searchlonglivedcharginostausleptons}. 
+
+
+\section{Target Models}
+
+\subsection{AMSB Charginos}
+An important scenario to consider for SUSY searches is the AMSB. In this scenario there are two interesting cases for this search: wino-like $\chinopm$ and $\ninoone$ and higgsino-like $\chinopm$ and $\ninoone$. Both of these cases give rise to scenarios where the mass spltting $\Delta m\left(\chinopm, \ninoone\right)$ is small O($100-300 \text{ MeV}$). These scenarios lead to a long lifetime O(0.04 - 10 ns). Due to the small phase space available the main branching fraction is assumed to be $\chinopm \to \pi^{\pm}\ninoone$
+
+\subsection{CMSSM coannihilation stau}
+One compelling model that provides a dark matter candidate is the constrained minimal supersymmetric standard model~(CMSSM).
+In this model, the neutralino ($\ninoone$) can be the lightest SUSY particle and a natural dark matter candidate. 
+
+A naive calculation of the relic density for the neutralino predicts an overabundance of dark matter compared to current observations. A mechanism that can suppress the relic abundance is the coannihilation of $\stau-\ninoone$~\cite{GriestKim1991Teit}. If the $\stau$ and the $\ninoone$ are nearly mass-degenerate, then during the cooling in the early universe they would have frozen out almost simultaneously. During this freeze-out process the $\stau-\ninoone$ interactions increased the effective annihilation cross section, thus reducing the $\ninoone$ relic abundance. This effect could reconcile the predicted relic abundance with current observations.
+
+The lifetime of the $\stau$ in this scenario is sensitive to several parameters, including the mass-splitting between the $\ninoone$ and $\stau$, possible CP-violating phases, and the mixing angle between the left- and right-handed $\stau$ states~\cite{Jittoh_2006}. As a result, the $\stau$ lifetime can span many orders of magnitude across the viable SUSY parameter space.
+
+This search targets the direct detection of $\stau$ pairs via the process:
+\begin{equation}
+	pp \to \stau^+ \stau^- j
+\end{equation}
+Here $j$ represents an energetic jet from initial state radiation~(ISR ). The presence of the ISR jet is critical as it provides the necessary missing transverse energy to trigger on the otherwise soft final-state signature. The need of the ISR jet is the same as in the chargino case. Kinematically, this model is almost identical to that of the chargino, with a key difference arising from the difference in spins between the particles. The $\stau$ particles are spin-0 scalars while charginos are spin-1/2 Dirac fermions. This difference affects the production kinematics as scalar particles have a momentum term in their coupling of the gauge field to particles, thus suppressing production at low momentum. Fermions, such as charginos, do not have this momentum term in their coupling, and thus do not exhibit the same suppression.
+
+A typical diagram of this process is illustrated in Figure~\ref{fig:Stau_diagram_CMSSM}.
+
+Despite the fact that this analysis was originally optimized for the chargino scenarios, the $\stau$ coannihilation model presents a similarly viable signal topology. As such, it can be effectively probed using the same search strategy without requiring additional optimizations.
+
+The detailed descriptions of the signal simulation and the cross section calculation are given in Section~\ref{sec:datasets:mc:CMSSM-stau}.
+
+
+\subsection{GMSB Stau}
+Another scenario of interest for this search is gauge-mediated supersymmetry breaking~(GMSB).
+
+In GMSB models, the ordinary gauge interactions cause the supersymmetry breaking.
+This is done through messenger particles that couple the source of supersymmetry breaking and the quarks, leptons and Higgs to their respective SUSY partners.
+
+In the parameter space relevant for this analysis, the lightest supersymmetric particle~(LSP) is the nearly massless gravitino~($\gravino$), and the next-to-lightest supersymmetric particle~(NLSP) is the stau~($\stau$).
+
+The small coupling between the stau, tau, and gravitino results in a long NLSP lifetime.
+
+This search specifically targets the direct production of $\stau$ pairs in association with an initial-state radiation jet:
+\begin{equation}
+    pp \to \stau^+ \stau^- j
+\end{equation}
+
+A typical diagram of this process is illustrated in Figure~\ref{fig:Stau_diagram_GMSB}.
+
+\begin{figure}[htbp]
+  \centering
+  \subfloat[$pp \rightarrow \tau^+ \tau^- \ninoone \ninoone j$]{
+    \includegraphics[width=0.35\textwidth]{../Pictures/Chap_6/staustau-jtautauN1N1}
+    \label{fig:Stau_diagram_CMSSM}
+  }
+  \subfloat[$pp \rightarrow \tau^+ \tau^- \gravino \gravino j$]{
+    \includegraphics[width=0.35\textwidth]{../Pictures/Chap_6/staustau-jtautauG1G1}
+    \label{fig:Stau_diagram_GMSB}
+  }
+  \caption{Diagrams of (a) CMSSM $\stau$ and (b) GMSB $\stau$ decay processes.}
+  %\label{fig:Stau_diagram} % LABEL UNUSED (for now)
+\end{figure}
+
+This GMSB stau production is a model typically probed by ATLAS in searches using pixel $\text{d}E/\text{d}x$ (for $\stau$ lifetimes of $3-10$~ns) and displaced leptons (for $\stau$ lifetimes of $0.005-2$~ns).
+Since the final-state signature is similar to the CMSSM $\stau$ scenario, also here the same search strategy as for the chargino models can be used without additional optimizations.
+%Maybe further discussion here would be useful to motivate that disappearing tracks is sensitive to masses between the two searches.
+%So disappearing track is sensitive to heavier and longer masses then displaced leptons and lighter and shorter lifetime then dEdx.
+
+The detailed descriptions of the signal simulation and the cross section calculation are given in Section~\ref{sec:datasets:mc:GMSB-stau}.
+
+
+\subsubsection{GMSB Stau Sample}
+\label{sec:datasets:mc:GMSB_stau}
+
+Simulated samples for the GMSB long lived $\stau$ pair production were generated using \MGNLO v2.6.1, \PYTHIA v8.230, and \EVTGEN v1.6.0.
+The events used in this search were originally generated for the displaced lepton and $\text{d}E/\text{d}x$ analyses, and were subsequently reconstructed specifically for this study.
+In these samples, the $\stau$ decays into a $\tilde{G}$ and $\tau$.
+The $\tau$ then subsequently decays via the standard channels.
+All other SUSY particles besides the $\tilde{G}$ and $\stau$ were assumed to be heavy enough to have negligible effects on the production and decay.
+All the signal parameters and cross sections are summarised in Table ~\ref{tab:xsec_stauGMSB}
+
+\begin{table}[htbp]
+	\centering
+	\caption{Summary of the cross-sections, masses, and lifetimes for the GMSB stau samples.}
+	\begin{tabular}{ccccc}
+		\hline
+		\hline
+		$m_{\tilde{\tau}}[\GeV]$ & Lifetimes [nsec] & Cross section [$\mathrm{pb}$] \\
+		\hline
+		100  & 0.3, 1.0, 3.0, 10.0 & $2.9638 \times 10^{-1}$    \\
+		200  & 0.3, 1.0, 3.0, 10.0 & $2.2293 \times 10^{-2}$    \\
+		300  & 0.3, 1.0, 3.0, 10.0 & $4.5463 \times 10^{-3}$    \\
+		400  & 0.3, 1.0, 3.0, 10.0 & $1.3657 \times 10^{-3}$    \\
+		500  & 0.3, 1.0, 3.0, 10.0 & $4.6717 \times 10^{-4}$  \\
+		600  & 0.3, 1.0, 3.0, 10.0 & $1.8848 \times 10^{-4}$  \\
+		\hline
+		\hline
+	\end{tabular}
+	\label{tab:xsec_stauGMSB}
+\end{table}
+
+
+\subsubsection{CMSSM Coannihilation Stau Sample}
+\label{sec:datasets:mc:CMSSM_stau}
+
+Simulated samples of long lived, pair produced staus were generated using MadGraph5\_aMC@NLO v2.9.5 with Pythia v8.306 and EvtGen v.1.7.0. All samples were produced in the mc16e configuration and extrapolated across the full run 2 dataset. This approach was chosen due to issues with the trigger configurations present in mc16a and mc16d. The Feynman diagram for these samples are shown in Fig.~\ref{fig:StauFeynmann}. In these samples, the stau decays into a tau which then subsequently decays via the standard channels. 
+Due to the large parameter space available to this model, the lifetime, $\stau$ mass, and mass splitting, $m_{\ninoone} - m_{\tilde{\tau}}$ of the samples were chosen independent of each other. The mass and lifetime were chosen to span regions where this analysis is expected to have sensitivity. The mass splitting was fixed at 2 GeV, slightly above the tau mass. All other SUSY particles besides the neutralino and stau were assumed to be heavy enough to have negligible effects on the production and decay. 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.48\textwidth]{../Pictures/Chap_6/staustau-jtautauN1N1.pdf}
+	\caption{The Feynman diagram for pair produced $\tilde{\tau}$}
+	\label{fig:StauFeynmann}
+\end{figure}
+
+
+
+
+\begin{table}[htbp]
+	\centering
+	\caption{Summary of the cross-section for stau. Link to original production request in JIRA: \href{https://its.cern.ch/jira/browse/ATLMCPROD-10493}{ATLMCPROD-10493}, \href{https://its.cern.ch/jira/browse/ATLHMBSDPD-2934}{ATLHMBSDPD-2934}.}
+	\begin{tabular}{ccccc}
+		\hline
+		\hline
+		$m_{\tilde{\tau}}[\GeV]$ & Lifetimes [nsec] & Cross section [$\mathrm{pb}$] \\
+		\hline
+		80   & 0.2, 1.0, 4.0, 10.0 & $7.8791 \times 10^{-1}$  \\
+		100  & 0.2, 1.0, 4.0, 10.0 & $3.5380 \times 10^{-1}$    \\
+		200  & 0.2, 1.0, 4.0, 10.0 & $2.7905 \times 10^{-2}$    \\
+		300  & 0.2, 1.0, 4.0, 10.0 & $5.5456 \times 10^{-3}$    \\
+		400  & 0.2, 1.0, 4.0, 10.0 & $1.6202 \times 10^{-3}$    \\
+		500  & 0.2, 1.0, 4.0, 10.0 & $5.7826 \times 10^{-4}$  \\
+		600  & 0.2, 1.0, 4.0, 10.0 & $2.3420 \times 10^{-4}$  \\
+		\hline
+		\hline
+	\end{tabular}
+	\label{tab:xsec_stau}
+\end{table}
+
+
+\section{Analysis Strategy}
+
+\section{Background Estimation}
+
+\section{Systematic Uncertainties}
+
+\section{Results}
