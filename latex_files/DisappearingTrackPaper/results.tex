@@ -6,8 +6,7 @@ Figure~\ref{fig:results:BinnedCRs} presents an overview of the CRs after the bac
 
 \begin{figure}[t]
   \centering
-  \includegraphics[width=0.75\textwidth]{figures/results/Public/cr_allchannels_postfit.pdf}
-  \vspace{-0.5cm}
+  \includegraphics[width=0.75\textwidth]{../figures/results/Public/cr_allchannels_postfit.pdf}
   \caption{The post-fit yields in the CRs. All statistical and systematic uncertainties are considered in the error bands. Three representative pre-fit signal yields are indicated with dashed lines.}
   \label{fig:results:BinnedCRs}
 \end{figure}
@@ -16,17 +15,16 @@ To evaluate the fit procedure and background modelling, the CR normalisations ar
 
 \begin{figure}[htb]
 \begin{center}
-\subfigure[]{
-\includegraphics[width=0.44\textwidth]{figures/results/Public/FourLayer_middleMET_CaloSide_highpt_postfit.pdf}\label{fig:VR_N1:a}
-}
-\subfigure[]{
-\includegraphics[width=0.44\textwidth]{figures/results/Public/ThreeLayerNotSP_middleMET_CaloVeto_highpt_postfit.pdf}\label{fig:VR_N1:b}
-}
-\subfigure[]{
-\includegraphics[width=0.44\textwidth]{figures/results/Public/ThreeLayerSP_middleMET_CaloVeto_highpt_postfit.pdf}\label{fig:VR_N1:c}
-}\\
+\begin{subfigure}{0.44\textwidth}
+\includegraphics[width=\textwidth]{../figures/results/Public/FourLayer_middleMET_CaloSide_highpt_postfit.pdf}\label{fig:VR_N1:a}
+\end{subfigure}
+\begin{subfigure}{0.44\textwidth}
+\includegraphics[width=\textwidth]{../figures/results/Public/ThreeLayerNotSP_middleMET_CaloVeto_highpt_postfit.pdf}\label{fig:VR_N1:b}
+\end{subfigure}
+\begin{subfigure}{0.44\textwidth}
+\includegraphics[width=\textwidth]{../figures/results/Public/ThreeLayerSP_middleMET_CaloVeto_highpt_postfit.pdf}\label{fig:VR_N1:c}
+\end{subfigure}
 \end{center}
-\vspace{-0.75cm}
 \caption{The post-fit tracklet \pt distributions in \protect\subref{fig:VR_N1:a} \VRAms, \protect\subref{fig:VR_N1:b} \VRBzm, and \protect\subref{fig:VR_N1:c} \VRBom. The dashed vertical line denotes the boundary between the CR and VR selections. The pre-fit signal distributions are indicated with dashed lines. The lower pad shows the ratio of the observed yields to the post-fit predicted background yields. The last bin includes overflow events. All statistical and systematic uncertainties are considered in the error bands.}
 \label{fig:VR_N1}
 \end{figure}
@@ -36,7 +34,7 @@ The level of post-fit agreement in the VRs and SRs is shown in Figure~\ref{fig:r
 
 \begin{figure}[t!]
   \centering
-\includegraphics[width=0.75\textwidth]{figures/results/Public/vrsr_allchannels_postfit.pdf}
+\includegraphics[width=0.75\textwidth]{../figures/results/Public/vrsr_allchannels_postfit.pdf}
   \vspace{-0.5cm}
   \caption{The observed and expected event yields in the VRs and SRs. The lower pads show the ratio of the observed yields to the post-fit predicted background yields and the statistical significance~\cite{Cousins:2007bmb} of the observed data. A red arrow is used to indicate that a ratio value is outside the displayed interval. The background estimates are calculated from the background-only fit. All statistical and systematic uncertainties are considered in the error bands. Three representative pre-fit signal yields are indicated with dashed lines.}
   \label{fig:results:BinnedVRSR}
@@ -46,18 +44,20 @@ Figure~\ref{fig:SR_N1} presents post-fit distributions of the tracklet \pt in ea
 
 \begin{figure}[b]
 \begin{center}
-\subfigure[]{
-\includegraphics[width=0.44\textwidth]{figures/results/Public/FourLayer_highMET_CaloVeto_highpt_postfit.pdf}\label{fig:SRA:a}
-}
-\subfigure[]{
-\includegraphics[width=0.44\textwidth]{figures/results/Public/FourLayer_middleMET_CaloVeto_highpt_postfit.pdf}\label{fig:SRA:b}
-}\\
-\subfigure[]{
-\includegraphics[width=0.44\textwidth]{figures/results/Public/ThreeLayerNotSP_highMET_CaloVeto_highpt_postfit.pdf}\label{fig:SRA:c}
-}
-\subfigure[]{
-\includegraphics[width=0.44\textwidth]{figures/results/Public/ThreeLayerSP_highMET_CaloVeto_highpt_postfit.pdf}\label{fig:SRA:d}
-}
+\begin{subfigure}{0.44\textwidth}
+\includegraphics[width=\textwidth]{../figures/results/Public/FourLayer_highMET_CaloVeto_highpt_postfit.pdf}\label{fig:SRA:a}
+\end{subfigure}
+\begin{subfigure}{0.44\textwidth}
+\includegraphics[width=\textwidth]{../figures/results/Public/FourLayer_middleMET_CaloVeto_highpt_postfit.pdf}\label{fig:SRA:b}
+\end{subfigure}
+
+\begin{subfigure}{0.44\textwidth}
+\includegraphics[width=\textwidth]{../figures/results/Public/ThreeLayerNotSP_highMET_CaloVeto_highpt_postfit.pdf}\label{fig:SRA:c}
+\end{subfigure}
+\begin{subfigure}{0.44\textwidth}
+\includegraphics[width=\textwidth]{../figures/results/Public/ThreeLayerSP_highMET_CaloVeto_highpt_postfit.pdf}\label{fig:SRA:d}
+\end{subfigure}
+
 \end{center}
 \vspace{-0.5cm}
 \caption{The post-fit tracklet \pt distributions in \protect\subref{fig:SRA:a} \SRAh, \protect\subref{fig:SRA:b} \SRAm, \protect\subref{fig:SRA:c} \SRBz, and \protect\subref{fig:SRA:d} \SRBo. The dashed vertical line denotes the boundary between the CR/VR and SR selections. The lower pad shows the ratio of the observed data yields to the post-fit predicted background estimates. A red arrow is used to indicate that a ratio value is outside the displayed interval. The last bin includes overflow events. All statistical and systematic uncertainties are considered in the error bands. Three representative pre-fit signal yields are indicated with dashed lines.
@@ -104,14 +104,15 @@ Figures~\ref{fig:results:WinoLimits} and \ref{fig:results:HiggsinoLimits} also s
 
 \begin{figure}[tb!]
 \begin{center}
-  \subfigure[]{
-  \includegraphics[width=0.45\textwidth]{figures/results/Public/wino.pdf}
+  \begin{subfigure}{0.45\textwidth}
+  \includegraphics[width=\textwidth]{../figures/results/Public/wino.pdf}
     \label{fig:results:WinoFull}
-    }
-  \subfigure[] {
-  \includegraphics[width=0.45\textwidth]{figures/results/Public/dm_wino_combined.pdf}
+  \end{subfigure}
+  \begin{subfigure}{0.45\textwidth}
+  \includegraphics[width=\textwidth]{../figures/results/Public/dm_wino_combined.pdf}
       \label{fig:results:WinoDM}
-    }
+  \end{subfigure}
+  
   \end{center}
 \vspace{-0.75cm}
 \caption{The expected (dashed line) and observed (solid line) 95\% CL exclusion contours for wino production as a function of the chargino mass and \protect\subref{fig:results:WinoFull} lifetime, or \protect\subref{fig:results:WinoDM} mass splitting of the electroweakinos. The dotted lines indicates the $\pm \sigma_{\mathrm{theory}}$ from signal cross-section uncertainties, while the solid band indicates the $\pm \sigma_{\mathrm{exp}}$ from experimental systematic uncertainties and statistical uncertainties on the data yields. The solid grey area shows the region excluded by Ref.~\cite{SUSY-2018-19}. The dashed-dotted line is the prediction of the chargino lifetime or wino mass splitting as a function of the chargino mass as predicted by the SM loop corrections~\cite{Ibe:2012sx}. \label{fig:results:WinoLimits}}
@@ -119,15 +120,16 @@ Figures~\ref{fig:results:WinoLimits} and \ref{fig:results:HiggsinoLimits} also s
 
 \begin{figure}[tb!]
 \begin{center}
-  \subfigure[]{
-  %\includegraphics[width=0.45\textwidth]{figures/results/Public/higgsino_indiv.pdf}
-  \includegraphics[width=0.45\textwidth]{figures/results/Public/higgsino_combined.pdf}
+  \begin{subfigure}{0.45\textwidth}
+  %\includegraphics[width=0.45\textwidth]{../figures/results/Public/higgsino_indiv.pdf}
+  \includegraphics[width=\textwidth]{../figures/results/Public/higgsino_combined.pdf}
     \label{fig:results:HiggsinoFull}
-    }
-  \subfigure[] {
-  \includegraphics[width=0.45\textwidth]{figures/results/Public/dm_higgsino_combined.pdf}
+  \end{subfigure}
+  \begin{subfigure}{0.45\textwidth}
+  \includegraphics[width=\textwidth]{../figures/results/Public/dm_higgsino_combined.pdf}
       \label{fig:results:HiggsinoDM}
-    }
+   \end{subfigure}
+
   \end{center}
 \vspace{-0.75cm}
 \caption{The expected (dashed line) and observed (solid line) 95\% CL exclusion contours for higgsino production as a function of the chargino mass and \protect\subref{fig:results:HiggsinoFull} lifetime, or \protect\subref{fig:results:HiggsinoDM} mass splitting of the electroweakinos. The dotted lines indicates the $\pm \sigma_{\mathrm{theory}}$ from signal cross-section uncertainties, while the solid band indicates the $\pm \sigma_{\mathrm{exp}}$ from experimental systematic uncertainties and statistical uncertainties on the data yields. The solid grey area shows the region excluded by Ref.~\cite{SUSY-2018-19}. The dashed-dotted line is the prediction of the chargino lifetime or higgsino mass splitting as a function of the chargino mass as predicted by the SM loop corrections~\cite{Thomas:1998wy}. \label{fig:results:HiggsinoLimits}}
@@ -138,14 +140,14 @@ The 95\% CL exclusion limits in the $\tau$-slepton scenarios are presented in Fi
 
 \begin{figure}[tb!]
 \begin{center}
-  \subfigure[]{
-  \includegraphics[width=0.45\textwidth]{figures/results/Public/cmssm_stau.pdf}
+  \begin{subfigure}{0.44\textwidth}
+  \includegraphics[width=\textwidth]{../figures/results/Public/cmssm_stau.pdf}
     \label{fig:results:cmssm_stau}
-    }
-  \subfigure[]{
-  \includegraphics[width=0.45\textwidth]{figures/results/Public/gmsb_stau.pdf}
+  \end{subfigure}
+  \begin{subfigure}{0.44\textwidth}
+  \includegraphics[width=\textwidth]{../figures/results/Public/gmsb_stau.pdf}
       \label{fig:results:gmsb_stau}
-    }
+  \end{subfigure}
   \end{center}
 \vspace{-0.75cm}
   \caption{The expected (dashed line) and observed (solid line) 95\% CL exclusion contours for $\tau$-slepton production in \protect\subref{fig:results:cmssm_stau} CMSSM-inspired scenarios and \protect\subref{fig:results:gmsb_stau} GMSB-inspired scenario. The dotted lines indicates the $\pm \sigma_{\mathrm{theory}}$ from signal cross-section uncertainties, while the solid band indicates the $\pm \sigma_{\mathrm{exp}}$ from experimental systematic uncertainties and statistical uncertainties on the data yields.\label{fig:results:StauLimits}}

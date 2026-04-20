@@ -60,6 +60,7 @@
 %------------------------------------------------------------------------------%
 % PACKAGES
 %------------------------------------------------------------------------------%
+
 \usepackage[USenglish,UKenglish]{babel}
 \usepackage{mathtools,amsmath,amsfonts,amsthm,amssymb,bm, bbm}
 \usepackage{dcolumn,booktabs,longtable}
@@ -84,19 +85,26 @@
 \usepackage{hyperref}
 % \usepackage{braket}
 
+\usepackage[subcaption]{atlaspackage}
+\usepackage{atlaspackage}
+
+% \usepackage{atlasbiblatex}
+\usepackage{atlasphysics}
+\usepackage{atlasbsm}
+\usepackage{ANA-HMBS-2024-66-PAPER-defs}
 
 % \RequirePackage{DisappearingTrackPaper/latex/atlaslatexpath}
 % % % \usepackage{atlasbiblatex}
-% \usepackage{latex/atlasphysics}
+% \usepackage{atlasphysics}
 % \usepackage{atlasbsm}
-% \usepackage{latex/atlasunit}
+% \usepackage{atlasunit}
 
 
 % \usepackage{DisappearingTrackPaper/ANA-HMBS-2024-66-PAPER-defs}
 % \usepackage{DisappearingTrackPaper/atlaspackage}
 
 %------------------------------------------------------------------------------%
-% BIBLIOGRAPHY
+% BIBLIOGRAPHY 
 %------------------------------------------------------------------------------%
 %--- You need to specify these if your dissertation is something other than
 %--- apacite+bibtex, but these may be helpful for anything nonstandard.
@@ -114,6 +122,17 @@
 %
 %--- Or, if you want to change the citation style to e.g. acm
 % \bibliographystyle{plain}
+
+\addbibresource{main.bib}
+\addbibresource{bib/ANA-HMBS-2024-66-PAPER.bib}
+\addbibresource{bib/ATLAS.bib}
+\addbibresource{bib/ATLAS-SUSY.bib}
+\addbibresource{bib/ATLAS-useful.bib}
+\addbibresource{bib/CMS.bib}
+\addbibresource{bib/ConfNotes.bib}
+\addbibresource{bib/PubNotes.bib}
+
+
 %------------------------------------------------------------------------------%
 % MATH EQUATIONS AND THEOREMS (.cls also restructures theorem layout)
 %------------------------------------------------------------------------------%
@@ -128,205 +147,205 @@
 \appto{\small}{\zerodisplayskips}
 \appto{\footnotesize}{\zerodisplayskips}
 
-\newcommand{\eV}{\text{eV}}
-\newcommand{\MeV}{\text{MeV}}
-\newcommand{\GeV}{\text{GeV}}
-\newcommand{\TeV}{\text{TeV}}
-\newcommand{\Bra}[1]{\left\langle {#1} \right\vert}
-\newcommand{\Ket}[1]{\left\vert {#1} \right\rangle}
-\newcommand{\Bracket}[3]{\left\langle {#1} | {#2} | {#3} \right\rangle}
-\newcommand{\Inner}[2]{\left\langle {#1} | {#2} \right\rangle}
-\newcommand{\Expect}[1]{\left\langle {#1} \right\rangle}
-\newcommand{\E}[1]{ \times 10^#1}
-\newcommand{\Par}[1]{ \frac{\partial } {\partial {#1}} }
-\newcommand{\Unit}[1]{\text{#1}}
-\newcommand{\Partial}[2]{ \frac{\partial {#1} } {\partial {#2}} }
-\newcommand{\Sin}{ \text{sin} }
-\newcommand{\Cos}{ \text{cos} }
-\newcommand{\Tan}{ \text{tan} }
-\newcommand{\Cot}{ \text{cot} }
-\newcommand{\Stau}{\tilde{\tau}}
-\newcommand{\Chargino}{\tilde{\chi}}
-\newcommand{\Grav}{\tilde{G}}
+\providecommand{\eV}{\text{eV}}
+\providecommand{\MeV}{\text{MeV}}
+\providecommand{\GeV}{\text{GeV}}
+\providecommand{\TeV}{\text{TeV}}
+\providecommand{\Bra}[1]{\left\langle {#1} \right\vert}
+\providecommand{\Ket}[1]{\left\vert {#1} \right\rangle}
+\providecommand{\Bracket}[3]{\left\langle {#1} | {#2} | {#3} \right\rangle}
+\providecommand{\Inner}[2]{\left\langle {#1} | {#2} \right\rangle}
+\providecommand{\Expect}[1]{\left\langle {#1} \right\rangle}
+\providecommand{\E}[1]{ \times 10^#1}
+\providecommand{\Par}[1]{ \frac{\partial } {\partial {#1}} }
+\providecommand{\Unit}[1]{\text{#1}}
+\providecommand{\Partial}[2]{ \frac{\partial {#1} } {\partial {#2}} }
+\providecommand{\Sin}{ \text{sin} }
+\providecommand{\Cos}{ \text{cos} }
+\providecommand{\Tan}{ \text{tan} }
+\providecommand{\Cot}{ \text{cot} }
+\providecommand{\Stau}{\tilde{\tau}}
+\providecommand{\Chargino}{\tilde{\chi}}
+\providecommand{\Grav}{\tilde{G}}
 
 
 \counterwithin{figure}{chapter}  % Figures numbered by chapter
 \counterwithin{table}{chapter}   % Tables numbered by chapter
 \counterwithin{equation}{chapter} % Optional: equations too
 
-\newcommand*{\Azero}{\ensuremath{A^0}\xspace}
-\newcommand*{\hzero}{\ensuremath{h^0}\xspace}
-\newcommand*{\Hzero}{\ensuremath{H^0}\xspace}
-\newcommand*{\Hboson}{\ensuremath{H}\xspace}
-\newcommand*{\Hplus}{\ensuremath{H^+}\xspace}
-\newcommand*{\Hminus}{\ensuremath{H^-}\xspace}
-\newcommand*{\Hpm}{\ensuremath{H^{\pm}}\xspace}
-\newcommand*{\Hmp}{\ensuremath{H^{\mp}}\xspace}
-\newcommand*{\susy}[1]{\ensuremath{\tilde{#1}}\xspace}
-\newcommand*{\ggino}{\ensuremath{\mathchoice%
+\providecommand*{\Azero}{\ensuremath{A^0}\xspace}
+\providecommand*{\hzero}{\ensuremath{h^0}\xspace}
+\providecommand*{\Hzero}{\ensuremath{H^0}\xspace}
+\providecommand*{\Hboson}{\ensuremath{H}\xspace}
+\providecommand*{\Hplus}{\ensuremath{H^+}\xspace}
+\providecommand*{\Hminus}{\ensuremath{H^-}\xspace}
+\providecommand*{\Hpm}{\ensuremath{H^{\pm}}\xspace}
+\providecommand*{\Hmp}{\ensuremath{H^{\mp}}\xspace}
+\providecommand*{\susy}[1]{\ensuremath{\tilde{#1}}\xspace}
+\providecommand*{\ggino}{\ensuremath{\mathchoice%
       {\displaystyle\raise.4ex\hbox{\(\displaystyle\tilde\chi\)}}%
          {\textstyle\raise.4ex\hbox{\(\textstyle\tilde\chi\)}}%
        {\scriptstyle\raise.3ex\hbox{\(\scriptstyle\tilde\chi\)}}%
  {\scriptscriptstyle\raise.3ex\hbox{\(\scriptscriptstyle\tilde\chi\)}}}\xspace}
 
-\newcommand*{\chinop}{\ensuremath{\mathchoice%
+\providecommand*{\chinop}{\ensuremath{\mathchoice%
       {\displaystyle\raise.4ex\hbox{\(\displaystyle\tilde\chi^+\)}}%
          {\textstyle\raise.4ex\hbox{\(\textstyle\tilde\chi^+\)}}%
        {\scriptstyle\raise.3ex\hbox{\(\scriptstyle\tilde\chi^+\)}}%
  {\scriptscriptstyle\raise.3ex\hbox{\(\scriptscriptstyle\tilde\chi^+\)}}}\xspace}
-\newcommand*{\chinom}{\ensuremath{\mathchoice%
+\providecommand*{\chinom}{\ensuremath{\mathchoice%
       {\displaystyle\raise.4ex\hbox{\(\displaystyle\tilde\chi^-\)}}%
          {\textstyle\raise.4ex\hbox{\(\textstyle\tilde\chi^-\)}}%
        {\scriptstyle\raise.3ex\hbox{\(\scriptstyle\tilde\chi^-\)}}%
  {\scriptscriptstyle\raise.3ex\hbox{\(\scriptscriptstyle\tilde\chi^-\)}}}\xspace}
-\newcommand*{\chinopm}{\ensuremath{\mathchoice%
+\providecommand*{\chinopm}{\ensuremath{\mathchoice%
       {\displaystyle\raise.4ex\hbox{\(\displaystyle\tilde\chi^\pm\)}}%
          {\textstyle\raise.4ex\hbox{\(\textstyle\tilde\chi^\pm\)}}%
        {\scriptstyle\raise.3ex\hbox{\(\scriptstyle\tilde\chi^\pm\)}}%
  {\scriptscriptstyle\raise.3ex\hbox{\(\scriptscriptstyle\tilde\chi^\pm\)}}}\xspace}
-\newcommand*{\chinomp}{\ensuremath{\mathchoice%
+\providecommand*{\chinomp}{\ensuremath{\mathchoice%
       {\displaystyle\raise.4ex\hbox{\(\displaystyle\tilde\chi^\mp\)}}%
          {\textstyle\raise.4ex\hbox{\(\textstyle\tilde\chi^\mp\)}}%
        {\scriptstyle\raise.3ex\hbox{\(\scriptstyle\tilde\chi^\mp\)}}%
  {\scriptscriptstyle\raise.3ex\hbox{\(\scriptscriptstyle\tilde\chi^\mp\)}}}\xspace}
 
-\newcommand*{\chinoonep}{\ensuremath{\mathchoice%
+\providecommand*{\chinoonep}{\ensuremath{\mathchoice%
       {\displaystyle\raise.4ex\hbox{\(\displaystyle\tilde\chi^+_1\)}}%
          {\textstyle\raise.4ex\hbox{\(\textstyle\tilde\chi^+_1\)}}%
        {\scriptstyle\raise.3ex\hbox{\(\scriptstyle\tilde\chi^+_1\)}}%
  {\scriptscriptstyle\raise.3ex\hbox{\(\scriptscriptstyle\tilde\chi^+_1\)}}}\xspace}
-\newcommand*{\chinoonem}{\ensuremath{\mathchoice%
+\providecommand*{\chinoonem}{\ensuremath{\mathchoice%
       {\displaystyle\raise.4ex\hbox{\(\displaystyle\tilde\chi^-_1\)}}%
          {\textstyle\raise.4ex\hbox{\(\textstyle\tilde\chi^-_1\)}}%
        {\scriptstyle\raise.3ex\hbox{\(\scriptstyle\tilde\chi^-_1\)}}%
  {\scriptscriptstyle\raise.3ex\hbox{\(\scriptscriptstyle\tilde\chi^-_1\)}}}\xspace}
-\newcommand*{\chinoonepm}{\ensuremath{\mathchoice%
+\providecommand*{\chinoonepm}{\ensuremath{\mathchoice%
       {\displaystyle\raise.4ex\hbox{\(\displaystyle\tilde\chi^\pm_1\)}}%
          {\textstyle\raise.4ex\hbox{\(\textstyle\tilde\chi^\pm_1\)}}%
        {\scriptstyle\raise.3ex\hbox{\(\scriptstyle\tilde\chi^\pm_1\)}}%
  {\scriptscriptstyle\raise.3ex\hbox{\(\scriptscriptstyle\tilde\chi^\pm_1\)}}}\xspace}
 
-\newcommand*{\chinotwop}{\ensuremath{\mathchoice%
+\providecommand*{\chinotwop}{\ensuremath{\mathchoice%
       {\displaystyle\raise.4ex\hbox{\(\displaystyle\tilde\chi^+_2\)}}%
          {\textstyle\raise.4ex\hbox{\(\textstyle\tilde\chi^+_2\)}}%
        {\scriptstyle\raise.3ex\hbox{\(\scriptstyle\tilde\chi^+_2\)}}%
  {\scriptscriptstyle\raise.3ex\hbox{\(\scriptscriptstyle\tilde\chi^+_2\)}}}\xspace}
-\newcommand*{\chinotwom}{\ensuremath{\mathchoice%
+\providecommand*{\chinotwom}{\ensuremath{\mathchoice%
       {\displaystyle\raise.4ex\hbox{\(\displaystyle\tilde\chi^-_2\)}}%
          {\textstyle\raise.4ex\hbox{\(\textstyle\tilde\chi^-_2\)}}%
        {\scriptstyle\raise.3ex\hbox{\(\scriptstyle\tilde\chi^-_2\)}}%
  {\scriptscriptstyle\raise.3ex\hbox{\(\scriptscriptstyle\tilde\chi^-_2\)}}}\xspace}
-\newcommand*{\chinotwopm}{\ensuremath{\mathchoice%
+\providecommand*{\chinotwopm}{\ensuremath{\mathchoice%
       {\displaystyle\raise.4ex\hbox{\(\displaystyle\tilde\chi^\pm_2\)}}%
          {\textstyle\raise.4ex\hbox{\(\textstyle\tilde\chi^\pm_2\)}}%
        {\scriptstyle\raise.3ex\hbox{\(\scriptstyle\tilde\chi^\pm_2\)}}%
  {\scriptscriptstyle\raise.3ex\hbox{\(\scriptscriptstyle\tilde\chi^\pm_2\)}}}\xspace}
 
-\newcommand*{\nino}{\ensuremath{\mathchoice%
+\providecommand*{\nino}{\ensuremath{\mathchoice%
       {\displaystyle\raise.4ex\hbox{\(\displaystyle\tilde\chi^0\)}}%
          {\textstyle\raise.4ex\hbox{\(\textstyle\tilde\chi^0\)}}%
        {\scriptstyle\raise.3ex\hbox{\(\scriptstyle\tilde\chi^0\)}}%
  {\scriptscriptstyle\raise.3ex\hbox{\(\scriptscriptstyle\tilde\chi^0\)}}}\xspace}
 
-\newcommand*{\ninoone}{\ensuremath{\mathchoice%
+\providecommand*{\ninoone}{\ensuremath{\mathchoice%
       {\displaystyle\raise.4ex\hbox{\(\displaystyle\tilde\chi^0_1\)}}%
          {\textstyle\raise.4ex\hbox{\(\textstyle\tilde\chi^0_1\)}}%
        {\scriptstyle\raise.3ex\hbox{\(\scriptstyle\tilde\chi^0_1\)}}%
  {\scriptscriptstyle\raise.3ex\hbox{\(\scriptscriptstyle\tilde\chi^0_1\)}}}\xspace}
-\newcommand*{\ninotwo}{\ensuremath{\mathchoice%
+\providecommand*{\ninotwo}{\ensuremath{\mathchoice%
       {\displaystyle\raise.4ex\hbox{\(\displaystyle\tilde\chi^0_2\)}}%
          {\textstyle\raise.4ex\hbox{\(\textstyle\tilde\chi^0_2\)}}%
        {\scriptstyle\raise.3ex\hbox{\(\scriptstyle\tilde\chi^0_2\)}}%
  {\scriptscriptstyle\raise.3ex\hbox{\(\scriptscriptstyle\tilde\chi^0_2\)}}}\xspace}
-\newcommand*{\ninothree}{\ensuremath{\mathchoice%
+\providecommand*{\ninothree}{\ensuremath{\mathchoice%
       {\displaystyle\raise.4ex\hbox{\(\displaystyle\tilde\chi^0_3\)}}%
          {\textstyle\raise.4ex\hbox{\(\textstyle\tilde\chi^0_3\)}}%
        {\scriptstyle\raise.3ex\hbox{\(\scriptstyle\tilde\chi^0_3\)}}%
  {\scriptscriptstyle\raise.3ex\hbox{\(\scriptscriptstyle\tilde\chi^0_3\)}}}\xspace}
-\newcommand*{\ninofour}{\ensuremath{\mathchoice%
+\providecommand*{\ninofour}{\ensuremath{\mathchoice%
       {\displaystyle\raise.4ex\hbox{\(\displaystyle\tilde\chi^0_4\)}}%
          {\textstyle\raise.4ex\hbox{\(\textstyle\tilde\chi^0_4\)}}%
        {\scriptstyle\raise.3ex\hbox{\(\scriptstyle\tilde\chi^0_4\)}}%
  {\scriptscriptstyle\raise.3ex\hbox{\(\scriptscriptstyle\tilde\chi^0_4\)}}}\xspace}
-\newcommand*{\gravino}{\ensuremath{\tilde{G}}\xspace}
-\newcommand*{\Zprime}{\ensuremath{Z^\prime}\xspace}
-\newcommand*{\Zstar}{\ensuremath{Z^{*}}\xspace}
-\newcommand*{\squark}{\ensuremath{\tilde{q}}\xspace}
-\newcommand*{\squarkL}{\ensuremath{\tilde{q}_{\mathrm{L}}}\xspace}
-\newcommand*{\squarkR}{\ensuremath{\tilde{q}_{\mathrm{R}}}\xspace}
-\newcommand*{\gluino}{\ensuremath{\tilde{g}}\xspace}
-\renewcommand*{\stop}{\ensuremath{\tilde{t}}\xspace}
-\newcommand*{\stopone}{\ensuremath{\tilde{t}_1}\xspace}
-\newcommand*{\stoptwo}{\ensuremath{\tilde{t}_2}\xspace}
-\newcommand*{\stopL}{\ensuremath{\tilde{t}_{\mathrm{L}}}\xspace}
-\newcommand*{\stopR}{\ensuremath{\tilde{t}_{\mathrm{R}}}\xspace}
-\newcommand*{\sbottom}{\ensuremath{\tilde{b}}\xspace}
-\newcommand*{\sbottomone}{\ensuremath{\tilde{b}_1}\xspace}
-\newcommand*{\sbottomtwo}{\ensuremath{\tilde{b}_2}\xspace}
-\newcommand*{\sbottomL}{\ensuremath{\tilde{b}_{\mathrm{L}}}\xspace}
-\newcommand*{\sbottomR}{\ensuremath{\tilde{b}_{\mathrm{R}}}\xspace}
-\newcommand*{\slepton}{\ensuremath{\tilde{\ell}}\xspace}
-\newcommand*{\sleptonL}{\ensuremath{\tilde{\ell}_{\mathrm{L}}}\xspace}
-\newcommand*{\sleptonR}{\ensuremath{\tilde{\ell}_{\mathrm{R}}}\xspace}
-\newcommand*{\sel}{\ensuremath{\tilde{e}}\xspace}
-\newcommand*{\selL}{\ensuremath{\tilde{e}_{\mathrm{L}}}\xspace}
-\newcommand*{\selR}{\ensuremath{\tilde{e}_{\mathrm{R}}}\xspace}
-\newcommand*{\smu}{\ensuremath{\tilde{\mu}}\xspace}
-\newcommand*{\smuL}{\ensuremath{\tilde{\mu}_{\mathrm{L}}}\xspace}
-\newcommand*{\smuR}{\ensuremath{\tilde{\mu}_{\mathrm{R}}}\xspace}
-\newcommand*{\stau}{\ensuremath{\tilde{\tau}}\xspace}
-\newcommand*{\stauL}{\ensuremath{\tilde{\tau}_{\mathrm{L}}}\xspace}
-\newcommand*{\stauR}{\ensuremath{\tilde{\tau}_{\mathrm{R}}}\xspace}
-\newcommand*{\stauone}{\ensuremath{\tilde{\tau}_1}\xspace}
-\newcommand*{\stautwo}{\ensuremath{\tilde{\tau}_2}\xspace}
-\newcommand*{\snu}{\ensuremath{\tilde{\nu}}\xspace}
+\providecommand*{\gravino}{\ensuremath{\tilde{G}}\xspace}
+\providecommand*{\Zprime}{\ensuremath{Z^\prime}\xspace}
+\providecommand*{\Zstar}{\ensuremath{Z^{*}}\xspace}
+\providecommand*{\squark}{\ensuremath{\tilde{q}}\xspace}
+\providecommand*{\squarkL}{\ensuremath{\tilde{q}_{\mathrm{L}}}\xspace}
+\providecommand*{\squarkR}{\ensuremath{\tilde{q}_{\mathrm{R}}}\xspace}
+\providecommand*{\gluino}{\ensuremath{\tilde{g}}\xspace}
+\providecommand*{\stop}{\ensuremath{\tilde{t}}\xspace}
+\providecommand*{\stopone}{\ensuremath{\tilde{t}_1}\xspace}
+\providecommand*{\stoptwo}{\ensuremath{\tilde{t}_2}\xspace}
+\providecommand*{\stopL}{\ensuremath{\tilde{t}_{\mathrm{L}}}\xspace}
+\providecommand*{\stopR}{\ensuremath{\tilde{t}_{\mathrm{R}}}\xspace}
+\providecommand*{\sbottom}{\ensuremath{\tilde{b}}\xspace}
+\providecommand*{\sbottomone}{\ensuremath{\tilde{b}_1}\xspace}
+\providecommand*{\sbottomtwo}{\ensuremath{\tilde{b}_2}\xspace}
+\providecommand*{\sbottomL}{\ensuremath{\tilde{b}_{\mathrm{L}}}\xspace}
+\providecommand*{\sbottomR}{\ensuremath{\tilde{b}_{\mathrm{R}}}\xspace}
+\providecommand*{\slepton}{\ensuremath{\tilde{\ell}}\xspace}
+\providecommand*{\sleptonL}{\ensuremath{\tilde{\ell}_{\mathrm{L}}}\xspace}
+\providecommand*{\sleptonR}{\ensuremath{\tilde{\ell}_{\mathrm{R}}}\xspace}
+\providecommand*{\sel}{\ensuremath{\tilde{e}}\xspace}
+\providecommand*{\selL}{\ensuremath{\tilde{e}_{\mathrm{L}}}\xspace}
+\providecommand*{\selR}{\ensuremath{\tilde{e}_{\mathrm{R}}}\xspace}
+\providecommand*{\smu}{\ensuremath{\tilde{\mu}}\xspace}
+\providecommand*{\smuL}{\ensuremath{\tilde{\mu}_{\mathrm{L}}}\xspace}
+\providecommand*{\smuR}{\ensuremath{\tilde{\mu}_{\mathrm{R}}}\xspace}
+\providecommand*{\stau}{\ensuremath{\tilde{\tau}}\xspace}
+\providecommand*{\stauL}{\ensuremath{\tilde{\tau}_{\mathrm{L}}}\xspace}
+\providecommand*{\stauR}{\ensuremath{\tilde{\tau}_{\mathrm{R}}}\xspace}
+\providecommand*{\stauone}{\ensuremath{\tilde{\tau}_1}\xspace}
+\providecommand*{\stautwo}{\ensuremath{\tilde{\tau}_2}\xspace}
+\providecommand*{\snu}{\ensuremath{\tilde{\nu}}\xspace}
 
-\NewDocumentCommand {\AtlasMC} { o m } {%
-  \IfNoValueTF {#1} {%
-    \textsc{#2}\xspace%
-  }{%
-    \textsc{#2}\,#1\xspace%
-  }%
-}
-\NewDocumentCommand {\ACERMC} { o } {\AtlasMC[#1]{AcerMC}}
-\NewDocumentCommand {\ALPGEN} { o } {\AtlasMC[#1]{Alpgen}}
-\NewDocumentCommand {\AMCatNLO} { o } {\AtlasMC[#1]{aMC@NLO}}
-\NewDocumentCommand {\BLACKHAT} { o } {\AtlasMC[#1]{BlackHat}}
-\NewDocumentCommand {\CALCHEP} { o } {\AtlasMC[#1]{CalcHEP}}
-\NewDocumentCommand {\COLLIER} { o } {\AtlasMC[#1]{Collier}}
-\NewDocumentCommand {\COMPHEP} { o } {\AtlasMC[#1]{CompHEP}}
-\NewDocumentCommand {\EVTGEN} { o } {\AtlasMC[#1]{EvtGen}}
-\NewDocumentCommand {\FEYNRULES} { o } {\AtlasMC[#1]{FeynRules}}
-\NewDocumentCommand {\GGTOVV} { o } {\AtlasMC[#1]{gg2VV}}
-\NewDocumentCommand {\GOSAM} { o } {\AtlasMC[#1]{GoSam}}
-\NewDocumentCommand {\HATHOR} { o } {\AtlasMC[#1]{Hathor}}
-\NewDocumentCommand {\HEJ} { o } {\AtlasMC[#1]{HEJ}}
-\NewDocumentCommand {\Herwig} { o } {\AtlasMC[#1]{Herwig}}
-\NewDocumentCommand {\HERWIG} { o } {\AtlasMC[#1]{Herwig}}
-\NewDocumentCommand {\HERWIGpp} { o } {\AtlasMC[#1]{Herwig++}}
-\NewDocumentCommand {\HRES} { o } {\AtlasMC[#1]{Hres}}
-\NewDocumentCommand {\JIMMY} { o } {\AtlasMC[#1]{Jimmy}}
-\NewDocumentCommand {\MADSPIN} { o } {\AtlasMC[#1]{MadSpin}}
-\NewDocumentCommand {\MADGRAPH} { o } {\AtlasMC[#1]{MadGraph}}
-\NewDocumentCommand {\MGNLO} { o } {\AtlasMC[#1]{MadGraph5\_aMC@NLO}} %short-hand
-\NewDocumentCommand {\MCatNLO} { o } {\AtlasMC[#1]{MC@NLO}}
-\NewDocumentCommand {\MCFM} { o } {\AtlasMC[#1]{MCFM}}
-\NewDocumentCommand {\METOP} { o } {\AtlasMC[#1]{METOP}}
-\NewDocumentCommand {\OPENLOOPS} { o } {\AtlasMC[#1]{OpenLoops}}
-\NewDocumentCommand {\POWHEG} { o } {\AtlasMC[#1]{Powheg}}
-\NewDocumentCommand {\POWHEGBOX} { o } {\AtlasMC[#1]{Powheg\,Box}}
-\NewDocumentCommand {\POWHEGBOXRES} { o } {\AtlasMC[#1]{Powheg\,Box\,Res}}
-\NewDocumentCommand {\PHOTOS} { o } {\AtlasMC[#1]{Photos}}
-\NewDocumentCommand {\PHOTOSpp} { o } {\AtlasMC[#1]{Photos++}}
-\NewDocumentCommand {\PROPHECY} { o } {\AtlasMC[#1]{Prophecy4f}}
-\NewDocumentCommand {\PROTOS} { o } {\AtlasMC[#1]{Protos}}
-\NewDocumentCommand {\Pythia} { o } {\AtlasMC[#1]{Pythia}}
-\NewDocumentCommand {\PYTHIA} { o } {\AtlasMC[#1]{Pythia}}
-\NewDocumentCommand {\RECOLA} { o } {\AtlasMC[#1]{Recola}}
-\NewDocumentCommand {\Sherpa} { o } {\AtlasMC[#1]{Sherpa}}
-\NewDocumentCommand {\SHERPA} { o } {\AtlasMC[#1]{Sherpa}}
-\NewDocumentCommand {\TOPpp} { o } {\AtlasMC[#1]{Top++}}
-\NewDocumentCommand {\VBFNLO} { o } {\AtlasMC[#1]{VBFNLO}}
+% \NewDocumentCommand {\AtlasMC} { o m } {%
+%   \IfNoValueTF {#1} {%
+%     \textsc{#2}\xspace%
+%   }{%
+%     \textsc{#2}\,#1\xspace%
+%   }%
+% }
+% \NewDocumentCommand {\ACERMC} { o } {\AtlasMC[#1]{AcerMC}}
+% \NewDocumentCommand {\ALPGEN} { o } {\AtlasMC[#1]{Alpgen}}
+% \NewDocumentCommand {\AMCatNLO} { o } {\AtlasMC[#1]{aMC@NLO}}
+% \NewDocumentCommand {\BLACKHAT} { o } {\AtlasMC[#1]{BlackHat}}
+% \NewDocumentCommand {\CALCHEP} { o } {\AtlasMC[#1]{CalcHEP}}
+% \NewDocumentCommand {\COLLIER} { o } {\AtlasMC[#1]{Collier}}
+% \NewDocumentCommand {\COMPHEP} { o } {\AtlasMC[#1]{CompHEP}}
+% \NewDocumentCommand {\EVTGEN} { o } {\AtlasMC[#1]{EvtGen}}
+% \NewDocumentCommand {\FEYNRULES} { o } {\AtlasMC[#1]{FeynRules}}
+% \NewDocumentCommand {\GGTOVV} { o } {\AtlasMC[#1]{gg2VV}}
+% \NewDocumentCommand {\GOSAM} { o } {\AtlasMC[#1]{GoSam}}
+% \NewDocumentCommand {\HATHOR} { o } {\AtlasMC[#1]{Hathor}}
+% \NewDocumentCommand {\HEJ} { o } {\AtlasMC[#1]{HEJ}}
+% \NewDocumentCommand {\Herwig} { o } {\AtlasMC[#1]{Herwig}}
+% \NewDocumentCommand {\HERWIG} { o } {\AtlasMC[#1]{Herwig}}
+% \NewDocumentCommand {\HERWIGpp} { o } {\AtlasMC[#1]{Herwig++}}
+% \NewDocumentCommand {\HRES} { o } {\AtlasMC[#1]{Hres}}
+% \NewDocumentCommand {\JIMMY} { o } {\AtlasMC[#1]{Jimmy}}
+% \NewDocumentCommand {\MADSPIN} { o } {\AtlasMC[#1]{MadSpin}}
+% \NewDocumentCommand {\MADGRAPH} { o } {\AtlasMC[#1]{MadGraph}}
+% \NewDocumentCommand {\MGNLO} { o } {\AtlasMC[#1]{MadGraph5\_aMC@NLO}} %short-hand
+% \NewDocumentCommand {\MCatNLO} { o } {\AtlasMC[#1]{MC@NLO}}
+% \NewDocumentCommand {\MCFM} { o } {\AtlasMC[#1]{MCFM}}
+% \NewDocumentCommand {\METOP} { o } {\AtlasMC[#1]{METOP}}
+% \NewDocumentCommand {\OPENLOOPS} { o } {\AtlasMC[#1]{OpenLoops}}
+% \NewDocumentCommand {\POWHEG} { o } {\AtlasMC[#1]{Powheg}}
+% \NewDocumentCommand {\POWHEGBOX} { o } {\AtlasMC[#1]{Powheg\,Box}}
+% \NewDocumentCommand {\POWHEGBOXRES} { o } {\AtlasMC[#1]{Powheg\,Box\,Res}}
+% \NewDocumentCommand {\PHOTOS} { o } {\AtlasMC[#1]{Photos}}
+% \NewDocumentCommand {\PHOTOSpp} { o } {\AtlasMC[#1]{Photos++}}
+% \NewDocumentCommand {\PROPHECY} { o } {\AtlasMC[#1]{Prophecy4f}}
+% \NewDocumentCommand {\PROTOS} { o } {\AtlasMC[#1]{Protos}}
+% \NewDocumentCommand {\Pythia} { o } {\AtlasMC[#1]{Pythia}}
+% \NewDocumentCommand {\PYTHIA} { o } {\AtlasMC[#1]{Pythia}}
+% \NewDocumentCommand {\RECOLA} { o } {\AtlasMC[#1]{Recola}}
+% \NewDocumentCommand {\Sherpa} { o } {\AtlasMC[#1]{Sherpa}}
+% \NewDocumentCommand {\SHERPA} { o } {\AtlasMC[#1]{Sherpa}}
+% \NewDocumentCommand {\TOPpp} { o } {\AtlasMC[#1]{Top++}}
+% \NewDocumentCommand {\VBFNLO} { o } {\AtlasMC[#1]{VBFNLO}}
 
 
 \newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}

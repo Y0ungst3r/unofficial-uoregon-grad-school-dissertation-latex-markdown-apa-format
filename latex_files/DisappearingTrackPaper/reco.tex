@@ -19,21 +19,21 @@ To identify low-energy charged pions, indicative of the electroweakino signal sc
 The background is taken from data, selecting tracklets that have large impact parameter values with respect to the primary vertex. From MC studies this is expected to be dominated by accidental crossings, referred to as the \enquote{fake track} background. The algorithm uses eight input variables related to the properties of the soft tracks, including the kinematic properties \pt and $\eta$, the number of hits/holes associated with the track in the SCT, the number of hits associated with the track in the TRT, the distance in $\Delta R$ between the soft track and the tracklet, the distance in $z$ between the soft track and the tracklet, and the $\chi^2$ value of the soft track when fitted to the tracklet's endpoint. The TMVA architecture~\cite{TMVA} is used with gradient boost, and a hyperparameter optimisation is performed to prevent overtraining. Figure~\ref{fig:reco:pionBDT} displays the BDT output score. A low-energy charged pion is identified if the score for a soft track is ${>}0.8$ and, to reduce the misidentification rate, a transverse impact parameter requirement of $|d_0|/\sigma(d_0) < 40$ is satisfied. The latter rejects an additional 4\% of the tracklet background with minimal impact on the signal, according to MC simulation. Figure~\ref{fig:reco:pionEff} shows that the pion reconstruction efficiency, measured as a function of the true pion \pt in the lab-frame, is as high as 70\% for \pt near 2\,\GeV.
 
 \begin{figure}[tb!]
-\begin{center}
-  \subfigure[]{
-  \includegraphics[width=0.44\textwidth]{figures/reco/Public/decayr_250_0p04.pdf}
+\centering
+  \begin{subfigure}{0.44\textwidth}
+  \includegraphics[width=\textwidth]{../figures/reco/Public/decayr_250_0p04.pdf}
+  \caption{}
     \label{fig:reco:TrackEff}
-    }
-  \subfigure[] {
-  \includegraphics[width=0.44\textwidth]{figures/reco/Public/bdt_score_3layer_scteffective.pdf}
+  \end{subfigure}
+  \begin{subfigure}{0.44\textwidth}
+  \includegraphics[width=\textwidth]{../figures/reco/Public/bdt_score_3layer_scteffective.pdf}
       \label{fig:reco:pionBDT}
-    }
-  \subfigure[] {
-  \includegraphics[width=0.44\textwidth]{figures/reco/Public/sp_eff_250_0p04.pdf}
+  \end{subfigure}
+  \begin{subfigure}{0.44\textwidth}
+  \includegraphics[width=\textwidth]{../figures/reco/Public/sp_eff_250_0p04.pdf}
       \label{fig:reco:pionEff}
-    }
-  \end{center}
-\vspace{-0.75cm}
+  \end{subfigure}
+
 \caption{Representative distributions related to the reconstruction of tracklets and charged pions: \protect\subref{fig:reco:TrackEff} event yields and reconstruction efficiencies for  three- and four-layer tracklet reconstruction as a function of \chinoonepm decay radius; \protect\subref{fig:reco:pionBDT} BDT output score used to judge if an event contains a low-energy pion, showing the training dataset (solid histogram) and the test dataset (points); \protect\subref{fig:reco:pionEff} event yields and reconstruction efficiency for charged pions as a function of the true pion transverse momentum as measured in the lab-frame, where the acceptance includes all charged-pion reconstruction effects but not geometric acceptance from tracklet reconstruction (which is assumed to already have been reconstructed). The true transverse momentum is defined as $\pt = \sqrt{p_x^2 + p_y^2}$ in the global detector coordinate system with the $z$-axis along the beam pipe. For \protect\subref{fig:reco:TrackEff} and \protect\subref{fig:reco:pionEff} the filled histogram displays the total yield without applying a selection, while the dashed lines present the yield after applying the tracklet selection or tracklet+pion selection. The points denote the reconstruction efficiency. A representative higgsino signal scenario with $m(\chinoonepm) = 250$\,GeV and $\tau(\chinoonepm)= 0.04$\,ns is shown. 
  }
 \end{figure}

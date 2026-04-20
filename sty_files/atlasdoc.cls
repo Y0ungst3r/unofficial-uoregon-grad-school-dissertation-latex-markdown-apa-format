@@ -11,7 +11,7 @@
 %-------------------------------------------------------------------------------
 \newcommand*{\ATPackageVersion}{15.19.0}
 \newcommand*{\ATPackageUseVersion}{15}
-\ProvidesClass{latex/atlasdoc}[2026/01/28 v15.19.0 ATLAS document class]
+\ProvidesClass{atlasdoc}[2026/01/28 v15.19.0 ATLAS document class]
 % Needs 2013 TeX Live or later
 \NeedsTeXFormat{LaTeX2e}[2013/01/01]
 
@@ -429,7 +429,7 @@
 
 % Required packages
 \RequirePackage{graphicx}
-\RequirePackage[svgnames]{xcolor}
+% \RequirePackage[svgnames]{xcolor}
 \RequirePackage{babel}
 
 % Extra and very useful maths macros from AMS are always needed
@@ -610,7 +610,7 @@
   \RequirePackage{lineno}
 }
 % If you have an old lineno or do not have it, you can get it from the latex/other directory
-% \RequirePackage{latex/other/lineno}
+% \RequirePackage{other/lineno}
 % \nolinenumbers
 
 % Show frame for checking dimensions etc.

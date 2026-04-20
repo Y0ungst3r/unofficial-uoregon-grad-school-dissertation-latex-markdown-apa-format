@@ -13,21 +13,25 @@ using the yields in TRs modified by TFs and scale factors (SFs), which are descr
 From studies using $V$+\:\!jets MC events, it is found that extrapolating from the high-$|z_0\sin\theta|$ TR to regions with low $|z_0\sin\theta|$ introduces a $|d_0|/\sigma(d_0)$ dependence. This is corrected for by using $|d_0|/\sigma(d_0)$-binned correction factors, $\mathrm{TF}^{\mathrm{fake}}_{d_0\textrm{-correction}}$, defined as the ratio of the $|d_0|/\sigma(d_0)$ distribution shape for tracklets with $|z_0\sin\theta| < 0.2\,$mm to that for those with $|z_0\sin\theta| > 2.5\,$mm and are taken directly from data. Figure~\ref{fig:bkg:fake_SF_d0} shows the difference in $|d_0|/\sigma(d_0)$ between the TR and a low-$|z_0\sin\theta|$ region, with the $\mathrm{TF}^{\mathrm{fake}}_{d_0\textrm{-correction}}$ shown in the lower panel.
 
 \begin{figure}[tb!]
-\begin{center}
-  \subfigure[] {
-  \includegraphics[width=0.44\textwidth]{figures/background/Public/template_original_4layer.pdf}
+\centering
+  \begin{subfigure}{0.44\textwidth}
+  \includegraphics[width=\textwidth]{../figures/background/Public/template_original_4layer.pdf}
+    \caption{}
       \label{fig:bkg:34_layer_Template}
-    }
-  \subfigure[]{
-  \includegraphics[width=0.44\textwidth]{figures/background/Public/h_weight_d0sig_3layer_z0cr_to_4layer_lowmet.pdf}
+  \end{subfigure}
+  \begin{subfigure}{0.44\textwidth}
+  \includegraphics[width=\textwidth]{../figures/background/Public/h_weight_d0sig_3layer_z0cr_to_4layer_lowmet.pdf}
+    \caption{}
     \label{fig:bkg:fake_SF_d0}
-    }
-  \subfigure[] {
-  \includegraphics[width=0.44\textwidth]{figures/background/Public/tracklet_vcpt_4layer_label.pdf}
+      \end{subfigure}
+
+    \begin{subfigure}{0.44\textwidth}
+  \includegraphics[width=\textwidth]{../figures/background/Public/tracklet_vcpt_4layer_label.pdf}
+    \caption{}
       \label{fig:bkg:34_Hybrid}
-    }
-  \end{center}
-\vspace{-0.75cm}
+    \end{subfigure}
+
+  
 \caption{Individual components used in the estimation of the fake background: \protect\subref{fig:bkg:34_layer_Template} shows the original template, $N^{\mathrm{TRfake}}(\pt)$, as a solid line. The templates after the application of the transfer factors are shown as dashed lines; \protect\subref{fig:bkg:fake_SF_d0} shows the $|d_{0}|/\sigma(d_{0})$ dependence introduced when extrapolating over $|z_0\sin\theta|$ and the binwise, with respect to $|d_{0}|/\sigma(d_{0})$, transfer factors $\mathrm{TF}^{\mathrm{fake}}_{d_0\textrm{-correction}}(d_0)$ used to remove the dependence; and \protect\subref{fig:bkg:34_Hybrid} shows a comparison between the pure fake and hybrid fake contributions and the \pt-dependent transfer factors $\mathrm{TF}^{\mathrm{fake}}_{\mathrm{hybrid}}(\pt)$ used to extrapolate from the template region that contains pure fakes to the SR, which contains a mixture of hybrid and pure fake components. }
 \end{figure}
 
@@ -44,26 +48,29 @@ f_{\mathrm{SR}}^{e}(\pt,\eta) = N^{\mathrm{TR}e}(\pt,\eta) \times \mathrm{TF}^e_
 \end{equation*}
 
 \begin{figure}[b!]
-\begin{center}
-  \subfigure[] {
-  \includegraphics[width=0.45\textwidth]{figures/background/Public/factor_comparison_electron.pdf}
+\centering
+  \begin{subfigure}{0.45\textwidth}
+  \includegraphics[width=\textwidth]{../figures/background/Public/factor_comparison_electron.pdf}
+    \caption{}
       \label{fig:bkg:el_Template}
-    }
-  \subfigure[]{
-  \includegraphics[width=0.45\textwidth]{figures/background/Public/m_h_tfpix_ele_pt_incl.pdf}
+    \end{subfigure}
+  \begin{subfigure}{0.45\textwidth}
+  \includegraphics[width=\textwidth]{../figures/background/Public/m_h_tfpix_ele_pt_incl.pdf}
+    \caption{}
     \label{fig:bkg:el_TF_trk}
-    }\\
-  \subfigure[] {
-  \includegraphics[width=0.45\textwidth]{figures/background/Public/tf_caloveto_1d.pdf}
+   \end{subfigure}
+  \begin{subfigure}{0.45\textwidth}
+  \includegraphics[width=\textwidth]{../figures/background/Public/tf_caloveto_1d.pdf}
+    \caption{}
       \label{fig:bkg:el_TF_calo}
-    }
-  \subfigure[] {
-  %\includegraphics[width=0.45\textwidth]{figures/background/Public/smearing_function_with_band.pdf}
-  \includegraphics[width=0.45\textwidth]{figures/background/Public/smearing_function_with_band_ver2.pdf}
+    \end{subfigure}
+  \begin{subfigure}{0.45\textwidth}
+  %\includegraphics[width=0.45\textwidth]{../figures/background/Public/smearing_function_with_band.pdf}
+  \includegraphics[width=\textwidth]{../figures/background/Public/smearing_function_with_band_ver2.pdf}
+    \caption{}
       \label{fig:bkg:el_smear}
-    }
-  \end{center}
-\vspace{-0.75cm}
+    \end{subfigure}
+  
 \caption{Individual contributions used in the estimation of the electron background: \protect\subref{fig:bkg:el_Template} presents the original electron \pt template, $N^{\mathrm{TRe}}(\pt)$, as a solid line, with the templates also shown after the application of each transfer/smearing factor as dashed lines; \protect\subref{fig:bkg:el_TF_trk} shows the transfer factor, $\mathrm{TF}^e_{\mathrm{tracklet}}$, used to correct for the likelihood of reconstructing an electron track as a tracklet; \protect\subref{fig:bkg:el_TF_calo} shows the transfer factors, $\mathrm{TF}^{e}_{\textrm{calo-veto}}$, used to correct for the likelihood of an electron not being associated with a calorimeter energy cluster; and \protect\subref{fig:bkg:el_smear} shows the smearing functions, $f^{e}_{\mathrm{smear}}$, used to correct the measured electron track \pt to the tracklet \pt (defined on the figure). While the tracklet \pt template and the TFs are dependent upon both \pt and $\eta$, the components are shown with their dependence upon the tracklet \pt distribution as a representative distribution. }
 \end{figure}
 
@@ -156,9 +163,8 @@ Tracklet $E_\mathrm{T}^{\mathrm{clus}}$ &  $< 5\,\GeV$ &  $< 5\,\GeV$ & $< 5\,\G
 
 \begin{figure}[t!]
   \centering
-  \includegraphics[width=0.85\textwidth]{figures/background/Schematic-newText.pdf}
-  %\includegraphics[width=0.85\textwidth]{figures/background/Schematic.png}
-\vspace{-3.5cm}
+  \includegraphics[width=0.85\textwidth]{../figures/background/Schematic-newText.pdf}
+  %\includegraphics[width=0.85\textwidth]{../figures/background/Schematic.png}
 \caption{Schematic diagram for the background estimation strategy, describing the usage of template regions (TRs), and relaxed selections to calculate transfer factors (TFs) before performing the fit using control regions (CRs). The kinematic regions are orthogonal due to selections on \met, tracklet $p_{\mathrm{T}}$, and tracklet $E_\mathrm{T}^{\mathrm{clus}}$, with high calorimeter energies (\enquote{calo-side}) dominated by the hadron background, and low calorimeter energies (\enquote{calo-veto}) dominated by the fake background.}
   \label{fig:background:FitSchematic}
 \end{figure}
