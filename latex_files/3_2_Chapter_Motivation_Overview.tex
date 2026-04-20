@@ -13,7 +13,7 @@ The SM elementary particles are shown in Fig.~\ref{fig:particle_zoo}.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth]{../Pictures/Chap_2/Standard_Model_of_Elementary_Particles.png}
-    \caption{Standard model elementary particles.}
+    \caption{Standard model elementary particles \cite{WikiImageExample}.}
     \label{fig:particle_zoo}
 \end{figure}
 
@@ -127,27 +127,153 @@ The defining feature of supersymmetry is the existence of supersymmertic transfo
     Q \Ket{\text{fermion}} &= \Ket{\text{boson}}.
 \end{align}
 
-Particles in supersymmetric theories are organized into supermultiplets, in which each bosonic degree of freedom is paired with a fermionic degree of freedom. For example, each Weyl fermion is associated with two real scalar superpartners, typically arranged into a complex scalar field~\cite{MARTIN_1998}. Similarly, spin-1 gauge bosons are paired with spin-1/2 fermionic superpartners known as gauginos. These superpartners extend the Standard Model particle content, leading to a rich phenomenology and providing new particles to search for experimentally. The full set of predicted superpartners is illustrated in Fig.~\ref{fig:SUSY_zoo}.
+Particles in supersymmetric theories are organized into supermultiplets, in which each bosonic degree of freedom is paired with a fermionic degree of freedom. For example, each Weyl fermion is associated with two real scalar superpartners, typically arranged into a complex scalar field~\cite{MARTIN_1998}. Similarly, spin-1 gauge bosons are paired with spin-1/2 fermionic superpartners known as gauginos. These superpartners extend the Standard Model particle content, leading to a rich phenomenology and providing new particles to search for experimentally. 
+%The full set of predicted superpartners is illustrated in Fig.~\ref{fig:SUSY_zoo}. MAybe add back in? 
 
 
-The scalar superpartners to the fermions would add another term to the higgs correction of the form in Fig. \ref{fig:loop_corrections} b). This term picks up a negitive symbol due to spin statistics. As each fermion has a super partner the correction to the Higgs term from each fermion and superpartner would be
+
+The scalar superpartners of fermions introduce additional contributions to the Higgs mass through loop corrections, as illustrated in Fig.~\ref{fig:loop_corrections}(b). These scalar loop contributions enter with an opposite sign relative to the fermion loops due to their differing spin statistics. 
+
+For a fermion and its corresponding scalar superpartner, the combined correction to the Higgs mass parameter can be written schematically as
 \begin{equation}
-    \Delta m_H^2 \sim -\frac{|\lambda_f|^2}{8\pi^2} \Lambda_{\mathrm{UV}}^2 + \frac{|\lambda_s|^2}{16\pi^2} \Lambda_{\mathrm{UV}}^2 ....
-\end{equation} 
+\Delta m_H^2 \sim \frac{\lambda_S}{16\pi^2} \left[ \Lambda_{\mathrm{UV}}^2 - 2 m_S^2 \ln \left(\frac{\Lambda_{\mathrm{UV}}}{m_S} \right) \right]
+- \frac{|\lambda_f|^2}{8\pi^2} \Lambda_{\mathrm{UV}}^2,
+\end{equation}
+where $\lambda_f$ is the fermion Yukawa coupling, $\lambda_S$ is the scalar coupling, and $m_S$ is the scalar mass.
 
-\subsection{Coannihilation Stau}
-
-
-
-
-Searches for supersymmetry and other beyond the Standard Model particles have not yet revealed conclusive evidence of new physics. To continue the search, an important phase space to explore is long lived particles. Assuming that dark matter was in thermal equilibrium during the early moments of the universe, cosmological limits can be placed on staus, the superpartners of the tau lepton, of approximately 1 ns to satisfy requirements for relic abundance of dark matter \cite{coannihilation}. This important strip of phase space is not fully explored in current searches at ATLAS due to the cross section of sleptons being relatively small. 
+In the limit of exact supersymmetry, where $\lambda_S = |\lambda_f|^2$ and the fermion and scalar masses are degenerate, the quadratic divergences cancel exactly. This cancellation stabilizes the Higgs mass against large radiative corrections and provides a natural solution to the hierarchy problem. In realistic models where supersymmetry is broken, this cancellation is only approximate, but it can still significantly reduce the degree of fine-tuning required.
 
 
-An important theoretical motivation to search for long lived staus comes from the coannihilation model which can give the observed dark matter relic density. Limits set on SUSY by the dark matter relic density suggest that given the neutralino, $\chi$, being the lightest SUSY particle and the stau, $\Stau$, being the next to lightest SUSY particle, the lifetime of the stau would need to be of the order O(1 ns). Stau with a long lifetime is a favored fraction of the remaining phase spaces of the various SUSY models that can produce dark matter candidates. 
+\subsection{CMSSM Coannihilation Stau}
+\label{sec:CMSSM_stau}
+One compelling model that provides a dark matter candidate is the constrained minimal supersymmetric standard model~(CMSSM).
+In this model, the neutralino ($\ninoone$) can be the lightest SUSY particle and a natural dark matter candidate, while the next to lightest SUSY particle (NLSP) is the charged stau ($\stau$).
 
 
-In addition to the theoretical motivation from dark matter, the ANITA experiment \cite{ANITA} provides strong experimental motivation to search for long lived staus. High energy cosmic neutrinos that pass through ice produce electromagnetic showers by the Askaryan effect. These showers give off radio emissions characteristic of the particles that initiated the shower. ANITA observed two anomalous events. The events are radio wave showers observed directly by ANITA that were produced below the horizon. The two events that are anomalous have no Standard Model processes that could produce them. One explanation for the anomalous events is long lived staus with lifetime order 1ns to 10ns that traveled through a chord length of the Earth $l > 5700$ km and then decayed to a tau. 
+
+A naive calculation of the relic abundance of $\ninoone$ typically predicts an overproduction of dark matter compared to current cosmological observations. A mechanism that can significantly reduce this relic density is $\stau$–$\ninoone$ coannihilation~\cite{GriestKim1991Teit}. If the $\stau$ and $\ninoone$ are nearly mass-degenerate, they remain in thermal equilibrium for a longer period during freeze-out in the early Universe. During this process, coannihilation channels involving $\stau$ increase the effective annihilation cross section, thereby reducing the relic abundance of $\ninoone$. This mechanism can bring the predicted relic density into agreement with current observational constraints.
+
+
+If the mass splitting between the \stau and the neutralino exceeds the tau mass, $\Delta m ({\stau}, \nino) = m_{\stau} - m_{\nino} > m_\tau$, then the decay width is dominated by the two-body decay $\stau \to \nino \, \tau$.
+
+The decay width for this process is approximately \cite{Citron_2013}
+\begin{align*}
+    \Gamma(\stau \to \tau \nino) =& \frac{1}{16\pi m_{\stau}^3}(m_{\stau}^4 + m_{\nino}^4 + m_{\tau}^4 - 2m_{\stau}^2 m_{\nino}^2 - 2m_{\stau}^2 m_{\tau}^2 - 2m_{\tau}^2 m_{\nino}^2)^\frac{1}{2} \\ & \times \left[ \left( |c_L|^2 + |c_R|^2  \right) \left( (\Delta m) ^2 + 2(\Delta m) m_{\nino} - m_\tau ^ 2 - 2 \left(c_Lc_R^* + c_L^*c_R\right)m_{\nino} m_{\stau}\right)\right] \numberthis \label{eq:stau_width}
+\end{align*}
+Here, $c_L$ and $c_R$ are the left- and right-handed couplings, respectively. These depend on the electroweak parameters, including the hypercharge and weak coupling constants, the weak mixing angle, as well as the $\stau$ and $\nino$ mixing angles.
+
+The decay width provides insight into the phenomenology of the $\stau$. In particular, it depends on the mass splitting $\Delta m = m_{\stau} - m_{\nino}$. As $\Delta m$ decreases, the available phase space becomes increasingly suppressed, leading to a smaller decay width and consequently a longer lifetime.
+
+In the region where $\Delta m \approx m_\tau$ and the width is significantly reduced. In this regime, the $\stau$ can become long-lived, with a typical lifetime of $\mathcal{O}(1~\mathrm{ns})$, which is relevant for the phenomenology considered in this thesis. 
+
+As the mass splitting $\Delta m = m_{\stau} - m_{\nino}$ decreases further, the two-body decay channel $\stau \to \nino \, \tau$ becomes kinematically inaccessible once $\Delta m < m_\tau$. In this regime, the $\stau$ instead decays via suppressed three- and four-body processes.
+
+The dominant decay modes include
+\begin{align}
+    \stau &\to \nino \, \nu_\tau \, a_1, \\
+    \stau &\to \nino \, \nu_\tau \, \rho, \\
+    \stau &\to \nino \, \nu_\tau \, \pi, \\
+    \stau &\to \nino \, \nu_\tau \, \bar{\nu}_e \, e, \\
+    \stau &\to \nino \, \nu_\tau \, \bar{\nu}_\mu \, \mu,
+\end{align}
+where the available decay channels depend on the value of the mass splitting $\Delta m$ and the corresponding kinematically accessible phase space.
+
+
+This behaviour is phenomenologically important, as in all of these scenarios the $\stau$ can appear as a long-lived charged particle before decaying into relatively soft Standard Model final states. These decay products often carry low momentum, making them challenging to detect experimentally. In addition, the $\nino$, being weakly interacting, escapes the detector without depositing energy, resulting in missing transverse momentum in the final state.
+
+
+% This search targets the direct detection of $\stau$ pairs via the process:
+% \begin{equation}
+% 	pp \to \stau^+ \stau^- j
+% \end{equation}
+% Here $j$ represents an energetic jet from initial state radiation~(ISR ). The presence of the ISR jet is critical as it provides the necessary missing transverse energy to trigger on the otherwise soft final-state signature. The need of the ISR jet is the same as in the chargino case. Kinematically, this model is almost identical to that of the chargino, with a key difference arising from the difference in spins between the particles. The $\stau$ particles are spin-0 scalars while charginos are spin-1/2 Dirac fermions. This difference affects the production kinematics as scalar particles have a momentum term in their coupling of the gauge field to particles, thus suppressing production at low momentum. Fermions, such as charginos, do not have this momentum term in their coupling, and thus do not exhibit the same suppression.
+
+% A typical diagram of this process is illustrated in Figure~\ref{fig:Stau_diagram_CMSSM}.
+
+% Despite the fact that this analysis was originally optimized for the chargino scenarios, the $\stau$ coannihilation model presents a similarly viable signal topology. As such, it can be effectively probed using the same search strategy without requiring additional optimizations.
+
+% The detailed descriptions of the signal simulation and the cross section calculation are given in Section~\ref{sec:datasets:mc:CMSSM-stau}.
+
+
+% Searches for supersymmetry and other beyond the Standard Model particles have not yet revealed conclusive evidence of new physics. To continue the search, an important phase space to explore is long lived particles. Assuming that dark matter was in thermal equilibrium during the early moments of the universe, cosmological limits can be placed on staus, the superpartners of the tau lepton, of approximately 1 ns to satisfy requirements for relic abundance of dark matter \cite{coannihilation}. This important strip of phase space is not fully explored in current searches at ATLAS due to the cross section of sleptons being relatively small. 
+
+
+% An important theoretical motivation to search for long lived staus comes from the coannihilation model which can give the observed dark matter relic density. Limits set on SUSY by the dark matter relic density suggest that given the neutralino, $\chi$, being the lightest SUSY particle and the stau, $\Stau$, being the next to lightest SUSY particle, the lifetime of the stau would need to be of the order O(1 ns). Stau with a long lifetime is a favored fraction of the remaining phase spaces of the various SUSY models that can produce dark matter candidates. 
+
+
+% In addition to the theoretical motivation from dark matter, the ANITA experiment \cite{ANITA} provides strong experimental motivation to search for long lived staus. High energy cosmic neutrinos that pass through ice produce electromagnetic showers by the Askaryan effect. These showers give off radio emissions characteristic of the particles that initiated the shower. ANITA observed two anomalous events. The events are radio wave showers observed directly by ANITA that were produced below the horizon. The two events that are anomalous have no Standard Model processes that could produce them. One explanation for the anomalous events is long lived staus with lifetime order 1ns to 10ns that traveled through a chord length of the Earth $l > 5700$ km and then decayed to a tau. 
 
 
 \subsection{Gauge Meditated SUSY Breaking}
-\subsection{Anomaly Mediaded SUSY Breaking}
+
+Another scenario of interest for this thesis is gauge-mediated supersymmetry breaking (GMSB).
+
+In GMSB models, the supersymmetry breaking is thought to take place in some hidden sector and communicated to the visible sector via the Standard Model gauge interactions. This is achieved through messenger fields, which couple to the hidden sector responsible for supersymmetry breaking and transmit this breaking to the quarks, leptons, and Higgs fields, as well as their supersymmetric partners.
+
+In the parameter space relevant for this analysis, the lightest supersymmetric particle (LSP) is the gravitino ($\gravino$), which is typically very light, and the next-to-lightest supersymmetric particle (NLSP) is the stau ($\stau$).
+
+In these models, the dominant decay mode is $\stau \to \gravino \, \tau$. This signature is experimentally easier to detect than in models such as the CMSSM, as the $\tau$ can carry a significant amount of momentum and is therefore more readily reconstructed. As a result, GMSB scenarios are often used as benchmark models in searches for long-lived supersymmetric particles.
+
+In this framework, the $\stau$ decay width is given by~\cite{Fujii_2002}
+\begin{equation}
+ \Gamma(\stau \to \tau \gravino)\simeq \frac{1}{48\pi}\frac{m_{\stau}^5}{m_{3/2}^2 M_*^2}\,,
+\label{eq:NLSP-decay-width}
+\end{equation}
+where $m_{3/2}$ is the gravitino mass and $M_*$ is the reduced Planck scale.
+
+This expression highlights an important feature of GMSB phenomenology. In contrast to models such as the CMSSM, the $\stau$ lifetime in GMSB is primarily controlled by the weak coupling between the $\stau$, $\tau$, and $\gravino$, which is governed by the small gravitino mass. In particular, for small $m_{3/2}$, this suppression results in a long-lived $\stau$.
+
+\subsection{Anomaly Mediated SUSY Breaking}
+
+
+% The final scenario of interest in this thesis is Anomaly Mediated SUSY Breaking (AMSB). In this framework, supersymmetry is assumed to be broken in a hidden sector, similarly to GMSB. However, in AMSB the breaking is communicated to the visible sector via superconformal anomalies in supergravity.
+
+% A distinctive feature of AMSB models is the near mass degeneracy between the charged and neutral winos. The mass splitting arises predominantly from electroweak loop corrections. These corrections lead to a mass difference of approximately
+% \begin{equation}
+% \Delta m_{\chi^\pm, \chi^0} \approx 160 - 165~\mathrm{MeV},
+% \end{equation}
+% where the splitting is typically of order a few hundred MeV~\cite{Ibe_2013}.
+
+% This small mass splitting allows for the decay channel
+% \begin{equation}
+% \chi^\pm \to \chi^0 \, \pi^\pm.
+% \end{equation}
+
+% The corresponding decay width at tree level is given by~\cite{Ibe_2023}
+% \begin{align}
+%     \Gamma(\chi^- \to \pi^- \chi^0)
+%     = \frac{4}{\pi} F_\pi^2 \left(\frac{g^2}{4\sqrt{2} M_W^2} V_{ud}\right)^2 (\Delta m)^3
+%     \left(1 - \frac{m_\pi^2}{\Delta m^2}\right)^{1/2}
+%     \left(1 - \frac{\Delta m}{m_\chi}
+%     + \frac{\Delta m^2 - m_\pi^2}{4 m_\chi^2}\right).
+% \end{align}
+
+% Here, $F_\pi$ is the pion decay constant, $g$ is the weak coupling constant, $M_W$ is the $W$ boson mass, and $V_{ud}$ is the relevant element of the CKM matrix.
+
+% This scenario is analogous to the compressed spectra cases discussed previously, in which a small mass splitting leads to a suppressed decay width and consequently a long-lived chargino. In particular, the small value of $\Delta m_{\chi^\pm, \chi^0}$ results in a soft pion in the final state, which can be difficult to reconstruct experimentally.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The final scenario of interest to this thesis is Anomaly Mediated Supersymmetry Breaking (AMSB). In this scenario, supersymmetry is assumed to be broken in some hidden sector, similarly to GMSB. In AMSB the breaking is communicated to the4 visable sector through superconformal anomaly in supergravity. 
+
+A distinctive feature of AMSB is the near mass degeneracy between the charged and neutral winos. The mass splitting arises predominantly from electroweak loop corrections. 
+These corrections lead to a mass difference of approximately $\Delta m_{\nino, \chinopm} \approx 160-165 \MeV$ ~\cite{Ibe_2013}.
+
+
+This small mass splitting allows for the decay channel $\chinopm \to \nino, \pi^\pm$. The corresponding decay width is given by~\cite{Ibe_2023}
+
+
+\begin{align}
+    \Gamma(\chi^-\to \pi^- \chi^0)=\frac{1}{2\pi} F_\pi^2 \left(\frac{g^2 }{M^2_W V_{ud}}\right)^2 {\mathit{\Delta} m}^3\left(1- \frac{m_\pi^2}{\mathit{\Delta} m^2}\right)^{1/2} \left(1-\frac{\mathit{\Delta}m}{m_\chi}+\frac{\mathit{\Delta}m^2 - m_\pi^2}{4m_\chi^2}\right) \ .
+\end{align}
+
+Here, $F_\pi$ is the pion decay constant, $g$ is the weak coupling constant, $M_W$ is the $W$ boson mass, and $V_{ud}$ is the relevant element of the CKM matrix.
+
+This scenario is analogous to the compressed spectra cases discussed previously, in which a small mass splitting leads to a suppressed decay width and consequently a long-lived charged particle. The small value of $\Delta m_{\chi^\pm, \chi^0}$ results in a soft pion in the final state, which can be difficult to reconstruct experimentally.
+
+
+\subsection{Conclusion}
+The Standard Model is remarkably successful in describing a wide range of experimental observations. Despite this success, it is widely understood that it does not provide a complete description of particle physics. Supersymmetry offers a compelling extension of the Standard Model, addressing several of its shortcomings and providing a framework for physics beyond the Standard Model. However, supersymmetry must be a broken symmetry, and the mechanism of this breaking leads to a variety of possible phenomenological scenarios.
+
+The scenarios relevant to this thesis involve long-lived charged particles that decay into Standard Model states. In all cases discussed, some or all of the decay products escape detection, resulting in missing energy signatures. Although these are not the only mechanisms that can produce long-lived charged particles in beyond the Standard Model scenarios, they provide a well-motivated and experimentally accessible region of parameter space. This makes them a natural and systematic target for the searches presented in this thesis.
