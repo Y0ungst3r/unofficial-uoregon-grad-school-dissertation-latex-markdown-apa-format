@@ -1,3 +1,6 @@
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/build
 [100%] Building LaTeX document
 This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
  restricted \write18 enabled.
@@ -224,11 +227,66 @@ Package ctable Warning:  Transparency disabled: incompatible with tikz package
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 (/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty))))
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryintersections.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersection
+s.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarythrough.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarybackgrounds.code.tex)
+(/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertatio
+n-latex-markdown-apa-format/build/output/atlaspackage.sty
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def)
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
+(/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/translations/translations.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc-greekbasic.def)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/psdextra.def)
+(/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def))
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx)))
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty))))
+(/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertatio
+n-latex-markdown-apa-format/build/output/atlasphysics.sty
+(/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertatio
+n-latex-markdown-apa-format/build/output/atlasmisc.sty)
+(/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertatio
+n-latex-markdown-apa-format/build/output/atlasparticle.sty)
+(/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertatio
+n-latex-markdown-apa-format/build/output/atlasunit.sty)
+(/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertatio
+n-latex-markdown-apa-format/build/output/atlasxref.sty))
+(/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertatio
+n-latex-markdown-apa-format/build/output/atlasbsm.sty)
+(/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertatio
+n-latex-markdown-apa-format/build/output/ANA-HMBS-2024-66-PAPER-defs.sty))
 (./1_uothesis_prefatory_pages.tex (./cover.tex) (./abstract.tex) (./cv.tex)
 (./acknowledgements.tex) (./dedication.tex))
 (./2_uothesis_begin_main_body_of_document.tex
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
 (/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertatio
 n-latex-markdown-apa-format/build/output/main.aux)
 *geometry* driver: auto-detecting
@@ -249,366 +307,2171 @@ loading the todonotes package. on input line 4.
 (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictio
+nary-english.trsl)
+(/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictio
+nary-english.trsl)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/UKenglish.lbx
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/british.lbx)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/british.lbx
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx)))
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/USenglish.lbx
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/american.lbx
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx))
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/american.lbx
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx)))
 (/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertatio
-n-latex-markdown-apa-format/build/output/main.out)
-(/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertatio
-n-latex-markdown-apa-format/build/output/main.out) [1{/var/lib/texmf/fonts/map/
+n-latex-markdown-apa-format/build/output/main.bbl) [1{/var/lib/texmf/fonts/map/
 pdftex/updmap/pdftex.map}] [2{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-
 super/cm-super-ts1.enc}]
 Underfull \hbox (badness 10000) in paragraph at lines 11--11
 
-[3] [4] [5] [6]
+[3] (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg) [4] [5] [6]
 (/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertatio
 n-latex-markdown-apa-format/build/output/main.toc
-Overfull \hbox (22.58168pt too wide) detected at line 2
+Overfull \hbox (14.3568pt too wide) detected at line 2
  \OT1/cmr/m/n/12 I.  
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
-Overfull \hbox (27.14691pt too wide) detected at line 3
+
+Overfull \hbox (18.92203pt too wide) detected at line 3
  \OT1/cmr/m/n/12 II.  
 
 Overfull \hbox (28.78717pt too wide) detected at line 4
  \OT1/cmr/m/n/12 2.1.  
 
-Overfull \hbox (28.78717pt too wide) detected at line 5
- \OT1/cmr/m/n/12 2.2.  
+Overfull \hbox (27.35115pt too wide) detected at line 5
+ \OT1/cmr/m/n/12 2.1.1.  
 
 Overfull \hbox (27.35115pt too wide) detected at line 6
- \OT1/cmr/m/n/12 2.2.1.  
+ \OT1/cmr/m/n/12 2.1.2.  
 
-Overfull \hbox (27.35115pt too wide) detected at line 7
- \OT1/cmr/m/n/12 2.2.2.  
+Overfull \hbox (28.78717pt too wide) detected at line 7
+ \OT1/cmr/m/n/12 2.2.  
 
-Overfull \hbox (31.71214pt too wide) detected at line 8
- \OT1/cmr/m/n/12 III.  
+Overfull \hbox (28.78717pt too wide) detected at line 8
+ \OT1/cmr/m/n/12 2.3.  
 
-Overfull \hbox (28.78717pt too wide) detected at line 9
- \OT1/cmr/m/n/12 3.1.  
+Overfull \hbox (27.35115pt too wide) detected at line 9
+ \OT1/cmr/m/n/12 2.3.1.  
 
-Overfull \hbox (28.78717pt too wide) detected at line 10
- \OT1/cmr/m/n/12 3.2.  
+Overfull \hbox (27.35115pt too wide) detected at line 10
+ \OT1/cmr/m/n/12 2.3.2.  
 
 Overfull \hbox (27.35115pt too wide) detected at line 11
+ \OT1/cmr/m/n/12 2.3.3.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 12
+ \OT1/cmr/m/n/12 2.3.4.  
+
+Overfull \hbox (23.48726pt too wide) detected at line 13
+ \OT1/cmr/m/n/12 III.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 14
+ \OT1/cmr/m/n/12 3.1.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 15
+ \OT1/cmr/m/n/12 3.2.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 16
  \OT1/cmr/m/n/12 3.2.1.  
 
-Overfull \hbox (25.91495pt too wide) detected at line 12
+Overfull \hbox (25.91495pt too wide) detected at line 17
  \OT1/cmr/m/n/12 3.2.1.1.  
 
-Overfull \hbox (25.91495pt too wide) detected at line 13
+Overfull \hbox (25.91495pt too wide) detected at line 18
  \OT1/cmr/m/n/12 3.2.1.2.  
 
-Overfull \hbox (25.91495pt too wide) detected at line 14
+Overfull \hbox (25.91495pt too wide) detected at line 19
  \OT1/cmr/m/n/12 3.2.1.3.  
 
-Overfull \hbox (27.35115pt too wide) detected at line 15
+Overfull \hbox (27.35115pt too wide) detected at line 20
  \OT1/cmr/m/n/12 3.2.2.  
 
-Overfull \hbox (25.91495pt too wide) detected at line 16
+Overfull \hbox (25.91495pt too wide) detected at line 21
  \OT1/cmr/m/n/12 3.2.2.1.  
 
-Overfull \hbox (25.91495pt too wide) detected at line 17
+Overfull \hbox (25.91495pt too wide) detected at line 22
  \OT1/cmr/m/n/12 3.2.2.2.  
 
-Overfull \hbox (27.35115pt too wide) detected at line 18
+Overfull \hbox (27.35115pt too wide) detected at line 23
  \OT1/cmr/m/n/12 3.2.3.  
 
-Overfull \hbox (31.38992pt too wide) detected at line 19
+Overfull \hbox (23.16504pt too wide) detected at line 24
  \OT1/cmr/m/n/12 IV.  
-
-Overfull \hbox (28.78717pt too wide) detected at line 20
+[7]
+Overfull \hbox (28.78717pt too wide) detected at line 25
  \OT1/cmr/m/n/12 4.1.  
 
-Overfull \hbox (28.78717pt too wide) detected at line 21
+Overfull \hbox (28.78717pt too wide) detected at line 26
  \OT1/cmr/m/n/12 4.2.  
 
-Overfull \hbox (27.35115pt too wide) detected at line 22
- \OT1/cmr/m/n/12 4.2.1.  
-
-Overfull \hbox (25.91495pt too wide) detected at line 23
- \OT1/cmr/m/n/12 4.2.1.1.  
-
-Overfull \hbox (25.91495pt too wide) detected at line 24
- \OT1/cmr/m/n/12 4.2.1.2.  
-[7]
-Overfull \hbox (27.15108pt too wide) detected at line 25
- \OT1/cmr/m/n/12 V.  
-
-Overfull \hbox (27.35115pt too wide) detected at line 26
- \OT1/cmr/m/n/12 5.0.1.  
-
-Overfull \hbox (27.35115pt too wide) detected at line 27
- \OT1/cmr/m/n/12 5.0.2.  
+Overfull \hbox (28.78717pt too wide) detected at line 27
+ \OT1/cmr/m/n/12 4.3.  
 
 Overfull \hbox (27.35115pt too wide) detected at line 28
- \OT1/cmr/m/n/12 5.0.3.  
+ \OT1/cmr/m/n/12 4.3.1.  
 
 Overfull \hbox (27.35115pt too wide) detected at line 29
- \OT1/cmr/m/n/12 5.0.4.  
+ \OT1/cmr/m/n/12 4.3.2.  
 
-Overfull \hbox (31.38992pt too wide) detected at line 30
+Overfull \hbox (18.9262pt too wide) detected at line 30
+ \OT1/cmr/m/n/12 V.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 31
+ \OT1/cmr/m/n/12 5.1.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 32
+ \OT1/cmr/m/n/12 5.1.1.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 33
+ \OT1/cmr/m/n/12 5.1.2.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 34
+ \OT1/cmr/m/n/12 5.1.3.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 35
+ \OT1/cmr/m/n/12 5.1.4.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 36
+ \OT1/cmr/m/n/12 5.1.5.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 37
+ \OT1/cmr/m/n/12 5.2.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 38
+ \OT1/cmr/m/n/12 5.2.1.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 39
+ \OT1/cmr/m/n/12 5.2.2.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 40
+ \OT1/cmr/m/n/12 5.2.3.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 41
+ \OT1/cmr/m/n/12 5.2.4.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 42
+ \OT1/cmr/m/n/12 5.3.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 43
+ \OT1/cmr/m/n/12 5.3.1.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 44
+ \OT1/cmr/m/n/12 5.3.2.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 45
+ \OT1/cmr/m/n/12 5.4.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 46
+ \OT1/cmr/m/n/12 5.4.1.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 47
+ \OT1/cmr/m/n/12 5.4.2.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 48
+ \OT1/cmr/m/n/12 5.4.3.  
+
+Overfull \hbox (23.16504pt too wide) detected at line 49
  \OT1/cmr/m/n/12 VI.  
+[8]
+Overfull \hbox (28.78717pt too wide) detected at line 50
+ \OT1/cmr/m/n/12 6.1.  
 
-Overfull \hbox (35.95515pt too wide) detected at line 31
+Overfull \hbox (28.78717pt too wide) detected at line 51
+ \OT1/cmr/m/n/12 6.2.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 52
+ \OT1/cmr/m/n/12 6.3.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 53
+ \OT1/cmr/m/n/12 6.4.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 54
+ \OT1/cmr/m/n/12 6.5.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 55
+ \OT1/cmr/m/n/12 6.6.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 56
+ \OT1/cmr/m/n/12 6.7.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 57
+ \OT1/cmr/m/n/12 6.8.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 58
+ \OT1/cmr/m/n/12 6.9.  
+
+Overfull \hbox (34.66211pt too wide) detected at line 59
+ \OT1/cmr/m/n/12 6.10.  
+
+Overfull \hbox (27.73027pt too wide) detected at line 60
  \OT1/cmr/m/n/12 VII.  
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
- [][] [][] \OT1/cmr/m/n/12 DIS-AP-PEAR-ING TRACKS WITH HIGH ION-IZ-A-TION 
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+ [][] [][][]\OT1/cmr/m/n/12 (+14) DISAPPEARING TRACKS WITH HIGH ION-IZ-A-TION 
 
-Overfull \hbox (40.52039pt too wide) detected at line 32
+Overfull \hbox (28.78717pt too wide) detected at line 61
+ \OT1/cmr/m/n/12 7.1.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 62
+ \OT1/cmr/m/n/12 7.2.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 63
+ \OT1/cmr/m/n/12 7.3.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 64
+ \OT1/cmr/m/n/12 7.3.1.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 65
+ \OT1/cmr/m/n/12 7.3.2.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 66
+ \OT1/cmr/m/n/12 7.4.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 67
+ \OT1/cmr/m/n/12 7.4.1.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 68
+ \OT1/cmr/m/n/12 7.4.2.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 69
+ \OT1/cmr/m/n/12 7.4.3.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 70
+ \OT1/cmr/m/n/12 7.4.4.  
+
+Overfull \hbox (25.91495pt too wide) detected at line 71
+ \OT1/cmr/m/n/12 7.4.4.1.  
+
+Overfull \hbox (25.91495pt too wide) detected at line 72
+ \OT1/cmr/m/n/12 7.4.4.2.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 73
+ \OT1/cmr/m/n/12 7.5.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 74
+ \OT1/cmr/m/n/12 7.5.1.  
+[9]
+Overfull \hbox (27.35115pt too wide) detected at line 75
+ \OT1/cmr/m/n/12 7.5.2.  
+
+Overfull \hbox (25.91495pt too wide) detected at line 76
+ \OT1/cmr/m/n/12 7.5.2.1.  
+
+Overfull \hbox (27.35115pt too wide) detected at line 77
+ \OT1/cmr/m/n/12 7.5.3.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 78
+ \OT1/cmr/m/n/12 7.6.  
+
+Overfull \hbox (32.2955pt too wide) detected at line 79
  \OT1/cmr/m/n/12 VIII.  
 
-Overfull \hbox (27.15108pt too wide) detected at line 34
- \OT1/cmr/m/n/12 A.  
+Overfull \hbox (31.72047pt too wide) detected at line 82
+ \OT1/cmr/m/n/12 A.1.  
 
-Overfull \hbox (30.28445pt too wide) detected at line 35
- \OT1/cmr/m/n/12 A.0.1.  
-
-Overfull \hbox (30.28445pt too wide) detected at line 36
- \OT1/cmr/m/n/12 A.0.2.  
-
-Overfull \hbox (26.66359pt too wide) detected at line 37
- \OT1/cmr/m/n/12 B.  
-
-Overfull \hbox (31.23299pt too wide) detected at line 38
- \OT1/cmr/m/n/12 B.1.  
-
-Overfull \hbox (29.79697pt too wide) detected at line 39
- \OT1/cmr/m/n/12 B.1.1.  
-) [8]
+Overfull \hbox (30.28445pt too wide) detected at line 83
+ \OT1/cmr/m/n/12 A.1.1.  
+) [10]
 (/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertatio
 n-latex-markdown-apa-format/build/output/main.lof
-Overfull \hbox (19.64838pt too wide) detected at line 2
- \OT1/cmr/m/n/12 1.  
+Overfull \hbox (28.78717pt too wide) detected at line 2
+ \OT1/cmr/m/n/12 2.1.  
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--2
- [][] [][]\OT1/cmr/m/n/12 Schematic of the LHC ac-cel-er-ator complex[[]], show
--ing the 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--2
- \OT1/cmr/m/n/12 se-quence of ac-cel-er-at-ors used to pre-pare and in-ject pro
--ton 
-
-Overfull \hbox (19.64838pt too wide) detected at line 3
- \OT1/cmr/m/n/12 2.  
+Overfull \hbox (28.78717pt too wide) detected at line 3
+ \OT1/cmr/m/n/12 2.2.  
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--3
- [][] [][]\OT1/cmr/m/n/12 Schematic view of the AT-LAS detector[[]], show-ing t
-he main 
+ [][] [][][]\OT1/cmr/m/n/12 (+14) Higgs quantum cor-rec-tions ex-ample from 1 l
+oop a) fer-mi-ons 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--3
- \OT1/cmr/m/n/12 sub-sys-tems ar-ranged around the in-ter-ac-tion point. Im-age
- 
-
-Overfull \hbox (19.64838pt too wide) detected at line 4
- \OT1/cmr/m/n/12 3.  
+Overfull \hbox (28.78717pt too wide) detected at line 4
+ \OT1/cmr/m/n/12 3.1.  
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
- [][] [][]\OT1/cmr/m/n/12 Schematic view of the In-ner Detector[[]], show-ing t
-he beam 
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Schematic of the LHC ac-cel-er-ator com-plex[
+[][]9[][]], show-ing the 
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
- \OT1/cmr/m/n/12 pipe, pixel bar-rel, SCT bar-rel, and TRT. Im-age credit: 
+ \OT1/cmr/m/n/12 (+20) se-quence of ac-cel-er-at-ors used to pre-pare and in-je
+ct pro-ton 
 
-Overfull \hbox (19.64838pt too wide) detected at line 5
- \OT1/cmr/m/n/12 4.  
+Overfull \hbox (28.78717pt too wide) detected at line 5
+ \OT1/cmr/m/n/12 3.2.  
 
-Overfull \hbox (19.64838pt too wide) detected at line 6
- \OT1/cmr/m/n/12 5.  
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Schematic view of the AT-LAS de-tector[[][]11
+[][]], show-ing the 
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+ \OT1/cmr/m/n/12 (+20) main sub-sys-tems ar-ranged around the in-ter-ac-tion po
+int. 
+
+Overfull \hbox (28.78717pt too wide) detected at line 6
+ \OT1/cmr/m/n/12 3.3.  
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--6
- [][] [][]\OT1/cmr/m/n/12 Schematic view of the Calorimeters[[]], show-ing the 
-
+ [][] [][][]\OT1/cmr/m/n/12 (+9) Schematic view of the In-ner De-tector[[][]11[
+][]], show-ing the beam 
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--6
- \OT1/cmr/m/n/12 elec-tro-mag-netic and had-ronic calor-i-met-ers. Im-age credi
-t: 
+ \OT1/cmr/m/n/12 (+20) pipe, pixel bar-rel, SCT bar-rel, and TRT. Im-age credit
+: 
 
-Overfull \hbox (19.64838pt too wide) detected at line 7
- \OT1/cmr/m/n/12 6.  
+Overfull \hbox (28.78717pt too wide) detected at line 7
+ \OT1/cmr/m/n/12 3.4.  
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--7
- [][] [][]\OT1/cmr/m/n/12 Schematic lay-out of the AT-LAS Muon Spec-tro-meter 
+Overfull \hbox (28.78717pt too wide) detected at line 8
+ \OT1/cmr/m/n/12 3.5.  
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--7
- \OT1/cmr/m/n/12 show-ing the bar-rel and en-d-cap re-gions along with the 
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Schematic view of the Calor-i-met-ers[[][]11[
+][]], show-ing the 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--7
- \OT1/cmr/m/n/12 loc-a-tions of the dif-fer-ent de-tector tech-no-lo-gies used 
-for 
-
-Overfull \hbox (19.64838pt too wide) detected at line 8
- \OT1/cmr/m/n/12 7.  
-
-Overfull \hbox (19.64838pt too wide) detected at line 9
- \OT1/cmr/m/n/12 8.  
+Overfull \hbox (28.78717pt too wide) detected at line 9
+ \OT1/cmr/m/n/12 3.6.  
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--9
- [][] [][]\OT1/cmr/m/n/12 View of ITk triplet and quad mod-ules. Note the at-ta
-ched 
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Schematic lay-out of the AT-LAS Muon Spec-tro
+-meter 
 
-Overfull \hbox (19.64838pt too wide) detected at line 10
- \OT1/cmr/m/n/12 9.  
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+ \OT1/cmr/m/n/12 (+20) show-ing the bar-rel and en-d-cap re-gions along with th
+e 
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+ \OT1/cmr/m/n/12 (+20) loc-a-tions of the dif-fer-ent de-tector tech-no-lo-gies
+ used for 
+
+Overfull \hbox (28.78717pt too wide) detected at line 10
+ \OT1/cmr/m/n/12 4.1.  
 
 Underfull \hbox (badness 10000) in paragraph at lines 10--10
- [][] [][]\OT1/cmr/m/n/12 Schematic of the quarter shell sup-port struc-ture of
- the in-ner 
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Cut away view of ITk in one quad-rant only. L
+ay-out is only 
 
-Overfull \hbox (25.52332pt too wide) detected at line 11
- \OT1/cmr/m/n/12 10.  
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+ \OT1/cmr/m/n/12 (+20) in pos-it-ive z dir-ec-tion. Full de-tector is sym-met-r
+ic about 
 
-Overfull \hbox (25.52332pt too wide) detected at line 12
- \OT1/cmr/m/n/12 11.  
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+ \OT1/cmr/m/n/12 (+20) the z=0 and ex-tends in a full cyl-in-der around beam li
+ne. 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--12
- [][] [][]\OT1/cmr/m/n/12 Disconnected bump bonds from one sensor be-fore and a
-fter 
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+ \OT1/cmr/m/n/12 (+20) ([][]4.1(a)[][]) Shows one quad-rant of the full ITk. ([
+][]4.1(b)[][]) Shows 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--12
- \OT1/cmr/m/n/12 100 thermal cycles. Blue pixels in-dic-ate dis-con-nec-ted bum
-p 
-) [9]
+Overfull \hbox (28.78717pt too wide) detected at line 11
+ \OT1/cmr/m/n/12 4.2.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+ [][] [][][]\OT1/cmr/m/n/12 (+20) View of ITk triplet and quad mod-ules. Note t
+he at-tached 
+
+Overfull \hbox (28.78717pt too wide) detected at line 12
+ \OT1/cmr/m/n/12 4.3.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 13
+ \OT1/cmr/m/n/12 4.4.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 14
+ \OT1/cmr/m/n/12 4.5.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Disconnected bump bonds from one sensor be-fo
+re and after 
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+ \OT1/cmr/m/n/12 (+20) 100 thermal cycles. Blue pixels in-dic-ate dis-con-nec-t
+ed bump 
+[11]
+Overfull \hbox (28.78717pt too wide) detected at line 15
+ \OT1/cmr/m/n/12 5.1.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Schematic view of sagitta meas-ure-ment for t
+hree hits in 
+
+Overfull \hbox (28.78717pt too wide) detected at line 16
+ \OT1/cmr/m/n/12 6.1.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Representative sig-nal dia-grams for [][](a)[
+][][] the elec-troweak 
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+ \OT1/cmr/m/n/12 (+20) pro-duc-tion of $[][]$, and $\OML/cmm/m/it/12 ^^\$\OT1/c
+mr/m/n/12 (+20) -slepton pair pro-duc-tion in [][](b)[][][] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+ \OT1/cmr/m/n/12 (+20) CMSSM-inspired or [][](c)[][][] GMSB-inspired SUSY mod-e
+ls. The 
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+ \OT1/cmr/m/n/12 (+20) sig-nal sig-na-ture con-sists of a long-lived $[]$ or $\
+OML/cmm/m/it/12 ^^\$\OT1/cmr/m/n/12 (+20) -slepton, 
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+ \OT1/cmr/m/n/12 (+20) miss-ing trans-verse mo-mentum, and quarks or gluons, 
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+ \OT1/cmr/m/n/12 (+20) which are ob-served as jets ($\OML/cmm/m/it/12 j$\OT1/cm
+r/m/n/12 (+20) ). When con-sid-er-ing the 
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+ \OT1/cmr/m/n/12 (+20) elec-troweakino scen-arios, the pro-duc-tion of $[][]$ i
+s also 
+
+Overfull \hbox (28.78717pt too wide) detected at line 17
+ \OT1/cmr/m/n/12 6.2.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Representative dis-tri-bu-tions re-lated to t
+he re-con-struc-tion 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) of track-lets and charged pi-ons: [][](a)[][][] event yi
+elds and 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) re-con-struc-tion ef-fi-cien-cies for three- and four-la
+yer track-let 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) re-con-struc-tion as a func-tion of $[]$ de-cay ra-dius;
+ [][](a)[][][] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) BDT out-put score used to judge if an event con-tains 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) a low-energy pion, show-ing the train-ing data-set (soli
+d 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) his-to-gram) and the test data-set (points); [][](a)[][]
+[] event 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) yields and re-con-struc-tion ef-fi-ciency for charged pi
+-ons 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) as a func-tion of the true pion trans-verse mo-mentum as
+ 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) meas-ured in the lab-frame, where the ac-cept-ance in-cl
+udes 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) all charged-pion re-con-struc-tion ef-fects but not geo-
+met-ric 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) ac-cept-ance from track-let re-con-struc-tion (which is 
+as-sumed 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) to already have been re-con-struc-ted). The true trans-v
+erse 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) mo-mentum is defined as $\OML/cmm/m/it/12 p[] \OT1/cmr/m
+/n/12 (+20) = []$ in the global 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) de-tector co-ordin-ate sys-tem with the $\OML/cmm/m/it/1
+2 z$\OT1/cmr/m/n/12 (+20) -axis along the 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) beam pipe. For [][](a)[][][] and [][](a)[][][] the fille
+d his-to-gram dis-plays 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) the total yield without ap-ply-ing a se-lec-tion, while 
+the 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) dashed lines present the yield after ap-ply-ing the trac
+k-let 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) se-lec-tion or track-let+pion se-lec-tion. The points de
+-note the 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) re-con-struc-tion ef-fi-ciency. A rep-res-ent-at-ive hig
+gsino sig-nal 
+
+Overfull \hbox (28.78717pt too wide) detected at line 18
+ \OT1/cmr/m/n/12 6.3.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Schematic dia-gram il-lus-trat-ing how the si
+g-nal scen-arios are 
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+ \OT1/cmr/m/n/12 (+20) de-tec-ted and how the back-ground pro-cesses may enter 
+the 
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+ \OT1/cmr/m/n/12 (+20) SR se-lec-tions. The de-tector lay-ers are not shown to 
+scale. 
+
+Overfull \hbox (28.78717pt too wide) detected at line 19
+ \OT1/cmr/m/n/12 6.4.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Individual com-pon-ents used in the es-tim-a-
+tion of the fake 
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \OT1/cmr/m/n/12 (+20) back-ground: [][](a)[][][] shows the ori-ginal tem-plate
+, $\OML/cmm/m/it/12 N[]\OT1/cmr/m/n/12 (+20) (\OML/cmm/m/it/12 p[]\OT1/cmr/m/n/
+12 (+20) )$, 
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \OT1/cmr/m/n/12 (+20) as a solid line. The tem-plates after the ap-plic-a-tion
+ of the 
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \OT1/cmr/m/n/12 (+20) trans-fer factors are shown as dashed lines; [][](b)[][]
+[] shows the 
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 d[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 =^^[\
+OT1/cmr/m/n/12 (+20) (\OML/cmm/m/it/12 d[]\OT1/cmr/m/n/12 (+20) )$ de-pend-ence
+ in-tro-duced when ex-tra-pol-at-ing over 
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \OT1/cmr/m/n/12 (+20) factors $[][](\OML/cmm/m/it/12 d[]\OT1/cmr/m/n/12 (+20) 
+)$ used to re-move the de-pend-ence; 
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \OT1/cmr/m/n/12 (+20) and [][](c)[][][] shows a com-par-ison between the pure 
+fake and 
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \OT1/cmr/m/n/12 (+20) hy-brid fake con-tri-bu-tions and the $\OML/cmm/m/it/12 
+p[]$\OT1/cmr/m/n/12 (+20) -dependent trans-fer 
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \OT1/cmr/m/n/12 (+20) factors $[][](\OML/cmm/m/it/12 p[]\OT1/cmr/m/n/12 (+20) 
+)$ used to ex-tra-pol-ate from the tem-plate 
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \OT1/cmr/m/n/12 (+20) re-gion that con-tains pure fakes to the SR, which con-t
+ains a 
+[12]
+Overfull \hbox (28.78717pt too wide) detected at line 20
+ \OT1/cmr/m/n/12 6.5.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Individual con-tri-bu-tions used in the es-ti
+m-a-tion of the 
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+ \OT1/cmr/m/n/12 (+20) elec-tron back-ground: [][](a)[][][] presents the ori-gi
+nal elec-tron $\OML/cmm/m/it/12 p[]$ 
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+ \OT1/cmr/m/n/12 (+20) tem-plate, $\OML/cmm/m/it/12 N[]\OT1/cmr/m/n/12 (+20) (\
+OML/cmm/m/it/12 p[]\OT1/cmr/m/n/12 (+20) )$, as a solid line, with the tem-plat
+es also 
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+ \OT1/cmr/m/n/12 (+20) as dashed lines; [][](b)[][][] shows the trans-fer facto
+r, $[][]$, 
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+ \OT1/cmr/m/n/12 (+20) used to cor-rect for the like-li-hood of re-con-struct-i
+ng an 
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+ \OT1/cmr/m/n/12 (+20) elec-tron track as a track-let; [][](c)[][][] shows the 
+trans-fer factors, 
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+ [][]$\OT1/cmr/m/n/12 (+20) , used to cor-rect for the like-li-hood of an elec-
+tron 
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+ \OT1/cmr/m/n/12 (+20) not be-ing as-so-ci-ated with a calor-i-meter en-ergy cl
+uster; and 
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+ \OT1/cmr/m/n/12 (+20) meas-ured elec-tron track $\OML/cmm/m/it/12 p[]$ \OT1/cm
+r/m/n/12 (+20) to the track-let $\OML/cmm/m/it/12 p[]$ \OT1/cmr/m/n/12 (+20) (d
+efined on 
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+ \OT1/cmr/m/n/12 (+16) the fig-ure). While the track-let $\OML/cmm/m/it/12 p[]$
+ \OT1/cmr/m/n/12 (+16) tem-plate and the TFs are 
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+ \OT1/cmr/m/n/12 (+20) de-pend-ent upon both $\OML/cmm/m/it/12 p[]$ \OT1/cmr/m/
+n/12 (+20) and $\OML/cmm/m/it/12 ^^Q$\OT1/cmr/m/n/12 (+20) , the com-pon-ents a
+re shown 
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+ \OT1/cmr/m/n/12 (+5) with their de-pend-ence upon the track-let $\OML/cmm/m/it
+/12 p[]$ \OT1/cmr/m/n/12 (+5) dis-tri-bu-tion as a 
+
+Overfull \hbox (28.78717pt too wide) detected at line 21
+ \OT1/cmr/m/n/12 6.6.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Schematic dia-gram for the back-ground es-tim
+-a-tion strategy, 
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+ \OT1/cmr/m/n/12 (+20) de-scrib-ing the us-age of tem-plate re-gions (TRs), and
+ 
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+ \OT1/cmr/m/n/12 (+20) re-laxed se-lec-tions to cal-cu-late trans-fer factors (
+TFs) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+ \OT1/cmr/m/n/12 (+20) be-fore per-form-ing the fit us-ing con-trol re-gions (C
+Rs). 
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+ \OT1/cmr/m/n/12 (+20) The kin-ematic re-gions are or-tho-gonal due to se-lec-t
+ions on 
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+ \OML/cmm/m/it/12 E[]$\OT1/cmr/m/n/12 (+20) , track-let $\OML/cmm/m/it/12 p[]$\
+OT1/cmr/m/n/12 (+20) , and track-let $\OML/cmm/m/it/12 E[]$\OT1/cmr/m/n/12 (+20
+) , with high calor-i-meter 
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+ \OT1/cmr/m/n/12 (+20) en-er-gies (`  calo-side') dom-in-ated by the had-ron ba
+ck-ground, 
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+ \OT1/cmr/m/n/12 (+20) and low calor-i-meter en-er-gies (`  calo-veto') dom-in-
+ated by the 
+
+Overfull \hbox (28.78717pt too wide) detected at line 22
+ \OT1/cmr/m/n/12 6.7.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+ [][] [][][]\OT1/cmr/m/n/12 (+20) A sum-mary of the sys-tem-atic un-cer-tain-ti
+es af-fect-ing the 
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+ \OT1/cmr/m/n/12 (+20) back-ground es-tim-ates in the SRs after the like-li-hoo
+d fit 
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+ \OT1/cmr/m/n/12 (+20) to data in the CRs is per-formed (`  Post-fit'). The tot
+al 
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+ \OT1/cmr/m/n/12 (+20) un-cer-tain-ties may not sum in quad-rat-ure to the tota
+l 
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+ \OT1/cmr/m/n/12 (+20) un-cer-tainty, due to cor-rel-a-tions between the dif-fe
+r-ent 
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+ \OT1/cmr/m/n/12 (+20) com-pon-ents. The un-cer-tain-ties arising from the es-t
+im-a-tion 
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+ \OT1/cmr/m/n/12 (+20) of the fake-tracklet back-ground, which are the dom-in-a
+nt 
+[13]
+Overfull \hbox (28.78717pt too wide) detected at line 23
+ \OT1/cmr/m/n/12 6.8.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+ \OT1/cmr/m/n/12 (+20) un-cer-tain-ties are con-sidered in the er-ror bands. Th
+ree 
+
+Overfull \hbox (28.78717pt too wide) detected at line 24
+ \OT1/cmr/m/n/12 6.9.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+ [][] [][][]\OT1/cmr/m/n/12 (+20) The post-fit track-let $\OML/cmm/m/it/12 p[]$
+ \OT1/cmr/m/n/12 (+20) dis-tri-bu-tions in [][]()[][][] VR$[]$, [][]()[][][] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+ \OT1/cmr/m/n/12 (+20) VR$[]$, and [][]()[][][] VR$[]$. The dashed ver-tical li
+ne 
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+ \OT1/cmr/m/n/12 (+20) de-notes the bound-ary between the CR and VR se-lec-tion
+s. 
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+ \OT1/cmr/m/n/12 (+20) The pre-fit sig-nal dis-tri-bu-tions are in-dic-ated wit
+h dashed 
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+ \OT1/cmr/m/n/12 (+20) lines. The lower pad shows the ra-tio of the ob-served y
+ields 
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+ \OT1/cmr/m/n/12 (+20) to the post-fit pre-dicted back-ground yields. The last 
+bin 
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+ \OT1/cmr/m/n/12 (+20) in-cludes over-flow events. All stat-ist-ical and sys-te
+m-atic 
+
+Overfull \hbox (34.66211pt too wide) detected at line 25
+ \OT1/cmr/m/n/12 6.10.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+ \OT1/cmr/m/n/12 (+20) The lower pads show the ra-tio of the ob-served yields t
+o 
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+ \OT1/cmr/m/n/12 (+20) the post-fit pre-dicted back-ground yields and the stat-
+ist-ical 
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+ \OT1/cmr/m/n/12 (+20) sig-ni-fic-ance [[][]127[][]] of the ob-served data. A r
+ed ar-row is 
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+ \OT1/cmr/m/n/12 (+20) used to in-dic-ate that a ra-tio value is out-side the d
+is-played 
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+ \OT1/cmr/m/n/12 (+20) in-ter-val. The back-ground es-tim-ates are cal-cu-lated
+ from 
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+ \OT1/cmr/m/n/12 (+20) the background-only fit. All stat-ist-ical and sys-tem-a
+tic 
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+ \OT1/cmr/m/n/12 (+20) un-cer-tain-ties are con-sidered in the er-ror bands. Th
+ree 
+
+Overfull \hbox (34.66211pt too wide) detected at line 26
+ \OT1/cmr/m/n/12 6.11.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+ [][] [][][]\OT1/cmr/m/n/12 (+20) The post-fit track-let $\OML/cmm/m/it/12 p[]$
+ \OT1/cmr/m/n/12 (+20) dis-tri-bu-tions in [][]()[][][] SR$[]$, [][]()[][][] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+ \OT1/cmr/m/n/12 (+20) SR$[]$, [][]()[][][] SR$[]$, and [][]()[][][] SR$[]$. Th
+e dashed ver-tical 
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+ \OT1/cmr/m/n/12 (+20) line de-notes the bound-ary between the CR/VR and SR 
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+ \OT1/cmr/m/n/12 (+20) se-lec-tions. The lower pad shows the ra-tio of the ob-s
+erved 
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+ \OT1/cmr/m/n/12 (+20) data yields to the post-fit pre-dicted back-ground es-ti
+m-ates. 
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+ \OT1/cmr/m/n/12 (+20) A red ar-row is used to in-dic-ate that a ra-tio value i
+s out-side 
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+ \OT1/cmr/m/n/12 (+20) All stat-ist-ical and sys-tem-atic un-cer-tain-ties are 
+con-sidered 
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+ \OT1/cmr/m/n/12 (+15) in the er-ror bands. Three rep-res-ent-at-ive pre-fit si
+g-nal yields 
+
+Overfull \hbox (34.66211pt too wide) detected at line 27
+ \OT1/cmr/m/n/12 6.12.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+ [][] [][][]\OT1/cmr/m/n/12 (+20) The ex-pec-ted (dashed line) and ob-served (s
+olid line) 95% 
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+ \OT1/cmr/m/n/12 (+20) CL ex-clu-sion con-tours for wino pro-duc-tion as a func
+-tion 
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+ \OT1/cmr/m/n/12 (+20) of the char-gino mass and [][]()[][][] life-time, or [][
+]()[][][] mass split-ting of 
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+ \OT1/cmr/m/n/12 (+20) the elec-troweaki-nos. The dot-ted lines in-dic-ates the
+ $\OMS/cmsy/m/n/12 ^^F\OML/cmm/m/it/12 ^^[[]$ 
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+ \OT1/cmr/m/n/12 (+20) from sig-nal cross-section un-cer-tain-ties, while the s
+olid 
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+ \OT1/cmr/m/n/12 (+20) band in-dic-ates the $\OMS/cmsy/m/n/12 ^^F\OML/cmm/m/it/
+12 ^^[[]$ \OT1/cmr/m/n/12 (+20) from ex-per-i-mental sys-tem-atic 
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+ \OT1/cmr/m/n/12 (+12) un-cer-tain-ties and stat-ist-ical un-cer-tain-ties on t
+he data yields. 
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+ \OT1/cmr/m/n/12 (+20) The solid grey area shows the re-gion ex-cluded by Ref. 
+[[][]58[][]]. 
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+ \OT1/cmr/m/n/12 (+20) The dashed-dotted line is the pre-dic-tion of the char-g
+ino 
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+ \OT1/cmr/m/n/12 (+20) life-time or wino mass split-ting as a func-tion of the 
+char-gino 
+[14]
+Overfull \hbox (34.66211pt too wide) detected at line 28
+ \OT1/cmr/m/n/12 6.13.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+ [][] [][][]\OT1/cmr/m/n/12 (+20) The ex-pec-ted (dashed line) and ob-served (s
+olid line) 95% 
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+ \OT1/cmr/m/n/12 (+18) CL ex-clu-sion con-tours for higgsino pro-duc-tion as a 
+func-tion 
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+ \OT1/cmr/m/n/12 (+20) of the char-gino mass and [][]()[][][] life-time, or [][
+]()[][][] mass split-ting of 
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+ \OT1/cmr/m/n/12 (+20) the elec-troweaki-nos. The dot-ted lines in-dic-ates the
+ $\OMS/cmsy/m/n/12 ^^F\OML/cmm/m/it/12 ^^[[]$ 
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+ \OT1/cmr/m/n/12 (+20) from sig-nal cross-section un-cer-tain-ties, while the s
+olid 
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+ \OT1/cmr/m/n/12 (+20) band in-dic-ates the $\OMS/cmsy/m/n/12 ^^F\OML/cmm/m/it/
+12 ^^[[]$ \OT1/cmr/m/n/12 (+20) from ex-per-i-mental sys-tem-atic 
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+ \OT1/cmr/m/n/12 (+12) un-cer-tain-ties and stat-ist-ical un-cer-tain-ties on t
+he data yields. 
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+ \OT1/cmr/m/n/12 (+20) The solid grey area shows the re-gion ex-cluded by Ref. 
+[[][]58[][]]. 
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+ \OT1/cmr/m/n/12 (+20) The dashed-dotted line is the pre-dic-tion of the char-g
+ino 
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+ \OT1/cmr/m/n/12 (+20) life-time or higgsino mass split-ting as a func-tion of 
+the 
+
+Overfull \hbox (34.66211pt too wide) detected at line 29
+ \OT1/cmr/m/n/12 6.14.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+ [][] [][][]\OT1/cmr/m/n/12 (+20) The ex-pec-ted (dashed line) and ob-served (s
+olid line) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+ \OT1/cmr/m/n/12 (+20) 95% CL ex-clu-sion con-tours for $\OML/cmm/m/it/12 ^^\$\
+OT1/cmr/m/n/12 (+20) -slepton pro-duc-tion in [][]()[][][] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+ \OT1/cmr/m/n/12 (+20) CMSSM-inspired scen-arios and [][]()[][][] GMSB-inspired
+ scen-ario. 
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+ \OT1/cmr/m/n/12 (+20) The dot-ted lines in-dic-ates the $\OMS/cmsy/m/n/12 ^^F\
+OML/cmm/m/it/12 ^^[[]$ \OT1/cmr/m/n/12 (+20) from sig-nal cross- 
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+ \OT1/cmr/m/n/12 (+20) section un-cer-tain-ties, while the solid band in-dic-at
+es the 
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+ \OMS/cmsy/m/n/12 ^^F\OML/cmm/m/it/12 ^^[[]$ \OT1/cmr/m/n/12 (+20) from ex-per-
+i-mental sys-tem-atic un-cer-tain-ties and 
+
+Overfull \hbox (28.78717pt too wide) detected at line 30
+ \OT1/cmr/m/n/12 7.1.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Feynman dia-grams for (left) pair-produced ch
+ar-gi-nos and 
+
+Overfull \hbox (28.78717pt too wide) detected at line 31
+ \OT1/cmr/m/n/12 7.2.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Schematic view of the sig-nal re-gions. On th
+e left be-ing for 
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+ \OT1/cmr/m/n/12 (+20) de-cay ag-nostic sig-nal re-gions. On the right be-ing f
+or de-cay 
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+ \OT1/cmr/m/n/12 (+3) spe-cific re-gions. Note that in this case the $^^A\OML/c
+mm/m/it/12 m$ \OT1/cmr/m/n/12 (+3) is spe-cific-ally 
+
+Overfull \hbox (28.78717pt too wide) detected at line 32
+ \OT1/cmr/m/n/12 7.3.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Distributions of the key se-lec-tion vari-abl
+es for sig-nal and 
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+ \OT1/cmr/m/n/12 (+20) back-ground pro-cesses, with$[]\OML/cmm/m/it/12 E=[]x$ $
+< \OT1/cmr/m/n/12 (+20) 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 (+20) 2$ to avoid si
+g-nal 
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+ \OT1/cmr/m/n/12 (+20) re-gion. (a) MeT dis-tri-bu-tion, (b) $\OML/cmm/m/it/12 
+p[]$\OT1/cmr/m/n/12 (+20) , (c) ptcone40 Clear 
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+ \OT1/cmr/m/n/12 (+20) sep-ar-a-tion between sig-nal and back-ground is ob-serv
+ed, 
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+ \OT1/cmr/m/n/12 (+20) mo-tiv-at-ing the chosen se-lec-tion thresholds at the d
+ashed 
+[15]
+Overfull \hbox (28.78717pt too wide) detected at line 33
+ \OT1/cmr/m/n/12 7.4.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 34
+ \OT1/cmr/m/n/12 7.5.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 35
+ \OT1/cmr/m/n/12 7.6.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+ [][] [][][]\OT1/cmr/m/n/12 (+20) dEdx shapes of dif-fer-ent slices of pT. All 
+slices are 
+
+Overfull \hbox (28.78717pt too wide) detected at line 36
+ \OT1/cmr/m/n/12 7.7.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 37
+ \OT1/cmr/m/n/12 7.8.  
+
+Overfull \hbox (28.78717pt too wide) detected at line 38
+ \OT1/cmr/m/n/12 7.9.  
+) [16]
 (/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertatio
 n-latex-markdown-apa-format/build/output/main.lot
-Overfull \hbox (23.17337pt too wide) detected at line 2
- \OT1/cmr/m/n/12 1.  
+Overfull \hbox (32.31216pt too wide) detected at line 2
+ \OT1/cmr/m/n/12 2.1.  
 
-Overfull \hbox (23.17337pt too wide) detected at line 3
- \OT1/cmr/m/n/12 2.  
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Summary of fer-mion masses and quantum num-be
+rs in the 
 
-Overfull \hbox (23.17337pt too wide) detected at line 4
- \OT1/cmr/m/n/12 3.  
+Overfull \hbox (32.31216pt too wide) detected at line 3
+ \OT1/cmr/m/n/12 4.1.  
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--4
- [][] [][]\OT1/cmr/m/n/12 Table show-ing num-ber of dis-con-nec-ted bump bonds 
-after 
-) [10]) (./3_1_Chapter_Introduction.tex
+Overfull \hbox (32.31216pt too wide) detected at line 4
+ \OT1/cmr/m/n/12 4.2.  
+
+Overfull \hbox (32.31216pt too wide) detected at line 5
+ \OT1/cmr/m/n/12 4.3.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Table show-ing num-ber of dis-con-nec-ted bum
+p bonds after 
+
+Overfull \hbox (32.31216pt too wide) detected at line 6
+ \OT1/cmr/m/n/12 6.1.  
+
+Overfull \hbox (32.31216pt too wide) detected at line 7
+ \OT1/cmr/m/n/12 6.2.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--7
+ [][] [][][]\OT1/cmr/m/n/12 (+3) Summary of the event and track-let se-lec-tion
+ re-quire-ments for 
+
+Overfull \hbox (32.31216pt too wide) detected at line 8
+ \OT1/cmr/m/n/12 6.3.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+ [][] [][][]\OT1/cmr/m/n/12 (+3) Summary of the event and track-let se-lec-tion
+ re-quire-ments for 
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+ \OT1/cmr/m/n/12 (+20) the CRs as-so-ci-ated with the three-layer SRs that con-
+tain a 
+
+Overfull \hbox (32.31216pt too wide) detected at line 9
+ \OT1/cmr/m/n/12 6.4.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Summary of the event and track-let se-lec-tio
+n re-quire-ments 
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+ \OT1/cmr/m/n/12 (+20) for the CRs as-so-ci-ated with the three-layer SRs that 
+veto a 
+
+Overfull \hbox (32.31216pt too wide) detected at line 10
+ \OT1/cmr/m/n/12 6.5.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+ [][] [][][]\OT1/cmr/m/n/12 (+3) Summary of the event and track-let se-lec-tion
+ re-quire-ments for 
+
+Overfull \hbox (32.31216pt too wide) detected at line 11
+ \OT1/cmr/m/n/12 6.6.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Summary of the ob-served and post-fit ex-pec-
+ted SR 
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+ \OT1/cmr/m/n/12 (+20) yields, with `  Bkg.' de-not-ing back-ground, and the mo
+del- 
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+ \OT1/cmr/m/n/12 (+20) independent fit res-ults. All sys-tem-atic and stat-ist-
+ical 
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+ \OT1/cmr/m/n/12 (+20) un-cer-tain-ties are con-sidered. The cal-cu-lated $\OML
+/cmm/m/it/12 p[]$\OT1/cmr/m/n/12 (+20) -value is 
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+ \OT1/cmr/m/n/12 (+20) capped at 0.5 and shown to-gether with the cor-res-pond-
+ing 
+
+Overfull \hbox (32.31216pt too wide) detected at line 12
+ \OT1/cmr/m/n/12 7.1.  
+
+Overfull \hbox (32.31216pt too wide) detected at line 13
+ \OT1/cmr/m/n/12 7.2.  
+
+Overfull \hbox (32.31216pt too wide) detected at line 14
+ \OT1/cmr/m/n/12 7.3.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+ [][] [][][]\OT1/cmr/m/n/12 (+20) Signal re-gion se-lec-tions. Note these are i
+n ad-di-tion to the 
+
+Overfull \hbox (32.31216pt too wide) detected at line 15
+ \OT1/cmr/m/n/12 7.4.  
+[17]
+Overfull \hbox (32.31216pt too wide) detected at line 16
+ \OT1/cmr/m/n/12 7.5.  
+
+Overfull \hbox (32.31216pt too wide) detected at line 17
+ \OT1/cmr/m/n/12 7.6.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) splitting sig-nals like the GMSB stau. A kinked track-le
+t is 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) re-quired as a unique probe for these sig-nal events. Si
+nce 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) sig-ni-fic-ant back-ground re-jec-tion is achieved from 
+the 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) kink and the $\OML/cmm/m/it/12 dE=dx$ \OT1/cmr/m/n/12 (+
+20) re-quire-ment, the $\OML/cmm/m/it/12 E[]$ \OT1/cmr/m/n/12 (+20) and vertex-
+ 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \OT1/cmr/m/n/12 (+20) constrained $\OML/cmm/m/it/12 p[]$ \OT1/cmr/m/n/12 (+20)
+ thresholds are loosened to 100GeV and 
+
+Overfull \hbox (32.31216pt too wide) detected at line 18
+ \OT1/cmr/m/n/12 7.7.  
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+ \OT1/cmr/m/n/12 (+20) splitting sig-nals like the GMSB stau. A kinked track-le
+t is 
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+ \OT1/cmr/m/n/12 (+20) re-quired as a unique probe for these sig-nal events. Si
+nce 
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+ \OT1/cmr/m/n/12 (+20) sig-ni-fic-ant back-ground re-jec-tion is achieved from 
+the 
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+ \OT1/cmr/m/n/12 (+20) kink and the $\OML/cmm/m/it/12 dE=dx$ \OT1/cmr/m/n/12 (+
+20) re-quire-ment, the $\OML/cmm/m/it/12 E[]$ \OT1/cmr/m/n/12 (+20) and vertex-
+ 
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+ \OT1/cmr/m/n/12 (+20) constrained $\OML/cmm/m/it/12 p[]$ \OT1/cmr/m/n/12 (+20)
+ thresholds are loosened to 100GeV and 
+
+Overfull \hbox (32.31216pt too wide) detected at line 19
+ \OT1/cmr/m/n/12 7.8.  
+
+Overfull \hbox (32.31216pt too wide) detected at line 20
+ \OT1/cmr/m/n/12 7.9.  
+) [18]) (./3_1_Chapter_Introduction.tex
 [Introduction]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 2.
 
-) (./3_2_Chapter_Motivation_Overview.tex [11]
+) (./3_2_Chapter_Motivation_Overview.tex [19]
 [Overview and Motivation]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 2.
 
-) (./3_3_Chapter_Experiemental.tex [12]
+
+Overfull \hbox (0.14023pt too wide) in paragraph at lines 7--11
+\OT1/cmr/m/n/12 (+3) significant achievements of modern theoretical and experim
+ental physics. Developed 
+
+Overfull \hbox (0.18121pt too wide) in paragraph at lines 24--25
+    \OT1/cmr/bx/n/12 (+17) 2.1.1 Fermions.[] \OT1/cmr/m/n/12 (+17) Particles ca
+n be classified in several ways, one of the 
+[20] [21 <../Pictures/Chap_2/Standard_Model_of_Elementary_Particles.png>]
+Overfull \hbox (21.64279pt too wide) in paragraph at lines 38--55
+[][] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
+[]\OT1/cmr/m/n/12 (+20) Table 2.1. |Sum-mary of fer-mion masses and quantum num
+-bers in the Stand-ard
+[22] [23]
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
+[]\OT1/cmr/m/it/12 (+20) Figure 2.2. |\OT1/cmr/m/n/12 (+20) Higgs quantum cor-r
+ec-tions ex-ample from 1 loop a) fer-mi-ons and b)
+[24 <../Pictures/Chap_2/h-ff-h.pdf> <../Pictures/Chap_2/h-ss-h.pdf>]
+Overfull \hbox (0.12643pt too wide) in paragraph at lines 113--114
+\OT1/cmr/m/n/12 (+14) its pres-ence is in-stead de-duced in-dir-ectly through i
+ts grav-it-a-tional ef-fects on vis-ible 
+[25] [26]
+Overfull \hbox (12.72935pt too wide) detected at line 162
+[]
+[27]
+Overfull \hbox (0.16933pt too wide) in paragraph at lines 182--183
+\OT1/cmr/m/n/12 (+6) the $[]$ can ap-pear as a long-lived charged particle be-f
+ore de-cay-ing into re-l-at-ively soft 
+[28]
+Underfull \hbox (badness 2150) in paragraph at lines 213--214
+[]\OT1/cmr/m/n/12 (+20) In the para-meter space rel-ev-ant for this ana-lysis, 
+the light-est 
+[29]
+Overfull \hbox (2.90347pt too wide) detected at line 269
+[]
+[30]) (./3_3_Chapter_Experiemental.tex [31]
 [Experimental Setup]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 27.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--43
-[]\OT1/cmr/m/it/12 Figure 1. |\OT1/cmr/m/n/12 Schem-atic of the LHC ac-cel-er-a
-tor complex[[]], show-ing the se-quence of
+Overfull \hbox (0.21422pt too wide) in paragraph at lines 33--38
+\OT1/cmr/m/n/12 (+20) the four main ex-per-i-ments: AT-LAS, CMS, LHCb, and ALIC
+E. The center-of-mass 
 
 Underfull \hbox (badness 10000) in paragraph at lines 43--43
-\OT1/cmr/m/n/12 ac-cel-er-at-ors used to pre-pare and in-ject pro-ton beams int
-o the LHC ring. Im-age
-[13]
+[]\OT1/cmr/m/it/12 (+20) Figure 3.1. |\OT1/cmr/m/n/12 (+20) Schem-atic of the L
+HC ac-cel-er-ator com-plex[[][]9[][]], show-ing the se-quence
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
+\OT1/cmr/m/n/12 (+20) of ac-cel-er-at-ors used to pre-pare and in-ject pro-ton 
+beams into the LHC ring. Im-age
+[32] [33 <../Pictures/LHC_complex.pdf, page is rotated 90 degrees>]
 Underfull \hbox (badness 10000) in paragraph at lines 104--104
-[]\OT1/cmr/m/it/12 Figure 2. |\OT1/cmr/m/n/12 Schem-atic view of the AT-LAS det
-ector[[]], show-ing the main sub-sys-tems
-[14 <../Pictures/LHC_complex.pdf, page is rotated 90 degrees>] [15 <../Pictures
-/ATLAS_CrossSection.jpg>] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 196--196
-[]\OT1/cmr/m/it/12 Figure 3. |\OT1/cmr/m/n/12 Schem-atic view of the In-ner Det
-ector[[]], show-ing the beam pipe, pixel
-[17 <../Pictures/IDbriefing.png>] [18] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 306--306
-[]\OT1/cmr/m/it/12 Figure 5. |\OT1/cmr/m/n/12 Schem-atic view of the Calorimete
-rs[[]], show-ing the elec-tro-mag-netic and
-[20 <../Pictures/SiliconShot.png>] [21 <../Pictures/calorimeter.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 341--341
-[]\OT1/cmr/m/it/12 Figure 6. |\OT1/cmr/m/n/12 Schem-atic lay-out of the AT-LAS 
-Muon Spec-tro-meter show-ing the bar-rel
-
-Underfull \hbox (badness 10000) in paragraph at lines 341--341
-\OT1/cmr/m/n/12 and en-d-cap re-gions along with the loc-a-tions of the dif-fer
--ent de-tector tech-no-lo-gies
-) (./3_4_Chapter_Experiemental_Upgrades.tex [22] [23 <../Pictures/MuonSys.jpg>]
+[]\OT1/cmr/m/it/12 (+20) Figure 3.2. |\OT1/cmr/m/n/12 (+20) Schem-atic view of 
+the AT-LAS de-tector[[][]11[][]], show-ing the main
+[34 <../Pictures/ATLAS_CrossSection.jpg>]
+Overfull \hbox (0.10127pt too wide) in paragraph at lines 118--122
+\OT1/cmr/m/n/12 (+9) muons. Due to their relatively large mass, long lifetime, 
+and weak interactions with 
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+[]\OT1/cmr/m/it/12 (+14) Figure 3.3. |\OT1/cmr/m/n/12 (+14) Schem-atic view of 
+the In-ner De-tector[[][]11[][]], show-ing the beam pipe, pixel
+[36] [37 <../Pictures/IDbriefing.png>]
+Overfull \hbox (0.13171pt too wide) in paragraph at lines 271--273
+    \OT1/cmr/bx/it/12 (+10) 3.2.1.2 Semiconductor Tracker.[] \OT1/cmr/m/n/12 (+
+10) The Semiconductor Tracker (SCT) 
+[38] [39 <../Pictures/SiliconShot.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 309--309
+[]\OT1/cmr/m/it/12 (+20) Figure 3.5. |\OT1/cmr/m/n/12 (+20) Schem-atic view of 
+the Calor-i-met-ers[[][]11[][]], show-ing the elec-tro-mag-netic
+[40] [41 <../Pictures/calorimeter.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 345--345
+\OT1/cmr/m/n/12 (+20) and en-d-cap re-gions along with the loc-a-tions of the d
+if-fer-ent de-tector tech-no-lo-gies
+) (./3_4_Chapter_Experiemental_Upgrades.tex [42 <../Pictures/MuonSys.jpg>]
 [Experimental Upgrades]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 2.
 
-[24] [25] [26]
+[43]
+Overfull \hbox (0.11644pt too wide) in paragraph at lines 39--45
+\OT1/cmr/m/n/12 (+8) instantaneous luminosity result in the ID no longer being 
+sufficient for tracking and 
+[44]
+Overfull \hbox (0.12083pt too wide) in paragraph at lines 68--70
+\OT1/cmr/m/n/12 (+20) sec-tion will fo-cus on the Pixel De-tector as this is th
+e area of ITk that the ma-jor-ity 
+[45]
+Overfull \hbox (0.13043pt too wide) in paragraph at lines 82--93
+\OT1/cmr/m/n/12 (+9) to mit-ig-ate ra-di-ation dam-age ef-fects and pro-long se
+nsor life. These rings and staves 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (0.12285pt too wide) in paragraph at lines 94--99
+\OT1/cmr/m/n/12 (+2) module testing and quality assurance was needed at SLAC. G
+iven the nature of ITk 
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+[]   \OT1/cmr/m/n/10.95 (+17) (a) |ITk Stave and Ring Lay-out. Blue lines in-di
+c-ate ITk Strip stave and ring Loc-a-tions.
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--151
+[]   \OT1/cmr/m/n/10.95 (+20) (b) |Zoom in of ITK Pixel Sys-tem. Note that firs
+t two lay-ers are the In-ner Sys-tem and
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
+[]\OT1/cmr/m/it/12 (+20) Figure 4.1. |\OT1/cmr/m/n/12 (+20) Cut away view of IT
+k in one quad-rant only. Lay-out is only in pos-it-ive
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
+\OT1/cmr/m/n/12 (+11) z dir-ec-tion. Full de-tector is sym-met-ric about the z=
+0 and ex-tends in a full cyl-in-der
+
+LaTeX Warning: Float too large for page by 6.84088pt on input line 159.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
-[]\OT1/cmr/m/it/12 Figure 8. |\OT1/cmr/m/n/12 View of ITk triplet and quad mod-
-ules. Note the at-tached power and data
-[27] [28 <../Pictures/ITK_fig1.png> <../Pictures/ITK_fig2.png>] [29 <../Picture
-s/Trip_rec.png (PNG copy)> <../Pictures/Quad_rec.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
-[]\OT1/cmr/m/it/12 Figure 9. |\OT1/cmr/m/n/12 Schem-atic of the quarter shell s
-up-port struc-ture of the in-ner pixel
-[30 <../Pictures/ShellIntegration.png>] [31] [32 <../Pictures/ITkServices.png>]
- [33] [34]
-Underfull \hbox (badness 10000) in paragraph at lines 319--319
-[]\OT1/cmr/m/it/12 Figure 11. |\OT1/cmr/m/n/12 Dis-con-nec-ted bump bonds from 
-one sensor be-fore and after 100
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+[]\OT1/cmr/m/it/12 (+20) Figure 4.2. |\OT1/cmr/m/n/12 (+20) View of ITk triplet
+ and quad mod-ules. Note the at-tached power and
+[47] [48 <../Pictures/ITK_fig1.png> <../Pictures/ITK_fig2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 207--207
+[]\OT1/cmr/m/it/12 (+20) Figure 4.3. |\OT1/cmr/m/n/12 (+20) Schem-atic of the q
+uarter shell sup-port struc-ture of the in-ner pixel
+[49 <../Pictures/Trip_rec.png (PNG copy)> <../Pictures/Quad_rec.png (PNG copy)>
+] [50 <../Pictures/ShellIntegration.png>] [51 <../Pictures/ITkServices.png>]
+Overfull \hbox (0.13841pt too wide) in paragraph at lines 254--260
+\OT1/cmr/m/n/12 (+1) de-form-ing the ti-tanium pipe. This con-nec-tion al-lows 
+the local sup-ports to be cooled 
+[52] [53]
+Underfull \hbox (badness 10000) in paragraph at lines 322--322
+[]\OT1/cmr/m/n/12 (+20) Table 4.3. |Table show-ing num-ber of dis-con-nec-ted b
+ump bonds after thermal
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--319
-\OT1/cmr/m/n/12 thermal cycles. Blue pixels in-dic-ate dis-con-nec-ted bump bon
-ds. Red pixels in-dic-ate
-) (./3_5_Chapter_Reconstruction.tex [35 <../Pictures/bumpBondDelamination.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
+[]\OT1/cmr/m/it/12 (+20) Figure 4.5. |\OT1/cmr/m/n/12 (+20) Dis-con-nec-ted bum
+p bonds from one sensor be-fore and after 100
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
+\OT1/cmr/m/n/12 (+20) thermal cycles. Blue pixels in-dic-ate dis-con-nec-ted bu
+mp bonds. Red pixels in-dic-ate
+) (./3_5_Chapter_Reconstruction.tex [54] [55 <../Pictures/bumpBondDelamination.
+png>]
 [Object Reconstruction]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 2.
 
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 7.
+Overfull \hbox (0.12077pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/12 (+10) clusters, where neigh-bors are defined as pixels shar-ing
+ an edge or a corner, up 
+[56]
+Overfull \hbox (0.16496pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/12 (+18) a score based on cri-teria such as the num-ber of hits, s
+hared hits, miss-ing hits, 
 
-[36] [37]) (./3_6_Chapter_Disappearing_Tracks.tex [38]
+Overfull \hbox (0.1551pt too wide) in paragraph at lines 30--31
+[]\OT1/cmr/m/n/12 (+15) The result of the tracking algrithm is track objects de
+fined by a helical path 
+[57] [58]
+
+Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instea
+d on input line 92.
+
+[59] [60]
+Missing character: There is no ; in font nullfont!
+
+! Package tikz Error: Cannot parse this coordinate.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+\GenericError  ...                                
+                                                  \endgroup 
+\pgfutil@next ...or {Cannot parse this coordinate}
+                                                  #1{\pgfpointorigin }
+<to be read again> 
+                   3
+\tikz@scan@point@coordinate ->(3, (3*sin(35) + 3
+                                                *sin(-25))/2 + .50)
+l.187 		\coordinate (h) at (\r, \y)
+                                   ;
+
+! Package tikz Error: Giving up on this path. Did you forget a semicolon?.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+\GenericError  ...                                
+                                                  \endgroup 
+<argument> ...s path. Did you forget a semicolon?}
+                                                  \global \let \tikz@expand@...
+
+\pgfutil@firstoftwo #1#2->#1
+                            
+\tikz@scan@point@coordinate ->(3, (3*sin(35) + 3
+                                                *sin(-25))/2 + .50)
+l.187 		\coordinate (h) at (\r, \y)
+                                   ;
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no + in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
+[]\OT1/cmr/m/it/12 (+20) Figure 5.1. |\OT1/cmr/m/n/12 (+20) Schem-atic view of 
+sagitta meas-ure-ment for three hits in si-li-cion. Note,
+
+Overfull \hbox (0.10828pt too wide) in paragraph at lines 274--276
+[]\OT1/cmr/m/n/12 (+7) In this assuption is the implict assumptuon that are no 
+hard scatterings as a 
+[61] [62]
+Overfull \hbox (0.14552pt too wide) in paragraph at lines 342--344
+\OT1/cmr/m/n/12 (+16) Where $\OML/cmm/m/it/12 w\OT1/cmr/m/n/12 (+16) (\OML/cmm/
+m/it/12 !\OT1/cmr/m/n/12 (+16) )$ is the probability of energy loss $\OML/cmm/m
+/it/12 !$ \OT1/cmr/m/n/12 (+16) of a particle per unit path and $\OML/cmm/m/it/
+12 n[]$ \OT1/cmr/m/n/12 (+16) is 
+[63]
+Overfull \hbox (0.14798pt too wide) in paragraph at lines 371--372
+[]\OT1/cmr/m/n/12 (+14) In the thin absorber limit, this formalism reduces to t
+he well-known Landau 
+) (./3_6_Chapter_Disappearing_Tracks.tex [64]
 [Disapearing Tracks]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 2.
 
-) (./3_7_Chapter_Ionization_Loss_Disappearing_Tracks.tex [39]
-[Disappearing Tracks with High Ionization Loss]
+(./DisappearingTrackPaper/intro.tex [65] [66]
+Overfull \hbox (0.18214pt too wide) in paragraph at lines 22--26
+\OT1/cmr/m/n/12 (+12) pro-posed grav-iton. This model is para-met-erised by the
+ $\OML/cmm/m/it/12 ^^\$\OT1/cmr/m/n/12 (+12) -slepton mass and life-time, 
+[67] [68]
+Overfull \hbox (0.19592pt too wide) in paragraph at lines 34--37
+\OT1/cmr/m/n/12 (+6) GMSB-inspired scenarios, as shown in Figure [][]6.1[][], i
+n the context of simplified SUSY 
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+[]\OT1/cmr/m/it/12 (+20) Figure 6.1. |\OT1/cmr/m/n/12 (+20) Rep-res-ent-at-ive 
+sig-nal dia-grams for [][](a)[][][] the elec-troweak pro-duc-tion of
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+\OT1/cmr/m/n/12 (+4) SUSY mod-els. The sig-nal sig-na-ture con-sists of a long-
+lived $[]$ or $\OML/cmm/m/it/12 ^^\$\OT1/cmr/m/n/12 (+4) -slepton, miss-ing
+[69]
+Overfull \hbox (0.14879pt too wide) in paragraph at lines 78--87
+\OT1/cmr/m/n/12 (+1) the track-ing tech-niques ne-ces-sary for shorter life-tim
+e scen-arios. This search em-ploys 
+
+Overfull \hbox (0.13039pt too wide) in paragraph at lines 78--87
+\OT1/cmr/m/n/12 (+6) quality re-quire-ments. The new track-quality cri-teria re
+-quires the dis-ap-pear-ing track 
+[70 <../figures/intro/C1N1.pdf> <../figures/intro/staustau-jtautauN1N1.pdf> <..
+/figures/intro/staustau-jtautauG1G1.pdf>]
+Overfull \hbox (0.18579pt too wide) in paragraph at lines 89--90
+\OT1/cmr/m/n/12 (+14) the sys-tem-atic un-cer-tain-ties con-sidered, with Sec-t
+ion [][]6.9[][] present-ing the res-ults and 
+) (./DisappearingTrackPaper/detector.tex
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+[][][]\OT1/cmr/m/n/10 (+20) ATLAS uses a right-handed co-ordin-ate sys-tem with
+ its ori-gin at the nom-inal in-ter-ac-tion
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+\OT1/cmr/m/n/10 (+20) point (IP) in the centre of the de-tector and the $\OML/c
+mm/m/it/10 z$\OT1/cmr/m/n/10 (+20) -axis along the beam pipe. The $\OML/cmm/m/i
+t/10 x$\OT1/cmr/m/n/10 (+20) -axis points
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+\OT1/cmr/m/n/10 (+20) from the IP to the centre of the LHC ring, and the $\OML/
+cmm/m/it/10 y$\OT1/cmr/m/n/10 (+20) -axis points up-wards. Po-lar co-ordin-ates
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+\OT1/cmr/m/n/10 (+20) (\OML/cmm/m/it/10 r; ^^^\OT1/cmr/m/n/10 (+20) )$ are used
+ in the trans-verse plane, $\OML/cmm/m/it/10 ^^^$ \OT1/cmr/m/n/10 (+20) be-ing 
+the azi-muthal angle around the $\OML/cmm/m/it/10 z$\OT1/cmr/m/n/10 (+20) -axis
+. The
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+\OT1/cmr/m/n/10 (+20) pseu-dorapid-ity is defined in terms of the po-lar angle 
+$\OML/cmm/m/it/10 ^^R$ \OT1/cmr/m/n/10 (+20) as $\OML/cmm/m/it/10 ^^Q \OT1/cmr/
+m/n/10 (+20) = \OMS/cmsy/m/n/10 ^^@ [] []\OT1/cmr/m/n/10 (+20) (\OML/cmm/m/it/1
+0 ^^R=\OT1/cmr/m/n/10 (+20) 2)$ and is equal to
+[71]
+Overfull \hbox (0.18936pt too wide) in paragraph at lines 36--43
+\OT1/cmr/m/n/12 (+20) track-ing cham-bers meas-ur-ing the de-flec-tion of muons
+ in a mag-netic field gen-er-ated 
+[72]) (./DisappearingTrackPaper/data_mc.tex [73]
+Overfull \hbox (0.16652pt too wide) in paragraph at lines 4--5
+\OT1/cmr/m/n/12 (+9) ap-ply-ing an off-line lepton trans-verse mo-mentum re-qui
+re-ment of $\OML/cmm/m/it/12 p[]\OT1/cmr/m/n/12 (+9) (\OML/cmm/m/it/12 `\OT1/cm
+r/m/n/12 (+9) ) \OML/cmm/m/it/12 > \OT1/cmr/m/n/12 (+9) 27 []$ [[][]75[][], 
+
+Overfull \hbox (0.13487pt too wide) in paragraph at lines 6--10
+\OT1/cmr/m/n/12 (+1) AT-LAS sim-u-la-tion in-fra-struc-ture [[][]77[][]] and ei
+ther $[]$ [[][]78[][]] or a faster sim-u-la-tion 
+[74]
+Overfull \hbox (73.2636pt too wide) in paragraph at lines 11--12
+[]\OT1/cmr/m/n/12 (-20) The elec-troweakino sig-nal samples were gen-er-ated wi
+th \OT1/cmr/m/sc/12 (-20) Mad-Graph5[]aMC@NLO\OT1/cmr/m/n/12 (-20) 2.9.9 [[][]8
+2[][]] 
+
+Overfull \hbox (0.12773pt too wide) in paragraph at lines 13--14
+[]\OT1/cmr/m/n/12 (+15) For all signal scenarios the underlying event was model
+led with the A14 [[][]84[][]] 
+[75]
+Overfull \hbox (0.112pt too wide) in paragraph at lines 21--22
+\OT1/cmr/m/n/12 (+13) The mat-rix ele-ments were matched with the \OT1/cmr/m/sc
+/12 (+13) Sherpa \OT1/cmr/m/n/12 (+13) par-ton shower [[][]102[][]] us-ing the 
+
+[76]) (./DisappearingTrackPaper/reco.tex
+Overfull \hbox (0.14706pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/n/12 (+17) bremsstrahlung losses [[][]110[][]]. They are re-quired t
+o have $\OML/cmm/m/it/12 p[] > \OT1/cmr/m/n/12 (+17) 10 []$ and $\OMS/cmsy/m/n/
+12 j\OML/cmm/m/it/12 ^^Q\OMS/cmsy/m/n/12 j \OML/cmm/m/it/12 < \OT1/cmr/m/n/12 (
++17) 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 (+17) 47$, 
+[77] [78]
+Overfull \hbox (0.17659pt too wide) in paragraph at lines 13--14
+\OT1/cmr/m/n/12 (+13) soft term is calculated from tracks matched to the primar
+y vertex and not assigned 
+[79]
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+[][][]\OT1/cmr/m/n/10 (+20) A hole is a miss-ing hit on a re-con-struc-ted trac
+k tra-ject-ory, pos-sibly due to a non-functioning
+[80]
+
+Package caption Warning: \label without proper reference on input line 30.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:reco:pionBDT' on page 81 undefined on input line 
+19.
+
+
+Package caption Warning: \label without proper reference on input line 34.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:reco:pionEff' on page 81 undefined on input line 
+19.
+
+
+Overfull \hbox (0.15082pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/12 (+10) hits/holes as-so-ci-ated with the track in the SCT, the n
+um-ber of hits as-so-ci-ated with 
+
+Overfull \hbox (0.1369pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/12 (+2) misid-en-ti-fic-a-tion rate, a trans-verse im-pact para-me
+ter re-quire-ment of $\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 d[]\OMS/cmsy/m/n/12 j\
+OML/cmm/m/it/12 =^^[\OT1/cmr/m/n/12 (+2) (\OML/cmm/m/it/12 d[]\OT1/cmr/m/n/12 (
++2) ) \OML/cmm/m/it/12 < \OT1/cmr/m/n/12 (+2) 40$ 
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+[]\OT1/cmr/m/it/12 (+20) Figure 6.2. |\OT1/cmr/m/n/12 (+20) Rep-res-ent-at-ive 
+dis-tri-bu-tions re-lated to the re-con-struc-tion of track-lets
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\OT1/cmr/m/n/12 (+20) and charged pi-ons: [][](a)[][][] event yields and re-con
+-struc-tion ef-fi-cien-cies for three- and
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\OT1/cmr/m/n/12 (+20) four-layer track-let re-con-struc-tion as a func-tion of 
+$[]$ de-cay ra-dius; [][](a)[][][] BDT
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\OT1/cmr/m/n/12 (+20) out-put score used to judge if an event con-tains a low-e
+nergy pion, show-ing the
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\OT1/cmr/m/n/12 (+20) train-ing data-set (solid his-to-gram) and the test data-
+set (points); [][](a)[][][] event yields
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\OT1/cmr/m/n/12 (+20) and re-con-struc-tion ef-fi-ciency for charged pi-ons as 
+a func-tion of the true pion
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\OT1/cmr/m/n/12 (+13) trans-verse mo-mentum as meas-ured in the lab-frame, wher
+e the ac-cept-ance in-cludes
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\OT1/cmr/m/n/12 (+20) all charged-pion re-con-struc-tion ef-fects but not geo-m
+et-ric ac-cept-ance from track-let
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\OT1/cmr/m/n/12 (+20) re-con-struc-tion (which is as-sumed to already have been
+ re-con-struc-ted). The true
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\OT1/cmr/m/n/12 (+20) sys-tem with the $\OML/cmm/m/it/12 z$\OT1/cmr/m/n/12 (+20
+) -axis along the beam pipe. For [][](a)[][][] and [][](a)[][][] the filled his
+-to-gram
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\OT1/cmr/m/n/12 (+4) the yield after ap-ply-ing the track-let se-lec-tion or tr
+ack-let+pion se-lec-tion. The points
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\OT1/cmr/m/n/12 (+20) de-note the re-con-struc-tion ef-fi-ciency. A rep-res-ent
+-at-ive higgsino sig-nal scen-ario with
+[81]) (./DisappearingTrackPaper/analysis.tex
+Overfull \hbox (0.1079pt too wide) in paragraph at lines 1--2
+\OT1/cmr/m/n/12 (+1) re-l-at-ive to the back-ground pro-cesses. All SRs re-quir
+e events to have zero leptons, at 
+
+Overfull \hbox (0.16661pt too wide) in paragraph at lines 1--2
+\OT1/cmr/m/n/12 (+16) lay-ers and dif-fer-ing mainly in whether or not a low-en
+ergy charged pion is re-quired. 
+[82 <../figures/reco/Public/decayr_250_0p04.pdf, page is rotated 90 degrees> <.
+./figures/reco/Public/bdt_score_3layer_scteffective.pdf, page is rotated 90 deg
+rees> <../figures/reco/Public/sp_eff_250_0p04.pdf, page is rotated 90 degrees>]
+
+Overfull \hbox (24.78061pt too wide) in paragraph at lines 7--24
+ [][] 
+
+Overfull \hbox (0.15219pt too wide) in paragraph at lines 26--27
+\OT1/cmr/m/n/12 (+14) layers are defined in order to target very short-lived ch
+arged SUSY particles, which 
+
+Overfull \hbox (0.10976pt too wide) in paragraph at lines 26--27
+\OT1/cmr/m/n/12 (+18) and the main difference between the two is the absence or
+ presence of a low-energy 
+[83]
+Underfull \hbox (badness 10000) in paragraph at lines 33--33
+[]\OT1/cmr/m/it/12 (+20) Figure 6.3. |\OT1/cmr/m/n/12 (+20) Schem-atic dia-gram
+ il-lus-trat-ing how the sig-nal scen-arios are de-tec-ted
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--33
+\OT1/cmr/m/n/12 (+4) and how the back-ground pro-cesses may enter the SR se-lec
+-tions. The de-tector lay-ers
+[84]) (./DisappearingTrackPaper/backgrounds.tex
+Overfull \hbox (0.14476pt too wide) in paragraph at lines 1--2
+\OT1/cmr/m/n/12 (+12) and a sim-ilar ap-proach is used for all back-grounds sou
+rces. Tem-plate re-gions (TRs) 
+[85 <../figures/analysis/Background_Diagram.pdf>] [86]
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]\OT1/cmr/m/it/12 (+20) Figure 6.4. |\OT1/cmr/m/n/12 (+20) In-di-vidual com-po
+n-ents used in the es-tim-a-tion of the fake back-ground:
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[][]\OT1/cmr/m/n/12 (+20) (a)[][][] shows the ori-ginal tem-plate, $\OML/cmm/m/
+it/12 N[]\OT1/cmr/m/n/12 (+20) (\OML/cmm/m/it/12 p[]\OT1/cmr/m/n/12 (+20) )$, a
+s a solid line. The tem-plates after
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+\OT1/cmr/m/n/12 (+20) the ap-plic-a-tion of the trans-fer factors are shown as 
+dashed lines; [][](b)[][][] shows the
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+\OT1/cmr/m/n/12 (+20) with re-spect to $\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 d[]\
+OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 =^^[\OT1/cmr/m/n/12 (+20) (\OML/cmm/m/it/12 d
+[]\OT1/cmr/m/n/12 (+20) )$, trans-fer factors $[][](\OML/cmm/m/it/12 d[]\OT1/cm
+r/m/n/12 (+20) )$ used to re-move the
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+\OT1/cmr/m/n/12 (+20) de-pend-ence; and [][](c)[][][] shows a com-par-ison betw
+een the pure fake and hy-brid
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+\OT1/cmr/m/n/12 (+20) fake con-tri-bu-tions and the $\OML/cmm/m/it/12 p[]$\OT1/
+cmr/m/n/12 (+20) -dependent trans-fer factors $[][](\OML/cmm/m/it/12 p[]\OT1/cm
+r/m/n/12 (+20) )$ used to
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+\OT1/cmr/m/n/12 (+20) ex-tra-pol-ate from the tem-plate re-gion that con-tains 
+pure fakes to the SR, which
+[87] [88 <../figures/background/Public/template_original_4layer.pdf, page is ro
+tated 90 degrees> <../figures/background/Public/h_weight_d0sig_3layer_z0cr_to_4
+layer_lowmet.pdf, page is rotated 90 degrees> <../figures/background/Public/tra
+cklet_vcpt_4layer_label.pdf, page is rotated 90 degrees>]
+Overfull \hbox (0.11227pt too wide) in paragraph at lines 42--43
+\OT1/cmr/m/n/12 (+12) CR to the high-CR used to derive the fake background $[][
+]$ in the signal regions 
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+[]\OT1/cmr/m/it/12 (+20) Figure 6.5. |\OT1/cmr/m/n/12 (+20) In-di-vidual con-tr
+i-bu-tions used in the es-tim-a-tion of the elec-tron
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+\OT1/cmr/m/n/12 (+20) back-ground: [][](a)[][][] presents the ori-ginal elec-tr
+on $\OML/cmm/m/it/12 p[]$ \OT1/cmr/m/n/12 (+20) tem-plate, $\OML/cmm/m/it/12 N[
+]\OT1/cmr/m/n/12 (+20) (\OML/cmm/m/it/12 p[]\OT1/cmr/m/n/12 (+20) )$, as a soli
+d
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+\OT1/cmr/m/n/12 (+20) line, with the tem-plates also shown after the ap-plic-a-
+tion of each trans-fer/smearing
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+\OT1/cmr/m/n/12 (+20) factor as dashed lines; [][](b)[][][] shows the trans-fer
+ factor, $[][]$, used to cor-rect
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+\OT1/cmr/m/n/12 (+20) for the like-li-hood of re-con-struct-ing an elec-tron tr
+ack as a track-let; [][](c)[][][] shows the
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+\OT1/cmr/m/n/12 (+20) trans-fer factors, $[][]$, used to cor-rect for the like-
+li-hood of an elec-tron not
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+\OT1/cmr/m/n/12 (+20) be-ing as-so-ci-ated with a calor-i-meter en-ergy cluster
+; and [][](d)[][][] shows the smear-ing
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+\OT1/cmr/m/n/12 (+20) func-tions, $\OML/cmm/m/it/12 f[]$\OT1/cmr/m/n/12 (+20) ,
+ used to cor-rect the meas-ured elec-tron track $\OML/cmm/m/it/12 p[]$ \OT1/cmr
+/m/n/12 (+20) to the track-let $\OML/cmm/m/it/12 p[]$
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+\OT1/cmr/m/n/12 (+20) (defined on the fig-ure). While the track-let $\OML/cmm/m
+/it/12 p[]$ \OT1/cmr/m/n/12 (+20) tem-plate and the TFs are de-pend-ent
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+\OT1/cmr/m/n/12 (+20) upon both $\OML/cmm/m/it/12 p[]$ \OT1/cmr/m/n/12 (+20) an
+d $\OML/cmm/m/it/12 ^^Q$\OT1/cmr/m/n/12 (+20) , the com-pon-ents are shown with
+ their de-pend-ence upon the
+[89] [90 <../figures/background/Public/factor_comparison_electron.pdf, page is 
+rotated 90 degrees> <../figures/background/Public/m_h_tfpix_ele_pt_incl.pdf, pa
+ge is rotated 90 degrees> <../figures/background/Public/tf_caloveto_1d.pdf, pag
+e is rotated 90 degrees> <../figures/background/Public/smearing_function_with_b
+and_ver2.pdf, page is rotated 90 degrees>] [91]
+Overfull \hbox (0.16342pt too wide) in paragraph at lines 85--86
+\OT1/cmr/m/n/12 (+5) ($\OML/cmm/m/it/12 f[]$\OT1/cmr/m/n/12 (+5) ) is ap-plied 
+to ac-count for dif-fer-ences between the meas-ured muon track $\OML/cmm/m/it/1
+2 p[]$ \OT1/cmr/m/n/12 (+5) in 
+[92]
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+[]\OT1/cmr/m/n/12 (+20) Table 6.2. |Sum-mary of the event and track-let se-lec-
+tion re-quire-ments for the CRs
+
+Overfull \hbox (0.16093pt too wide) in paragraph at lines 116--117
+\OT1/cmr/m/n/12 (+7) de-scribed in Sec-tion [][]6.9[][]) to provide a fi-nal es
+-tim-ate of the back-ground dis-tri-bu-tions 
+[93]
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
+[]\OT1/cmr/m/n/12 (+20) Table 6.3. |Sum-mary of the event and track-let se-lec-
+tion re-quire-ments for the CRs
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+[]\OT1/cmr/m/n/12 (+20) Table 6.4. |Sum-mary of the event and track-let se-lec-
+tion re-quire-ments for the CRs
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ../figures/background/Schematic-newText
+.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
+d
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--168
+[]\OT1/cmr/m/it/12 (+20) Figure 6.6. |\OT1/cmr/m/n/12 (+20) Schem-atic dia-gram
+ for the back-ground es-tim-a-tion strategy, de-scrib-ing
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--168
+\OT1/cmr/m/n/12 (+20) the us-age of tem-plate re-gions (TRs), and re-laxed se-l
+ec-tions to cal-cu-late trans-fer
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--168
+\OT1/cmr/m/n/12 (+19) factors (TFs) be-fore per-form-ing the fit us-ing con-tro
+l re-gions (CRs). The kin-ematic
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--168
+\OT1/cmr/m/n/12 (+20) re-gions are or-tho-gonal due to se-lec-tions on $\OML/cm
+m/m/it/12 E[]$\OT1/cmr/m/n/12 (+20) , track-let $\OML/cmm/m/it/12 p[]$\OT1/cmr/
+m/n/12 (+20) , and track-let $\OML/cmm/m/it/12 E[]$\OT1/cmr/m/n/12 (+20) ,
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--168
+\OT1/cmr/m/n/12 (+20) with high calor-i-meter en-er-gies (`  calo-side') dom-in
+-ated by the had-ron back-ground,
+
+Overfull \hbox (0.1057pt too wide) in paragraph at lines 172--173
+\OT1/cmr/m/n/12 (+16) val-id-a-tion re-gions (VRs) are con-struc-ted by se-lect
+-ing events kin-emat-ic-ally closer to 
+[94] [95 <../figures/background/Schematic-newText.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
+[]\OT1/cmr/m/n/12 (+20) Table 6.5. |Sum-mary of the event and track-let se-lec-
+tion re-quire-ments for the
+) (./DisappearingTrackPaper/systematics.tex
+Overfull \hbox (0.11641pt too wide) in paragraph at lines 1--2
+\OT1/cmr/m/n/12 (+20) their stat-ist-ical un-cer-tain-ties. Each source of back
+-ground un-cer-tainty ($\OML/cmm/m/it/12 p[]$ \OT1/cmr/m/n/12 (+20) tem-plate 
+[96]
+Overfull \hbox (0.1876pt too wide) in paragraph at lines 7--8
+[]\OT1/cmr/m/n/12 (+10) The the-or-et-ical un-cer-tain-ties ori-gin-at-ing from
+ the choice of fac-tor-isa-tion and 
+
+Overfull \hbox (0.13994pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/n/12 (+16) scen-arios. The the-or-et-ical mod-el-ling un-cer-tain-ti
+es con-trib-ute up to 20%, in-creas-ing 
+[97]
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+[]\OT1/cmr/m/it/12 (+20) Figure 6.7. |\OT1/cmr/m/n/12 (+20) A sum-mary of the s
+ys-tem-atic un-cer-tain-ties af-fect-ing the back-ground
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+\OT1/cmr/m/n/12 (+20) fit'). The total un-cer-tainty is in-dic-ated by a solid 
+black line. The in-di-vidual
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+\OT1/cmr/m/n/12 (+20) un-cer-tain-ties may not sum in quad-rat-ure to the total
+ un-cer-tainty, due to
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+\OT1/cmr/m/n/12 (+20) cor-rel-a-tions between the dif-fer-ent com-pon-ents. The
+ un-cer-tain-ties arising from the
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+\OT1/cmr/m/n/12 (+20) es-tim-a-tion of the fake-tracklet back-ground, which are
+ the dom-in-ant un-cer-tain-ties,
+) (./DisappearingTrackPaper/results.tex [98] [99 <../figures/systematics/Draft_
+1/sr_syst.pdf, page is rotated 90 degrees>]
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[]\OT1/cmr/m/it/12 (+20) Figure 6.8. |\OT1/cmr/m/n/12 (+20) The post-fit yields
+ in the CRs. All stat-ist-ical and sys-tem-atic
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+\OT1/cmr/m/n/12 (+20) un-cer-tain-ties are con-sidered in the er-ror bands. Thr
+ee rep-res-ent-at-ive pre-fit sig-nal
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+[]\OT1/cmr/m/it/12 (+20) Figure 6.9. |\OT1/cmr/m/n/12 (+20) The post-fit track-
+let $\OML/cmm/m/it/12 p[]$ \OT1/cmr/m/n/12 (+20) dis-tri-bu-tions in [][]()[][]
+[] VR$[]$, [][]()[][][] VR$[]$, and
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+[][]\OT1/cmr/m/n/12 (+20) ()[][][] VR$[]$. The dashed ver-tical line de-notes t
+he bound-ary between the CR and
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\OT1/cmr/m/n/12 (+20) VR se-lec-tions. The pre-fit sig-nal dis-tri-bu-tions are
+ in-dic-ated with dashed lines.
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\OT1/cmr/m/n/12 (+20) The lower pad shows the ra-tio of the ob-served yields to
+ the post-fit pre-dicted
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\OT1/cmr/m/n/12 (+20) back-ground yields. The last bin in-cludes over-flow even
+ts. All stat-ist-ical and
+[100 <../figures/results/Public/cr_allchannels_postfit.pdf, page is rotated 90 
+degrees>]
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+[]\OT1/cmr/m/it/12 (+20) Figure 6.10. |\OT1/cmr/m/n/12 (+20) The ob-served and 
+ex-pec-ted event yields in the VRs and SRs.
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+\OT1/cmr/m/n/12 (+20) The lower pads show the ra-tio of the ob-served yields to
+ the post-fit pre-dicted
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+\OT1/cmr/m/n/12 (+20) back-ground yields and the stat-ist-ical sig-ni-fic-ance 
+[[][]127[][]] of the ob-served data. A
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+\OT1/cmr/m/n/12 (+20) red ar-row is used to in-dic-ate that a ra-tio value is o
+ut-side the dis-played in-ter-val.
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+\OT1/cmr/m/n/12 (+20) The back-ground es-tim-ates are cal-cu-lated from the bac
+kground-only fit. All
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+\OT1/cmr/m/n/12 (+20) stat-ist-ical and sys-tem-atic un-cer-tain-ties are con-s
+idered in the er-ror bands. Three
+
+Package caption Warning: \label without proper reference on input line 48.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:SRA:a' on page 101 undefined on input line 43.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+[]\OT1/cmr/m/it/12 (+20) Figure 6.11. |\OT1/cmr/m/n/12 (+20) The post-fit track
+-let $\OML/cmm/m/it/12 p[]$ \OT1/cmr/m/n/12 (+20) dis-tri-bu-tions in [][]()[][
+][] SR$[]$, [][]()[][][] SR$[]$, [][]()[][][]
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+\OT1/cmr/m/n/12 (+11) SR$[]$, and [][]()[][][] SR$[]$. The dashed ver-tical lin
+e de-notes the bound-ary between
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+\OT1/cmr/m/n/12 (+20) the CR/VR and SR se-lec-tions. The lower pad shows the ra
+-tio of the ob-served
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+\OT1/cmr/m/n/12 (+20) data yields to the post-fit pre-dicted back-ground es-tim
+-ates. A red ar-row is used to
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+\OT1/cmr/m/n/12 (+20) in-dic-ate that a ra-tio value is out-side the dis-played
+ in-ter-val. The last bin in-cludes
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+\OT1/cmr/m/n/12 (+20) over-flow events. All stat-ist-ical and sys-tem-atic un-c
+er-tain-ties are con-sidered in the
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+\OT1/cmr/m/n/12 (+20) er-ror bands. Three rep-res-ent-at-ive pre-fit sig-nal yi
+elds are in-dic-ated with dashed
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+[]\OT1/cmr/m/n/12 (+20) Table 6.6. |Sum-mary of the ob-served and post-fit ex-p
+ec-ted SR yields, with `  Bkg.'
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+\OT1/cmr/m/n/12 (+20) de-not-ing back-ground, and the model-independent fit res
+-ults. All sys-tem-atic and
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+\OT1/cmr/m/n/12 (+20) stat-ist-ical un-cer-tain-ties are con-sidered. The cal-c
+u-lated $\OML/cmm/m/it/12 p[]$\OT1/cmr/m/n/12 (+20) -value is capped at 0.5
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+\OT1/cmr/m/n/12 (+17) and shown to-gether with the cor-res-pond-ing sig-ni-fic-
+ance in stand-ard de-vi-ations $(\OML/cmm/m/it/12 Z\OT1/cmr/m/n/12 (+17) )$.
+[101] [102]
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+\OT1/cmr/m/n/12 (+20) con-tours for wino pro-duc-tion as a func-tion of the cha
+r-gino mass and [][]()[][][] life-time,
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+\OT1/cmr/m/n/12 (+20) or [][]()[][][] mass split-ting of the elec-troweaki-nos.
+ The dot-ted lines in-dic-ates the $\OMS/cmsy/m/n/12 ^^F\OML/cmm/m/it/12 ^^[[]$
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+\OT1/cmr/m/n/12 (+20) from sig-nal cross-section un-cer-tain-ties, while the so
+lid band in-dic-ates the $\OMS/cmsy/m/n/12 ^^F\OML/cmm/m/it/12 ^^[[]$
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+\OT1/cmr/m/n/12 (+20) yields. The solid grey area shows the re-gion ex-cluded b
+y Ref. [[][]58[][]]. The dashed-
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+\OT1/cmr/m/n/12 (+20) dotted line is the pre-dic-tion of the char-gino life-tim
+e or wino mass split-ting as a
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
+\OT1/cmr/m/n/12 (+20) or [][]()[][][] mass split-ting of the elec-troweaki-nos.
+ The dot-ted lines in-dic-ates the $\OMS/cmsy/m/n/12 ^^F\OML/cmm/m/it/12 ^^[[]$
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
+\OT1/cmr/m/n/12 (+20) from sig-nal cross-section un-cer-tain-ties, while the so
+lid band in-dic-ates the $\OMS/cmsy/m/n/12 ^^F\OML/cmm/m/it/12 ^^[[]$
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
+\OT1/cmr/m/n/12 (+20) yields. The solid grey area shows the re-gion ex-cluded b
+y Ref. [[][]58[][]]. The dashed-
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
+\OT1/cmr/m/n/12 (+20) dotted line is the pre-dic-tion of the char-gino life-tim
+e or higgsino mass split-ting as a
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--153
+[]\OT1/cmr/m/it/12 (+20) Figure 6.14. |\OT1/cmr/m/n/12 (+20) The ex-pec-ted (da
+shed line) and ob-served (solid line) 95% CL
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--153
+\OT1/cmr/m/n/12 (+20) ex-clu-sion con-tours for $\OML/cmm/m/it/12 ^^\$\OT1/cmr/
+m/n/12 (+20) -slepton pro-duc-tion in [][]()[][][] CMSSM-inspired scen-arios an
+d [][]()[][][]
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--153
+\OT1/cmr/m/n/12 (+20) GMSB-inspired scen-ario. The dot-ted lines in-dic-ates th
+e $\OMS/cmsy/m/n/12 ^^F\OML/cmm/m/it/12 ^^[[]$ \OT1/cmr/m/n/12 (+20) from sig-n
+al cross-
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--153
+\OT1/cmr/m/n/12 (+20) section un-cer-tain-ties, while the solid band in-dic-ate
+s the $\OMS/cmsy/m/n/12 ^^F\OML/cmm/m/it/12 ^^[[]$ \OT1/cmr/m/n/12 (+20) from e
+x-per-i-mental
+
+Overfull \hbox (0.10832pt too wide) in paragraph at lines 156--158
+\OT1/cmr/m/n/12 (+19) the SRs is non-trivial, as the pre-vi-ous ana-lyses used 
+five-layer track-ing and did not 
+
+Overfull \hbox (0.18402pt too wide) in paragraph at lines 156--158
+\OT1/cmr/m/n/12 (+18) events se-lec-ted by SR$[]$ was also one of the three eve
+nts se-lec-ted by the pre-vi-ous 
+) [103] [104] [105 <../figures/results/Public/FourLayer_middleMET_CaloSide_high
+pt_postfit.pdf, page is rotated 90 degrees> <../figures/results/Public/ThreeLay
+erNotSP_middleMET_CaloVeto_highpt_postfit.pdf, page is rotated 90 degrees> <../
+figures/results/Public/ThreeLayerSP_middleMET_CaloVeto_highpt_postfit.pdf, page
+ is rotated 90 degrees>] [106 <../figures/results/Public/vrsr_allchannels_postf
+it.pdf, page is rotated 90 degrees>] [107 <../figures/results/Public/FourLayer_
+highMET_CaloVeto_highpt_postfit.pdf, page is rotated 90 degrees> <../figures/re
+sults/Public/FourLayer_middleMET_CaloVeto_highpt_postfit.pdf, page is rotated 9
+0 degrees> <../figures/results/Public/ThreeLayerNotSP_highMET_CaloVeto_highpt_p
+ostfit.pdf, page is rotated 90 degrees> <../figures/results/Public/ThreeLayerSP
+_highMET_CaloVeto_highpt_postfit.pdf, page is rotated 90 degrees>] [108 <../fig
+ures/results/Public/wino.pdf, page is rotated 90 degrees> <../figures/results/P
+ublic/dm_wino_combined.pdf, page is rotated 90 degrees>] [109 <../figures/resul
+ts/Public/higgsino_combined.pdf, page is rotated 90 degrees> <../figures/result
+s/Public/dm_higgsino_combined.pdf, page is rotated 90 degrees> <../figures/resu
+lts/Public/cmssm_stau.pdf, page is rotated 90 degrees> <../figures/results/Publ
+ic/gmsb_stau.pdf, page is rotated 90 degrees>]
+(./DisappearingTrackPaper/conclusion.tex
+Overfull \hbox (0.17017pt too wide) in paragraph at lines 1--2
+\OT1/cmr/m/n/12 (+18) from hits in only three pixel layers and a dedicated BDT 
+to reconstruct low-energy 
+)) [110] (./3_7_Chapter_Ionization_Loss_Disappearing_Tracks.tex [111]
+[Disappearing Tracks with High Ionization Energy Loss]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 2.
 
-) (./3_8_Chapter_Conclusion.tex [40]
+[112] [113]
+Underfull \hbox (badness 1077) in paragraph at lines 81--83
+\OT1/cmr/m/n/12 (+20) de-signed to pre-serve in-form-a-tion that is nor-mally n
+ot saved dur-ing the 
+[114]
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
+[]\OT1/cmr/m/it/12 (+20) Figure 7.1. |\OT1/cmr/m/n/12 (+20) Feyn-man dia-grams 
+for (left) pair-produced char-gi-nos and (right) pair-
+[115 <../Pictures/C1C1-qpipiN1N1-AMSB.pdf> <../Pictures/staustau-jtautauN1N1.pd
+f>]
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+[]\OT1/cmr/m/it/12 (+20) Figure 7.2. |\OT1/cmr/m/n/12 (+20) Schem-atic view of 
+the sig-nal re-gions. On the left be-ing for de-cay
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+\OT1/cmr/m/n/12 (+20) ag-nostic sig-nal re-gions. On the right be-ing for de-ca
+y spe-cific re-gions. Note that in
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+\OT1/cmr/m/n/12 (+20) this case the $^^A\OML/cmm/m/it/12 m$ \OT1/cmr/m/n/12 (+2
+0) is spe-cific-ally the mass split-ting between the BSM particle and
+[116] [117 <../Pictures/Overall_concept.png>]
+Overfull \hbox (0.19942pt too wide) in paragraph at lines 189--190
+\OT1/cmr/m/n/12 (+19) necessitating a selection to suppress the QCD contributio
+ns in the low MeT region. 
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
+[]\OT1/cmr/m/it/12 (+20) Figure 7.3. |\OT1/cmr/m/n/12 (+20) Dis-tri-bu-tions of
+ the key se-lec-tion vari-ables for sig-nal and back-ground
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
+\OT1/cmr/m/n/12 (+20) ptcone40 Clear sep-ar-a-tion between sig-nal and back-gro
+und is ob-served, mo-tiv-at-ing
+
+Overfull \hbox (13.7771pt too wide) in paragraph at lines 236--259
+ [][] 
+
+LaTeX Warning: Reference `eq:BetheBloch' on page 118 undefined on input line 29
+3.
+
+
+LaTeX Warning: Reference `eq:rel_momentum' on page 118 undefined on input line 
+293.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 309--309
+[]   \OT1/cmr/m/n/10.95 (+20) (a) |Ad-di-tional se-lec-tions used for high-
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
+[]   \OT1/cmr/m/n/10.95 (+20) (b) |Ad-di-tional se-lec-tions used for low-
+
+Overfull \hbox (3.91663pt too wide) in paragraph at lines 298--325
+[]$[]$ $[]$ 
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
+[]\OT1/cmr/m/n/12 (+20) Table 7.3. |Sig-nal re-gion se-lec-tions. Note these ar
+e in ad-di-tion to the baseline
+[118] [119 <../Pictures/Chap_7/METblinded_nm1.png> <../Pictures/Chap_7/KVUmomen
+tum10blinded_nm1.png> <../Pictures/Chap_7/ptcone40blinded_nm1.png>] [120 <../Pi
+ctures/Chap_7/Cutflow.png>]
+Overfull \hbox (77.15138pt too wide) in paragraph at lines 343--358
+ [][] 
+
+Overfull \hbox (71.29883pt too wide) in paragraph at lines 365--383
+ [][] 
+
+Overfull \hbox (0.15045pt too wide) in paragraph at lines 389--391
+\OT1/cmr/m/n/12 (+8) of the tracklet motivating the selection in the kinked tra
+cklet region. The selections 
+[121] [122]
+Overfull \hbox (0.15126pt too wide) in paragraph at lines 392--393
+[]\OT1/cmr/m/n/12 (+10) This idea is new to ATLAS, however, kinked tracks has h
+istorical precidence 
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
+[]\OT1/cmr/m/n/12 (+20) Table 7.6. |Se-lec-tions for the kink-required SR, whic
+h tar-gets large mass-splitting
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
+\OT1/cmr/m/n/12 (+20) sig-nals like the GMSB stau. A kinked track-let is re-qui
+red as a unique probe for
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
+\OT1/cmr/m/n/12 (+20) and the $\OML/cmm/m/it/12 dE=dx$ \OT1/cmr/m/n/12 (+20) re
+-quire-ment, the $\OML/cmm/m/it/12 E[]$ \OT1/cmr/m/n/12 (+20) and vertex-constr
+ained $\OML/cmm/m/it/12 p[]$ \OT1/cmr/m/n/12 (+20) thresholds are
+
+Overfull \hbox (148.28084pt too wide) in paragraph at lines 414--426
+ [][] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--426
+[]\OT1/cmr/m/n/12 (+20) Table 7.7. |Se-lec-tions for the kink-required SR, whic
+h tar-gets large mass-splitting
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--426
+\OT1/cmr/m/n/12 (+20) sig-nals like the GMSB stau. A kinked track-let is re-qui
+red as a unique probe for
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--426
+\OT1/cmr/m/n/12 (+20) and the $\OML/cmm/m/it/12 dE=dx$ \OT1/cmr/m/n/12 (+20) re
+-quire-ment, the $\OML/cmm/m/it/12 E[]$ \OT1/cmr/m/n/12 (+20) and vertex-constr
+ained $\OML/cmm/m/it/12 p[]$ \OT1/cmr/m/n/12 (+20) thresholds are
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[123]
+Overfull \hbox (0.13768pt too wide) in paragraph at lines 436--440
+[]\OT1/cmr/m/n/12 (+11) Fakes are mis-combination of multiple real low-momentum
+ particles that are 
+
+Overfull \hbox (0.10902pt too wide) in paragraph at lines 441--444
+[]\OT1/cmr/m/n/12 (+3) The scattering background originates from real high-ener
+gy electrons, muons, 
+[124]
+Overfull \hbox (0.1706pt too wide) in paragraph at lines 445--451
+\OT1/cmr/m/n/12 (+16) background sources in this analysis both techniques are f
+ully data driven. The first 
+
+Overfull \hbox (0.17543pt too wide) in paragraph at lines 465--473
+\OT1/cmr/m/n/12 (+7) the frac-tion of events in the$[]\OML/cmm/m/it/12 E=[]x$ \
+OT1/cmr/m/n/12 (+7) tails. At higher dE/dx val-ues there is few events 
+[125]
+Underfull \hbox (badness 10000) in paragraph at lines 485--485
+[]\OT1/cmr/m/it/12 (+20) Figure 7.6. |[][]\OT1/cmr/m/n/12 (+20) dEdx shapes of 
+dif-fer-ent slices of pT. All slices are nor-mal-ized to show
+[126 <../Pictures/Chap_7/dEdx_tail_frac.png>] [127 <../Pictures/Chap_7/dEdx_sta
+ck.png>]
+Overfull \hbox (106.92743pt too wide) in paragraph at lines 505--527
+ [][] 
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 532.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 532.
+
+[128]) (./3_8_Chapter_Conclusion.tex [129] [130 <../Pictures/Chap_7/BG_shape_co
+mpare.png>] [131 <../Pictures/Chap_7/BG_MIP_shape.png>] [132 <../Pictures/Chap_
+7/BG_FAKE_shape.png>] [133]
 [Conclusion]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 2.
 
-) (./4_uothesis_appendix_examples.tex [41]
-[dEdx measurements]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 10.
-
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 15.
-
-[42]
-! Undefined control sequence.
-l.66 		\Partial
-               {f(x, \Delta)}{x} = \int_0^{T_0} w(\omega, \gamma) [f(x, \Del...
-
-[43] [44]
+Overfull \hbox (0.17499pt too wide) in paragraph at lines 9--12
+\OT1/cmr/m/n/12 (+9) AT-LAS. This search is de-signed to use track-lets ori-gin
+-at-ing from long-lived charged 
+[134]) (./4_uothesis_appendix_examples.tex [135]
 [The Second Appendix]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 88.
+(hyperref)                removing `\uppercase' on input line 18.
 
-) (./5_uothesis_bibliography.tex
-(/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertatio
-n-latex-markdown-apa-format/build/output/main.bbl [45]))
-(./6_uothesis_end_of_document.tex [46]
+) (./5_uothesis_bibliography.tex [136]
+Overfull \hbox (0.10313pt too wide) in paragraph at lines 7--7
+\OT1/cmr/m/n/12 (+1) neutral winos at two-loop level'. In: \OT1/cmr/m/it/12 (+1
+) Physics Letters B \OT1/cmr/m/n/12 (+1) 721.4{5 (Apr. 2013), 
+[137]
+Overfull \hbox (0.14041pt too wide) in paragraph at lines 7--7
+\OT1/cmr/m/it/12 (+15) final states with a disappearing track in $\OML/cmm/m/it
+/12 pp$ \OT1/cmr/m/it/12 (+15) collisions at $[] \OT1/cmr/m/n/12 (+15) = 13$ \O
+T1/cmr/m/it/12 (+15) TeV with 
+[138]
+Overfull \hbox (0.12778pt too wide) in paragraph at lines 7--7
+\OT1/cmr/m/n/12 (+18) unification'. In: \OT1/cmr/m/it/12 (+18) Phys. Rev. D \OT
+1/cmr/m/n/12 (+18) 24 (1981), p. 1681. \OT1/cmr/m/sc/12 (+18) doi\OT1/cmr/m/n/1
+2 (+18) : [][]$\OT1/cmtt/m/n/12 10 . 1103 / PhysRevD . 
+[139] [140] [141]
+Underfull \hbox (badness 1308) in paragraph at lines 7--7
+[]\OT1/cmr/m/n/12 (+20) R. Bar-bieri, S. Fer-rara and C. A. Sa-voy. `  Gauge Mo
+d-els with 
+
+Overfull \hbox (0.15544pt too wide) in paragraph at lines 7--7
+[]\OT1/cmr/m/n/12 (+5) G. L. Kane et al. `  Study of constrained minimal supers
+ymmetry'. In: \OT1/cmr/m/it/12 (+5) Phys. 
+[142] [143] [144]
+Overfull \hbox (0.16162pt too wide) in paragraph at lines 7--7
+[]\OT1/cmr/m/n/12 (+10) ATLAS Collaboration. \OT1/cmr/m/it/12 (+10) 2015 start-
+up trigger menu and initial performance 
+
+Overfull \hbox (0.19518pt too wide) in paragraph at lines 7--7
+[]\OT1/cmr/m/n/12 (+16) ATLAS Collaboration. `  Performance of the missing tran
+sverse momentum 
+[145]
+Overfull \hbox (0.14363pt too wide) in paragraph at lines 7--7
+[]\OT1/cmr/m/n/12 (+18) T. Sj^^?ostrand, S. Mrenna and P. Skands. `  A brief in
+troduction to PYTHIA 
+
+Overfull \hbox (0.11652pt too wide) in paragraph at lines 7--7
+\OT1/cmr/m/n/12 (+15) 8.1'. In: \OT1/cmr/m/it/12 (+15) Comput. Phys. Commun. \O
+T1/cmr/m/n/12 (+15) 178 (2008), pp. 852{867. \OT1/cmr/m/sc/12 (+15) doi\OT1/cmr
+/m/n/12 (+15) : [][]$\OT1/cmtt/m/n/12 10 . 1016 / 
+[146] [147] [148]
+Overfull \hbox (0.19348pt too wide) in paragraph at lines 7--7
+\OT1/cmr/m/n/12 (+19) ATLAS experiment using the 2015 and 2016 LHC proton--prot
+on collision 
+[149] [150]
+Overfull \hbox (0.12285pt too wide) in paragraph at lines 7--7
+[]\OT1/cmr/m/n/12 (+7) ATLAS Collaboration. `  The performance of missing trans
+verse momentum 
+[151]) (./6_uothesis_end_of_document.tex [152]
 (/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertatio
 n-latex-markdown-apa-format/build/output/main.aux)
 
@@ -734,6 +2597,44 @@ ge
 with kernel methods
 rerunfilecheck.sty    2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 uniquecounter.sty    2019/12/15 v1.4 Provide unlimited unique counter (HO)
+atlaspackage.sty    2026/01/28 v15.19.0 ATLAS LaTeX packages
+microtype.sty    2023/03/13 v3.1a Micro-typographical refinements (RS)
+microtype-pdftex.def    2023/03/13 v3.1a Definitions specific to pdftex (RS)
+microtype.cfg    2023/03/13 v3.1a microtype main configuration file (RS)
+csquotes.sty    2022-09-14 v5.2n context-sensitive quotations (JAW)
+csquotes.def    2022-09-14 v5.2n csquotes generic definitions (JAW)
+csquotes.cfg    
+bookmark.sty    2020-11-06 v1.29 PDF bookmarks (HO)
+bkm-pdftex.def    2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
+ siunitx.sty    2023-03-14 v3.2.3 A comprehensive (SI) units package
+translations.sty    2022/02/05 v1.12 internationalization of LaTeX2e packages (
+CN)
+puenc-greekbasic.def    2023-02-07 v7.00v Hyperref: PDF Unicode definition (gre
+ek block) (HO)
+psdextra.def    2023-02-07 v7.00v Hyperref: Additions to PDF string support
+cleveref.sty    2018/03/27 v0.21.4 Intelligent cross-referencing
+biblatex.sty    2024/03/21 v3.20 programmable bibliographies (PK/MW)
+  logreq.sty    2010/08/04 v1.0 xml request logger
+  logreq.def    2010/08/04 v1.0 logreq spec v1.0
+  blx-dm.def    2024/03/21 v3.20 biblatex datamodel (PK/MW)
+blx-compat.def    2024/03/21 v3.20 biblatex compatibility (PK/MW)
+biblatex.def    2024/03/21 v3.20 biblatex compatibility (PK/MW)
+standard.bbx    2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+ numeric.bbx    2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+numeric-comp.bbx    2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+numeric-comp.cbx    2024/03/21 v3.20 biblatex citation style (PK/MW)
+biblatex.cfg    
+   expl3.sty    2023-02-22 L3 programming layer (loader) 
+l3backend-pdftex.def    2023-01-16 L3 backend support: PDF output (pdfTeX)
+blx-case-expl3.sty    2024/03/21 v3.20 expl3 case changing code for biblatex
+  xparse.sty    2023-02-02 L3 Experimental document command parser
+atlasphysics.sty    2026/01/28 v15.19.0 ATLAS physics macros
+atlasmisc.sty    
+atlasparticle.sty    2026/01/28 v15.19.0 ATLAS particle definitins
+atlasunit.sty    
+atlasxref.sty    
+atlasbsm.sty    
+ANA-HMBS-2024-66-PAPER-defs.sty    
 1_uothesis_prefatory_pages.tex
    cover.tex
 abstract.tex
@@ -741,19 +2642,33 @@ abstract.tex
 acknowledgements.tex
 dedication.tex
 2_uothesis_begin_main_body_of_document.tex
-l3backend-pdftex.def    2023-01-16 L3 backend support: PDF output (pdfTeX)
 ltcaption.sty    2021/01/08 v1.4c longtable captions (AR)
 supp-pdf.mkii
 pdflscape.sty    2022-10-27 v0.13 Display of landscape pages in PDF
 pdflscape-nometadata.sty    2022-10-28 v0.13 Display of landscape pages in PDF 
 (HO)
   lscape.sty    2020/05/28 v3.02 Landscape Pages (DPC)
-    main.out
-    main.out
+  mt-cmr.cfg    2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
+RS)
+translations-basic-dictionary-english.trsl    (english translation file `transl
+ations-basic-dictionary')
+translations-basic-dictionary-english.trsl    (english translation file `transl
+ations-basic-dictionary')
+ british.lbx    2024/03/21 v3.20 biblatex localization (PK/MW)
+ english.lbx    2024/03/21 v3.20 biblatex localization (PK/MW)
+UKenglish.lbx    2024/03/21 v3.20 biblatex localization (PK/MW)
+american.lbx    2024/03/21 v3.20 biblatex localization (PK/MW)
+USenglish.lbx    2024/03/21 v3.20 biblatex localization (PK/MW)
+    main.bbl
     umsa.fd    2013/01/14 v3.01 AMS symbols A
+  mt-msa.cfg    2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
     umsb.fd    2013/01/14 v3.01 AMS symbols B
+  mt-msb.cfg    2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 3_1_Chapter_Introduction.tex
 3_2_Chapter_Motivation_Overview.tex
+../Pictures/Chap_2/Standard_Model_of_Elementary_Particles.png
+../Pictures/Chap_2/h-ff-h.pdf
+../Pictures/Chap_2/h-ss-h.pdf
 3_3_Chapter_Experiemental.tex
 ../Pictures/LHC_complex.pdf
 ../Pictures/ATLAS_CrossSection.jpg
@@ -771,31 +2686,95 @@ pdflscape-nometadata.sty    2022-10-28 v0.13 Display of landscape pages in PDF
 ../Pictures/bumpBondDelamination.png
 3_5_Chapter_Reconstruction.tex
 3_6_Chapter_Disappearing_Tracks.tex
+DisappearingTrackPaper/intro.tex
+../figures/intro/C1N1.pdf
+../figures/intro/staustau-jtautauN1N1.pdf
+../figures/intro/staustau-jtautauG1G1.pdf
+DisappearingTrackPaper/detector.tex
+DisappearingTrackPaper/data_mc.tex
+DisappearingTrackPaper/reco.tex
+../figures/reco/Public/decayr_250_0p04.pdf
+../figures/reco/Public/bdt_score_3layer_scteffective.pdf
+../figures/reco/Public/sp_eff_250_0p04.pdf
+DisappearingTrackPaper/analysis.tex
+../figures/analysis/Background_Diagram.pdf
+DisappearingTrackPaper/backgrounds.tex
+../figures/background/Public/template_original_4layer.pdf
+../figures/background/Public/h_weight_d0sig_3layer_z0cr_to_4layer_lowmet.pdf
+../figures/background/Public/tracklet_vcpt_4layer_label.pdf
+../figures/background/Public/factor_comparison_electron.pdf
+../figures/background/Public/m_h_tfpix_ele_pt_incl.pdf
+../figures/background/Public/tf_caloveto_1d.pdf
+../figures/background/Public/smearing_function_with_band_ver2.pdf
+../figures/background/Schematic-newText.pdf
+DisappearingTrackPaper/systematics.tex
+../figures/systematics/Draft_1/sr_syst.pdf
+DisappearingTrackPaper/results.tex
+../figures/results/Public/cr_allchannels_postfit.pdf
+../figures/results/Public/FourLayer_middleMET_CaloSide_highpt_postfit.pdf
+../figures/results/Public/ThreeLayerNotSP_middleMET_CaloVeto_highpt_postfit.pdf
+
+../figures/results/Public/ThreeLayerSP_middleMET_CaloVeto_highpt_postfit.pdf
+../figures/results/Public/vrsr_allchannels_postfit.pdf
+../figures/results/Public/FourLayer_highMET_CaloVeto_highpt_postfit.pdf
+../figures/results/Public/FourLayer_middleMET_CaloVeto_highpt_postfit.pdf
+../figures/results/Public/ThreeLayerNotSP_highMET_CaloVeto_highpt_postfit.pdf
+../figures/results/Public/ThreeLayerSP_highMET_CaloVeto_highpt_postfit.pdf
+../figures/results/Public/wino.pdf
+../figures/results/Public/dm_wino_combined.pdf
+../figures/results/Public/higgsino_combined.pdf
+../figures/results/Public/dm_higgsino_combined.pdf
+../figures/results/Public/cmssm_stau.pdf
+../figures/results/Public/gmsb_stau.pdf
+DisappearingTrackPaper/conclusion.tex
 3_7_Chapter_Ionization_Loss_Disappearing_Tracks.tex
+../Pictures/C1C1-qpipiN1N1-AMSB.pdf
+../Pictures/staustau-jtautauN1N1.pdf
+../Pictures/Overall_concept.png
+../Pictures/Chap_7/METblinded_nm1.png
+../Pictures/Chap_7/KVUmomentum10blinded_nm1.png
+../Pictures/Chap_7/ptcone40blinded_nm1.png
+../Pictures/Chap_7/Cutflow.png
+../Pictures/Chap_7/dEdx_tail_frac.png
+../Pictures/Chap_7/dEdx_stack.png
+../Pictures/Chap_7/BG_shape_compare.png
+../Pictures/Chap_7/BG_MIP_shape.png
+../Pictures/Chap_7/BG_FAKE_shape.png
 3_8_Chapter_Conclusion.tex
 4_uothesis_appendix_examples.tex
 5_uothesis_bibliography.tex
-    main.bbl
 6_uothesis_end_of_document.tex
  ***********
 
+
+LaTeX Warning: There were undefined references.
+
  ) )
 (see the transcript file for additional information)</usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/cm-super/sfrm1200.pfb>
+ist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
+2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
 Output written on /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-s
-chool-dissertation-latex-markdown-apa-format/build/output/main.pdf (46 pages, 2
-2052828 bytes).
+chool-dissertation-latex-markdown-apa-format/build/output/main.pdf (152 pages, 
+25700913 bytes).
 Transcript written on /home/nyoung/Documents/Dissertation/unofficial-uoregon-gr
 ad-school-dissertation-latex-markdown-apa-format/build/output/main.log.

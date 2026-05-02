@@ -67,14 +67,36 @@ include CMakeFiles/pdf.dir/compiler_depend.make
 include CMakeFiles/pdf.dir/progress.make
 
 CMakeFiles/pdf: output/main.pdf
+CMakeFiles/pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files/ANA-HMBS-2024-66-PAPER-defs.sty
+CMakeFiles/pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files/atlasbiblatex.sty
+CMakeFiles/pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files/atlasbsm.sty
+CMakeFiles/pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files/atlascomment.sty
+CMakeFiles/pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files/atlascontribute.sty
+CMakeFiles/pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files/atlascover.sty
+CMakeFiles/pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files/atlasdatapolicy.sty
+CMakeFiles/pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files/atlasheavyion.sty
+CMakeFiles/pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files/atlasjetetmiss.sty
+CMakeFiles/pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files/atlasjournal.sty
+CMakeFiles/pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files/atlaslatexpath.sty
+CMakeFiles/pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files/atlasmetadefs.sty
+CMakeFiles/pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files/atlasmisc.sty
+CMakeFiles/pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files/atlaspackage.sty
+CMakeFiles/pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files/atlasparticle.sty
+CMakeFiles/pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files/atlasphysics.sty
+CMakeFiles/pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files/atlassnippets.sty
+CMakeFiles/pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files/atlastodo.sty
+CMakeFiles/pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files/atlasunit.sty
+CMakeFiles/pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files/atlasxref.sty
 
+output/main.pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files
+output/main.pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/latex_files/DisappearingTrackPaper/*.tex
 output/main.pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/latex_files/*.tex
 output/main.pdf: /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/latex_files/main.tex
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building LaTeX document"
-	cd /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/latex_files && /usr/bin/pdflatex -interaction=nonstopmode -output-directory=/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/build/output /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/latex_files/main.tex
-	cd /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/latex_files && /usr/bin/bibtex /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/build/output/main || true
-	cd /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/latex_files && /usr/bin/pdflatex -interaction=nonstopmode -output-directory=/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/build/output /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/latex_files/main.tex
-	cd /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/latex_files && /usr/bin/pdflatex -interaction=nonstopmode -output-directory=/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/build/output /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/latex_files/main.tex
+	cd /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/latex_files && /usr/bin/pdflatex -interaction=nonstopmode -include-directory=/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files -output-directory=/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/build/output /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/latex_files/main.tex
+	cd /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/latex_files && /usr/bin/biber /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/build/output/main || true
+	cd /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/latex_files && /usr/bin/pdflatex -include-directory=/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files -interaction=nonstopmode -output-directory=/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/build/output /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/latex_files/main.tex
+	cd /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/latex_files && /usr/bin/pdflatex -include-directory=/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/sty_files -interaction=nonstopmode -output-directory=/home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/build/output /home/nyoung/Documents/Dissertation/unofficial-uoregon-grad-school-dissertation-latex-markdown-apa-format/latex_files/main.tex
 
 CMakeFiles/pdf.dir/codegen:
 .PHONY : CMakeFiles/pdf.dir/codegen

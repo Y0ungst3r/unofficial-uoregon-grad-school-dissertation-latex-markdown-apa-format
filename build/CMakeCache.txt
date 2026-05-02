@@ -15,6 +15,9 @@
 ########################
 
 //Path to a program.
+BIBER:FILEPATH=/usr/bin/biber
+
+//Path to a program.
 BIBTEX:FILEPATH=/usr/bin/bibtex
 
 //Enable/Disable color output during build.
@@ -78,7 +81,7 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=31
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=6
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=11
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.

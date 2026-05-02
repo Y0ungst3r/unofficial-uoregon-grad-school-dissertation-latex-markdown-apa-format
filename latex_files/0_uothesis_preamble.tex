@@ -82,9 +82,11 @@
 \usepackage{pdfpages}
 % Added by Jacob L. following https://tex.stackexchange.com/questions/148314/undefined-control-sequence-in-printbibliography-biblatex to allow UTF-8 (non-ASCII) characters in the bibliography .bib file.
 \usepackage[utf8]{inputenc}
-\usepackage{hyperref}
+\usepackage[colorlinks=false, allcolors=black]{hyperref}
 % \usepackage{braket}
 
+\usetikzlibrary{intersections, calc,through,backgrounds}
+\usepackage{adjustbox}
 \usepackage[subcaption]{atlaspackage}
 \usepackage{atlaspackage}
 
@@ -133,6 +135,9 @@
 \addbibresource{bib/PubNotes.bib}
 
 
+
+\AtBeginBibliography{\singlespacing}
+\setlength{\bibitemsep}{\baselineskip}
 %------------------------------------------------------------------------------%
 % MATH EQUATIONS AND THEOREMS (.cls also restructures theorem layout)
 %------------------------------------------------------------------------------%
@@ -349,3 +354,6 @@
 
 
 \newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+\makeatletter
+\renewcommand*\l@chapter{\@dottedtocline{1}{1em}{2.5em}}
+\makeatother

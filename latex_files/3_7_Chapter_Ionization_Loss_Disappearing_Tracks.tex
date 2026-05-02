@@ -159,6 +159,92 @@ Together, these signal regions provide broad and complementary sensitivity to mu
 \label{sec:event_picking_selections}
 To further exploit the discriminating power of ionization energy loss, it is necessary to incorporate cluster level information in the event reconstruction. This additional granularity improves the performance of $dE/dx$-based selections, motivating the need for event picking strategy.
 
+% \begin{adjustbox}{width=\textwidth}
+
+% \begin{tikzpicture}[scale=1]
+
+% % COLORS
+% \definecolor{mygreen}{RGB}{0,150,0}
+% \definecolor{myorange}{RGB}{220,100,0}
+% \definecolor{lightgray}{RGB}{220,220,220}
+
+% % -------- LEFT PANEL --------
+% \node[draw=mygreen, thick, rounded corners, minimum width=6cm, minimum height=5cm] (leftbox) {};
+
+% \node[above=0.2cm of leftbox, text=mygreen, font=\bfseries] {Inclusive (agnostic) region};
+
+% % Axis
+% \draw[->, thick] ([xshift=-2.5cm,yshift=-2cm]leftbox.center) -- ++(0,4);
+
+% % Calo block
+% \fill[lightgray] ([xshift=-2.2cm,yshift=1.2cm]leftbox.center) rectangle ++(4.4,0.8);
+% \node at ([yshift=1.6cm]leftbox.center) {Calo};
+
+% % SCT lines
+% \foreach \y in {0.6,0.3,0.0} {
+%     \draw[blue, thick] ([xshift=-2cm,yshift=\y cm]leftbox.center) -- ++(4,0);
+% }
+% \node[blue] at ([yshift=0.8cm]leftbox.center) {SCT};
+
+% % Pixel lines
+% \foreach \y in {-1.2,-1.5,-1.8,-2.1} {
+%     \draw[mygreen, thick] ([xshift=-2cm,yshift=\y cm]leftbox.center) -- ++(4,0);
+% }
+% \node[mygreen] at ([yshift=-1cm]leftbox.center) {Pixel};
+
+% % Track
+% \draw[red, thick] ([xshift=0cm,yshift=-2cm]leftbox.center) -- ++(0.5,2);
+% \node at ([yshift=-0.2cm]leftbox.center) {?};
+
+
+% % -------- RIGHT PANEL --------
+% \node[draw=myorange, thick, rounded corners, minimum width=10cm, minimum height=5cm, right=2cm of leftbox] (rightbox) {};
+% \node[above=0.2cm of rightbox, text=myorange, font=\bfseries] {Decay-specific region};
+
+% % --- LEFT SUBPANEL (Veto) ---
+% \node at ([xshift=-2.5cm,yshift=2cm]rightbox.center) {\bf Veto region: small $\Delta m$};
+
+% % Axis
+% \draw[->, thick] ([xshift=-4cm,yshift=-2cm]rightbox.center) -- ++(0,4);
+
+% % Lines
+% \foreach \y in {0.6,0.3,0.0} {
+%     \draw[blue, thick] ([xshift=-3.8cm,yshift=\y cm]rightbox.center) -- ++(3,0);
+% }
+% \foreach \y in {-1.2,-1.5,-1.8,-2.1} {
+%     \draw[mygreen, thick] ([xshift=-3.8cm,yshift=\y cm]rightbox.center) -- ++(3,0);
+% }
+
+% % Track + dashed
+% \draw[red, thick] ([xshift=-2.5cm,yshift=-2cm]rightbox.center) -- ++(0.3,2);
+% \draw[dashed] ([xshift=-2.2cm,yshift=0cm]rightbox.center) -- ++(-0.8,2);
+
+% \node[red] at ([xshift=-2cm,yshift=-2cm]rightbox.center) {chargino};
+
+% % --- RIGHT SUBPANEL (Kink) ---
+% \node at ([xshift=2.5cm,yshift=2cm]rightbox.center) {\bf Kink region: large $\Delta m$};
+
+% % Axis
+% \draw[->, thick] ([xshift=1cm,yshift=-2cm]rightbox.center) -- ++(0,4);
+
+% % Lines
+% \foreach \y in {0.6,0.3,0.0} {
+%     \draw[blue, thick] ([xshift=1.2cm,yshift=\y cm]rightbox.center) -- ++(3,0);
+% }
+% \foreach \y in {-1.2,-1.5,-1.8,-2.1} {
+%     \draw[mygreen, thick] ([xshift=1.2cm,yshift=\y cm]rightbox.center) -- ++(3,0);
+% }
+
+% % Kink track
+% \draw[red, thick] ([xshift=2.5cm,yshift=-2cm]rightbox.center) -- ++(0.3,2);
+% \draw[orange, thick] ([xshift=2.8cm,yshift=0cm]rightbox.center) -- ++(-0.5,2);
+% \draw[green!60!black, thick] ([xshift=2.8cm,yshift=0cm]rightbox.center) -- ++(0.5,2);
+
+% \node[red] at ([xshift=3cm,yshift=-2cm]rightbox.center) {GMSB stau};
+
+% \end{tikzpicture}
+% \end{adjustbox}
+
 \begin{figure}[tp]
     \centering
     \includegraphics[width=.9\textwidth]{../Pictures/Overall_concept.png}

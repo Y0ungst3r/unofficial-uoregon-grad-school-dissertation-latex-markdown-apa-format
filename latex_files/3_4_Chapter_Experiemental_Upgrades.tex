@@ -2,10 +2,8 @@
 \chapter{Experimental Upgrades}
 
 
-The ATLAS detector is currently operating beyond its original design specifications from the early 2000s for luminosity of 
-\[
-\mathcal{L} = 10^{34}~\mathrm{cm}^{-2}\mathrm{s}^{-1}.
-\]. 
+The highest peak integrated luminosity of the ATLAS detector to date was $\mathcal{L} = 2.61 \times 10^{34}~\mathrm{cm}^{-2}\mathrm{s}^{-1}$, which is beyond its original design specifications from the early 2000s for luminosity of 
+$\mathcal{L} = 10^{34}~\mathrm{cm}^{-2}\mathrm{s}^{-1}$.
 As the LHC has steadily increased its instantaneous and integrated luminosity, the ATLAS detector has required a series of upgrades to cope with higher data rates, increased detector occupancy, and elevated radiation levels.
 
 Beginning in approximately 2030, the LHC will enter the High-Luminosity phase (HL-LHC). 
@@ -13,7 +11,7 @@ During this period, the instantaneous luminosity is expected to increase to appr
 \[
 \mathcal{L} = 5 - 7.5 \times 10^{34}~\mathrm{cm}^{-2}\mathrm{s}^{-1}.
 \]
-At these luminosities, an average of approximately 200 proton--proton interactions per bunch crossing is anticipated, compared to the typical 20--50 interactions observed during run 2. 
+At this luminosity, an average of approximately 200 proton--proton interactions per bunch crossing is anticipated, compared to the typical 20--50 interactions observed during run 2. 
 This dramatic increase in pileup presents significant challenges for event reconstruction, triggering, and data acquisition.
 
 To meet these challenges and continue exploring the particle physics phenomena at the HL-LHC, the ATLAS detector is undergoing extensive upgrades. 
@@ -39,9 +37,8 @@ These upgrades enabled ATLAS to operate efficiently at higher luminosities and i
 The Phase 2 upgrade program is designed to prepare the ATLAS detector for sustained operation during the HL-LHC era and is scheduled for completion in 2030. 
 Phase 2 will introduce significant upgrades to the ATLAS trigger and data acquisition system, on/off detector electronics upgrades for LAr Calorimeter, Tile Calorimeters, and the muon detectors. 
 Phase 2 will also include a new tracking detector, High Granularity Timing Detector and Muon Chambers.  
-For phase two the replacement of the tracking detector is the work that was done as part of this thesis. 
-The combined effects of integrated luminosity and the planned increase of instantaneous luminosity result in the ID no longer being sufficient for tracking and vertexing beyond run 3 in ATLAS and thus needs to be replaced. 
-The ID is being replaced with a new all-silicon Inner Tracker (ITk).
+The combined effects of integrated luminosity and the planned increase of instantaneous luminosity result in the ID no longer being sufficient for tracking and vertexing in ATLAS beyond run 3. Thus, an integral part of the phase 2 upgrades is the replaced of the ID with ITk. 
+% The ID is being replaced with a new all-silicon Inner Tracker (ITk).
 
 The ITk is designed to accommodate the 200 proton-proton collisions per bunch crossing expected at the HL-LHC. 
 To meet these demands, the detector features substantially higher granularity, enhanced radiation hardness, and a 1~MHz readout capability.
@@ -70,31 +67,32 @@ A brief overview of the Strip detector will be given then the rest of this secti
 
 
 \subsection{ITk Strips}
-The ITk Strips surrounds the Pixel Detector and provides at least another 4 hits for charged particles traversing the detector within a pseudorapidity range of $|\eta| < 2.7$.
-ITk Strips will start at about a radius of 400 mm and extend to 1000 mm and have ~$165m^2$ of silcon micro-strip sensors.
-The Strip Detector is made up of overlapping silicon strip sensors, designed to be shorter and have more channels in order to keep occupency at ~1\% during the HL-LHC runs.
+The ITk Strips surrounds the Pixel Detector and provides at least 4 hits for charged particles traversing the detector within a pseudorapidity range of $|\eta| < 2.7$.
+ITk Strips will start at about a radius of 400 mm and extend to 1000 mm and have $165m^2$ of silicon micro-strip sensors.
+The Strip Detector is made up of overlapping silicon strip sensors ITk Strips is designed to keep occupancy at $\sim1\%$ during the HL-LHC runs.
 
 
 
 \subsection{ITk Pixels}
 
 
-ITk is made from two systems, the Inner System and the Outer System. 
-The outer three layers of the ITk Pixels are called the outer system. 
+ITk Pixels is made from two systems, the Inner System and the Outer System. 
+The outer three layers of the ITk Pixels are called the Outer system. 
 The innermost two layers of ITk Pixels are called the Inner System.
+The location of specific layer and pixel size for the Inner System can be found in Tab. \ref{tab:barrel_locations} and \ref{tab:ring_locations}.
 The basis of the whole ITk pixel detector is the pixel module, which detects the passage of charged particles.
 The pixel module is made of a silicon detector bonded directly to the front-end electronics for readout. 
-The front-end electronics are made the RD53 collaboration, which has designed a front-end for ATLAS and CMS.
+The front-end electronics are designed by the RD53 collaboration, which has designed a front-end for ATLAS and CMS.
 The RD53 front-end being used for the Pixel Detectors is called the ITkPixV2.
-The pixel modules are built as either quad modules, 4 ITkPixV2 front-ends bump bonded to a single silicon sensor, or as triplets, 3 RD53 front-ends each bonded together to individual silicon sensors, as can be seen in fig \ref{fig:itk_modules}. 
+The pixel modules are built as either quad modules, 4 ITkPixV2 front-ends bump bonded to a single silicon sensor, or as triplets, 3 RD53 front-ends each bonded together to individual silicon sensors, as can be seen in Fig. \ref{fig:itk_modules}. 
 The pixel modules will be attached to local supports either rings or staves made of carbon fiber laminates and high thermal-conductive foam core with titanium pipes traversing the center for cooling. 
 Cooling for ITk is provided by a  \(\mathrm{CO_2}\) evaporative cooling system that is designed to maintain the temperature of the silicon sensors at -55$^\circ$C to mitigate radiation damage effects and prolong sensor life. 
 These rings and staves are mounted into shells that will provide outer structure for ITk as can be seen in figure \ref{fig:itk_shells}.
 
 The US ATLAS program is responsible for the two innermost layers of Pixel Detector called the Inner System. 
-Assembly of the Inner System is being done at SLAC National Laboratory with major contributions from universities and national labs all over the US. 
+Assembly of the Inner System is being done at SLAC National Laboratory with major contributions from several universities and national labs all over the US. 
 To facilitate this assembly a robust and efficient setup for module testing and quality assurance was needed at SLAC. 
-Given the nature of ITk once installed the detector will be inaccessible making it critical to ensure that all systems are fully functional before installation. 
+Given the nature of ITk, once installed the detector will be inaccessible making it critical to ensure that all systems are fully functional before installation. 
 To meet this requirement extensive testing is performed at each stage of the assembly process. 
 
 
@@ -141,20 +139,20 @@ Layer & Radius [mm] & Pixel Size [$\mu m$] & Sensor Thickness [$\mu m$] \\
     \begin{subfigure}{\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../Pictures/ITK_fig1.png}
-        \caption{ITk Stave and Ring Layout. Blue lines indicate ITk Strip stave and ring Locations. Red Lines indicate ITk Pixel stave and ring locations.}
+        \caption{ITk Stave and Ring Layout \cite{ATL-PHYS-PUB-2021-024}. Blue lines indicate ITk Strip stave and ring Locations. Red Lines indicate ITk Pixel stave and ring locations.}
         \label{fig:ITK_full}
     \end{subfigure}
     \hfill
     \begin{subfigure}{\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../Pictures/ITK_fig2.png}
-        \caption{Zoom in of ITK Pixel System. Note that first two layers are the Inner System and the outside 3 layers are the Outer System.}
+        \caption{Zoom in of ITK Pixel System \cite{ATL-PHYS-PUB-2021-024}. Note that first two layers are the Inner System and the outside 3 layers are the Outer System. }
         \label{fig:ITk_Pixels}
     \end{subfigure}
     \caption{Cut away view of ITk in one quadrant only. Layout is only in positive z direction. 
     Full detector is symmetric about the z=0 and extends in a full cylinder around beam line. 
-    (\ref{fig:ITK_full}) Shows one quadrant of the full ITk.
-    (\ref{fig:ITk_Pixels}) Shows one quadrant of ITk Pixels.}
+    \ref{fig:ITK_full} Shows one quadrant of the full ITk.
+    \ref{fig:ITk_Pixels} Shows one quadrant of ITk Pixels.}
     \label{fig:itk_schematics}
 \end{figure}
 
@@ -190,11 +188,11 @@ The components that make up the Inner System are the mechanical supports, the se
 
 The mechanical support structure consists of two main elements: local supports and shells. 
 Each local support is constructed from a carbon-fiber laminate with a high thermal-conductivity foam core. 
-These materials were chosen due to their high strength to weight ratio and good thermal conductivity. 
+These materials were chosen due to their high strength-to-weight ratio and good thermal conductivity. 
 The low weight is important to the mission of ATLAS, as it minimizes the amount of material interactions that high energy particles undergo as they traverse the detector. 
 The high thermal conductivity is important as effectively cooling the modules will reduce radiation damage and prolong the effective life of the detector. 
 
-The local supports include staves, which are straight structures used in the barrel region, and rings, which are circular structures used in the endcap regions. 
+The local supports include staves, which are straight structures used in the barrel region, and rings, which are circular structures used in the end-cap regions. 
 Detector modules are directly bonded to the local supports using a thermally compound, SE4445.
 Although not actually a glue or adhesive, SE4445 provides the necessary adhesive to keep the modules precisely in place. 
 SE445 also provides good thermal conductivity and is sufficiently radiation tolerant to ensure that its properties do not significantly degrade under the high ionizing radiation doses expected at the HL-LHC.
@@ -211,15 +209,15 @@ A titanium cooling pipe runs through the center of each support structure, deliv
 
 The local supports are mounted within larger quarter shell structures that provide mechanical stability and define the overall geometry of the Inner System.
 As the name suggests, each quarter shell is one quarter of the cylindrical structure. 
-There are three sections that will be made in the Inner System, the inner barrel and two endcaps.
-An CAD model of a quarter shell for the barrel and one endcap can be seen in figure \ref{fig:itk_shells}. 
-The barrel and endcap structures are not rigidly constrained with respect to one another in the z-direction. 
+There are three sections that will be made in the Inner System, the inner barrel and two end-caps.
+A CAD model of a quarter shell for the barrel and one end-cap can be seen in figure \ref{fig:itk_shells}. 
+The barrel and end-cap structures are not rigidly constrained with respect to one another in the z-direction. 
 The complete Inner System is supported such that it remains free to accommodate thermal and mechanical movements along the beam axis.
 
 All electrical power and data lines are called services. 
 Type 0 services route the power, DCS, and data via flex cables from the modules to patch panels, called PP0.
 The PP0s are mounted directly to the quarter shells. 
-Type 1 services run from the PP0s to the edge of the detector with twinax cables. 
+Type 1 services run from the PP0s to the edge of the detector with twinaxial cables. 
 At the end of type 1 services the data is converted into optical signals, this is done outside the main detector volume due to the lack of radiation hard digital to optical converters. 
 
 Additional services are present further along the service chain, as illustrated in figure \ref{fig:itk_services}, but these components lie outside the Inner System and are therefore beyond the scope of this section.
@@ -238,7 +236,7 @@ Additional services are present further along the service chain, as illustrated 
 
 
 %Overview of integration process
-The first step of integration is the called "loading". 
+The first step of integration is the called ``loading''. 
 The process of loading involves bonding the modules directly to the local supports using the thermal compound SE4445.
 This process is of the utmost importance as it ensures that the modules are precisely loaded with only 25 microns between modules. 
 It is also important to ensure that the modules are able to dissipate heat effectively to the local supports, ensuring reduced radiation damage and longevity of the sensors.
@@ -251,9 +249,30 @@ The local supports likewise are tested before loading.
 Again once shipped to SLAC they are tested visually and then using a CMM they are measured for flatness.
 
 
-The loaded local supports then will be placed in a dry box and cooled to -55$^\circ$C. 
-To faciltiate this a special connection will have to be made to the delicate titanium cooling pipes. 
-This connection was devoloped at Argonne National Laboratory and is done by using a Yor-Lok like fitting with a special soft ferrule.
+The loaded local supports then will be placed in a test box and cooled to -55$^\circ$C. 
+The boxes box where designed and partially built as the work contributing to this dissertation. 
+The main challenges involved with the test boxes were the need for a small volume to allow for quickly drying the air to avoid condensation, allowing electrical connections to pass through, ackomading different varities of staves and rings, and finally providing interlocks to protect the operator and equiement. 
+The desgins can be found in Fig. \ref{fig:boxes}
+
+
+\begin{figure}[htbp]
+        \centering
+        \begin{subfigure}{\textwidth}
+            \includegraphics[width=\textwidth]{../Pictures/Chap_4/RingBox.png}
+            \caption{Ring Box}
+        \end{subfigure}
+        \begin{subfigure}{\textwidth}
+            \includegraphics[width=\textwidth]{../Pictures/Chap_4/RingBox.png}
+            \caption{Stave Box}
+        \end{subfigure}
+        \caption{CAD models of boxes used for loaded local supports.}
+        \label{fig:boxes}
+\end{figure}
+
+
+
+To facilitate this a special connection will have to be made to the delicate titanium cooling pipes. 
+This connection was developed at Argonne National Laboratory and is done by using a Yor-Lok like fitting with a special soft ferrule.
 Normally with a Yor-Lok fittings the tubing is compressed and deformed to create a tight seal against the ferrule and fittings. 
 In this case the ferrule is made of a soft metal and deforms to create a tight seal against the titanium pipe without deforming the titanium pipe. 
 This connection allows the local supports to be cooled to the operating temperature of -55$^\circ$C while in the dry box.
@@ -297,7 +316,7 @@ Stycast epoxy is more rigid than SE4445 that has received the radiation dose exp
 
 
 Once mounted, the module was thermally cycled between \(-55^\circ\)C and \(60^\circ\)C for a total of 100 cycles. 
-Due to the design and stack of the module it expected that any damage induced by thermal cycling would most likely manifest as broken or disconnected bump bonds between the silicon sensor and frount ends which we call delamination. 
+Due to the design and stack of the module it expected that any damage induced by thermal cycling would most likely manifest as broken or disconnected bump bonds between the silicon sensor and front ends which we call delamination. 
 To assess potential damage, a bump-bond scan was performed following the thermal cycling procedure.
 The bump-bond test operates by individually checking each pixel for capacitive coupling to its neighboring pixels. 
 Charge is injected into the neighboring pixels surrounding the pixel under test, and the response of the central pixel is then measured. 

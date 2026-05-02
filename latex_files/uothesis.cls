@@ -291,7 +291,7 @@ of this document.}
 \setlength{\@cvhangindent}{\parindent}
 \addtolength{\@cvhangindent}{.5in}  % this drives the amount of indent after line 1
 \long\def\cvpars#1{\par #1}
-\long\def\cvitem#1#2{\par\vspace{.75\baselineskip}\noindent{\hspace*{-4pt}#1}:\vspace{\baselineskip}\nopagebreak\par{#2}}
+\long\def\cvitem#1#2{\par\vspace{.75\baselineskip}\noindent{\hspace*{-4pt}#1}:\nopagebreak\par{#2}}
 
 \gdef\@schools{}
 \gdef\@degrees{}
@@ -547,19 +547,19 @@ All rights reserved.
     \vspace*{3ex}
     \noindent NAME OF AUTHOR:\quad \@author \vskip1.5\baselineskip
     \everypar={\hangindent=\@cvhangindent}
-    \noindent GRADUATE AND UNDERGRADUATE SCHOOLS ATTENDED: \vskip\baselineskip \@schools \vskip\baselineskip
+    \noindent GRADUATE AND UNDERGRADUATE SCHOOLS ATTENDED: \vskip.25\baselineskip \@schools \vskip\baselineskip
     \vskip \baselineskip
-    \noindent DEGREES AWARDED: \vskip\baselineskip \@degrees \vskip\baselineskip
+    \noindent DEGREES AWARDED: \vskip.25\baselineskip \@degrees \vskip\baselineskip
     \vskip \baselineskip
-    \noindent AREAS OF SPECIAL INTEREST: \vskip\baselineskip \@interests \vskip\baselineskip
+    \noindent AREAS OF SPECIAL INTEREST: \vskip.25\baselineskip \@interests \vskip\baselineskip
     \everypar={
       \parskip=0.75\baselineskip
       \hangindent=\@cvhangindent
       \interlinepenalty=\@M
     }
-    \cvitem{PROFESSIONAL EXPERIENCE}{\@experience} \vskip .5\baselineskip
-    \cvitem{GRANTS, AWARDS AND HONORS}{\@awards} \vskip .5\baselineskip
-    \cvitem{PUBLICATIONS}{\@publications} \vskip .5\baselineskip
+    \cvitem{PROFESSIONAL EXPERIENCE}{\@experience} \vskip.25\baselineskip
+    \cvitem{GRANTS, AWARDS AND HONORS}{\@awards} \vskip .25\baselineskip
+    \cvitem{PUBLICATIONS}{\@publications} \vskip .25\baselineskip
     \par
   \end{singlespacing}
 }
@@ -730,10 +730,10 @@ Draft of \@longdraftdate\\
 \renewcommand*{\@tocrmarg}{8em} % Added by JL to change the TOC text right margin (since all TOC lines must have at least three dots between the text and the page number). I just played around with this number and dotsep above until the TOC looked correct. See http://tex.stackexchange.com/a/49898 for an overview of dotsep, tocrmarg, and pnumwidth.
 
 % Added by JL following http://tex.stackexchange.com/a/16036
-  %\usepackage{tocloft}
-  %\renewcommand{\cftbeforetoctitleskip}{-0.25in}
-  %\renewcommand{\cftchapaftersnum}{ }
-  %\renewcommand{\cftaftertoctitleskip}{2.0\baselineskip}
+  % \usepackage{tocloft}
+  % \renewcommand{\cftbeforetoctitleskip}{-0.25in}
+  % \renewcommand{\cftchapaftersnum}{ }
+  % \renewcommand{\cftaftertoctitleskip}{2.0\baselineskip}
 
 \def\@tableofcontents{%
   \clearpage
