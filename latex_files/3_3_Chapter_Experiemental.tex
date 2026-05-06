@@ -2,7 +2,7 @@
 \chapter{Experimental Setup}
 
 This chapter describes the experimental setup used to collect the data for the long-lived particle searches presented in Sections~\ref{ch:llp_search_dt} and~\ref{ch:llp_search_dedx_dt}. 
-All results presented in this thesis are based on data collected by the ATLAS detector at the Large Hadron Collider (LHC) at CERN.
+All results presented in this dissertation are based on data collected by the ATLAS detector at the Large Hadron Collider (LHC) at CERN.
 
 \section{The Large Hadron Collider}
 The LHC is currently the world’s largest and highest-energy particle accelerator, with a total circumference of approximately 27~km. 
@@ -31,48 +31,11 @@ A detailed description of the injector chain performance can be found in Ref.~\c
 Finally, the prepared proton bunches are injected into the LHC, where they are accelerated to their final energies and brought into collision at the four interaction points. 
 A schematic view of the LHC injection chain and other experiments done at the LHC can be seen in Fig. \ref{fig:lhc_complex}
 
-%\section{The ATLAS Detector}
-%The ATLAS detector is a general purpose particle detector at one of the four interaction points of the LHC. 
-% The ATLAS detector is 46 meters long, 25 meters in diameter, and weighs about 7000 tons and is made up of multiple subsystems. 
-% Starting at the interaction point and moving outwards the subsystems are the Inner Detector (ID), central solenoid magnet, the Electromagnetic and Hadronic Calorimeters, the Toroid magnet, and the Muon Spectrometer (MS).
-% Each of these subsystems are designed to measure different properties and types of particles produced in the proton proton collisions.
-% The first subsystem is the Inner Detector (ID) which is the closest subsystem to the interaction point and is designed to measure the trajectories of charged particles.
-% The ID starts measuring particles at a radius of 33.5mm and extends to a radial distance of 
-% Next is the central solenoid magnet which produces a 2 Tesla magnetic field that incompasses the inner detector and provides the necessary magnetic field for momentum measurements.
-% The next subsystem is the Electromagnetic calorimeter which causes electrons and photons to shower and deposit their energy. 
-% These showers are then measured to determine the energy of the original particles. 
-% Next is the Hadronic calorimeters which are designed to measure of the energy of hadrons that again shower in the system. 
-% The hadronic calorimeter is located just outside the electromagnetic calorimeter and works in conjunction with it to provide a complete picture of the energy flow in the detector.
-% Surrounding the calorimeters is the Toroid magnet system which provides a magnetic field for the Muon Spectrometer.
-% The final subsytem is the Muon Spectrometer (MS) which is the outermost layer of the ATLAS detector and is designed to detect and measure the momentum of muons.
-% Muons are able to penetrate through the inner detector and calorimeters due to their high mass and weak interactions with matter, making the MS crucial for identifying and measuring muons produced in collisions.
-% The MS uses a combination of tracking chambers and magnetic fields to measure the curvature of muon trajectories, allowing for precise momentum determination.
-% \subsection{Inner Detector}
-% The Inner Detector (ID) is the innermost subsystem of the ATLAS detector and is the most important for the long lived particle searches presented in this thesis.
-% The ID is split into three main components, the Pixel Detector, the Semiconductor Tracker (SCT), and the Transition Radiation Tracker (TRT).
-% The Pixel Detector is the closest to the interaction point and is made up of multiple layers of silicon pixel sensors.
-% The Pixel Detector consists of the Insertable B-Layer (IBL), 3 barrel layers and 3 end-cap disks on each side of the detector. 
-% This coverage allows the Pixel detector to provide 4 space point measurements for charged particles with a pseudorapidity of $|\eta| < 2.5$.
-% The first layer of the pixel detector is known as the Insertable B-Layer (IBL) and was added during the first long shutdown of the LHC to improve tracking performance. 
-% The IBL is located at 33.5mm from the beamline allowing it to provide high precision measurements close to the interaction point.
-% IBL is built from 14 staves that each contain 32 front end chips mounted on silicon sensors.
-% Two sensor technologies are used in the IBL, planar sensors and 3D sensors. 
-% The planar sensors are used in the central region of the stave. 
-% 3D sensors are used in the forward regions of the detector due to their higher radiation tolerance.
-% Each sensor is made up of pixels that are $50 \mu m$ in $\phi$ and $250 \mu m$ in $z$.
-% In total each stave holds 1280 columns and 336 rows of pixels giving a total of about 12.8 million pixels in the entire IBL.
-
-% The next three layers of the Pixel Detector are the B-Layer, layer 1, and layer 2 located at a radius of 50.5mm, 88.5mm, and 122.5mm from the beamline.
-% The pixel size in these layers are $50 \mu m$ in $\phi$ and $300 \mu m$ in $z$.
-% In these layers planar silicon sensors with a thickness of $250 \mu m$ are used to make up the pixels.
-
-
-%fixed 
 \section{The ATLAS Detector}
 
 The ATLAS detector is a general purpose particle detector located at one of the four interaction points of the LHC. 
 It is approximately 46~m long, 25~m in diameter, weighs about 7000~tons, and consists of multiple subsystems arranged concentrically around the interaction point.
-A cad view of a cross-section of the ATLAS detector can be seen in Fig. \ref{fig:ATLAS_figure}.
+A CAD view of a cross-section of the ATLAS detector can be seen in Fig. \ref{fig:ATLAS_figure}.
 
 \begin{figure}[htbp]
     \centering
@@ -92,9 +55,9 @@ It provides precise measurements of track positions and momenta within a 2~T mag
 Outside the solenoid lies the electromagnetic calorimeter, which measures the energies of electrons and photons through the development of electromagnetic showers. 
 Surrounding this is the hadronic calorimeter, designed to measure the energies of hadrons via hadronic showering, working in conjunction with the electromagnetic calorimeter to provide a complete measurement of the event energy flow.
 
-Enclosing the calorimeters is the toroidal magnet system, which supplies the magnetic field required for the Muon Spectrometer. 
+Enclosing the calorimeters is the toroidal magnet system, which supplies the magnetic field required for the MS. 
 The MS forms the outermost layer of ATLAS and is optimized for the detection and momentum measurement of muons. 
-Due to their relatively large mass, long lifetime, and weak interactions with matter, muons typically traverse the inner detector and calorimeters with minimal energy loss, making the MS essential for their identification. 
+Due to their relatively large mass, long lifetime, and weak interactions with matter, muons typically traverse the ID and calorimeters with minimal energy loss, making the MS essential for their identification. 
 The MS employs a combination of tracking chambers and magnetic fields to measure the curvature of muon trajectories, enabling precise momentum determination.
 
 
@@ -104,51 +67,11 @@ The ATLAS detector uses a right-handed coordinate system.
 The origin is at the nominal interaction point with the Z axis along the beam pipe. 
 The Y axis points upwards and the X axis points to the center of the LHC ring.
 In ATLAS the normal angles $\theta$ and $\phi$ are used where $\theta$ is the polar angle measured from the positive z axis and $\phi$ is the azimuthal angle measured in the x-y plane from the x-axis.
-One important variable used in ATLAS is pseudorapidity, $\eta$, which is defined as $\eta = -ln(tan(\theta/2))$ where $\theta$ is the polar angle measured from the positive z axis.
+One important variable used in ATLAS is pseudorapidity, $\eta$, which is defined as $\eta = -\ln(\tan(\theta/2))$ where $\theta$ is the polar angle measured from the positive z axis.
 Pseudorapidity is useful for ATLAS as the difference in pseudorapidity between particles, $\Delta \eta$, is invariant under Lorentz boosts along the beam axis with the assumption that the momentum of a particle is much larger than mass of the particle, $pc\gg mc^2$.
 
 
 
-
-
-% \subsection{Inner Detector}
-
-% The Inner Detector (ID) is the innermost subsystem of ATLAS and plays a central role in the long-lived particle searches presented in this thesis. 
-% It consists of three main components: the Pixel Detector, the Semiconductor Tracker (SCT), and the Transition Radiation Tracker (TRT).
-
-% The Pixel Detector is located closest to the interaction point and is composed of multiple layers of silicon pixel sensors. 
-% It includes the Insertable B-Layer (IBL), three barrel layers, and three end-cap disks on each side of the detector. 
-% This configuration provides up to four space-point measurements for charged particles within a pseudorapidity coverage of $|\eta| < 2.5$.
-
-% The innermost pixel layer, known as the Insertable B-Layer (IBL), was installed during the first long shutdown of the LHC to enhance tracking and vertexing performance. 
-% The IBL is positioned at a radius of 33.5~mm from the beamline, enabling high-precision measurements close to the interaction point. 
-% It is constructed from 14 staves, each containing 32 front-end chips mounted on silicon sensors.
-
-% Two sensor technologies are employed in the IBL: planar sensors and 3D sensors. 
-% Planar sensors are used in the central region of each stave, while 3D sensors are utilized in the forward regions due to their superior radiation tolerance. 
-% Each sensor is segmented into pixels with dimensions of $50~\mu\text{m}$ in $\phi$ and $250~\mu\text{m}$ in $z$. 
-% Each stave contains 1280 columns and 336 rows of pixels, resulting in approximately 12.8 million pixels in the full IBL.
-
-% The remaining three barrel layers of the Pixel Detector, referred to as the B-layer, Layer~1, and Layer~2, are located at radii of 50.5~mm, 88.5~mm, and 122.5~mm, respectively. 
-% In these layers, planar silicon sensors with a thickness of $250~\mu\text{m}$ are used, with pixel dimensions of $50~\mu\text{m}$ in $\phi$ and $300~\mu\text{m}$ in $z$.
-
-% \subsection{Calorimeters}
-% ATLAS has two main calorimeter systems, the electromagnetic calorimeter and the hadronic calorimeter. 
-% Both calorimeters are designed to absorb and measure the energy of particles after they pass through the ID. 
-
-% \subsubsection{Electromagnetic Calorimeter}
-% The EM calorimeter is a sampling calorimeter that uses lead as an absorber and liquid argon as the active material.
-% This works by having incoming particles interact with the lead absorber which causes them to shower and produce showers that are then sampled in the active layers through scintillation of the liquid argon.
-% The EM calorimeter is divided into a barrel section and two end-cap sections.
-% The barrel section covers the pseudorapidity range of $|\eta| < 1.475$ while the end-cap sections cover the range of $1.375 < |\eta| < 3.2$.
-
-% \subsubsection{Hadronic Calorimeter}
-% The hadronic calorimeter is also a sampling calorimeter but uses different materials for the absorber and active layers.
-% The hadronic calorimeter uses steel and copper as absorbers and scintillating tiles and liquid argon as active materials.
-% The hadronic calorimeter is also divided into a barrel section and two end-cap sections.
-% The barrel section covers the pseudorapidity range of $|\eta| < 1.4$ while the end-cap sections cover the range of $1.4 < |\eta| < 4.8$. 
-% In the end-cap region, $1.4 < |\eta| < 4.8$, the hadronic calorimeter uses the liquid argon technology similar to the EM calorimeter to deal with the higher radiation levels in this region.
-% In the central region of the detector, the barrel section of the hadronic calorimeter uses tile calorimeters. 
 
 
 \subsection{Inner Detector}
@@ -169,45 +92,12 @@ Particles that transverse the Pixel Detector, the SCT, and the TRT have momentum
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[trim={0 0 5cm 0},clip, width=\textwidth]{../Pictures/IDbriefing.png}
-    \caption{Schematic view of the Inner Detector \cite{ATLAS_Picture}, showing the beam pipe, pixel barrel, SCT barrel, and TRT. 
-    Image credit: CERN.}
+    \includegraphics[width=\textwidth]{../Pictures/IDbriefing.png}
+    \caption{Left: Schematic view of the ID, showing the beam pipe, pixel barrel, SCT barrel, and TRT.  
+    Right: schematic view of charged particle track; red stars are cluster hits, the track is in black, green indicates the intersection of the track with the silicon layer, and blue represents the distance between the track and cluster hit on the surface of the silicon.
+    Image credit: CERN \cite{ATLAS_Picture}.}
     \label{fig:ID_figure}
 \end{figure}
-
-
-% \subsubsection{Pixel Detector}
-% The Pixel Detector is located closest to the interaction point and is composed of multiple layers of silicon pixel sensors. 
-% The Pixel Detector provides tracking from 33.5mm to 122.5mm.
-% It includes the Insertable B-Layer (IBL), three barrel layers, and three end-cap disks on each side of the detector. 
-% This configuration provides up to four space-point measurements for charged particles within a pseudorapidity coverage of $|\eta| < 2.5$.
-
-% The innermost pixel layer, known as the Insertable B-Layer (IBL), was installed during the first long shutdown of the LHC to enhance tracking and vertexing performance. 
-% The IBL is positioned at a radius of 33.5~mm from the beamline, enabling high-precision measurements close to the interaction point. 
-% It is constructed from 14 staves, each containing 32 front-end chips mounted on silicon sensors.
-
-% Two sensor technologies are employed in the IBL: planar sensors and 3D sensors. 
-% Planar sensors are used in the central region of each stave, while 3D sensors are utilized in the forward regions due to their superior radiation tolerance. 
-% Each sensor is segmented into pixels with dimensions of $50~\mu\text{m}$ in $\phi$ and $250~\mu\text{m}$ in $z$. 
-% Each stave contains 1280 columns and 336 rows of pixels, resulting in approximately 12.8 million pixels in the full IBL.
-
-% The remaining three barrel layers of the Pixel Detector, referred to as the B-layer, Layer~1, and Layer~2, are located at radii of 50.5~mm, 88.5~mm, and 122.5~mm, respectively. 
-% In these layers, planar silicon sensors with a thickness of $250~\mu\text{m}$ are used, with pixel dimensions of $50~\mu\text{m}$ in $\phi$ and $300~\mu\text{m}$ in $z$.
-
-% \subsubsection{Semiconductor Tracker}
-% The Semiconductor tracker(SCT) is the next subsystem after the Pixel Detector. 
-% The SCT is a precision microstrip detector that provides tracking at radial distances of 299 mm to 560 mm from the beam line at a $|\eta| < 2.5$.
-% The SCT can provide momentum measurements of up to $\sigma pT / pT = 0.05\% \times pT[GeV] \oplus 1\%$ 
-% The SCT consists of 4088 silcon strip detectors arranged in 4 barrels and two disks of nine disks. 
-
-
-% \subsubsection{Transition Radiation Tracket}
-% The Transistion Radiation Tracker(TRT) is the last part of the Inner Detector. 
-% The TRT consists of straw tubes filled with a Xenon gas mixture.
-% As particles pass through the gas tubes they ionize the gas.
-% The ionization of the particles then drift to the electrodes where they are then read out.
-% Each tube is 4mm in diameter and can provide up to 36 hits per a track. 
-% The draw back of this technologies is that it can only provide infomation in the $R-\phi$ plane.
 
 \subsubsection{Pixel Detector}
 
@@ -248,7 +138,7 @@ After the threshold tuning a ToT scan can be done by injecting known charges and
 \subsubsection{Semiconductor Tracker}
 
 The Semiconductor Tracker (SCT) is located outside the Pixel Detector and provides precision tracking at radial distances between approximately 299~mm and 560~mm from the beamline, covering a pseudorapidity range of $|\eta| < 2.5$. 
-The SCT is a silicon microstrip detector designed to complement the Pixel Detector by extending the tracking lever arm and improving momentum resolution, see Fig. \ref{Silicion_view} for schematic view of silicon sensors. 
+The SCT is a silicon microstrip detector designed to complement the Pixel Detector by extending the tracking lever arm and improving momentum resolution, see Fig. \ref{fig:Silicion_view} for schematic view of silicon sensors. 
 
 The SCT consists of 4088 silicon strip modules arranged in four barrel layers and two end-caps, each comprising nine disks. 
 Each module contains two back-to-back silicon strip sensors mounted with a small stereo angle, enabling three-dimensional space-point reconstruction.
@@ -262,12 +152,12 @@ Each module contains two back-to-back silicon strip sensors mounted with a small
 
 \subsubsection{Transition Radiation Tracker}
 
-The Transition Radiation Tracker (TRT) forms the outermost component of the Inner Detector. 
+The Transition Radiation Tracker (TRT) forms the outermost component of the ID. 
 It is composed of straw tubes filled with a xenon-based gas mixture, which serve both as tracking detectors and as transition radiation detectors for electron identification.
  
 
 As charged particles traverse the straw tubes, they ionize the gas, and the resulting electrons drift toward the central anode wires where the signals are read out. 
-Each straw has a diameter of 4~mm, allowing the TRT to provide up to approximately 36 measurements per track, significantly increasing the number of tracking points in the outer region of the Inner Detector.
+Each straw has a diameter of 4~mm, allowing the TRT to provide up to approximately 36 measurements per track, significantly increasing the number of tracking points in the outer region of the ID.
 
 A limitation of the TRT is that it provides position measurements only in the $R$--$\phi$ plane. 
 Nevertheless, when combined with the Pixel Detector and SCT, the TRT enhances pattern recognition and improves track momentum resolution by providing tracking over a larger radial distance.
@@ -278,7 +168,7 @@ Nevertheless, when combined with the Pixel Detector and SCT, the TRT enhances pa
 \subsection{Calorimeters}
 
 ATLAS employs two main calorimeter systems: the electromagnetic calorimeter and the hadronic calorimeter, as seen in Fig. \ref{fig:calorimeter_figure}. 
-Together, these systems are designed to absorb  and measure the energies of particles emerging from the interaction point after they traverse the Inner Detector.
+Together, these systems are designed to absorb  and measure the energies of particles emerging from the interaction point after they traverse the ID.
 
 
 \begin{figure}[htbp]
@@ -308,43 +198,19 @@ In the forward and end-cap regions, liquid argon technology is used to accommoda
 
 \subsection{Muon Spectrometer}
 
-Due to their relatively large mass and weak interactions with matter, muons typically traverse the Inner Detector and calorimeters while depositing only small amounts of ionization energy. 
+Due to their relatively large mass and weak interactions with matter, muons typically traverse the ID and calorimeters while depositing only small amounts of ionization energy. 
 As a result, the outermost subsystem of ATLAS is dedicated to reconstructing the momentum and trajectory of these weakly interacting charged particles.
 
-The Muon Spectrometer is constructed using five detector technologies: Thin Gap Chambers (TGCs), Resistive Plate Chambers (RPCs), Monitored Drift Tubes (MDTs), Small-Strip Thin Gap Chambers (sTGCs), and Micromegas. 
+The MS is constructed using five detector technologies: Thin Gap Chambers (TGCs), Resistive Plate Chambers (RPCs), Monitored Drift Tubes (MDTs), Small-Strip Thin Gap Chambers (sTGCs), and Micromegas. 
 The majority of the precision tracking measurements are provided by the Monitored Drift Tubes.
 
-The Muon Spectrometer consists of a barrel region and two end-cap regions. 
+The MS consists of a barrel region and two end-cap regions. 
 The barrel region covers the pseudorapidity range $|\eta| < 1.2$, while the end-cap regions extend the coverage to $1.0 < |\eta| < 2.7$. 
-A schematic view of the Muon Spectrometer and its various detector components is shown in Figure~\ref{fig:muonSys}.
+A schematic view of the MS and its various detector components is shown in Fig.~\ref{fig:muonSys}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth]{../Pictures/muonSys.jpg}
-    \caption{Schematic layout of the ATLAS Muon Spectrometer showing the barrel and end-cap regions along with the locations of the different detector technologies used for muon tracking and triggering. Credit: CERN ~\cite{Muon_Picture}}
+    \caption{Schematic layout of the ATLAS MS showing the barrel and end-cap regions along with the locations of the different detector technologies used for muon tracking and triggering. Credit: CERN ~\cite{Muon_Picture}}
     \label{fig:muonSys}
 \end{figure}
-
-% \subsection{Muon Spectrometer}
-
-% The Muon Spectrometer (MS) is the outermost subsystem of the ATLAS detector and is specifically designed to identify muons and measure their momenta with high precision. 
-% Owing to their relatively large mass and weak interactions with detector material, muons typically traverse the Inner Detector and calorimeters while depositing only small amounts of energy. 
-% As a result, the Muon Spectrometer plays a crucial role in muon reconstruction and identification.
-
-% Momentum measurements in the Muon Spectrometer are performed independently of the Inner Detector using large air-core toroidal magnets, which generate a magnetic field with a bending power of approximately 2--6~Tm, depending on the detector region. 
-% The toroidal magnetic field allows for precise measurements of the curvature of muon trajectories while minimizing multiple scattering effects due to the absence of iron in the magnet design.
-
-% The Muon Spectrometer is composed of three layers of precision tracking chambers arranged in a barrel region and two end-cap regions. 
-% The barrel region provides coverage for pseudorapidities of $|\eta| < 1.2$, while the end-cap regions extend the acceptance to $1.0 < |\eta| < 2.7$. 
-% Together, these regions ensure near-complete coverage for muons produced in proton--proton collisions at the LHC.
-
-% Five detector technologies are employed in the Muon Spectrometer. 
-% Monitored Drift Tubes (MDTs) serve as the primary precision tracking detectors over most of the spectrometer acceptance, providing high spatial resolution. 
-% In the innermost forward region, where particle rates are highest, Cathode Strip Chambers (CSCs) were originally used, while for the Run~3 upgrade these have been complemented and partially replaced by Micromegas detectors and Small-Strip Thin Gap Chambers (sTGCs), which offer improved rate capability and spatial resolution.
-
-% In addition to precision tracking, fast trigger information is provided by Resistive Plate Chambers (RPCs) in the barrel region and Thin Gap Chambers (TGCs) in the end-cap regions. 
-% These trigger chambers enable the identification of muon candidates in real time and provide timing information necessary for the Level-1 muon trigger.
-
-% The combination of precision tracking chambers and trigger detectors allows the Muon Spectrometer to achieve excellent momentum resolution over a wide transverse momentum range. 
-% At low momenta, the resolution is dominated by multiple scattering, while at high momenta it is limited by the intrinsic detector resolution and magnetic field strength. 
-% The independent momentum measurement provided by the Muon Spectrometer is essential for robust muon identification and is particularly valuable in searches for new physics signatures involving displaced or non-prompt muons.

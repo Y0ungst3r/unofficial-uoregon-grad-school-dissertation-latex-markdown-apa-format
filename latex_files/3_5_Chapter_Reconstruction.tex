@@ -3,7 +3,7 @@
 
 Once data sets are recorded in the ATLAS detector, they are initially stored in a raw format that is not directly suitable for physics analysis. A dedicated reconstruction chain is therefore applied to transform these raw detector signals into higher-level physics objects.
 
-This section describes the reconstruction of the main physics objects used ATLAS. It is important to note that all reconstructed objects are subject to finite resolution and potential misconstruction effects. For example, a reconstructed track may arise from a random combination of detector hits, and reconstructed electrons or other particle candidates may originate from alternative physical processes or detector effects.
+This section describes the reconstruction of the main physics objects used in ATLAS. It is important to note that all reconstructed objects are subject to finite resolution and potential misconstruction effects. For example, a reconstructed track may arise from a random combination of detector hits, and reconstructed electrons or other particle candidates may originate from alternative physical processes or detector effects.
 
 As a result, each reconstructed object is associated with a quantified probability of correctly representing the underlying true particle. Understanding and controlling these reconstruction uncertainties is essential for precision measurements and searches for rare processes.
 
@@ -34,16 +34,16 @@ The first pass of track reconstruction proceeds through the following steps:
 
 The result of the tracking algorithm is track objects defined by a helical path through the detector with 5 variables, $(d_0, z_0, \phi, \theta, \frac{q}{p})$.
 
-For tracks to be kept they must pass a set of requirements. Until recently standard tracks were only considered to be valid if they had 7 silicon hits. This has recently changed that standard tracking requires 8 hits. 
+For tracks to be kept they must pass a set of requirements. Until recently standard tracks were only considered to be valid if they had at least 7 silicon hits. This has recently changed and new standard tracking now requires at least 8 silicon hits. 
 
 Interestingly, the number of tracks reconstructed is roughly linear in pileup, $\mu$. If pileup is too high though it becomes nonlinear due to fake track reconstruction starting to dominate. 
 
 
 \subsection{Tracklet Reconstruction}
 
-After the standard tracking procedure is completed, a second-pass tracking algorithm is performed to reconstruct tracklets, defined as short tracks composed mainly of hits in the pixel detector. This second-pass reconstruction uses hits that were not assigned to tracks in the primary tracking stage.
+After the first pass tracking procedure is completed, a second-pass tracking algorithm is performed to reconstruct tracklets, defined as short tracks composed mainly of hits in the pixel detector. This second-pass reconstruction uses hits that were not assigned to tracks in the primary tracking stage.
 
-Tracklets are seeded exclusively from pixel detector clusters, as the primary goal is to identify charged particles that decay within the inner detector volume. To ensure sufficient reconstruction quality, at least three pixel hits are required. The selection criteria used for tracklet reconstruction are summarized in Tab.~\ref{tab:tracklet_reco}.
+Tracklets are seeded exclusively from pixel detector clusters, as the primary goal is to identify charged particles that decay within the Inner Detector volume. To ensure sufficient reconstruction quality, at least three pixel hits are required. The selection criteria used for tracklet reconstruction are summarized in Tab.~\ref{tab:tracklet_reco}.
 
 \begin{table}[ht!]
 \centering
@@ -78,13 +78,13 @@ For pixel only tracklets that hit all four pixel layers, the lever arm is the di
 
 To exploit this, a vertex-constrained refit is applied to tracklets after reconstruction. The procedure is as follows:
 \begin{itemize}
-    \item Tracklets are reconstructed using the standard tracklet reconstruction pass.
+    \item Tracklets are reconstructed using the normal second-pass tracklet reconstruction.
     \item The distance between each tracklet and all reconstructed vertices (including pile-up vertices) is computed.
     \item Each tracklet is refitted under the hypothesis that it originates from the nearest vertex.
     \item The track parameters are updated, with the perigee defined relative to the selected vertex, resulting in a vanishing impact parameter by construction.
 \end{itemize}
 
-This procedure increases the effective lever arm by approximately 33~mm, leading to improved momentum resolution and better agreement with the true particle kinematics in simulation. Unless otherwise stated, the vertex-constrained momentum is used throughout this thesis when referring to tracklet \(p_T\).
+This procedure increases the effective lever arm by approximately 33~mm, leading to improved momentum resolution and better agreement with the true particle kinematics in simulation. Unless otherwise stated, the vertex-constrained momentum is used throughout this dissertation when referring to tracklet \(p_T\).
 
 \subsection{Kinked Tracklets}
 \label{sec:kinked_tracklet}
@@ -119,13 +119,6 @@ These kinked signatures can arise from two primary sources: particles material i
     \hline
   \end{tabular}
 \end{table}
-
-\subsection{Soft Pion Reconstruction}
-
-This reconstruction is performed after the tracklet reconstruction stage.
-
- 
-
 
 
 \subsection{Soft Pion}
@@ -175,7 +168,7 @@ The reconstruction typically follows an outside-in approach, where tracks recons
  
 
 \subsubsection{Segment-tagged Muon}
-Muons can also be identified using segment-tagging. In this approach, ID tracks are extrapolated into the MS and matched to at least one reconstructed track segment in the MS. This method allows for the identification of muons that cross only one layer of the MS due either to their low-$P_t$ or that they are outside normal acceptance regions of the MS.
+Muons can also be identified using segment-tagging. In this approach, ID tracks are extrapolated into the MS and matched to at least one reconstructed track segment in the MS. This method allows for the identification of muons that cross only one layer of the MS due either to their low-$p_T$ or that they are outside normal acceptance regions of the MS.
 
 
 
@@ -183,28 +176,25 @@ Muons can also be identified using segment-tagging. In this approach, ID tracks 
 Muons may also be identified by matching ID tracks to energy deposits in the calorimeter that are consistent with a MIP.
 This approach is particularly useful for recovering efficiency in regions where the MS has reduced acceptance, such as detector gaps required for services and support structures.
 
-\subsubsection{Extrapolated Muons}
-
-In the forward region, the pseudorapidity coverage of the MS extends beyond that of the ID. As a result, some muons are reconstructed in the MS without an associated ID track. These are referred to as extrapolated muons and are reconstructed using MS information alone.
 
 \subsubsection{Extrapolated muons}
 In the forward regions, the $\eta$ coverage of the MS extends beyond that of the ID. As a result, some muons in the forward region have no reconstructed ID track to be associated with. These are extrapolated muons and are reconstructed using only the MS.
 
 \subsection{Jet}
 
-Due to color confinement quarks do not propagate freely. Instead, quarks in \pp collisions will undergo hadronization. During hadronization many color natural hadrons are produced in a collimated jet. These collimated particles in the jet will deposit energy mostly inside the hadronic calorimeter. Topo-clusters (topologiccally-grouped cells of energy deposits in the calorimeters) are formed as the first step of jet reconstruction \cite{Schramm:2291608}. Then most jets are formed using an anti-kt algorithm \cite{Cacciari_2008}. 
+Due to color confinement quarks do not propagate freely. Instead, quarks in \pp collisions will undergo hadronization. During hadronization many color natural hadrons are produced in a collimated jet. These collimated particles in the jet will deposit energy mostly inside the hadronic calorimeter. Topo-clusters (topologically-grouped cells of energy deposits in the calorimeters) are formed as the first step of jet reconstruction \cite{Schramm:2291608}. Then most jets are formed using an anti-kt algorithm \cite{Cacciari_2008}. 
 
 
 
 \subsection{Missing Transverse Energy}
-The \pp collisions by design in ATLAS start with no momentum in the transverse plan. Due to the properties of hadrons the momentum carried by each parton is just fraction of the total momentum of the hadron. Meaning it is not known the initial momentum of the parton that undergos hard scattering. 
+The \pp collisions by design in ATLAS start with no momentum in the transverse plan. Due to the properties of hadrons the momentum carried by each parton is just fraction of the total momentum of the hadron. Meaning it is not known the initial momentum of the parton that undergo hard scattering. 
 Due to the conservation of momentum if the initial momentum in the transverse plane is zero then the final momentum in the transverse plane must also be zero. In a perfect detector the momentum of every particle produced would be measured and the vector sum of all momentum in the transverse plane would be zero. 
-However, in practice ATLAS is unable to detect every particle produced. For example, in the standard model the neutrino doesn't leave any measureable signal in the detector. 
-In addition, many BSM searches predict DM canidates which are also weakly interacting and escape any detection. This lack of detection provides a handle to measure potiental DM models. 
-Missing transvese energy (MET) is a measure of how much energy escapes detection in the ATLAS detector. Normally, MET is calculated as the vector sum required to balance all other physics objects $P_t$ out to zero, including the "soft term". The soft term is just momentum not associated with any other physics object, but that is measured in the detector. 
+However, in practice ATLAS is unable to detect every particle produced. For example, in the standard model the neutrino doesn't leave any measurable signal in the detector. 
+In addition, many BSM searches predict DM candidates which are also weakly interacting and escape any detection. This lack of detection provides a handle to measure potential DM models. 
+Missing transverse energy (MET) is a measure of how much energy escapes detection in the ATLAS detector. Normally, MET is calculated as the vector sum required to balance all other physics objects $p_T$ out to zero, including the "soft term". The soft term is just momentum not associated with any other physics object, but that is measured in the detector. 
 
 \section{Measurements}
-For this dissertation there are two important measurements. A tracks momentum and the ionization energy loss of a particle. 
+For this dissertation there are two important measurements; tracks momentum and the ionization energy loss of a particle. 
 
 \subsection{Momentum}
 \label{sec:sagitta}
@@ -217,6 +207,7 @@ Track momentum measurements rely on the magnetic field bending the charged parti
 
 
 Thus, if we assume the magnetic field inside the ID is uniform we measure the momentum by first measuring deviation of a particle from a straight line and using that to find the result of the Lorentz force and thus the resulting momentum. 
+This is done by first measuring the sagitta of the track.
 The sagitta is defined as the distance from the midpoint of an arc to the chord of that arc, see Fig. \ref{fig:sagitta}. 
 
 
@@ -239,53 +230,53 @@ The sagitta is defined as the distance from the midpoint of an arc to the chord 
 	
 	With the assumption that the magnetic field inside the ID is uniform and pointing along the beam line we can simply the Lorentz force and combine with Eq. \ref{Sagitta} to get,
 	\begin{equation}
-		P cos (\lambda) = .3 z B R = z \frac{.3 B L^2}{8 s} \label{Momentum}
+		P cos (\theta) = .3 z B R = z \frac{.3 B L^2}{8 s} \label{Momentum}
 	\end{equation}
 	
 	Where B is defined as the uniform magnetic field the particle is passing through in units of Tesla. z is the charge of the particle. L is the lever arm length and s is the sagitta as shown in Fig. \ref{fig:sagitta}, in units of meters.
 	\subsection{Momentum Error}
 	\label{sec:P-error}
-	Momentum error can be found by starting with equation \ref{Momentum}. 
+	Momentum error can be found by starting with equation \ref{Momentum} and assuming that $z=1$. 
 	
 	\begin{equation}
-		P = .3 B R \rightarrow  \delta_P = .3 B \delta_R
+		P = .3 B R \rightarrow  \sigma_P = .3 B \sigma_R
 	\end{equation}
 	
 	Which dividing by P on both sides and using \ref{Momentum} again we return to.
 
 
 	\begin{equation}
-		 \frac{\delta_P}{P} = \frac{\delta_R}{R} \label{LinearError}
+		 \frac{\sigma_P}{P} = \frac{\sigma_R}{R} \label{LinearError}
 	\end{equation}
 	
-	Now we can find the relation for $\delta_R$ by using \ref{Sagitta} and the standard error propagation term,
+	Now we can find the relation for $\sigma_R$ by using \ref{Sagitta} and the standard error propagation term,
 	
 	\begin{equation}
-		 \delta_R = \sqrt{\left(\frac{1}{4} \frac{L^2}{s}\right)^2 \sigma_L^2 + \left( \frac{1}{8} \frac{L^2}{s^2} \right)^2 \sigma^2_s}
+		 \sigma_R = \sqrt{\left(\frac{1}{4} \frac{L^2}{s}\right)^2 \sigma_L^2 + \left( \frac{1}{8} \frac{L^2}{s^2} \right)^2 \sigma^2_s}
 	\end{equation}
 	
 	Where we can assume that $\sigma_L \ll \sigma_s$ meaning that we can put this all together to get 
 	
 		\begin{equation}
-			\delta_R = \left( \frac{1}{8} \frac{L^2}{s^2} \right) \sigma_s
+			\sigma_R = \left( \frac{1}{8} \frac{L^2}{s^2} \right) \sigma_s
 		\end{equation}
 		
-		Then we use equation \ref{LinearError} change back to the important thing. 
+		Then we use equation \ref{LinearError} to change back to the relevant measurements. 
 		
 		\begin{equation}
-			\frac{\delta_P}{P} = \frac{1}{8} \frac{L^2}{R s^2} \sigma_s
+			\frac{\sigma_P}{P} = \frac{1}{8} \frac{L^2}{R s^2} \sigma_s
 		\end{equation}
 		
 		We can remove the s with equation \ref{Sagitta}.
 		
 		\begin{equation}
-			\frac{\delta_P}{P} = \frac{8 R}{ L^2} \sigma_s
+			\frac{\sigma_P}{P} = \frac{8 R}{ L^2} \sigma_s
 		\end{equation}
 	
 		Then finally using equation \ref{Momentum} to return to all observable. 
 			
 	\begin{equation}
-		\frac{\delta_P}{P^2} = \frac{8}{0.3 B L^2} \sigma_s
+		\frac{\sigma_P}{P^2} = \frac{8}{0.3 B L^2} \sigma_s
 		\label{eq:pT_error}
 	\end{equation}
 
@@ -383,7 +374,7 @@ The sagitta is defined as the distance from the midpoint of an arc to the chord 
 	
 \section{dEdx measurements}
 
-Ionization energy loss is the description of energy deposited into matter as charged high energy particles pass through. For the Inner Detector most particles are high energy and thus normally pass through matter without a significant change in energy. In addition, the silicon in the Inner Detector is thin. However, the ionization energy loss in inherently a statistical process. With these assumptions the probability of ionization energy loss can be calculated. 
+Ionization energy loss is the description of energy deposited into matter as charged high energy particles pass through. For the Inner Detector most particles are high energy and thus normally pass through matter without a significant change in energy. In addition, the silicon in the Inner Detector is thin. However, the ionization energy loss in inherently a statistical process. With these assumptions the probability of ionization energy loss can be approximated. 
 
 
 \subsection{Small number of collisions}
@@ -493,10 +484,54 @@ Eq.~\ref{eq:exact_dEdx} provides an exact description of the energy loss distrib
 
 In the thin absorber limit, this formalism reduces to the well-known Landau distribution, which describes the characteristic asymmetric fluctuations in energy loss observed in thin materials such as silicon sensors. This distribution provides a good description of measured $dE/dx$ spectrum in tracking detectors, where the number of collisions is relatively small.
 
-% \subsection{Bethe–Bloch}
+\subsection{Bethe–Bloch}
 
-% The mean ionization energy loss per unit legth for a particle with velocity $\beta$ is given by the Bethe-bloch equation,
+The mean ionization energy loss per unit length for a particle with velocity $\beta$ is given by the Bethe-Bloch equation,
 
-% \begin{equation}
-% \left< - \frac{dE}{dx} \right> = K z^2 \frac{Z}{A} \frac{1}{\beta^2}\left[ \frac{1}{2} ln \frac{2 m_2 c^2\beta^2 \gamma^2 W_{max}}{I} -\beta^2 - \frac{\delta (\beta \gamma)}{2}   \right]
-% \end{equation}
+\begin{equation}
+\left< - \frac{dE}{dx} \right> = K z^2 \frac{Z}{A} \frac{1}{\beta^2}\left[ \frac{1}{2} \ln \left(\frac{2 m_e c^2\beta^2 \gamma^2 W_{\mathrm{max}}}{I}\right) -\beta^2 - \frac{\delta (\beta \gamma)}{2}   \right]
+\label{eq:BetheBloch}
+\end{equation}
+
+
+The definitions of the variables used in Eq.~\ref{eq:BetheBloch} are given in Table~\ref{tab:bethe_bloch_vars}. The Bethe-Bloch prediction for a muon traversing silicon is shown in Fig.~\ref{fig:Bethe} \cite{ParticleDataGroup:2024cfk}.
+
+The density correction term $\delta(\beta\gamma)$ accounts for the screening of the incidents particles electric field by atomic electrons of the absorber medium. This becomes increasingly important at high $\beta\gamma$, where the Lorentz contraction of the particle's electric field squishes it into a disk transverse to the direction of momentum, enhancing the role of medium screening. As a result, the correction depends on the material density and modifies the relativistic rise of the energy loss at high momentum. 
+
+
+There are corrections that can be applied to make Eq.~\ref{eq:BetheBloch} describe experimental data more accurately, as found in \cite{ParticleDataGroup:2024cfk}. However, the expression provides a useful conceptual understanding of the relationship between the mean energy loss and the relevant particle properties.
+
+\begin{figure}[tp]
+    \centering
+    \includegraphics[width=.9\textwidth]{../Pictures/Chap_5/Bethe.png}
+    \caption{
+        Bethe-Bloch \dedx for muons incident on silicon \cite{ParticleDataGroup:2024cfk}. 
+    }
+    \label{fig:Bethe}
+\end{figure}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{c l}
+\hline
+\hline
+\textbf{Symbol} & \textbf{Definition} \\
+\hline
+$K$ & Constant $4\pi N_A r_e^2 m_e c^2$ \\
+$N_A$ & Avogadro’s number \\
+$r_e$ & Classical electron radius \\
+$m_e$ & Electron mass \\
+$z$ & Charge of incident particle \\
+$Z$ & Atomic number of absorber \\
+$A$ & Mass number of absorber \\
+$I$ & Mean excitation energy of absorber \\
+$W_{\mathrm{max}}$ & Maximum energy transfer in a single collision \\
+$\beta$ & $v/c$ of incident particle \\
+$\gamma$ & Lorentz factor $1/\sqrt{1-\beta^2}$ \\
+$\delta$ & Density correction term \\
+\hline
+\hline
+\end{tabular}
+\caption{Definitions of variables used in the Bethe-Bloch equation.}
+\label{tab:bethe_bloch_vars}
+\end{table}

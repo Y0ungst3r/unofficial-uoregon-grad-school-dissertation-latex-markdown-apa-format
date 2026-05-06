@@ -16,7 +16,7 @@ This dramatic increase in pileup presents significant challenges for event recon
 
 To meet these challenges and continue exploring the particle physics phenomena at the HL-LHC, the ATLAS detector is undergoing extensive upgrades. 
 These upgrades are designed to improve radiation tolerance, increase detector granularity, enhance readout bandwidth, and maintain or improve physics performance under extreme operating conditions. 
-Major upgrade components include a complete replacement of the Inner Detector with a new all-silicon Inner Tracker (ITk), upgrades to the Muon Spectrometer, new front-end and readout electronics for the calorimeters, and substantial improvements to the trigger and data acquisition systems.
+Major upgrade components include a complete replacement of the ID with a new all-silicon Inner Tracker (ITk), upgrades to the Muon Spectrometer, new front-end and readout electronics for the calorimeters, and substantial improvements to the trigger and data acquisition systems.
 
 The ATLAS upgrade program is divided into two phases. 
 Phase 1 upgrades were completed during the Long Shutdown 2 period and commissioned by 2024. 
@@ -37,7 +37,7 @@ These upgrades enabled ATLAS to operate efficiently at higher luminosities and i
 The Phase 2 upgrade program is designed to prepare the ATLAS detector for sustained operation during the HL-LHC era and is scheduled for completion in 2030. 
 Phase 2 will introduce significant upgrades to the ATLAS trigger and data acquisition system, on/off detector electronics upgrades for LAr Calorimeter, Tile Calorimeters, and the muon detectors. 
 Phase 2 will also include a new tracking detector, High Granularity Timing Detector and Muon Chambers.  
-The combined effects of integrated luminosity and the planned increase of instantaneous luminosity result in the ID no longer being sufficient for tracking and vertexing in ATLAS beyond run 3. Thus, an integral part of the phase 2 upgrades is the replaced of the ID with ITk. 
+The combined effects of integrated luminosity and the planned increase of instantaneous luminosity result in the ID no longer being sufficient for tracking and vertexing in ATLAS beyond run 3. Thus, an integral part of the phase 2 upgrades is the replacement of the ID with ITk. 
 % The ID is being replaced with a new all-silicon Inner Tracker (ITk).
 
 The ITk is designed to accommodate the 200 proton-proton collisions per bunch crossing expected at the HL-LHC. 
@@ -63,7 +63,7 @@ To operate reliably under these conditions, the ITk employs radiation hard silic
 The first layer of the ITk is also designed to be replaceable, allowing for potential replacement during the HL-LHC era. 
 
 ITk is split into two main systems: the Pixel Detector and the Strip Detector.
-A brief overview of the Strip detector will be given then the rest of this section will focus on the Pixel Detector as this is the area of ITk that the majority of the work for this thesis was done. 
+A brief overview of the Strip detector will be given then the rest of this section will focus on the Pixel Detector as this is the area of ITk that the majority of the work for this dissertation was done. 
 
 
 \subsection{ITk Strips}
@@ -86,8 +86,8 @@ The front-end electronics are designed by the RD53 collaboration, which has desi
 The RD53 front-end being used for the Pixel Detectors is called the ITkPixV2.
 The pixel modules are built as either quad modules, 4 ITkPixV2 front-ends bump bonded to a single silicon sensor, or as triplets, 3 RD53 front-ends each bonded together to individual silicon sensors, as can be seen in Fig. \ref{fig:itk_modules}. 
 The pixel modules will be attached to local supports either rings or staves made of carbon fiber laminates and high thermal-conductive foam core with titanium pipes traversing the center for cooling. 
-Cooling for ITk is provided by a  \(\mathrm{CO_2}\) evaporative cooling system that is designed to maintain the temperature of the silicon sensors at -55$^\circ$C to mitigate radiation damage effects and prolong sensor life. 
-These rings and staves are mounted into shells that will provide outer structure for ITk as can be seen in figure \ref{fig:itk_shells}.
+Cooling for ITk is provided by a  \(\mathrm{CO_2}\) evaporative cooling system that is designed to maintain the temperature of the silicon sensors at -35$^\circ$C to mitigate radiation damage effects and prolong sensor life. 
+These rings and staves are mounted into shells that will provide outer structure for ITk as can be seen in Fig.~\ref{fig:itk_shells}.
 
 The US ATLAS program is responsible for the two innermost layers of Pixel Detector called the Inner System. 
 Assembly of the Inner System is being done at SLAC National Laboratory with major contributions from several universities and national labs all over the US. 
@@ -210,17 +210,17 @@ A titanium cooling pipe runs through the center of each support structure, deliv
 The local supports are mounted within larger quarter shell structures that provide mechanical stability and define the overall geometry of the Inner System.
 As the name suggests, each quarter shell is one quarter of the cylindrical structure. 
 There are three sections that will be made in the Inner System, the inner barrel and two end-caps.
-A CAD model of a quarter shell for the barrel and one end-cap can be seen in figure \ref{fig:itk_shells}. 
+A CAD model of a quarter shell for the barrel and one end-cap can be seen in Fig.~\ref{fig:itk_shells}. 
 The barrel and end-cap structures are not rigidly constrained with respect to one another in the z-direction. 
 The complete Inner System is supported such that it remains free to accommodate thermal and mechanical movements along the beam axis.
 
 All electrical power and data lines are called services. 
-Type 0 services route the power, DCS, and data via flex cables from the modules to patch panels, called PP0.
-The PP0s are mounted directly to the quarter shells. 
+Type 0 services route the power, DCS, and data via flex cables from the modules to patch panels (PP0).
+The PP0s are mounted directly on the quarter shells and have several unique designs depending on their location and on whether they service quad or triplet modules.
 Type 1 services run from the PP0s to the edge of the detector with twinaxial cables. 
 At the end of type 1 services the data is converted into optical signals, this is done outside the main detector volume due to the lack of radiation hard digital to optical converters. 
 
-Additional services are present further along the service chain, as illustrated in figure \ref{fig:itk_services}, but these components lie outside the Inner System and are therefore beyond the scope of this section.
+Additional services are present further along the service chain, as illustrated in Fig. \ref{fig:itk_services}, but these components lie outside the Inner System and are therefore beyond the scope of this section.
 
 
 
@@ -249,54 +249,58 @@ The local supports likewise are tested before loading.
 Again once shipped to SLAC they are tested visually and then using a CMM they are measured for flatness.
 
 
-The loaded local supports then will be placed in a test box and cooled to -55$^\circ$C. 
-The boxes box where designed and partially built as the work contributing to this dissertation. 
-The main challenges involved with the test boxes were the need for a small volume to allow for quickly drying the air to avoid condensation, allowing electrical connections to pass through, ackomading different varities of staves and rings, and finally providing interlocks to protect the operator and equiement. 
-The desgins can be found in Fig. \ref{fig:boxes}
+The loaded local supports then will be placed in a test box and cooled to -35$^\circ$C. 
+The test boxes were designed and partially constructed as part of the work contributing to this dissertation. Their design was driven by several key requirements: minimizing the internal volume to allow rapid drying of the enclosed air and thereby preventing condensation, providing electrical feedthroughs for power and data connections, accommodating different stave and ring geometries, and incorporating interlock systems to protect both operators and equipment. The final designs are shown in Fig. \ref{fig:boxes}.
+
+The stave test box employs two mirrored PP0 boards that accommodate power and data connections for all stave variants. To achieve this, the staves must be mounted in one of three distinct orientations. The required orientation depends on whether the flex-cable connector is located on the upper or lower side of the flex. This distinction reflects the cable-routing constraints of the detector. The 8 varieties of staves can be seen in Fig. \ref{fig:staves}
+
+The ring test box requires three PP0 boards to accommodate the different types of rings. Due to the different angular locations of the cooling and data lines for different rings, the simplest solution for connecting all required services for testings was to fix all cooling line connections at a single location while allowing the PP0 boards to move. Consequently, the PP0 boards are mounted on a track that permits motion through a 120$^\circ$ arc around the ring, enabling all possible rings to be tested in one box.
+
+
 
 
 \begin{figure}[htbp]
         \centering
         \begin{subfigure}{\textwidth}
             \includegraphics[width=\textwidth]{../Pictures/Chap_4/RingBox.png}
-            \caption{Ring Box}
+            \caption{Ring Box.}
         \end{subfigure}
         \begin{subfigure}{\textwidth}
-            \includegraphics[width=\textwidth]{../Pictures/Chap_4/RingBox.png}
+            \includegraphics[width=\textwidth]{../Pictures/Chap_4/StaveBox.png}
             \caption{Stave Box}
         \end{subfigure}
         \caption{CAD models of boxes used for loaded local supports.}
         \label{fig:boxes}
 \end{figure}
+\begin{figure}[htbp]
+        \centering
+        \begin{subfigure}{\textwidth}
+            \includegraphics[width=\textwidth]{../Pictures/Chap_4/StavesL0.jpg}
+            \caption{Layer 0 staves with triplet modules and flex cables, tan flexes are for power, green and gray flexes are for data}
+        \end{subfigure}
+        \begin{subfigure}{\textwidth}
+            \includegraphics[clip,width=\textwidth]{../Pictures/Chap_4/StavesL1.jpg}
+            \caption{Layer 1 staves with quad modules and flex cables, gray flexes are for power, orange, green, purple flexes are for data.}
+        \end{subfigure}
+        \caption{CAD models of the various staves for Layer 1 and Layer 2. Note the flexes are bend into shape of final cable routing.}
+        \label{fig:staves}
+\end{figure}
 
 
-
-To facilitate this a special connection will have to be made to the delicate titanium cooling pipes. 
+To connect the cooling lines to the loaded local supports a connection will have to be made to the delicate titanium cooling pipes. 
 This connection was developed at Argonne National Laboratory and is done by using a Yor-Lok like fitting with a special soft ferrule.
 Normally with a Yor-Lok fittings the tubing is compressed and deformed to create a tight seal against the ferrule and fittings. 
 In this case the ferrule is made of a soft metal and deforms to create a tight seal against the titanium pipe without deforming the titanium pipe. 
-This connection allows the local supports to be cooled to the operating temperature of -55$^\circ$C while in the dry box.
+This connection allows the local supports to be cooled to the operating temperature of -35$^\circ$C while in the dry box.
 
-While at -55$^\circ$C the local supports will undergo a series of tests to ensure that the modules are fully functional after loading.
-This test is imperative as it is the last chance to test the modules before the cooling pipes are welded together the quarter shells and shipped to CERN.
+While at -35$^\circ$C the local supports will undergo a series of tests to ensure that the modules are fully functional after loading.
+This test is imperative as it is the last chance to test the modules before the cooling pipes are welded together and the quarter shells are shipped to CERN.
 After testing the local supports are mounted in the shells the titanium cooling pipes are orbital welded together. 
 The fully assembled shell will then be shipped to CERN for installation in ATLAS. 
 
 
 
 
-%Module reception and testing.
-%Some of the major work done while doing this thesis was setting up the testing infrastucture fo the Inner System at SLAC. 
-%The first step of this process is module receeption testing at SLAC. 
-%Modules are produced and tested at various institions and shipped to SLAC for assembly. 
-%When recieved SLAC validates that no damage occured during shipping. 
-%This validation has two major steps. 
-
-%First there is a visual inspection to check for physical damage to the module. 
-%The visual inspection includes carefully taking pictures of the delicate wire bonds used to attach the RD53 front-end to the PCB flex. 
-
-
-%Module loading onto local support. Including volumatric dispensing of glue. 
 
 
 
@@ -323,7 +327,8 @@ Charge is injected into the neighboring pixels surrounding the pixel under test,
 If a bump bond is broken, the pixel under test registers no signal. 
 If the bump bond is intact, capacitive coupling between neighboring pixels produces a small but measurable charge, indicating a functional connection.
 
-Results from the first 100 thermal cycles can be seen in figure \ref{fig:delamination_test} and table \ref{tab:delamination_test}.
+Results from the first 100 thermal cycles can be seen in Fig.~\ref{fig:delamination_test} and Tab.~\ref{tab:delamination_test}.
+After the 100 thermal cycles 380 of the 460,800 total pixels changed to a disconnected status when compared to the baseline scan.
 The results show that the number of disconnected bump bonds at the start is roughly the same as the number of disconnected bump bonds after 100 thermal cycles, showing that delamination is not likely to occur during ITk operation in ATLAS.
 This test was continued to 1000 thermal cycles and the results were consistent with the 100 cycle test, showing no significant increase in disconnected bump bonds after 1000 thermal cycles.
 

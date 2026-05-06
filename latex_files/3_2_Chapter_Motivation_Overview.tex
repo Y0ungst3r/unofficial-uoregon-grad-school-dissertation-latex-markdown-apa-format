@@ -12,8 +12,8 @@ Particles in this framework are understood as excitations of their corresponding
 The SM elementary particles are shown in Fig.~\ref{fig:particle_zoo}.
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=\textwidth]{../Pictures/Chap_2/Standard_Model_of_Elementary_Particles.png}
-    \caption{Standard model elementary particles \cite{WikiImageExample}.}
+    \includegraphics[width=\textwidth]{../Pictures/Chap_2/Particle_zoo.jpg}
+    \caption{Standard model elementary particles on the left and their superpartners on the right. \cite{particle_zoo_susy}.}
     \label{fig:particle_zoo}
 \end{figure}
 
@@ -21,7 +21,7 @@ The SM elementary particles are shown in Fig.~\ref{fig:particle_zoo}.
 
 \subsection{Fermions}
 
-Particles can be classified in several ways, one of the simplest being by their spin. Particles with half-integer spin are known as fermions. All elementary fermions in the Standard Model have spin $1/2$ and constitute all the observable matter in the universe. Fermions are divided into two classes: leptons and quarks, each organized into three generations. Each generation has identical electric and strong charge but differs in mass.
+Particles can be classified in several ways, one of the simplest being by their spin. Particles with half-integer spin are known as fermions. All elementary fermions in the Standard Model have spin-$1/2$ and constitute all the observable matter in the universe. Fermions are divided into two classes: leptons and quarks, each organized into three generations. Each generation has identical electric and strong charge but differs in mass.
 
 
 Each generation of leptons consists of a charged lepton and a neutrino. Neutrinos carry no electric charge and do not interact via the electromagnetic force. Neutrinos also do not carry color charge, and therefore interact only via the weak force. This makes them among the most difficult particles to detect experimentally. Charged leptons carry one unit of electric charge and interact via both the electromagnetic and weak interactions.
@@ -77,7 +77,11 @@ The hierarchy problem arises from the sensitivity of the Higgs boson parameters 
     V(\Phi) = m_H^2 |\Phi|^2 + \lambda |\Phi|^4,
 \end{equation}
 
-where $\Phi$ is the complex scalar Higgs doublet, $m_H^2$ is the negative mass squared parameter, and $\lambda$ is the Higgs self coupling parameter. Radiative corrections to the Higgs mass parameter receive contributions from loop diagrams involving Standard Model particles, as $m_H^2 = m_{H, bare} + \Delta m_H^2 $. For example, a fermion loop, as illustrated in Fig.~\ref{fig:loop_corrections}, gives a correction of the form
+where $\Phi$ is the complex scalar Higgs doublet, $m_H^2$ is the negative mass squared parameter, and $\lambda$ is the Higgs self coupling parameter. Radiative corrections from loop diagrams involving Standard Model particles modify the Higgs mass parameter according to
+\[
+m_H^2 = m_{H,\mathrm{bare}}^2 + \Delta m_H^2 .
+\]
+For example, a fermion loop, as illustrated in Fig.~\ref{fig:loop_corrections}, gives a correction of the form
 \begin{equation}
     \Delta m_H^2 \sim -\frac{|\lambda_f|^2}{8\pi^2} \Lambda_{\mathrm{UV}}^2 + ....
 \end{equation} 
@@ -103,11 +107,17 @@ These corrections grow quadratically with the cutoff scale, implying that if the
 
 
 
-In addition to the hierarchy problem, another open problem in particle physics is the existence of dark matter. Astrophysical and cosmological observations provide strong evidence for the existence of large amounts of non-luminous matter, known as dark matter, in the Universe. One of the earliest pieces of evidence comes from measurements of galactic rotation curves, which show that star's rotational velocities in galaxies at large radii remain approximately constant. In contrast, if visible matter accounted for the majority of the galactic mass, the rotational velocity of stars would be expected to decrease with increasing distance from the galactic center. Additional evidence for dark matter arises from observations such as gravitational lensing and the dynamics of galaxy clusters, both of which indicate the presence of additional mass contributing to the gravitational potential.
+In addition to the hierarchy problem, another open problem in particle physics is the existence of dark matter. Astrophysical and cosmological observations provide strong evidence for the existence of large amounts of non-luminous matter, known as dark matter, in the universe. One of the earliest pieces of evidence comes from measurements of galactic rotation curves, which show that star's rotational velocities in galaxies at large radii remain approximately constant, as seen in Fig. \ref{fig:loop_corrections}. In contrast, if visible matter accounted for the majority of the galactic mass, the rotational velocity of stars would be expected to decrease with increasing distance from the galactic center. Additional evidence for dark matter arises from observations such as gravitational lensing and the dynamics of galaxy clusters, both of which indicate the presence of additional mass contributing to the gravitational potential.
+\begin{figure}[!h]
+    \centering
+        \includegraphics[width=\textwidth]{../Pictures/Chap_2/Rotation.jpg}
+    \caption{Rotation curves for NGC 6503, Note the circle marks with error bars are the measured data. \cite{Rotation_Curves}}
+    \label{fig:loop_corrections}
+\end{figure}
 
 Except for gravitational wave observations from detectors such as LIGO, Virgo, and KAGRA, most astronomical measurements rely on the detection of photons. Since no direct detection of dark matter has yet been achieved, it is inferred that dark matter does not interact electromagnetically, and its presence is instead deduced indirectly through its gravitational effects on visible matter and radiation.
 
-These observations imply that a significant fraction of the matter content of the Universe is not directly observable, with current estimates indicating that approximately 84.4\% of the total matter density is dark matter, compared to about 15.6\% baryonic (visible) matter ~\cite{ParticleDataGroup:2024cfk}.
+These observations imply that a significant fraction of the matter content of the universe is not directly observable, with current estimates indicating that approximately 84.4\% of the total matter density is dark matter, compared to about 15.6\% baryonic (visible) matter ~\cite{ParticleDataGroup:2024cfk}.
 
 Both the hierarchy problem and the existence of dark matter point toward physics beyond the Standard Model. These observations motivate the development of new theoretical frameworks and continued experimental searches for undiscovered particles. While the specific theory that extends the Standard Model remains unknown, several well-motivated candidates have been proposed of which supersymmetry is one of the most extensively studied.
 
@@ -123,9 +133,11 @@ The defining feature of supersymmetry is the existence of supersymmetric transfo
 \end{align}
 
 Particles in supersymmetric theories are organized into supermultiplets, in which each bosonic degree of freedom is paired with a fermionic degree of freedom. For example, each Weyl fermion is associated with two real scalar superpartners, typically arranged into a complex scalar field~\cite{MARTIN_1998}. Similarly, spin-1 gauge bosons are paired with spin-1/2 fermionic superpartners known as gauginos. These superpartners extend the Standard Model particle content, leading to a rich phenomenology and providing new particles to search for experimentally. 
-%The full set of predicted superpartners is illustrated in Fig.~\ref{fig:SUSY_zoo}. MAybe add back in? 
 
 
+The full set of predicted superpartners is illustrated in Fig.~\ref{fig:particle_zoo}. The scalar superpartners of the Standard Model leptons and quarks are collectively referred to as sleptons and squarks, respectively. Their names are formed by prefixing the corresponding Standard Model particle name with ``s'', for example the scalar partner of the tau lepton is the stau. Similarly, the fermionic superpartners of the Standard Model gauge bosons are known as gauginos. Their names are conventionally formed by appending the suffix ``ino'' to the corresponding gauge boson name.
+
+Supersymmetric particles are conventionally denoted using the same symbol as their Standard Model partners with a tilde placed above the symbol to distinguish them. Following electroweak symmetry breaking, the charged and neutral gauginos mix with the higgsinos; the gauge eigenstates are not identical to the mass eigenstates. The resulting charged mass eigenstates are known as charginos and the neutral mass eigenstates as neutralinos, denoted by \chinopm\ and \nino, respectively. 
 
 The scalar superpartners of fermions introduce additional contributions to the Higgs mass through loop corrections, as illustrated in Fig.~\ref{fig:loop_corrections}(b). These scalar loop contributions enter with an opposite sign relative to the fermion loops due to their differing spin statistics. 
 
@@ -141,7 +153,7 @@ In the limit of exact supersymmetry, where $\lambda_S = |\lambda_f|^2$ and the f
 
 Supersymmetry must be a broken symmetry. The mechanism of SUSY breaking leads to a variety of possible phenomenological scenarios.
 The searches in this dissertation consider three different scenarios for SUSY, constrained minimal supersymmetric standard model, gauge-mediated supersymmetry breaking, and anomaly mediated supersymmetry breaking.
-The scenarios relevant to this thesis are theoretically motivated and involve long-lived charged particles that decay into Standard Model states. In all cases discussed, some or all of the decay products escape detection, resulting in missing energy signatures. Although these are not the only mechanisms that can produce long-lived charged particles in beyond the Standard Model scenarios, these scenarios provide a well-motivated and experimentally accessible region of parameter space. This makes them a natural and systematic target for the searches presented in this thesis.
+The scenarios relevant to this dissertation are theoretically motivated and involve long-lived charged particles that decay into Standard Model states. In all cases discussed, some or all of the decay products escape detection, resulting in missing energy signatures. Although these are not the only mechanisms that can produce long-lived charged particles in beyond the Standard Model scenarios, these scenarios provide a well-motivated and experimentally accessible region of parameter space. This makes them a natural and systematic target for the searches presented in this dissertation.
 
 \subsection{Constrained Minimal Supersymmetric Standard Model}
 \label{sec:CMSSM_stau}
@@ -150,7 +162,7 @@ In this model, the neutralino ($\ninoone$) can be the lightest SUSY particle and
 
 
 
-A naive calculation of the relic abundance of $\ninoone$ typically predicts an overproduction of dark matter compared to current cosmological observations. A mechanism that can significantly reduce this relic density is $\stau$–$\ninoone$ coannihilation~\cite{GriestKim1991Teit}. If the $\stau$ and $\ninoone$ are nearly mass-degenerate, they remain in thermal equilibrium for a longer period during freeze-out in the early Universe. During this process, coannihilation channels involving $\stau$ increase the effective annihilation cross-section, thereby reducing the relic abundance of $\ninoone$. This mechanism can bring the predicted relic density into agreement with current observational constraints.
+A naive calculation of the relic abundance of $\ninoone$ typically predicts an overproduction of dark matter compared to current cosmological observations. A mechanism that can significantly reduce this relic density is $\stau$–$\ninoone$ coannihilation~\cite{GriestKim1991Teit}. If the $\stau$ and $\ninoone$ are nearly mass-degenerate, they remain in thermal equilibrium for a longer period during freeze-out in the early universe. During this process, coannihilation channels involving $\stau$ increase the effective annihilation cross-section, thereby reducing the relic abundance of $\ninoone$. This mechanism can bring the predicted relic density into agreement with current observational constraints.
 
 The mass splitting $\Delta m = m_{\stau} - m_{\nino}$ provides key insights into the decay width and phenomenology of the $\stau$. As $\Delta m$ decreases, the available phase space becomes increasingly suppressed, leading to a smaller decay width and consequently a longer lifetime.
 
@@ -164,7 +176,7 @@ Here, $c_L$ and $c_R$ are the left- and right-handed couplings to the $\tau$, re
 
 
 
-In the region where $\Delta m \approx m_\tau$ the width is significantly reduced and the $\stau$ is long-lived, with a typical lifetime of $\mathcal{O}(1~\mathrm{ns})$, which is relevant for the phenomenology considered in this thesis. 
+In the region where $\Delta m \approx m_\tau$ the width is significantly reduced and the $\stau$ is long-lived, with a typical lifetime of $\mathcal{O}(1~\mathrm{ns})$, which is relevant for the phenomenology considered in this dissertation. 
 
 As the mass splitting, $\Delta m$, decreases further, the two-body decay channel $\stau \to \ninoone \, \tau$ becomes kinematically inaccessible once $\Delta m < m_\tau$. In this regime, the $\stau$ instead decays via suppressed three- and four-body processes.
 
@@ -185,8 +197,8 @@ This behavior is phenomenologically important, as in all of these scenarios the 
 
 
 \subsection{Gauge Meditated SUSY Breaking}
-
-Another scenario of interest for this thesis is gauge-mediated supersymmetry breaking (GMSB).
+\label{sec:GMSB}
+Another scenario of interest for this dissertation is gauge-mediated supersymmetry breaking (GMSB).
 
 In GMSB models, the supersymmetry breaking is thought to take place in some hidden sector and communicated to the visible sector via the Standard Model gauge interactions. This is achieved through messenger fields, which couple to the hidden sector responsible for supersymmetry breaking and transmit this breaking to the quarks, leptons, and Higgs fields, as well as their supersymmetric partners.
 
@@ -206,13 +218,13 @@ This expression highlights an important feature of GMSB phenomenology. In contra
 \subsection{Anomaly Mediated SUSY Breaking}
 
 
-The final scenario of interest to this thesis is Anomaly Mediated Supersymmetry Breaking (AMSB). In this scenario, supersymmetry is assumed to be broken in some hidden sector, similarly to GMSB. In AMSB the breaking is communicated to the visible sector through superconformal anomalies in supergravity. 
+The final scenario of interest to this dissertation is Anomaly Mediated Supersymmetry Breaking (AMSB). In this scenario, supersymmetry is assumed to be broken in some hidden sector, similarly to GMSB. In AMSB the breaking is communicated to the visible sector through superconformal anomalies in supergravity. 
 
 A distinctive feature of AMSB is the near mass degeneracy between the charged and neutral winos. The mass splitting arises predominantly from electroweak loop corrections. 
 These corrections lead to a mass difference of approximately $\Delta m_{\nino, \chinoonepm} \approx 165\, \MeV$ ~\cite{Ibe_2013}.
 
 
-This small mass splitting allows for the decay channel $\chinoonepm \to \nino, \pi^\pm$. The corresponding decay width is given by~\cite{Ibe_2023}
+This small mass splitting allows for the decay channel $\chinoonepm \to \nino \pi^\pm$. The corresponding decay width is given by~\cite{Ibe_2023}
 
 
 \begin{align}
